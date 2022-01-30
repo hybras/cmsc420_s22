@@ -31,3 +31,7 @@ tasks.named('test') {
     // Use JUnit Platform for unit tests.
     useJUnitPlatform()
 }
+
+task submit(type: Exec) {
+    executable "gradescope-submit"
+}
