@@ -48,7 +48,7 @@ public class CommandHandler {
 				String key1 = line.next(); // read key1
 				int key2 = line.nextInt(); // read key2
 				dualList.insert(key1, key2);
-				output = String.format("dl.insert(\"%s\", %d);\n", key1, key2);
+				output = String.format("\ndl.insert(\"%s\", %d);\n", key1, key2);
 			}
 			// -----------------------------------------------------
 			// LIST-BY-KEY-1
@@ -78,9 +78,9 @@ public class CommandHandler {
 				String temp;
 				try {
 					var min = dualList.extractMinKey1();
-					temp = String.format("Assertions.assertEquals(%d, Assertions.assertDoesNotThrow(dl::extractMinKey1));\n", min);
+					temp = String.format("\nAssertions.assertEquals(%d, Assertions.assertDoesNotThrow(dl::extractMinKey1));\n", min);
 				} catch (EmptyListException e) {
-					temp = "Assertions.assertThrows(EmptyListException.class, dl::extractMinKey1);\n";
+					temp = "\nAssertions.assertThrows(EmptyListException.class, dl::extractMinKey1);\n";
 				}
 				output = temp;
 			}
@@ -92,9 +92,9 @@ public class CommandHandler {
 				String temp;
 				try {
 					var min = dualList.extractMinKey2();
-					temp = String.format("Assertions.assertEquals(\"%s\", Assertions.assertDoesNotThrow(dl::extractMinKey2));\n", min);
+					temp = String.format("\nAssertions.assertEquals(\"%s\", Assertions.assertDoesNotThrow(dl::extractMinKey2));\n", min);
 				} catch (EmptyListException e) {
-					temp = "Assertions.assertThrows(EmptyListException.class, dl::extractMinKey2);\n";
+					temp = "\nAssertions.assertThrows(EmptyListException.class, dl::extractMinKey2);\n";
 				}
 				output = temp;
 			}
