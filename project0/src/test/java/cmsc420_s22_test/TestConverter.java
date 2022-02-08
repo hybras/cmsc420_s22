@@ -5,7 +5,9 @@ package cmsc420_s22_test;
 import org.junit.jupiter.api.Test;
 
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.nio.file.Path;
+import java.util.Objects;
 import java.util.Scanner;
 
 /**
@@ -17,24 +19,20 @@ import java.util.Scanner;
 public class TestConverter {
 
     @Test
-    public void converter() {
-        final var inputFileName = "test01-input.txt";
+    public void converter() throws FileNotFoundException {
 
-        try {
-            Scanner scanner = new Scanner(new FileInputStream(String.valueOf(Path.of(System.getProperty("user.dir"), "src", "test", "resources", inputFileName)))); // input scanner
+        final var inputFileName = "test01-input.txt";
+//
+        try(Scanner scanner = new Scanner(new FileInputStream(String.valueOf(Path.of(System.getProperty("user.dir"), "src", "test", "resources", inputFileName))))) {
             CommandHandler commandHandler = new CommandHandler(); // initialize command handler
-            System.out.println("@Test\n    void test() {");
+            System.out.println("@Test\nvoid test() {");
             System.out.println("var dl = new DualList<String, Integer>();");
             while (scanner.hasNextLine()) {
                 String line = scanner.nextLine(); // input next line
                 String output = commandHandler.processCommand(line); // process this command
                 System.out.print(output); // output summary
             }
-            scanner.close();
             System.out.println("}");
-        } catch (Exception e) {
-            System.err.println("Unexpected error: " + e.getMessage());
-            e.printStackTrace(System.err);
         }
     }
 }
