@@ -23,12 +23,15 @@ public class TestConverter {
         try {
             Scanner scanner = new Scanner(new FileInputStream(String.valueOf(Path.of(System.getProperty("user.dir"), "src", "test", "resources", inputFileName)))); // input scanner
             CommandHandler commandHandler = new CommandHandler(); // initialize command handler
+            System.out.println("@Test\n    void test() {");
+            System.out.println("var dl = new DualList<String, Integer>();");
             while (scanner.hasNextLine()) {
                 String line = scanner.nextLine(); // input next line
                 String output = commandHandler.processCommand(line); // process this command
                 System.out.print(output); // output summary
             }
             scanner.close();
+            System.out.println("}");
         } catch (Exception e) {
             System.err.println("Unexpected error: " + e.getMessage());
             e.printStackTrace(System.err);
