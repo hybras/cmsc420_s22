@@ -31,11 +31,11 @@ public final class DualListTest {
         Assertions.assertIterableEquals(List.of("(Z, 3)","(A, 5)"), dl.listByKey2());
 
         Assertions.assertEquals("Z", Assertions.assertDoesNotThrow(dl::extractMinKey2));
-        Assertions.assertIterableEquals(List.of("(Z, 3)"), dl.listByKey1());
-        Assertions.assertIterableEquals(List.of("(Z, 3)"), dl.listByKey2());
+        Assertions.assertIterableEquals(List.of("(A, 5)"), dl.listByKey1());
+        Assertions.assertIterableEquals(List.of("(A, 5)"), dl.listByKey2());
         Assertions.assertEquals(1, dl.size());
 
-        Assertions.assertEquals(3, Assertions.assertDoesNotThrow(dl::extractMinKey1));
+        Assertions.assertEquals(5, Assertions.assertDoesNotThrow(dl::extractMinKey1));
         Assertions.assertIterableEquals(List.of(), dl.listByKey1());
         Assertions.assertIterableEquals(List.of(), dl.listByKey2());
         Assertions.assertEquals(0, dl.size());
