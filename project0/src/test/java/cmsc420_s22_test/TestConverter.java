@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 /**
  * Testing program for Part 0. By default, this reads from tests/test01-input.txt and
- * writes the output to tests/test01-output.txt. Change inputFileName and outputFileName
+ * writes to stdout a test method. Copy this to a test class. Change inputFileName
  * below to change this behavior.
  */
 
