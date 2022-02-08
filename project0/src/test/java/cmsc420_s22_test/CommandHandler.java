@@ -115,12 +115,6 @@ public class CommandHandler {
 					System.err.println("Error: Invalid command - \"" + cmd + "\" (Ignored)");
 			}
 			return output; // return summary output
-		} catch (Exception e) { // exception thrown?
-			return "Failure due to exception: \"" + e.getMessage() + "\"" + System.lineSeparator();
-		} catch (Error e) { // error occurred?
-			System.err.print("Operation failed due to error: " + e.getMessage());
-			e.printStackTrace(System.err);
-			return "";
 		}
 	}
 
