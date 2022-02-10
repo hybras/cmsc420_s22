@@ -22,7 +22,7 @@ public class TestConverter {
     public void converter() throws FileNotFoundException {
 
         final var inputFileName = "test01-input.txt";
-//
+
         try(Scanner scanner = new Scanner(new FileInputStream(String.valueOf(Path.of(System.getProperty("user.dir"), "src", "test", "resources", inputFileName))))) {
             CommandHandler commandHandler = new CommandHandler(); // initialize command handler
             System.out.println("@Test\nvoid test() {");
