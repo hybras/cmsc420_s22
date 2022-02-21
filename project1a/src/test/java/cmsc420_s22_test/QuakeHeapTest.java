@@ -92,7 +92,7 @@ public class QuakeHeapTest {
                 "[9 ORD]",
                 "(5)",
                 "[5 DEL]",
-                " [6 LAX]"), heap.listHeap());
+                "[6 LAX]"), heap.listHeap());
         locators.put("CDG", heap.insert(7, "CDG"));
         locators.put("SFO", heap.insert(16, "SFO"));
         Assertions.assertEquals(4, Assertions.assertDoesNotThrow(heap::getMinKey));
