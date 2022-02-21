@@ -1,0 +1,9 @@
+[course]
+id = 343202
+name = "CMSC 420 - 0101"
+term = "Spring 2022"
+
+[assignment]
+id = 1855782
+name = "Programming Assignment 1A: Quake Heaps"
+files = [ "src/main/java/cmsc420_s22/QuakeHeap.java", "src/main/java/cmsc420_s22/EmptyHeapException.java" ]
