@@ -2,12 +2,6 @@ package cmsc420_s22_test;
 
 // YOU SHOULD NOT MODIFY THIS FILE
 
-import cmsc420_s22.QuakeHeap;
-import org.junit.jupiter.api.Assertions;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.ListIterator;
 import java.util.Scanner;
 
 /**
