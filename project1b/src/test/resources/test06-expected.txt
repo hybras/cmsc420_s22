@@ -1,0 +1,495 @@
+[This tests the Part-B functions decrease-key and extract-min]
+set-n-levels: 6
+[We set the quake ratio super high, so no quakes can occur]
+set-quake-ratio(1.0): successful
+insert(4, X04): successful
+insert(9, X09): successful
+insert(20, X20): successful
+insert(21, X21): successful
+get-min-key: 4
+list-heap:
+  {lev: 0 nodeCt: 4}
+  {lev: 1 nodeCt: 2}
+  {lev: 2 nodeCt: 1}
+  (4)
+  (4)
+  [4 X04]
+  [9 X09]
+  (20)
+  [20 X20]
+  [21 X21]
+Structured list:
+  {lev: 0 nodeCt: 4}
+  {lev: 1 nodeCt: 2}
+  {lev: 2 nodeCt: 1}
+    Tree: 0
+      | | [4 X04]
+      | (4)
+      | | [9 X09]
+      (4)
+      | | [20 X20]
+      | (20)
+      | | [21 X21]
+decrease-key(X21, 0): successful
+list-heap:
+  {lev: 0 nodeCt: 4}
+  [0 X21]
+  {lev: 1 nodeCt: 2}
+  {lev: 2 nodeCt: 1}
+  (4)
+  (4)
+  [4 X04]
+  [9 X09]
+  (20)
+  [20 X20]
+  [null]
+Structured list:
+  {lev: 0 nodeCt: 4}
+    Tree: 0
+      [0 X21]
+  {lev: 1 nodeCt: 2}
+  {lev: 2 nodeCt: 1}
+    Tree: 0
+      | | [4 X04]
+      | (4)
+      | | [9 X09]
+      (4)
+      | | [20 X20]
+      | (20)
+      | | [null]
+extract-min: X21
+list-heap:
+  {lev: 0 nodeCt: 3}
+  {lev: 1 nodeCt: 2}
+  {lev: 2 nodeCt: 1}
+  (4)
+  (4)
+  [4 X04]
+  [9 X09]
+  (20)
+  [20 X20]
+  [null]
+Structured list:
+  {lev: 0 nodeCt: 3}
+  {lev: 1 nodeCt: 2}
+  {lev: 2 nodeCt: 1}
+    Tree: 0
+      | | [4 X04]
+      | (4)
+      | | [9 X09]
+      (4)
+      | | [20 X20]
+      | (20)
+      | | [null]
+insert(5, X05): successful
+insert(6, X06): successful
+insert(30, X30): successful
+insert(31, X31): successful
+get-min-key: 4
+list-heap:
+  {lev: 0 nodeCt: 7}
+  {lev: 1 nodeCt: 4}
+  {lev: 2 nodeCt: 2}
+  {lev: 3 nodeCt: 1}
+  (4)
+  (4)
+  (4)
+  [4 X04]
+  [9 X09]
+  (20)
+  [20 X20]
+  [null]
+  (5)
+  (5)
+  [5 X05]
+  [6 X06]
+  (30)
+  [30 X30]
+  [31 X31]
+Structured list:
+  {lev: 0 nodeCt: 7}
+  {lev: 1 nodeCt: 4}
+  {lev: 2 nodeCt: 2}
+  {lev: 3 nodeCt: 1}
+    Tree: 0
+      | | | [4 X04]
+      | | (4)
+      | | | [9 X09]
+      | (4)
+      | | | [20 X20]
+      | | (20)
+      | | | [null]
+      (4)
+      | | | [5 X05]
+      | | (5)
+      | | | [6 X06]
+      | (5)
+      | | | [30 X30]
+      | | (30)
+      | | | [31 X31]
+decrease-key(X30, 0): successful
+list-heap:
+  {lev: 0 nodeCt: 7}
+  {lev: 1 nodeCt: 4}
+  (0)
+  [0 X30]
+  [31 X31]
+  {lev: 2 nodeCt: 2}
+  {lev: 3 nodeCt: 1}
+  (4)
+  (4)
+  (4)
+  [4 X04]
+  [9 X09]
+  (20)
+  [20 X20]
+  [null]
+  (5)
+  (5)
+  [5 X05]
+  [6 X06]
+  [null]
+Structured list:
+  {lev: 0 nodeCt: 7}
+  {lev: 1 nodeCt: 4}
+    Tree: 0
+      | [0 X30]
+      (0)
+      | [31 X31]
+  {lev: 2 nodeCt: 2}
+  {lev: 3 nodeCt: 1}
+    Tree: 0
+      | | | [4 X04]
+      | | (4)
+      | | | [9 X09]
+      | (4)
+      | | | [20 X20]
+      | | (20)
+      | | | [null]
+      (4)
+      | | | [5 X05]
+      | | (5)
+      | | | [6 X06]
+      | (5)
+      | | [null]
+extract-min: X30
+list-heap:
+  {lev: 0 nodeCt: 6}
+  [31 X31]
+  {lev: 1 nodeCt: 3}
+  {lev: 2 nodeCt: 2}
+  {lev: 3 nodeCt: 1}
+  (4)
+  (4)
+  (4)
+  [4 X04]
+  [9 X09]
+  (20)
+  [20 X20]
+  [null]
+  (5)
+  (5)
+  [5 X05]
+  [6 X06]
+  [null]
+Structured list:
+  {lev: 0 nodeCt: 6}
+    Tree: 0
+      [31 X31]
+  {lev: 1 nodeCt: 3}
+  {lev: 2 nodeCt: 2}
+  {lev: 3 nodeCt: 1}
+    Tree: 0
+      | | | [4 X04]
+      | | (4)
+      | | | [9 X09]
+      | (4)
+      | | | [20 X20]
+      | | (20)
+      | | | [null]
+      (4)
+      | | | [5 X05]
+      | | (5)
+      | | | [6 X06]
+      | (5)
+      | | [null]
+decrease-key(X31, 0): successful
+list-heap:
+  {lev: 0 nodeCt: 6}
+  [0 X31]
+  {lev: 1 nodeCt: 3}
+  {lev: 2 nodeCt: 2}
+  {lev: 3 nodeCt: 1}
+  (4)
+  (4)
+  (4)
+  [4 X04]
+  [9 X09]
+  (20)
+  [20 X20]
+  [null]
+  (5)
+  (5)
+  [5 X05]
+  [6 X06]
+  [null]
+Structured list:
+  {lev: 0 nodeCt: 6}
+    Tree: 0
+      [0 X31]
+  {lev: 1 nodeCt: 3}
+  {lev: 2 nodeCt: 2}
+  {lev: 3 nodeCt: 1}
+    Tree: 0
+      | | | [4 X04]
+      | | (4)
+      | | | [9 X09]
+      | (4)
+      | | | [20 X20]
+      | | (20)
+      | | | [null]
+      (4)
+      | | | [5 X05]
+      | | (5)
+      | | | [6 X06]
+      | (5)
+      | | [null]
+extract-min: X31
+list-heap:
+  {lev: 0 nodeCt: 5}
+  {lev: 1 nodeCt: 3}
+  {lev: 2 nodeCt: 2}
+  {lev: 3 nodeCt: 1}
+  (4)
+  (4)
+  (4)
+  [4 X04]
+  [9 X09]
+  (20)
+  [20 X20]
+  [null]
+  (5)
+  (5)
+  [5 X05]
+  [6 X06]
+  [null]
+Structured list:
+  {lev: 0 nodeCt: 5}
+  {lev: 1 nodeCt: 3}
+  {lev: 2 nodeCt: 2}
+  {lev: 3 nodeCt: 1}
+    Tree: 0
+      | | | [4 X04]
+      | | (4)
+      | | | [9 X09]
+      | (4)
+      | | | [20 X20]
+      | | (20)
+      | | | [null]
+      (4)
+      | | | [5 X05]
+      | | (5)
+      | | | [6 X06]
+      | (5)
+      | | [null]
+insert(40, X40): successful
+insert(41, X41): successful
+insert(42, X42): successful
+insert(43, X43): successful
+insert(44, X44): successful
+insert(45, X45): successful
+insert(46, X46): successful
+insert(47, X47): successful
+get-min-key: 4
+decrease-key(X40, 0): successful
+extract-min: X40
+decrease-key(X41, 0): successful
+extract-min: X41
+decrease-key(X42, 0): successful
+extract-min: X42
+decrease-key(X43, 0): successful
+extract-min: X43
+decrease-key(X44, 0): successful
+extract-min: X44
+decrease-key(X45, 0): successful
+extract-min: X45
+decrease-key(X46, 0): successful
+extract-min: X46
+decrease-key(X47, 0): successful
+extract-min: X47
+insert(7, X07): successful
+insert(16, X16): successful
+insert(50, X50): successful
+insert(51, X51): successful
+get-min-key: 4
+decrease-key(X50, 0): successful
+extract-min: X50
+decrease-key(X51, 0): successful
+extract-min: X51
+insert(14, X14): successful
+insert(60, X60): successful
+insert(61, X61): successful
+insert(62, X62): successful
+get-min-key: 4
+decrease-key(X60, 0): successful
+extract-min: X60
+decrease-key(X61, 0): successful
+extract-min: X61
+decrease-key(X62, 0): successful
+extract-min: X62
+insert(70, X70): successful
+insert(71, X71): successful
+insert(72, X72): successful
+insert(73, X73): successful
+insert(74, X74): successful
+insert(75, X75): successful
+insert(76, X76): successful
+insert(77, X77): successful
+get-min-key: 4
+decrease-key(X70, 0): successful
+extract-min: X70
+decrease-key(X71, 0): successful
+extract-min: X71
+decrease-key(X72, 0): successful
+extract-min: X72
+decrease-key(X73, 0): successful
+extract-min: X73
+decrease-key(X74, 0): successful
+extract-min: X74
+decrease-key(X75, 0): successful
+extract-min: X75
+decrease-key(X76, 0): successful
+extract-min: X76
+decrease-key(X77, 0): successful
+extract-min: X77
+insert(8, X08): successful
+insert(11, X11): successful
+get-min-key: 4
+list-heap:
+  {lev: 0 nodeCt: 10}
+  {lev: 1 nodeCt: 6}
+  (8)
+  [8 X08]
+  [11 X11]
+  {lev: 2 nodeCt: 4}
+  {lev: 3 nodeCt: 2}
+  {lev: 4 nodeCt: 2}
+  {lev: 5 nodeCt: 1}
+  (4)
+  (4)
+  (4)
+  (4)
+  (4)
+  [4 X04]
+  [9 X09]
+  (20)
+  [20 X20]
+  [null]
+  (5)
+  (5)
+  [5 X05]
+  [6 X06]
+  [null]
+  [null]
+  (7)
+  (7)
+  (7)
+  (7)
+  [7 X07]
+  [16 X16]
+  [null]
+  (14)
+  (14)
+  [14 X14]
+  [null]
+  [null]
+  [null]
+Structured list:
+  {lev: 0 nodeCt: 10}
+  {lev: 1 nodeCt: 6}
+    Tree: 0
+      | [8 X08]
+      (8)
+      | [11 X11]
+  {lev: 2 nodeCt: 4}
+  {lev: 3 nodeCt: 2}
+  {lev: 4 nodeCt: 2}
+  {lev: 5 nodeCt: 1}
+    Tree: 0
+      | | | | | [4 X04]
+      | | | | (4)
+      | | | | | [9 X09]
+      | | | (4)
+      | | | | | [20 X20]
+      | | | | (20)
+      | | | | | [null]
+      | | (4)
+      | | | | | [5 X05]
+      | | | | (5)
+      | | | | | [6 X06]
+      | | | (5)
+      | | | | [null]
+      | (4)
+      | | [null]
+      (4)
+      | | | | | [7 X07]
+      | | | | (7)
+      | | | | | [16 X16]
+      | | | (7)
+      | | | | [null]
+      | | (7)
+      | | | | | [14 X14]
+      | | | | (14)
+      | | | | | [null]
+      | | | (14)
+      | | | | [null]
+      | (7)
+      | | [null]
+[We reset the quake ratio to 0.75, so quakes can occur now]
+set-quake-ratio(0.75): successful
+[The following extract-min will trigger a quake down to level 1]
+extract-min: X04
+list-heap:
+  {lev: 0 nodeCt: 9}
+  [9 X09]
+  {lev: 1 nodeCt: 5}
+  (5)
+  [5 X05]
+  [6 X06]
+  (7)
+  [7 X07]
+  [16 X16]
+  (8)
+  [8 X08]
+  [11 X11]
+  (14)
+  [14 X14]
+  [null]
+  (20)
+  [20 X20]
+  [null]
+Structured list:
+  {lev: 0 nodeCt: 9}
+    Tree: 0
+      [9 X09]
+  {lev: 1 nodeCt: 5}
+    Tree: 0
+      | [5 X05]
+      (5)
+      | [6 X06]
+    Tree: 1
+      | [7 X07]
+      (7)
+      | [16 X16]
+    Tree: 2
+      | [8 X08]
+      (8)
+      | [11 X11]
+    Tree: 3
+      | [14 X14]
+      (14)
+      | [null]
+    Tree: 4
+      | [20 X20]
+      (20)
+      | [null]

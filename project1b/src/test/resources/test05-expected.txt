@@ -1,0 +1,958 @@
+[This tests the Part-B functions extract-min and size]
+set-n-levels: 5
+[We set the quake ratio to 1, so no quakes should occur]
+set-quake-ratio(1.0): successful
+insert(88, BWI): successful
+insert(42, LAX): successful
+insert(26, IAD): successful
+insert(67, DCA): successful
+insert(94, JFK): successful
+insert(48, ATL): successful
+insert(19, SFO): successful
+list-heap:
+  {lev: 0 nodeCt: 7}
+  [19 SFO]
+  [26 IAD]
+  [42 LAX]
+  [48 ATL]
+  [67 DCA]
+  [88 BWI]
+  [94 JFK]
+Structured list:
+  {lev: 0 nodeCt: 7}
+    Tree: 0
+      [19 SFO]
+    Tree: 1
+      [26 IAD]
+    Tree: 2
+      [42 LAX]
+    Tree: 3
+      [48 ATL]
+    Tree: 4
+      [67 DCA]
+    Tree: 5
+      [88 BWI]
+    Tree: 6
+      [94 JFK]
+size: 7
+get-min-key: 19
+list-heap:
+  {lev: 0 nodeCt: 7}
+  [94 JFK]
+  {lev: 1 nodeCt: 3}
+  (67)
+  [67 DCA]
+  [88 BWI]
+  {lev: 2 nodeCt: 1}
+  (19)
+  (19)
+  [19 SFO]
+  [26 IAD]
+  (42)
+  [42 LAX]
+  [48 ATL]
+Structured list:
+  {lev: 0 nodeCt: 7}
+    Tree: 0
+      [94 JFK]
+  {lev: 1 nodeCt: 3}
+    Tree: 0
+      | [67 DCA]
+      (67)
+      | [88 BWI]
+  {lev: 2 nodeCt: 1}
+    Tree: 0
+      | | [19 SFO]
+      | (19)
+      | | [26 IAD]
+      (19)
+      | | [42 LAX]
+      | (42)
+      | | [48 ATL]
+size: 7
+[The following is the first extract-min]
+extract-min: SFO
+list-heap:
+  {lev: 0 nodeCt: 6}
+  {lev: 1 nodeCt: 3}
+  (67)
+  [67 DCA]
+  [88 BWI]
+  {lev: 2 nodeCt: 1}
+  (26)
+  (26)
+  [26 IAD]
+  [94 JFK]
+  (42)
+  [42 LAX]
+  [48 ATL]
+Structured list:
+  {lev: 0 nodeCt: 6}
+  {lev: 1 nodeCt: 3}
+    Tree: 0
+      | [67 DCA]
+      (67)
+      | [88 BWI]
+  {lev: 2 nodeCt: 1}
+    Tree: 0
+      | | [26 IAD]
+      | (26)
+      | | [94 JFK]
+      (26)
+      | | [42 LAX]
+      | (42)
+      | | [48 ATL]
+size: 6
+extract-min: IAD
+list-heap:
+  {lev: 0 nodeCt: 5}
+  [94 JFK]
+  {lev: 1 nodeCt: 2}
+  {lev: 2 nodeCt: 1}
+  (42)
+  (42)
+  [42 LAX]
+  [48 ATL]
+  (67)
+  [67 DCA]
+  [88 BWI]
+Structured list:
+  {lev: 0 nodeCt: 5}
+    Tree: 0
+      [94 JFK]
+  {lev: 1 nodeCt: 2}
+  {lev: 2 nodeCt: 1}
+    Tree: 0
+      | | [42 LAX]
+      | (42)
+      | | [48 ATL]
+      (42)
+      | | [67 DCA]
+      | (67)
+      | | [88 BWI]
+size: 5
+extract-min: LAX
+list-heap:
+  {lev: 0 nodeCt: 4}
+  {lev: 1 nodeCt: 2}
+  {lev: 2 nodeCt: 1}
+  (48)
+  (48)
+  [48 ATL]
+  [94 JFK]
+  (67)
+  [67 DCA]
+  [88 BWI]
+Structured list:
+  {lev: 0 nodeCt: 4}
+  {lev: 1 nodeCt: 2}
+  {lev: 2 nodeCt: 1}
+    Tree: 0
+      | | [48 ATL]
+      | (48)
+      | | [94 JFK]
+      (48)
+      | | [67 DCA]
+      | (67)
+      | | [88 BWI]
+size: 4
+extract-min: ATL
+list-heap:
+  {lev: 0 nodeCt: 3}
+  [94 JFK]
+  {lev: 1 nodeCt: 1}
+  (67)
+  [67 DCA]
+  [88 BWI]
+Structured list:
+  {lev: 0 nodeCt: 3}
+    Tree: 0
+      [94 JFK]
+  {lev: 1 nodeCt: 1}
+    Tree: 0
+      | [67 DCA]
+      (67)
+      | [88 BWI]
+size: 3
+extract-min: DCA
+list-heap:
+  {lev: 0 nodeCt: 2}
+  {lev: 1 nodeCt: 1}
+  (88)
+  [88 BWI]
+  [94 JFK]
+Structured list:
+  {lev: 0 nodeCt: 2}
+  {lev: 1 nodeCt: 1}
+    Tree: 0
+      | [88 BWI]
+      (88)
+      | [94 JFK]
+size: 2
+extract-min: BWI
+list-heap:
+  {lev: 0 nodeCt: 1}
+  [94 JFK]
+Structured list:
+  {lev: 0 nodeCt: 1}
+    Tree: 0
+      [94 JFK]
+size: 1
+extract-min: JFK
+list-heap:
+Structured list:
+size: 0
+[The following should throw an empty-heap exception]
+Failure due to exception: "Empty heap"
+list-heap:
+Structured list:
+size: 0
+clear: successful
+size: 0
+insert(67, DCA): successful
+insert(26, IAD): successful
+insert(48, ATL): successful
+insert(19, SFO): successful
+insert(88, BWI): successful
+insert(94, JFK): successful
+insert(42, LAX): successful
+insert(73, ORD): successful
+insert(55, DFW): successful
+insert(13, SEA): successful
+insert(22, MIA): successful
+insert(27, CDG): successful
+insert(62, HKG): successful
+insert(46, LHR): successful
+insert(99, NRT): successful
+insert(64, PEK): successful
+list-heap:
+  {lev: 0 nodeCt: 16}
+  [13 SEA]
+  [19 SFO]
+  [22 MIA]
+  [26 IAD]
+  [27 CDG]
+  [42 LAX]
+  [46 LHR]
+  [48 ATL]
+  [55 DFW]
+  [62 HKG]
+  [64 PEK]
+  [67 DCA]
+  [73 ORD]
+  [88 BWI]
+  [94 JFK]
+  [99 NRT]
+Structured list:
+  {lev: 0 nodeCt: 16}
+    Tree: 0
+      [13 SEA]
+    Tree: 1
+      [19 SFO]
+    Tree: 2
+      [22 MIA]
+    Tree: 3
+      [26 IAD]
+    Tree: 4
+      [27 CDG]
+    Tree: 5
+      [42 LAX]
+    Tree: 6
+      [46 LHR]
+    Tree: 7
+      [48 ATL]
+    Tree: 8
+      [55 DFW]
+    Tree: 9
+      [62 HKG]
+    Tree: 10
+      [64 PEK]
+    Tree: 11
+      [67 DCA]
+    Tree: 12
+      [73 ORD]
+    Tree: 13
+      [88 BWI]
+    Tree: 14
+      [94 JFK]
+    Tree: 15
+      [99 NRT]
+size: 16
+get-min-key: 13
+list-heap:
+  {lev: 0 nodeCt: 16}
+  {lev: 1 nodeCt: 8}
+  {lev: 2 nodeCt: 4}
+  {lev: 3 nodeCt: 2}
+  {lev: 4 nodeCt: 1}
+  (13)
+  (13)
+  (13)
+  (13)
+  [13 SEA]
+  [19 SFO]
+  (22)
+  [22 MIA]
+  [26 IAD]
+  (27)
+  (27)
+  [27 CDG]
+  [42 LAX]
+  (46)
+  [46 LHR]
+  [48 ATL]
+  (55)
+  (55)
+  (55)
+  [55 DFW]
+  [62 HKG]
+  (64)
+  [64 PEK]
+  [67 DCA]
+  (73)
+  (73)
+  [73 ORD]
+  [88 BWI]
+  (94)
+  [94 JFK]
+  [99 NRT]
+Structured list:
+  {lev: 0 nodeCt: 16}
+  {lev: 1 nodeCt: 8}
+  {lev: 2 nodeCt: 4}
+  {lev: 3 nodeCt: 2}
+  {lev: 4 nodeCt: 1}
+    Tree: 0
+      | | | | [13 SEA]
+      | | | (13)
+      | | | | [19 SFO]
+      | | (13)
+      | | | | [22 MIA]
+      | | | (22)
+      | | | | [26 IAD]
+      | (13)
+      | | | | [27 CDG]
+      | | | (27)
+      | | | | [42 LAX]
+      | | (27)
+      | | | | [46 LHR]
+      | | | (46)
+      | | | | [48 ATL]
+      (13)
+      | | | | [55 DFW]
+      | | | (55)
+      | | | | [62 HKG]
+      | | (55)
+      | | | | [64 PEK]
+      | | | (64)
+      | | | | [67 DCA]
+      | (55)
+      | | | | [73 ORD]
+      | | | (73)
+      | | | | [88 BWI]
+      | | (73)
+      | | | | [94 JFK]
+      | | | (94)
+      | | | | [99 NRT]
+size: 16
+extract-min: SEA
+list-heap:
+  {lev: 0 nodeCt: 15}
+  [19 SFO]
+  {lev: 1 nodeCt: 7}
+  (22)
+  [22 MIA]
+  [26 IAD]
+  {lev: 2 nodeCt: 3}
+  (27)
+  (27)
+  [27 CDG]
+  [42 LAX]
+  (46)
+  [46 LHR]
+  [48 ATL]
+  {lev: 3 nodeCt: 1}
+  (55)
+  (55)
+  (55)
+  [55 DFW]
+  [62 HKG]
+  (64)
+  [64 PEK]
+  [67 DCA]
+  (73)
+  (73)
+  [73 ORD]
+  [88 BWI]
+  (94)
+  [94 JFK]
+  [99 NRT]
+Structured list:
+  {lev: 0 nodeCt: 15}
+    Tree: 0
+      [19 SFO]
+  {lev: 1 nodeCt: 7}
+    Tree: 0
+      | [22 MIA]
+      (22)
+      | [26 IAD]
+  {lev: 2 nodeCt: 3}
+    Tree: 0
+      | | [27 CDG]
+      | (27)
+      | | [42 LAX]
+      (27)
+      | | [46 LHR]
+      | (46)
+      | | [48 ATL]
+  {lev: 3 nodeCt: 1}
+    Tree: 0
+      | | | [55 DFW]
+      | | (55)
+      | | | [62 HKG]
+      | (55)
+      | | | [64 PEK]
+      | | (64)
+      | | | [67 DCA]
+      (55)
+      | | | [73 ORD]
+      | | (73)
+      | | | [88 BWI]
+      | (73)
+      | | | [94 JFK]
+      | | (94)
+      | | | [99 NRT]
+extract-min: SFO
+list-heap:
+  {lev: 0 nodeCt: 14}
+  {lev: 1 nodeCt: 7}
+  (22)
+  [22 MIA]
+  [26 IAD]
+  {lev: 2 nodeCt: 3}
+  (27)
+  (27)
+  [27 CDG]
+  [42 LAX]
+  (46)
+  [46 LHR]
+  [48 ATL]
+  {lev: 3 nodeCt: 1}
+  (55)
+  (55)
+  (55)
+  [55 DFW]
+  [62 HKG]
+  (64)
+  [64 PEK]
+  [67 DCA]
+  (73)
+  (73)
+  [73 ORD]
+  [88 BWI]
+  (94)
+  [94 JFK]
+  [99 NRT]
+Structured list:
+  {lev: 0 nodeCt: 14}
+  {lev: 1 nodeCt: 7}
+    Tree: 0
+      | [22 MIA]
+      (22)
+      | [26 IAD]
+  {lev: 2 nodeCt: 3}
+    Tree: 0
+      | | [27 CDG]
+      | (27)
+      | | [42 LAX]
+      (27)
+      | | [46 LHR]
+      | (46)
+      | | [48 ATL]
+  {lev: 3 nodeCt: 1}
+    Tree: 0
+      | | | [55 DFW]
+      | | (55)
+      | | | [62 HKG]
+      | (55)
+      | | | [64 PEK]
+      | | (64)
+      | | | [67 DCA]
+      (55)
+      | | | [73 ORD]
+      | | (73)
+      | | | [88 BWI]
+      | (73)
+      | | | [94 JFK]
+      | | (94)
+      | | | [99 NRT]
+extract-min: MIA
+list-heap:
+  {lev: 0 nodeCt: 13}
+  [26 IAD]
+  {lev: 1 nodeCt: 6}
+  {lev: 2 nodeCt: 3}
+  (27)
+  (27)
+  [27 CDG]
+  [42 LAX]
+  (46)
+  [46 LHR]
+  [48 ATL]
+  {lev: 3 nodeCt: 1}
+  (55)
+  (55)
+  (55)
+  [55 DFW]
+  [62 HKG]
+  (64)
+  [64 PEK]
+  [67 DCA]
+  (73)
+  (73)
+  [73 ORD]
+  [88 BWI]
+  (94)
+  [94 JFK]
+  [99 NRT]
+Structured list:
+  {lev: 0 nodeCt: 13}
+    Tree: 0
+      [26 IAD]
+  {lev: 1 nodeCt: 6}
+  {lev: 2 nodeCt: 3}
+    Tree: 0
+      | | [27 CDG]
+      | (27)
+      | | [42 LAX]
+      (27)
+      | | [46 LHR]
+      | (46)
+      | | [48 ATL]
+  {lev: 3 nodeCt: 1}
+    Tree: 0
+      | | | [55 DFW]
+      | | (55)
+      | | | [62 HKG]
+      | (55)
+      | | | [64 PEK]
+      | | (64)
+      | | | [67 DCA]
+      (55)
+      | | | [73 ORD]
+      | | (73)
+      | | | [88 BWI]
+      | (73)
+      | | | [94 JFK]
+      | | (94)
+      | | | [99 NRT]
+extract-min: IAD
+list-heap:
+  {lev: 0 nodeCt: 12}
+  {lev: 1 nodeCt: 6}
+  {lev: 2 nodeCt: 3}
+  (27)
+  (27)
+  [27 CDG]
+  [42 LAX]
+  (46)
+  [46 LHR]
+  [48 ATL]
+  {lev: 3 nodeCt: 1}
+  (55)
+  (55)
+  (55)
+  [55 DFW]
+  [62 HKG]
+  (64)
+  [64 PEK]
+  [67 DCA]
+  (73)
+  (73)
+  [73 ORD]
+  [88 BWI]
+  (94)
+  [94 JFK]
+  [99 NRT]
+Structured list:
+  {lev: 0 nodeCt: 12}
+  {lev: 1 nodeCt: 6}
+  {lev: 2 nodeCt: 3}
+    Tree: 0
+      | | [27 CDG]
+      | (27)
+      | | [42 LAX]
+      (27)
+      | | [46 LHR]
+      | (46)
+      | | [48 ATL]
+  {lev: 3 nodeCt: 1}
+    Tree: 0
+      | | | [55 DFW]
+      | | (55)
+      | | | [62 HKG]
+      | (55)
+      | | | [64 PEK]
+      | | (64)
+      | | | [67 DCA]
+      (55)
+      | | | [73 ORD]
+      | | (73)
+      | | | [88 BWI]
+      | (73)
+      | | | [94 JFK]
+      | | (94)
+      | | | [99 NRT]
+extract-min: CDG
+list-heap:
+  {lev: 0 nodeCt: 11}
+  [42 LAX]
+  {lev: 1 nodeCt: 5}
+  (46)
+  [46 LHR]
+  [48 ATL]
+  {lev: 2 nodeCt: 2}
+  {lev: 3 nodeCt: 1}
+  (55)
+  (55)
+  (55)
+  [55 DFW]
+  [62 HKG]
+  (64)
+  [64 PEK]
+  [67 DCA]
+  (73)
+  (73)
+  [73 ORD]
+  [88 BWI]
+  (94)
+  [94 JFK]
+  [99 NRT]
+Structured list:
+  {lev: 0 nodeCt: 11}
+    Tree: 0
+      [42 LAX]
+  {lev: 1 nodeCt: 5}
+    Tree: 0
+      | [46 LHR]
+      (46)
+      | [48 ATL]
+  {lev: 2 nodeCt: 2}
+  {lev: 3 nodeCt: 1}
+    Tree: 0
+      | | | [55 DFW]
+      | | (55)
+      | | | [62 HKG]
+      | (55)
+      | | | [64 PEK]
+      | | (64)
+      | | | [67 DCA]
+      (55)
+      | | | [73 ORD]
+      | | (73)
+      | | | [88 BWI]
+      | (73)
+      | | | [94 JFK]
+      | | (94)
+      | | | [99 NRT]
+extract-min: LAX
+list-heap:
+  {lev: 0 nodeCt: 10}
+  {lev: 1 nodeCt: 5}
+  (46)
+  [46 LHR]
+  [48 ATL]
+  {lev: 2 nodeCt: 2}
+  {lev: 3 nodeCt: 1}
+  (55)
+  (55)
+  (55)
+  [55 DFW]
+  [62 HKG]
+  (64)
+  [64 PEK]
+  [67 DCA]
+  (73)
+  (73)
+  [73 ORD]
+  [88 BWI]
+  (94)
+  [94 JFK]
+  [99 NRT]
+Structured list:
+  {lev: 0 nodeCt: 10}
+  {lev: 1 nodeCt: 5}
+    Tree: 0
+      | [46 LHR]
+      (46)
+      | [48 ATL]
+  {lev: 2 nodeCt: 2}
+  {lev: 3 nodeCt: 1}
+    Tree: 0
+      | | | [55 DFW]
+      | | (55)
+      | | | [62 HKG]
+      | (55)
+      | | | [64 PEK]
+      | | (64)
+      | | | [67 DCA]
+      (55)
+      | | | [73 ORD]
+      | | (73)
+      | | | [88 BWI]
+      | (73)
+      | | | [94 JFK]
+      | | (94)
+      | | | [99 NRT]
+extract-min: LHR
+list-heap:
+  {lev: 0 nodeCt: 9}
+  [48 ATL]
+  {lev: 1 nodeCt: 4}
+  {lev: 2 nodeCt: 2}
+  {lev: 3 nodeCt: 1}
+  (55)
+  (55)
+  (55)
+  [55 DFW]
+  [62 HKG]
+  (64)
+  [64 PEK]
+  [67 DCA]
+  (73)
+  (73)
+  [73 ORD]
+  [88 BWI]
+  (94)
+  [94 JFK]
+  [99 NRT]
+Structured list:
+  {lev: 0 nodeCt: 9}
+    Tree: 0
+      [48 ATL]
+  {lev: 1 nodeCt: 4}
+  {lev: 2 nodeCt: 2}
+  {lev: 3 nodeCt: 1}
+    Tree: 0
+      | | | [55 DFW]
+      | | (55)
+      | | | [62 HKG]
+      | (55)
+      | | | [64 PEK]
+      | | (64)
+      | | | [67 DCA]
+      (55)
+      | | | [73 ORD]
+      | | (73)
+      | | | [88 BWI]
+      | (73)
+      | | | [94 JFK]
+      | | (94)
+      | | | [99 NRT]
+extract-min: ATL
+list-heap:
+  {lev: 0 nodeCt: 8}
+  {lev: 1 nodeCt: 4}
+  {lev: 2 nodeCt: 2}
+  {lev: 3 nodeCt: 1}
+  (55)
+  (55)
+  (55)
+  [55 DFW]
+  [62 HKG]
+  (64)
+  [64 PEK]
+  [67 DCA]
+  (73)
+  (73)
+  [73 ORD]
+  [88 BWI]
+  (94)
+  [94 JFK]
+  [99 NRT]
+Structured list:
+  {lev: 0 nodeCt: 8}
+  {lev: 1 nodeCt: 4}
+  {lev: 2 nodeCt: 2}
+  {lev: 3 nodeCt: 1}
+    Tree: 0
+      | | | [55 DFW]
+      | | (55)
+      | | | [62 HKG]
+      | (55)
+      | | | [64 PEK]
+      | | (64)
+      | | | [67 DCA]
+      (55)
+      | | | [73 ORD]
+      | | (73)
+      | | | [88 BWI]
+      | (73)
+      | | | [94 JFK]
+      | | (94)
+      | | | [99 NRT]
+extract-min: DFW
+list-heap:
+  {lev: 0 nodeCt: 7}
+  [62 HKG]
+  {lev: 1 nodeCt: 3}
+  (64)
+  [64 PEK]
+  [67 DCA]
+  {lev: 2 nodeCt: 1}
+  (73)
+  (73)
+  [73 ORD]
+  [88 BWI]
+  (94)
+  [94 JFK]
+  [99 NRT]
+Structured list:
+  {lev: 0 nodeCt: 7}
+    Tree: 0
+      [62 HKG]
+  {lev: 1 nodeCt: 3}
+    Tree: 0
+      | [64 PEK]
+      (64)
+      | [67 DCA]
+  {lev: 2 nodeCt: 1}
+    Tree: 0
+      | | [73 ORD]
+      | (73)
+      | | [88 BWI]
+      (73)
+      | | [94 JFK]
+      | (94)
+      | | [99 NRT]
+size: 7
+extract-min: HKG
+list-heap:
+  {lev: 0 nodeCt: 6}
+  {lev: 1 nodeCt: 3}
+  (64)
+  [64 PEK]
+  [67 DCA]
+  {lev: 2 nodeCt: 1}
+  (73)
+  (73)
+  [73 ORD]
+  [88 BWI]
+  (94)
+  [94 JFK]
+  [99 NRT]
+Structured list:
+  {lev: 0 nodeCt: 6}
+  {lev: 1 nodeCt: 3}
+    Tree: 0
+      | [64 PEK]
+      (64)
+      | [67 DCA]
+  {lev: 2 nodeCt: 1}
+    Tree: 0
+      | | [73 ORD]
+      | (73)
+      | | [88 BWI]
+      (73)
+      | | [94 JFK]
+      | (94)
+      | | [99 NRT]
+extract-min: PEK
+list-heap:
+  {lev: 0 nodeCt: 5}
+  [67 DCA]
+  {lev: 1 nodeCt: 2}
+  {lev: 2 nodeCt: 1}
+  (73)
+  (73)
+  [73 ORD]
+  [88 BWI]
+  (94)
+  [94 JFK]
+  [99 NRT]
+Structured list:
+  {lev: 0 nodeCt: 5}
+    Tree: 0
+      [67 DCA]
+  {lev: 1 nodeCt: 2}
+  {lev: 2 nodeCt: 1}
+    Tree: 0
+      | | [73 ORD]
+      | (73)
+      | | [88 BWI]
+      (73)
+      | | [94 JFK]
+      | (94)
+      | | [99 NRT]
+extract-min: DCA
+list-heap:
+  {lev: 0 nodeCt: 4}
+  {lev: 1 nodeCt: 2}
+  {lev: 2 nodeCt: 1}
+  (73)
+  (73)
+  [73 ORD]
+  [88 BWI]
+  (94)
+  [94 JFK]
+  [99 NRT]
+Structured list:
+  {lev: 0 nodeCt: 4}
+  {lev: 1 nodeCt: 2}
+  {lev: 2 nodeCt: 1}
+    Tree: 0
+      | | [73 ORD]
+      | (73)
+      | | [88 BWI]
+      (73)
+      | | [94 JFK]
+      | (94)
+      | | [99 NRT]
+extract-min: ORD
+list-heap:
+  {lev: 0 nodeCt: 3}
+  [88 BWI]
+  {lev: 1 nodeCt: 1}
+  (94)
+  [94 JFK]
+  [99 NRT]
+Structured list:
+  {lev: 0 nodeCt: 3}
+    Tree: 0
+      [88 BWI]
+  {lev: 1 nodeCt: 1}
+    Tree: 0
+      | [94 JFK]
+      (94)
+      | [99 NRT]
+extract-min: BWI
+list-heap:
+  {lev: 0 nodeCt: 2}
+  {lev: 1 nodeCt: 1}
+  (94)
+  [94 JFK]
+  [99 NRT]
+Structured list:
+  {lev: 0 nodeCt: 2}
+  {lev: 1 nodeCt: 1}
+    Tree: 0
+      | [94 JFK]
+      (94)
+      | [99 NRT]
+extract-min: JFK
+list-heap:
+  {lev: 0 nodeCt: 1}
+  [99 NRT]
+Structured list:
+  {lev: 0 nodeCt: 1}
+    Tree: 0
+      [99 NRT]
+extract-min: NRT
+list-heap:
+Structured list:
+size: 0
+[The following attempts to extract-min from an empty heap]
+Failure due to exception: "Empty heap"
+list-heap:
+Structured list:
+size: 0

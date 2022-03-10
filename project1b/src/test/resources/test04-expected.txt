@@ -1,0 +1,2461 @@
+[This tests the Part-B function decrease-key]
+set-n-levels: 6
+insert(88, BWI): successful
+insert(42, LAX): successful
+insert(26, IAD): successful
+insert(67, DCA): successful
+insert(94, JFK): successful
+insert(48, ATL): successful
+insert(19, SFO): successful
+list-heap:
+  {lev: 0 nodeCt: 7}
+  [19 SFO]
+  [26 IAD]
+  [42 LAX]
+  [48 ATL]
+  [67 DCA]
+  [88 BWI]
+  [94 JFK]
+Structured list:
+  {lev: 0 nodeCt: 7}
+    Tree: 0
+      [19 SFO]
+    Tree: 1
+      [26 IAD]
+    Tree: 2
+      [42 LAX]
+    Tree: 3
+      [48 ATL]
+    Tree: 4
+      [67 DCA]
+    Tree: 5
+      [88 BWI]
+    Tree: 6
+      [94 JFK]
+decrease-key(BWI, 20): successful
+list-heap:
+  {lev: 0 nodeCt: 7}
+  [19 SFO]
+  [20 BWI]
+  [26 IAD]
+  [42 LAX]
+  [48 ATL]
+  [67 DCA]
+  [94 JFK]
+Structured list:
+  {lev: 0 nodeCt: 7}
+    Tree: 0
+      [19 SFO]
+    Tree: 1
+      [20 BWI]
+    Tree: 2
+      [26 IAD]
+    Tree: 3
+      [42 LAX]
+    Tree: 4
+      [48 ATL]
+    Tree: 5
+      [67 DCA]
+    Tree: 6
+      [94 JFK]
+get-min-key: 19
+list-heap:
+  {lev: 0 nodeCt: 7}
+  [94 JFK]
+  {lev: 1 nodeCt: 3}
+  (48)
+  [48 ATL]
+  [67 DCA]
+  {lev: 2 nodeCt: 1}
+  (19)
+  (19)
+  [19 SFO]
+  [20 BWI]
+  (26)
+  [26 IAD]
+  [42 LAX]
+Structured list:
+  {lev: 0 nodeCt: 7}
+    Tree: 0
+      [94 JFK]
+  {lev: 1 nodeCt: 3}
+    Tree: 0
+      | [48 ATL]
+      (48)
+      | [67 DCA]
+  {lev: 2 nodeCt: 1}
+    Tree: 0
+      | | [19 SFO]
+      | (19)
+      | | [20 BWI]
+      (19)
+      | | [26 IAD]
+      | (26)
+      | | [42 LAX]
+decrease-key(IAD, 26): successful
+list-heap:
+  {lev: 0 nodeCt: 7}
+  [94 JFK]
+  {lev: 1 nodeCt: 3}
+  (26)
+  [26 IAD]
+  [42 LAX]
+  (48)
+  [48 ATL]
+  [67 DCA]
+  {lev: 2 nodeCt: 1}
+  (19)
+  (19)
+  [19 SFO]
+  [20 BWI]
+  [null]
+Structured list:
+  {lev: 0 nodeCt: 7}
+    Tree: 0
+      [94 JFK]
+  {lev: 1 nodeCt: 3}
+    Tree: 0
+      | [26 IAD]
+      (26)
+      | [42 LAX]
+    Tree: 1
+      | [48 ATL]
+      (48)
+      | [67 DCA]
+  {lev: 2 nodeCt: 1}
+    Tree: 0
+      | | [19 SFO]
+      | (19)
+      | | [20 BWI]
+      (19)
+      | [null]
+decrease-key(ATL, 30): successful
+list-heap:
+  {lev: 0 nodeCt: 7}
+  [94 JFK]
+  {lev: 1 nodeCt: 3}
+  (26)
+  [26 IAD]
+  [42 LAX]
+  (30)
+  [30 ATL]
+  [67 DCA]
+  {lev: 2 nodeCt: 1}
+  (19)
+  (19)
+  [19 SFO]
+  [20 BWI]
+  [null]
+Structured list:
+  {lev: 0 nodeCt: 7}
+    Tree: 0
+      [94 JFK]
+  {lev: 1 nodeCt: 3}
+    Tree: 0
+      | [26 IAD]
+      (26)
+      | [42 LAX]
+    Tree: 1
+      | [30 ATL]
+      (30)
+      | [67 DCA]
+  {lev: 2 nodeCt: 1}
+    Tree: 0
+      | | [19 SFO]
+      | (19)
+      | | [20 BWI]
+      (19)
+      | [null]
+decrease-key(ATL, 10): successful
+list-heap:
+  {lev: 0 nodeCt: 7}
+  [94 JFK]
+  {lev: 1 nodeCt: 3}
+  (10)
+  [10 ATL]
+  [67 DCA]
+  (26)
+  [26 IAD]
+  [42 LAX]
+  {lev: 2 nodeCt: 1}
+  (19)
+  (19)
+  [19 SFO]
+  [20 BWI]
+  [null]
+Structured list:
+  {lev: 0 nodeCt: 7}
+    Tree: 0
+      [94 JFK]
+  {lev: 1 nodeCt: 3}
+    Tree: 0
+      | [10 ATL]
+      (10)
+      | [67 DCA]
+    Tree: 1
+      | [26 IAD]
+      (26)
+      | [42 LAX]
+  {lev: 2 nodeCt: 1}
+    Tree: 0
+      | | [19 SFO]
+      | (19)
+      | | [20 BWI]
+      (19)
+      | [null]
+get-min-key: 10
+clear: successful
+[The following creates a tree with 16 entries and decreases them all by 100]
+insert(167, DCA): successful
+insert(126, IAD): successful
+insert(148, ATL): successful
+insert(119, SFO): successful
+insert(188, BWI): successful
+insert(194, JFK): successful
+insert(142, LAX): successful
+insert(173, ORD): successful
+insert(155, DFW): successful
+insert(113, SEA): successful
+insert(122, MIA): successful
+insert(127, CDG): successful
+insert(162, HKG): successful
+insert(146, LHR): successful
+insert(199, NRT): successful
+insert(164, PEK): successful
+list-heap:
+  {lev: 0 nodeCt: 16}
+  [113 SEA]
+  [119 SFO]
+  [122 MIA]
+  [126 IAD]
+  [127 CDG]
+  [142 LAX]
+  [146 LHR]
+  [148 ATL]
+  [155 DFW]
+  [162 HKG]
+  [164 PEK]
+  [167 DCA]
+  [173 ORD]
+  [188 BWI]
+  [194 JFK]
+  [199 NRT]
+Structured list:
+  {lev: 0 nodeCt: 16}
+    Tree: 0
+      [113 SEA]
+    Tree: 1
+      [119 SFO]
+    Tree: 2
+      [122 MIA]
+    Tree: 3
+      [126 IAD]
+    Tree: 4
+      [127 CDG]
+    Tree: 5
+      [142 LAX]
+    Tree: 6
+      [146 LHR]
+    Tree: 7
+      [148 ATL]
+    Tree: 8
+      [155 DFW]
+    Tree: 9
+      [162 HKG]
+    Tree: 10
+      [164 PEK]
+    Tree: 11
+      [167 DCA]
+    Tree: 12
+      [173 ORD]
+    Tree: 13
+      [188 BWI]
+    Tree: 14
+      [194 JFK]
+    Tree: 15
+      [199 NRT]
+get-min-key: 113
+list-heap:
+  {lev: 0 nodeCt: 16}
+  {lev: 1 nodeCt: 8}
+  {lev: 2 nodeCt: 4}
+  {lev: 3 nodeCt: 2}
+  {lev: 4 nodeCt: 1}
+  (113)
+  (113)
+  (113)
+  (113)
+  [113 SEA]
+  [119 SFO]
+  (122)
+  [122 MIA]
+  [126 IAD]
+  (127)
+  (127)
+  [127 CDG]
+  [142 LAX]
+  (146)
+  [146 LHR]
+  [148 ATL]
+  (155)
+  (155)
+  (155)
+  [155 DFW]
+  [162 HKG]
+  (164)
+  [164 PEK]
+  [167 DCA]
+  (173)
+  (173)
+  [173 ORD]
+  [188 BWI]
+  (194)
+  [194 JFK]
+  [199 NRT]
+Structured list:
+  {lev: 0 nodeCt: 16}
+  {lev: 1 nodeCt: 8}
+  {lev: 2 nodeCt: 4}
+  {lev: 3 nodeCt: 2}
+  {lev: 4 nodeCt: 1}
+    Tree: 0
+      | | | | [113 SEA]
+      | | | (113)
+      | | | | [119 SFO]
+      | | (113)
+      | | | | [122 MIA]
+      | | | (122)
+      | | | | [126 IAD]
+      | (113)
+      | | | | [127 CDG]
+      | | | (127)
+      | | | | [142 LAX]
+      | | (127)
+      | | | | [146 LHR]
+      | | | (146)
+      | | | | [148 ATL]
+      (113)
+      | | | | [155 DFW]
+      | | | (155)
+      | | | | [162 HKG]
+      | | (155)
+      | | | | [164 PEK]
+      | | | (164)
+      | | | | [167 DCA]
+      | (155)
+      | | | | [173 ORD]
+      | | | (173)
+      | | | | [188 BWI]
+      | | (173)
+      | | | | [194 JFK]
+      | | | (194)
+      | | | | [199 NRT]
+decrease-key(SEA, 13): successful
+list-heap:
+  {lev: 0 nodeCt: 16}
+  {lev: 1 nodeCt: 8}
+  {lev: 2 nodeCt: 4}
+  {lev: 3 nodeCt: 2}
+  {lev: 4 nodeCt: 1}
+  (13)
+  (13)
+  (13)
+  (13)
+  [13 SEA]
+  [119 SFO]
+  (122)
+  [122 MIA]
+  [126 IAD]
+  (127)
+  (127)
+  [127 CDG]
+  [142 LAX]
+  (146)
+  [146 LHR]
+  [148 ATL]
+  (155)
+  (155)
+  (155)
+  [155 DFW]
+  [162 HKG]
+  (164)
+  [164 PEK]
+  [167 DCA]
+  (173)
+  (173)
+  [173 ORD]
+  [188 BWI]
+  (194)
+  [194 JFK]
+  [199 NRT]
+Structured list:
+  {lev: 0 nodeCt: 16}
+  {lev: 1 nodeCt: 8}
+  {lev: 2 nodeCt: 4}
+  {lev: 3 nodeCt: 2}
+  {lev: 4 nodeCt: 1}
+    Tree: 0
+      | | | | [13 SEA]
+      | | | (13)
+      | | | | [119 SFO]
+      | | (13)
+      | | | | [122 MIA]
+      | | | (122)
+      | | | | [126 IAD]
+      | (13)
+      | | | | [127 CDG]
+      | | | (127)
+      | | | | [142 LAX]
+      | | (127)
+      | | | | [146 LHR]
+      | | | (146)
+      | | | | [148 ATL]
+      (13)
+      | | | | [155 DFW]
+      | | | (155)
+      | | | | [162 HKG]
+      | | (155)
+      | | | | [164 PEK]
+      | | | (164)
+      | | | | [167 DCA]
+      | (155)
+      | | | | [173 ORD]
+      | | | (173)
+      | | | | [188 BWI]
+      | | (173)
+      | | | | [194 JFK]
+      | | | (194)
+      | | | | [199 NRT]
+decrease-key(DFW, 55): successful
+list-heap:
+  {lev: 0 nodeCt: 16}
+  {lev: 1 nodeCt: 8}
+  {lev: 2 nodeCt: 4}
+  {lev: 3 nodeCt: 2}
+  (55)
+  (55)
+  (55)
+  [55 DFW]
+  [162 HKG]
+  (164)
+  [164 PEK]
+  [167 DCA]
+  (173)
+  (173)
+  [173 ORD]
+  [188 BWI]
+  (194)
+  [194 JFK]
+  [199 NRT]
+  {lev: 4 nodeCt: 1}
+  (13)
+  (13)
+  (13)
+  (13)
+  [13 SEA]
+  [119 SFO]
+  (122)
+  [122 MIA]
+  [126 IAD]
+  (127)
+  (127)
+  [127 CDG]
+  [142 LAX]
+  (146)
+  [146 LHR]
+  [148 ATL]
+  [null]
+Structured list:
+  {lev: 0 nodeCt: 16}
+  {lev: 1 nodeCt: 8}
+  {lev: 2 nodeCt: 4}
+  {lev: 3 nodeCt: 2}
+    Tree: 0
+      | | | [55 DFW]
+      | | (55)
+      | | | [162 HKG]
+      | (55)
+      | | | [164 PEK]
+      | | (164)
+      | | | [167 DCA]
+      (55)
+      | | | [173 ORD]
+      | | (173)
+      | | | [188 BWI]
+      | (173)
+      | | | [194 JFK]
+      | | (194)
+      | | | [199 NRT]
+  {lev: 4 nodeCt: 1}
+    Tree: 0
+      | | | | [13 SEA]
+      | | | (13)
+      | | | | [119 SFO]
+      | | (13)
+      | | | | [122 MIA]
+      | | | (122)
+      | | | | [126 IAD]
+      | (13)
+      | | | | [127 CDG]
+      | | | (127)
+      | | | | [142 LAX]
+      | | (127)
+      | | | | [146 LHR]
+      | | | (146)
+      | | | | [148 ATL]
+      (13)
+      | [null]
+decrease-key(CDG, 27): successful
+list-heap:
+  {lev: 0 nodeCt: 16}
+  {lev: 1 nodeCt: 8}
+  {lev: 2 nodeCt: 4}
+  (27)
+  (27)
+  [27 CDG]
+  [142 LAX]
+  (146)
+  [146 LHR]
+  [148 ATL]
+  {lev: 3 nodeCt: 2}
+  (55)
+  (55)
+  (55)
+  [55 DFW]
+  [162 HKG]
+  (164)
+  [164 PEK]
+  [167 DCA]
+  (173)
+  (173)
+  [173 ORD]
+  [188 BWI]
+  (194)
+  [194 JFK]
+  [199 NRT]
+  {lev: 4 nodeCt: 1}
+  (13)
+  (13)
+  (13)
+  (13)
+  [13 SEA]
+  [119 SFO]
+  (122)
+  [122 MIA]
+  [126 IAD]
+  [null]
+  [null]
+Structured list:
+  {lev: 0 nodeCt: 16}
+  {lev: 1 nodeCt: 8}
+  {lev: 2 nodeCt: 4}
+    Tree: 0
+      | | [27 CDG]
+      | (27)
+      | | [142 LAX]
+      (27)
+      | | [146 LHR]
+      | (146)
+      | | [148 ATL]
+  {lev: 3 nodeCt: 2}
+    Tree: 0
+      | | | [55 DFW]
+      | | (55)
+      | | | [162 HKG]
+      | (55)
+      | | | [164 PEK]
+      | | (164)
+      | | | [167 DCA]
+      (55)
+      | | | [173 ORD]
+      | | (173)
+      | | | [188 BWI]
+      | (173)
+      | | | [194 JFK]
+      | | (194)
+      | | | [199 NRT]
+  {lev: 4 nodeCt: 1}
+    Tree: 0
+      | | | | [13 SEA]
+      | | | (13)
+      | | | | [119 SFO]
+      | | (13)
+      | | | | [122 MIA]
+      | | | (122)
+      | | | | [126 IAD]
+      | (13)
+      | | [null]
+      (13)
+      | [null]
+decrease-key(MIA, 22): successful
+list-heap:
+  {lev: 0 nodeCt: 16}
+  {lev: 1 nodeCt: 8}
+  (22)
+  [22 MIA]
+  [126 IAD]
+  {lev: 2 nodeCt: 4}
+  (27)
+  (27)
+  [27 CDG]
+  [142 LAX]
+  (146)
+  [146 LHR]
+  [148 ATL]
+  {lev: 3 nodeCt: 2}
+  (55)
+  (55)
+  (55)
+  [55 DFW]
+  [162 HKG]
+  (164)
+  [164 PEK]
+  [167 DCA]
+  (173)
+  (173)
+  [173 ORD]
+  [188 BWI]
+  (194)
+  [194 JFK]
+  [199 NRT]
+  {lev: 4 nodeCt: 1}
+  (13)
+  (13)
+  (13)
+  (13)
+  [13 SEA]
+  [119 SFO]
+  [null]
+  [null]
+  [null]
+Structured list:
+  {lev: 0 nodeCt: 16}
+  {lev: 1 nodeCt: 8}
+    Tree: 0
+      | [22 MIA]
+      (22)
+      | [126 IAD]
+  {lev: 2 nodeCt: 4}
+    Tree: 0
+      | | [27 CDG]
+      | (27)
+      | | [142 LAX]
+      (27)
+      | | [146 LHR]
+      | (146)
+      | | [148 ATL]
+  {lev: 3 nodeCt: 2}
+    Tree: 0
+      | | | [55 DFW]
+      | | (55)
+      | | | [162 HKG]
+      | (55)
+      | | | [164 PEK]
+      | | (164)
+      | | | [167 DCA]
+      (55)
+      | | | [173 ORD]
+      | | (173)
+      | | | [188 BWI]
+      | (173)
+      | | | [194 JFK]
+      | | (194)
+      | | | [199 NRT]
+  {lev: 4 nodeCt: 1}
+    Tree: 0
+      | | | | [13 SEA]
+      | | | (13)
+      | | | | [119 SFO]
+      | | (13)
+      | | | [null]
+      | (13)
+      | | [null]
+      (13)
+      | [null]
+decrease-key(SFO, 19): successful
+list-heap:
+  {lev: 0 nodeCt: 16}
+  [19 SFO]
+  {lev: 1 nodeCt: 8}
+  (22)
+  [22 MIA]
+  [126 IAD]
+  {lev: 2 nodeCt: 4}
+  (27)
+  (27)
+  [27 CDG]
+  [142 LAX]
+  (146)
+  [146 LHR]
+  [148 ATL]
+  {lev: 3 nodeCt: 2}
+  (55)
+  (55)
+  (55)
+  [55 DFW]
+  [162 HKG]
+  (164)
+  [164 PEK]
+  [167 DCA]
+  (173)
+  (173)
+  [173 ORD]
+  [188 BWI]
+  (194)
+  [194 JFK]
+  [199 NRT]
+  {lev: 4 nodeCt: 1}
+  (13)
+  (13)
+  (13)
+  (13)
+  [13 SEA]
+  [null]
+  [null]
+  [null]
+  [null]
+Structured list:
+  {lev: 0 nodeCt: 16}
+    Tree: 0
+      [19 SFO]
+  {lev: 1 nodeCt: 8}
+    Tree: 0
+      | [22 MIA]
+      (22)
+      | [126 IAD]
+  {lev: 2 nodeCt: 4}
+    Tree: 0
+      | | [27 CDG]
+      | (27)
+      | | [142 LAX]
+      (27)
+      | | [146 LHR]
+      | (146)
+      | | [148 ATL]
+  {lev: 3 nodeCt: 2}
+    Tree: 0
+      | | | [55 DFW]
+      | | (55)
+      | | | [162 HKG]
+      | (55)
+      | | | [164 PEK]
+      | | (164)
+      | | | [167 DCA]
+      (55)
+      | | | [173 ORD]
+      | | (173)
+      | | | [188 BWI]
+      | (173)
+      | | | [194 JFK]
+      | | (194)
+      | | | [199 NRT]
+  {lev: 4 nodeCt: 1}
+    Tree: 0
+      | | | | [13 SEA]
+      | | | (13)
+      | | | | [null]
+      | | (13)
+      | | | [null]
+      | (13)
+      | | [null]
+      (13)
+      | [null]
+[The following applies get-max-level from a degenerate tree ]
+get-max-level(SEA): 4
+[The minimum key comes from a completely degenerate tree]
+get-min-key: 13
+list-heap:
+  {lev: 0 nodeCt: 16}
+  [19 SFO]
+  {lev: 1 nodeCt: 8}
+  (22)
+  [22 MIA]
+  [126 IAD]
+  {lev: 2 nodeCt: 4}
+  (27)
+  (27)
+  [27 CDG]
+  [142 LAX]
+  (146)
+  [146 LHR]
+  [148 ATL]
+  {lev: 3 nodeCt: 2}
+  (55)
+  (55)
+  (55)
+  [55 DFW]
+  [162 HKG]
+  (164)
+  [164 PEK]
+  [167 DCA]
+  (173)
+  (173)
+  [173 ORD]
+  [188 BWI]
+  (194)
+  [194 JFK]
+  [199 NRT]
+  {lev: 4 nodeCt: 1}
+  (13)
+  (13)
+  (13)
+  (13)
+  [13 SEA]
+  [null]
+  [null]
+  [null]
+  [null]
+Structured list:
+  {lev: 0 nodeCt: 16}
+    Tree: 0
+      [19 SFO]
+  {lev: 1 nodeCt: 8}
+    Tree: 0
+      | [22 MIA]
+      (22)
+      | [126 IAD]
+  {lev: 2 nodeCt: 4}
+    Tree: 0
+      | | [27 CDG]
+      | (27)
+      | | [142 LAX]
+      (27)
+      | | [146 LHR]
+      | (146)
+      | | [148 ATL]
+  {lev: 3 nodeCt: 2}
+    Tree: 0
+      | | | [55 DFW]
+      | | (55)
+      | | | [162 HKG]
+      | (55)
+      | | | [164 PEK]
+      | | (164)
+      | | | [167 DCA]
+      (55)
+      | | | [173 ORD]
+      | | (173)
+      | | | [188 BWI]
+      | (173)
+      | | | [194 JFK]
+      | | (194)
+      | | | [199 NRT]
+  {lev: 4 nodeCt: 1}
+    Tree: 0
+      | | | | [13 SEA]
+      | | | (13)
+      | | | | [null]
+      | | (13)
+      | | | [null]
+      | (13)
+      | | [null]
+      (13)
+      | [null]
+decrease-key(DCA, 67): successful
+list-heap:
+  {lev: 0 nodeCt: 16}
+  [19 SFO]
+  [67 DCA]
+  {lev: 1 nodeCt: 8}
+  (22)
+  [22 MIA]
+  [126 IAD]
+  {lev: 2 nodeCt: 4}
+  (27)
+  (27)
+  [27 CDG]
+  [142 LAX]
+  (146)
+  [146 LHR]
+  [148 ATL]
+  {lev: 3 nodeCt: 2}
+  (55)
+  (55)
+  (55)
+  [55 DFW]
+  [162 HKG]
+  (164)
+  [164 PEK]
+  [null]
+  (173)
+  (173)
+  [173 ORD]
+  [188 BWI]
+  (194)
+  [194 JFK]
+  [199 NRT]
+  {lev: 4 nodeCt: 1}
+  (13)
+  (13)
+  (13)
+  (13)
+  [13 SEA]
+  [null]
+  [null]
+  [null]
+  [null]
+Structured list:
+  {lev: 0 nodeCt: 16}
+    Tree: 0
+      [19 SFO]
+    Tree: 1
+      [67 DCA]
+  {lev: 1 nodeCt: 8}
+    Tree: 0
+      | [22 MIA]
+      (22)
+      | [126 IAD]
+  {lev: 2 nodeCt: 4}
+    Tree: 0
+      | | [27 CDG]
+      | (27)
+      | | [142 LAX]
+      (27)
+      | | [146 LHR]
+      | (146)
+      | | [148 ATL]
+  {lev: 3 nodeCt: 2}
+    Tree: 0
+      | | | [55 DFW]
+      | | (55)
+      | | | [162 HKG]
+      | (55)
+      | | | [164 PEK]
+      | | (164)
+      | | | [null]
+      (55)
+      | | | [173 ORD]
+      | | (173)
+      | | | [188 BWI]
+      | (173)
+      | | | [194 JFK]
+      | | (194)
+      | | | [199 NRT]
+  {lev: 4 nodeCt: 1}
+    Tree: 0
+      | | | | [13 SEA]
+      | | | (13)
+      | | | | [null]
+      | | (13)
+      | | | [null]
+      | (13)
+      | | [null]
+      (13)
+      | [null]
+decrease-key(IAD, 26): successful
+list-heap:
+  {lev: 0 nodeCt: 16}
+  [19 SFO]
+  [26 IAD]
+  [67 DCA]
+  {lev: 1 nodeCt: 8}
+  (22)
+  [22 MIA]
+  [null]
+  {lev: 2 nodeCt: 4}
+  (27)
+  (27)
+  [27 CDG]
+  [142 LAX]
+  (146)
+  [146 LHR]
+  [148 ATL]
+  {lev: 3 nodeCt: 2}
+  (55)
+  (55)
+  (55)
+  [55 DFW]
+  [162 HKG]
+  (164)
+  [164 PEK]
+  [null]
+  (173)
+  (173)
+  [173 ORD]
+  [188 BWI]
+  (194)
+  [194 JFK]
+  [199 NRT]
+  {lev: 4 nodeCt: 1}
+  (13)
+  (13)
+  (13)
+  (13)
+  [13 SEA]
+  [null]
+  [null]
+  [null]
+  [null]
+Structured list:
+  {lev: 0 nodeCt: 16}
+    Tree: 0
+      [19 SFO]
+    Tree: 1
+      [26 IAD]
+    Tree: 2
+      [67 DCA]
+  {lev: 1 nodeCt: 8}
+    Tree: 0
+      | [22 MIA]
+      (22)
+      | [null]
+  {lev: 2 nodeCt: 4}
+    Tree: 0
+      | | [27 CDG]
+      | (27)
+      | | [142 LAX]
+      (27)
+      | | [146 LHR]
+      | (146)
+      | | [148 ATL]
+  {lev: 3 nodeCt: 2}
+    Tree: 0
+      | | | [55 DFW]
+      | | (55)
+      | | | [162 HKG]
+      | (55)
+      | | | [164 PEK]
+      | | (164)
+      | | | [null]
+      (55)
+      | | | [173 ORD]
+      | | (173)
+      | | | [188 BWI]
+      | (173)
+      | | | [194 JFK]
+      | | (194)
+      | | | [199 NRT]
+  {lev: 4 nodeCt: 1}
+    Tree: 0
+      | | | | [13 SEA]
+      | | | (13)
+      | | | | [null]
+      | | (13)
+      | | | [null]
+      | (13)
+      | | [null]
+      (13)
+      | [null]
+decrease-key(ATL, 48): successful
+list-heap:
+  {lev: 0 nodeCt: 16}
+  [19 SFO]
+  [26 IAD]
+  [48 ATL]
+  [67 DCA]
+  {lev: 1 nodeCt: 8}
+  (22)
+  [22 MIA]
+  [null]
+  {lev: 2 nodeCt: 4}
+  (27)
+  (27)
+  [27 CDG]
+  [142 LAX]
+  (146)
+  [146 LHR]
+  [null]
+  {lev: 3 nodeCt: 2}
+  (55)
+  (55)
+  (55)
+  [55 DFW]
+  [162 HKG]
+  (164)
+  [164 PEK]
+  [null]
+  (173)
+  (173)
+  [173 ORD]
+  [188 BWI]
+  (194)
+  [194 JFK]
+  [199 NRT]
+  {lev: 4 nodeCt: 1}
+  (13)
+  (13)
+  (13)
+  (13)
+  [13 SEA]
+  [null]
+  [null]
+  [null]
+  [null]
+Structured list:
+  {lev: 0 nodeCt: 16}
+    Tree: 0
+      [19 SFO]
+    Tree: 1
+      [26 IAD]
+    Tree: 2
+      [48 ATL]
+    Tree: 3
+      [67 DCA]
+  {lev: 1 nodeCt: 8}
+    Tree: 0
+      | [22 MIA]
+      (22)
+      | [null]
+  {lev: 2 nodeCt: 4}
+    Tree: 0
+      | | [27 CDG]
+      | (27)
+      | | [142 LAX]
+      (27)
+      | | [146 LHR]
+      | (146)
+      | | [null]
+  {lev: 3 nodeCt: 2}
+    Tree: 0
+      | | | [55 DFW]
+      | | (55)
+      | | | [162 HKG]
+      | (55)
+      | | | [164 PEK]
+      | | (164)
+      | | | [null]
+      (55)
+      | | | [173 ORD]
+      | | (173)
+      | | | [188 BWI]
+      | (173)
+      | | | [194 JFK]
+      | | (194)
+      | | | [199 NRT]
+  {lev: 4 nodeCt: 1}
+    Tree: 0
+      | | | | [13 SEA]
+      | | | (13)
+      | | | | [null]
+      | | (13)
+      | | | [null]
+      | (13)
+      | | [null]
+      (13)
+      | [null]
+decrease-key(BWI, 88): successful
+list-heap:
+  {lev: 0 nodeCt: 16}
+  [19 SFO]
+  [26 IAD]
+  [48 ATL]
+  [67 DCA]
+  [88 BWI]
+  {lev: 1 nodeCt: 8}
+  (22)
+  [22 MIA]
+  [null]
+  {lev: 2 nodeCt: 4}
+  (27)
+  (27)
+  [27 CDG]
+  [142 LAX]
+  (146)
+  [146 LHR]
+  [null]
+  {lev: 3 nodeCt: 2}
+  (55)
+  (55)
+  (55)
+  [55 DFW]
+  [162 HKG]
+  (164)
+  [164 PEK]
+  [null]
+  (173)
+  (173)
+  [173 ORD]
+  [null]
+  (194)
+  [194 JFK]
+  [199 NRT]
+  {lev: 4 nodeCt: 1}
+  (13)
+  (13)
+  (13)
+  (13)
+  [13 SEA]
+  [null]
+  [null]
+  [null]
+  [null]
+Structured list:
+  {lev: 0 nodeCt: 16}
+    Tree: 0
+      [19 SFO]
+    Tree: 1
+      [26 IAD]
+    Tree: 2
+      [48 ATL]
+    Tree: 3
+      [67 DCA]
+    Tree: 4
+      [88 BWI]
+  {lev: 1 nodeCt: 8}
+    Tree: 0
+      | [22 MIA]
+      (22)
+      | [null]
+  {lev: 2 nodeCt: 4}
+    Tree: 0
+      | | [27 CDG]
+      | (27)
+      | | [142 LAX]
+      (27)
+      | | [146 LHR]
+      | (146)
+      | | [null]
+  {lev: 3 nodeCt: 2}
+    Tree: 0
+      | | | [55 DFW]
+      | | (55)
+      | | | [162 HKG]
+      | (55)
+      | | | [164 PEK]
+      | | (164)
+      | | | [null]
+      (55)
+      | | | [173 ORD]
+      | | (173)
+      | | | [null]
+      | (173)
+      | | | [194 JFK]
+      | | (194)
+      | | | [199 NRT]
+  {lev: 4 nodeCt: 1}
+    Tree: 0
+      | | | | [13 SEA]
+      | | | (13)
+      | | | | [null]
+      | | (13)
+      | | | [null]
+      | (13)
+      | | [null]
+      (13)
+      | [null]
+decrease-key(JFK, 94): successful
+list-heap:
+  {lev: 0 nodeCt: 16}
+  [19 SFO]
+  [26 IAD]
+  [48 ATL]
+  [67 DCA]
+  [88 BWI]
+  {lev: 1 nodeCt: 8}
+  (22)
+  [22 MIA]
+  [null]
+  (94)
+  [94 JFK]
+  [199 NRT]
+  {lev: 2 nodeCt: 4}
+  (27)
+  (27)
+  [27 CDG]
+  [142 LAX]
+  (146)
+  [146 LHR]
+  [null]
+  {lev: 3 nodeCt: 2}
+  (55)
+  (55)
+  (55)
+  [55 DFW]
+  [162 HKG]
+  (164)
+  [164 PEK]
+  [null]
+  (173)
+  (173)
+  [173 ORD]
+  [null]
+  [null]
+  {lev: 4 nodeCt: 1}
+  (13)
+  (13)
+  (13)
+  (13)
+  [13 SEA]
+  [null]
+  [null]
+  [null]
+  [null]
+Structured list:
+  {lev: 0 nodeCt: 16}
+    Tree: 0
+      [19 SFO]
+    Tree: 1
+      [26 IAD]
+    Tree: 2
+      [48 ATL]
+    Tree: 3
+      [67 DCA]
+    Tree: 4
+      [88 BWI]
+  {lev: 1 nodeCt: 8}
+    Tree: 0
+      | [22 MIA]
+      (22)
+      | [null]
+    Tree: 1
+      | [94 JFK]
+      (94)
+      | [199 NRT]
+  {lev: 2 nodeCt: 4}
+    Tree: 0
+      | | [27 CDG]
+      | (27)
+      | | [142 LAX]
+      (27)
+      | | [146 LHR]
+      | (146)
+      | | [null]
+  {lev: 3 nodeCt: 2}
+    Tree: 0
+      | | | [55 DFW]
+      | | (55)
+      | | | [162 HKG]
+      | (55)
+      | | | [164 PEK]
+      | | (164)
+      | | | [null]
+      (55)
+      | | | [173 ORD]
+      | | (173)
+      | | | [null]
+      | (173)
+      | | [null]
+  {lev: 4 nodeCt: 1}
+    Tree: 0
+      | | | | [13 SEA]
+      | | | (13)
+      | | | | [null]
+      | | (13)
+      | | | [null]
+      | (13)
+      | | [null]
+      (13)
+      | [null]
+decrease-key(LAX, 42): successful
+list-heap:
+  {lev: 0 nodeCt: 16}
+  [19 SFO]
+  [26 IAD]
+  [42 LAX]
+  [48 ATL]
+  [67 DCA]
+  [88 BWI]
+  {lev: 1 nodeCt: 8}
+  (22)
+  [22 MIA]
+  [null]
+  (94)
+  [94 JFK]
+  [199 NRT]
+  {lev: 2 nodeCt: 4}
+  (27)
+  (27)
+  [27 CDG]
+  [null]
+  (146)
+  [146 LHR]
+  [null]
+  {lev: 3 nodeCt: 2}
+  (55)
+  (55)
+  (55)
+  [55 DFW]
+  [162 HKG]
+  (164)
+  [164 PEK]
+  [null]
+  (173)
+  (173)
+  [173 ORD]
+  [null]
+  [null]
+  {lev: 4 nodeCt: 1}
+  (13)
+  (13)
+  (13)
+  (13)
+  [13 SEA]
+  [null]
+  [null]
+  [null]
+  [null]
+Structured list:
+  {lev: 0 nodeCt: 16}
+    Tree: 0
+      [19 SFO]
+    Tree: 1
+      [26 IAD]
+    Tree: 2
+      [42 LAX]
+    Tree: 3
+      [48 ATL]
+    Tree: 4
+      [67 DCA]
+    Tree: 5
+      [88 BWI]
+  {lev: 1 nodeCt: 8}
+    Tree: 0
+      | [22 MIA]
+      (22)
+      | [null]
+    Tree: 1
+      | [94 JFK]
+      (94)
+      | [199 NRT]
+  {lev: 2 nodeCt: 4}
+    Tree: 0
+      | | [27 CDG]
+      | (27)
+      | | [null]
+      (27)
+      | | [146 LHR]
+      | (146)
+      | | [null]
+  {lev: 3 nodeCt: 2}
+    Tree: 0
+      | | | [55 DFW]
+      | | (55)
+      | | | [162 HKG]
+      | (55)
+      | | | [164 PEK]
+      | | (164)
+      | | | [null]
+      (55)
+      | | | [173 ORD]
+      | | (173)
+      | | | [null]
+      | (173)
+      | | [null]
+  {lev: 4 nodeCt: 1}
+    Tree: 0
+      | | | | [13 SEA]
+      | | | (13)
+      | | | | [null]
+      | | (13)
+      | | | [null]
+      | (13)
+      | | [null]
+      (13)
+      | [null]
+decrease-key(ORD, 73): successful
+list-heap:
+  {lev: 0 nodeCt: 16}
+  [19 SFO]
+  [26 IAD]
+  [42 LAX]
+  [48 ATL]
+  [67 DCA]
+  [88 BWI]
+  {lev: 1 nodeCt: 8}
+  (22)
+  [22 MIA]
+  [null]
+  (94)
+  [94 JFK]
+  [199 NRT]
+  {lev: 2 nodeCt: 4}
+  (27)
+  (27)
+  [27 CDG]
+  [null]
+  (146)
+  [146 LHR]
+  [null]
+  (73)
+  (73)
+  [73 ORD]
+  [null]
+  [null]
+  {lev: 3 nodeCt: 2}
+  (55)
+  (55)
+  (55)
+  [55 DFW]
+  [162 HKG]
+  (164)
+  [164 PEK]
+  [null]
+  [null]
+  {lev: 4 nodeCt: 1}
+  (13)
+  (13)
+  (13)
+  (13)
+  [13 SEA]
+  [null]
+  [null]
+  [null]
+  [null]
+Structured list:
+  {lev: 0 nodeCt: 16}
+    Tree: 0
+      [19 SFO]
+    Tree: 1
+      [26 IAD]
+    Tree: 2
+      [42 LAX]
+    Tree: 3
+      [48 ATL]
+    Tree: 4
+      [67 DCA]
+    Tree: 5
+      [88 BWI]
+  {lev: 1 nodeCt: 8}
+    Tree: 0
+      | [22 MIA]
+      (22)
+      | [null]
+    Tree: 1
+      | [94 JFK]
+      (94)
+      | [199 NRT]
+  {lev: 2 nodeCt: 4}
+    Tree: 0
+      | | [27 CDG]
+      | (27)
+      | | [null]
+      (27)
+      | | [146 LHR]
+      | (146)
+      | | [null]
+    Tree: 1
+      | | [73 ORD]
+      | (73)
+      | | [null]
+      (73)
+      | [null]
+  {lev: 3 nodeCt: 2}
+    Tree: 0
+      | | | [55 DFW]
+      | | (55)
+      | | | [162 HKG]
+      | (55)
+      | | | [164 PEK]
+      | | (164)
+      | | | [null]
+      (55)
+      | [null]
+  {lev: 4 nodeCt: 1}
+    Tree: 0
+      | | | | [13 SEA]
+      | | | (13)
+      | | | | [null]
+      | | (13)
+      | | | [null]
+      | (13)
+      | | [null]
+      (13)
+      | [null]
+get-min-key: 13
+list-heap:
+  {lev: 0 nodeCt: 16}
+  {lev: 1 nodeCt: 11}
+  (94)
+  [94 JFK]
+  [199 NRT]
+  {lev: 2 nodeCt: 6}
+  {lev: 3 nodeCt: 4}
+  (55)
+  (55)
+  (55)
+  [55 DFW]
+  [162 HKG]
+  (164)
+  [164 PEK]
+  [null]
+  [null]
+  {lev: 4 nodeCt: 2}
+  {lev: 5 nodeCt: 1}
+  (13)
+  (13)
+  (13)
+  (13)
+  (13)
+  [13 SEA]
+  [null]
+  [null]
+  [null]
+  [null]
+  (19)
+  (19)
+  (19)
+  (19)
+  [19 SFO]
+  [26 IAD]
+  (22)
+  [22 MIA]
+  [null]
+  (27)
+  (27)
+  [27 CDG]
+  [null]
+  (146)
+  [146 LHR]
+  [null]
+  (42)
+  (42)
+  (42)
+  [42 LAX]
+  [48 ATL]
+  (67)
+  [67 DCA]
+  [88 BWI]
+  (73)
+  (73)
+  [73 ORD]
+  [null]
+  [null]
+Structured list:
+  {lev: 0 nodeCt: 16}
+  {lev: 1 nodeCt: 11}
+    Tree: 0
+      | [94 JFK]
+      (94)
+      | [199 NRT]
+  {lev: 2 nodeCt: 6}
+  {lev: 3 nodeCt: 4}
+    Tree: 0
+      | | | [55 DFW]
+      | | (55)
+      | | | [162 HKG]
+      | (55)
+      | | | [164 PEK]
+      | | (164)
+      | | | [null]
+      (55)
+      | [null]
+  {lev: 4 nodeCt: 2}
+  {lev: 5 nodeCt: 1}
+    Tree: 0
+      | | | | | [13 SEA]
+      | | | | (13)
+      | | | | | [null]
+      | | | (13)
+      | | | | [null]
+      | | (13)
+      | | | [null]
+      | (13)
+      | | [null]
+      (13)
+      | | | | | [19 SFO]
+      | | | | (19)
+      | | | | | [26 IAD]
+      | | | (19)
+      | | | | | [22 MIA]
+      | | | | (22)
+      | | | | | [null]
+      | | (19)
+      | | | | | [27 CDG]
+      | | | | (27)
+      | | | | | [null]
+      | | | (27)
+      | | | | | [146 LHR]
+      | | | | (146)
+      | | | | | [null]
+      | (19)
+      | | | | | [42 LAX]
+      | | | | (42)
+      | | | | | [48 ATL]
+      | | | (42)
+      | | | | | [67 DCA]
+      | | | | (67)
+      | | | | | [88 BWI]
+      | | (42)
+      | | | | | [73 ORD]
+      | | | | (73)
+      | | | | | [null]
+      | | | (73)
+      | | | | [null]
+decrease-key(HKG, 62): successful
+list-heap:
+  {lev: 0 nodeCt: 16}
+  [62 HKG]
+  {lev: 1 nodeCt: 11}
+  (94)
+  [94 JFK]
+  [199 NRT]
+  {lev: 2 nodeCt: 6}
+  {lev: 3 nodeCt: 4}
+  (55)
+  (55)
+  (55)
+  [55 DFW]
+  [null]
+  (164)
+  [164 PEK]
+  [null]
+  [null]
+  {lev: 4 nodeCt: 2}
+  {lev: 5 nodeCt: 1}
+  (13)
+  (13)
+  (13)
+  (13)
+  (13)
+  [13 SEA]
+  [null]
+  [null]
+  [null]
+  [null]
+  (19)
+  (19)
+  (19)
+  (19)
+  [19 SFO]
+  [26 IAD]
+  (22)
+  [22 MIA]
+  [null]
+  (27)
+  (27)
+  [27 CDG]
+  [null]
+  (146)
+  [146 LHR]
+  [null]
+  (42)
+  (42)
+  (42)
+  [42 LAX]
+  [48 ATL]
+  (67)
+  [67 DCA]
+  [88 BWI]
+  (73)
+  (73)
+  [73 ORD]
+  [null]
+  [null]
+Structured list:
+  {lev: 0 nodeCt: 16}
+    Tree: 0
+      [62 HKG]
+  {lev: 1 nodeCt: 11}
+    Tree: 0
+      | [94 JFK]
+      (94)
+      | [199 NRT]
+  {lev: 2 nodeCt: 6}
+  {lev: 3 nodeCt: 4}
+    Tree: 0
+      | | | [55 DFW]
+      | | (55)
+      | | | [null]
+      | (55)
+      | | | [164 PEK]
+      | | (164)
+      | | | [null]
+      (55)
+      | [null]
+  {lev: 4 nodeCt: 2}
+  {lev: 5 nodeCt: 1}
+    Tree: 0
+      | | | | | [13 SEA]
+      | | | | (13)
+      | | | | | [null]
+      | | | (13)
+      | | | | [null]
+      | | (13)
+      | | | [null]
+      | (13)
+      | | [null]
+      (13)
+      | | | | | [19 SFO]
+      | | | | (19)
+      | | | | | [26 IAD]
+      | | | (19)
+      | | | | | [22 MIA]
+      | | | | (22)
+      | | | | | [null]
+      | | (19)
+      | | | | | [27 CDG]
+      | | | | (27)
+      | | | | | [null]
+      | | | (27)
+      | | | | | [146 LHR]
+      | | | | (146)
+      | | | | | [null]
+      | (19)
+      | | | | | [42 LAX]
+      | | | | (42)
+      | | | | | [48 ATL]
+      | | | (42)
+      | | | | | [67 DCA]
+      | | | | (67)
+      | | | | | [88 BWI]
+      | | (42)
+      | | | | | [73 ORD]
+      | | | | (73)
+      | | | | | [null]
+      | | | (73)
+      | | | | [null]
+decrease-key(LHR, 46): successful
+list-heap:
+  {lev: 0 nodeCt: 16}
+  [62 HKG]
+  {lev: 1 nodeCt: 11}
+  (46)
+  [46 LHR]
+  [null]
+  (94)
+  [94 JFK]
+  [199 NRT]
+  {lev: 2 nodeCt: 6}
+  {lev: 3 nodeCt: 4}
+  (55)
+  (55)
+  (55)
+  [55 DFW]
+  [null]
+  (164)
+  [164 PEK]
+  [null]
+  [null]
+  {lev: 4 nodeCt: 2}
+  {lev: 5 nodeCt: 1}
+  (13)
+  (13)
+  (13)
+  (13)
+  (13)
+  [13 SEA]
+  [null]
+  [null]
+  [null]
+  [null]
+  (19)
+  (19)
+  (19)
+  (19)
+  [19 SFO]
+  [26 IAD]
+  (22)
+  [22 MIA]
+  [null]
+  (27)
+  (27)
+  [27 CDG]
+  [null]
+  [null]
+  (42)
+  (42)
+  (42)
+  [42 LAX]
+  [48 ATL]
+  (67)
+  [67 DCA]
+  [88 BWI]
+  (73)
+  (73)
+  [73 ORD]
+  [null]
+  [null]
+Structured list:
+  {lev: 0 nodeCt: 16}
+    Tree: 0
+      [62 HKG]
+  {lev: 1 nodeCt: 11}
+    Tree: 0
+      | [46 LHR]
+      (46)
+      | [null]
+    Tree: 1
+      | [94 JFK]
+      (94)
+      | [199 NRT]
+  {lev: 2 nodeCt: 6}
+  {lev: 3 nodeCt: 4}
+    Tree: 0
+      | | | [55 DFW]
+      | | (55)
+      | | | [null]
+      | (55)
+      | | | [164 PEK]
+      | | (164)
+      | | | [null]
+      (55)
+      | [null]
+  {lev: 4 nodeCt: 2}
+  {lev: 5 nodeCt: 1}
+    Tree: 0
+      | | | | | [13 SEA]
+      | | | | (13)
+      | | | | | [null]
+      | | | (13)
+      | | | | [null]
+      | | (13)
+      | | | [null]
+      | (13)
+      | | [null]
+      (13)
+      | | | | | [19 SFO]
+      | | | | (19)
+      | | | | | [26 IAD]
+      | | | (19)
+      | | | | | [22 MIA]
+      | | | | (22)
+      | | | | | [null]
+      | | (19)
+      | | | | | [27 CDG]
+      | | | | (27)
+      | | | | | [null]
+      | | | (27)
+      | | | | [null]
+      | (19)
+      | | | | | [42 LAX]
+      | | | | (42)
+      | | | | | [48 ATL]
+      | | | (42)
+      | | | | | [67 DCA]
+      | | | | (67)
+      | | | | | [88 BWI]
+      | | (42)
+      | | | | | [73 ORD]
+      | | | | (73)
+      | | | | | [null]
+      | | | (73)
+      | | | | [null]
+decrease-key(NRT, 99): successful
+list-heap:
+  {lev: 0 nodeCt: 16}
+  [62 HKG]
+  [99 NRT]
+  {lev: 1 nodeCt: 11}
+  (46)
+  [46 LHR]
+  [null]
+  (94)
+  [94 JFK]
+  [null]
+  {lev: 2 nodeCt: 6}
+  {lev: 3 nodeCt: 4}
+  (55)
+  (55)
+  (55)
+  [55 DFW]
+  [null]
+  (164)
+  [164 PEK]
+  [null]
+  [null]
+  {lev: 4 nodeCt: 2}
+  {lev: 5 nodeCt: 1}
+  (13)
+  (13)
+  (13)
+  (13)
+  (13)
+  [13 SEA]
+  [null]
+  [null]
+  [null]
+  [null]
+  (19)
+  (19)
+  (19)
+  (19)
+  [19 SFO]
+  [26 IAD]
+  (22)
+  [22 MIA]
+  [null]
+  (27)
+  (27)
+  [27 CDG]
+  [null]
+  [null]
+  (42)
+  (42)
+  (42)
+  [42 LAX]
+  [48 ATL]
+  (67)
+  [67 DCA]
+  [88 BWI]
+  (73)
+  (73)
+  [73 ORD]
+  [null]
+  [null]
+Structured list:
+  {lev: 0 nodeCt: 16}
+    Tree: 0
+      [62 HKG]
+    Tree: 1
+      [99 NRT]
+  {lev: 1 nodeCt: 11}
+    Tree: 0
+      | [46 LHR]
+      (46)
+      | [null]
+    Tree: 1
+      | [94 JFK]
+      (94)
+      | [null]
+  {lev: 2 nodeCt: 6}
+  {lev: 3 nodeCt: 4}
+    Tree: 0
+      | | | [55 DFW]
+      | | (55)
+      | | | [null]
+      | (55)
+      | | | [164 PEK]
+      | | (164)
+      | | | [null]
+      (55)
+      | [null]
+  {lev: 4 nodeCt: 2}
+  {lev: 5 nodeCt: 1}
+    Tree: 0
+      | | | | | [13 SEA]
+      | | | | (13)
+      | | | | | [null]
+      | | | (13)
+      | | | | [null]
+      | | (13)
+      | | | [null]
+      | (13)
+      | | [null]
+      (13)
+      | | | | | [19 SFO]
+      | | | | (19)
+      | | | | | [26 IAD]
+      | | | (19)
+      | | | | | [22 MIA]
+      | | | | (22)
+      | | | | | [null]
+      | | (19)
+      | | | | | [27 CDG]
+      | | | | (27)
+      | | | | | [null]
+      | | | (27)
+      | | | | [null]
+      | (19)
+      | | | | | [42 LAX]
+      | | | | (42)
+      | | | | | [48 ATL]
+      | | | (42)
+      | | | | | [67 DCA]
+      | | | | (67)
+      | | | | | [88 BWI]
+      | | (42)
+      | | | | | [73 ORD]
+      | | | | (73)
+      | | | | | [null]
+      | | | (73)
+      | | | | [null]
+decrease-key(PEK, 64): successful
+list-heap:
+  {lev: 0 nodeCt: 16}
+  [62 HKG]
+  [99 NRT]
+  {lev: 1 nodeCt: 11}
+  (46)
+  [46 LHR]
+  [null]
+  (64)
+  [64 PEK]
+  [null]
+  (94)
+  [94 JFK]
+  [null]
+  {lev: 2 nodeCt: 6}
+  {lev: 3 nodeCt: 4}
+  (55)
+  (55)
+  (55)
+  [55 DFW]
+  [null]
+  [null]
+  [null]
+  {lev: 4 nodeCt: 2}
+  {lev: 5 nodeCt: 1}
+  (13)
+  (13)
+  (13)
+  (13)
+  (13)
+  [13 SEA]
+  [null]
+  [null]
+  [null]
+  [null]
+  (19)
+  (19)
+  (19)
+  (19)
+  [19 SFO]
+  [26 IAD]
+  (22)
+  [22 MIA]
+  [null]
+  (27)
+  (27)
+  [27 CDG]
+  [null]
+  [null]
+  (42)
+  (42)
+  (42)
+  [42 LAX]
+  [48 ATL]
+  (67)
+  [67 DCA]
+  [88 BWI]
+  (73)
+  (73)
+  [73 ORD]
+  [null]
+  [null]
+Structured list:
+  {lev: 0 nodeCt: 16}
+    Tree: 0
+      [62 HKG]
+    Tree: 1
+      [99 NRT]
+  {lev: 1 nodeCt: 11}
+    Tree: 0
+      | [46 LHR]
+      (46)
+      | [null]
+    Tree: 1
+      | [64 PEK]
+      (64)
+      | [null]
+    Tree: 2
+      | [94 JFK]
+      (94)
+      | [null]
+  {lev: 2 nodeCt: 6}
+  {lev: 3 nodeCt: 4}
+    Tree: 0
+      | | | [55 DFW]
+      | | (55)
+      | | | [null]
+      | (55)
+      | | [null]
+      (55)
+      | [null]
+  {lev: 4 nodeCt: 2}
+  {lev: 5 nodeCt: 1}
+    Tree: 0
+      | | | | | [13 SEA]
+      | | | | (13)
+      | | | | | [null]
+      | | | (13)
+      | | | | [null]
+      | | (13)
+      | | | [null]
+      | (13)
+      | | [null]
+      (13)
+      | | | | | [19 SFO]
+      | | | | (19)
+      | | | | | [26 IAD]
+      | | | (19)
+      | | | | | [22 MIA]
+      | | | | (22)
+      | | | | | [null]
+      | | (19)
+      | | | | | [27 CDG]
+      | | | | (27)
+      | | | | | [null]
+      | | | (27)
+      | | | | [null]
+      | (19)
+      | | | | | [42 LAX]
+      | | | | (42)
+      | | | | | [48 ATL]
+      | | | (42)
+      | | | | | [67 DCA]
+      | | | | (67)
+      | | | | | [88 BWI]
+      | | (42)
+      | | | | | [73 ORD]
+      | | | | (73)
+      | | | | | [null]
+      | | | (73)
+      | | | | [null]
+get-min-key: 13
+list-heap:
+  {lev: 0 nodeCt: 16}
+  {lev: 1 nodeCt: 12}
+  {lev: 2 nodeCt: 8}
+  {lev: 3 nodeCt: 5}
+  {lev: 4 nodeCt: 3}
+  (46)
+  (46)
+  (46)
+  (46)
+  [46 LHR]
+  [null]
+  (62)
+  [62 HKG]
+  [99 NRT]
+  (64)
+  (64)
+  [64 PEK]
+  [null]
+  (94)
+  [94 JFK]
+  [null]
+  (55)
+  (55)
+  (55)
+  [55 DFW]
+  [null]
+  [null]
+  [null]
+  {lev: 5 nodeCt: 1}
+  (13)
+  (13)
+  (13)
+  (13)
+  (13)
+  [13 SEA]
+  [null]
+  [null]
+  [null]
+  [null]
+  (19)
+  (19)
+  (19)
+  (19)
+  [19 SFO]
+  [26 IAD]
+  (22)
+  [22 MIA]
+  [null]
+  (27)
+  (27)
+  [27 CDG]
+  [null]
+  [null]
+  (42)
+  (42)
+  (42)
+  [42 LAX]
+  [48 ATL]
+  (67)
+  [67 DCA]
+  [88 BWI]
+  (73)
+  (73)
+  [73 ORD]
+  [null]
+  [null]
+Structured list:
+  {lev: 0 nodeCt: 16}
+  {lev: 1 nodeCt: 12}
+  {lev: 2 nodeCt: 8}
+  {lev: 3 nodeCt: 5}
+  {lev: 4 nodeCt: 3}
+    Tree: 0
+      | | | | [46 LHR]
+      | | | (46)
+      | | | | [null]
+      | | (46)
+      | | | | [62 HKG]
+      | | | (62)
+      | | | | [99 NRT]
+      | (46)
+      | | | | [64 PEK]
+      | | | (64)
+      | | | | [null]
+      | | (64)
+      | | | | [94 JFK]
+      | | | (94)
+      | | | | [null]
+      (46)
+      | | | | [55 DFW]
+      | | | (55)
+      | | | | [null]
+      | | (55)
+      | | | [null]
+      | (55)
+      | | [null]
+  {lev: 5 nodeCt: 1}
+    Tree: 0
+      | | | | | [13 SEA]
+      | | | | (13)
+      | | | | | [null]
+      | | | (13)
+      | | | | [null]
+      | | (13)
+      | | | [null]
+      | (13)
+      | | [null]
+      (13)
+      | | | | | [19 SFO]
+      | | | | (19)
+      | | | | | [26 IAD]
+      | | | (19)
+      | | | | | [22 MIA]
+      | | | | (22)
+      | | | | | [null]
+      | | (19)
+      | | | | | [27 CDG]
+      | | | | (27)
+      | | | | | [null]
+      | | | (27)
+      | | | | [null]
+      | (19)
+      | | | | | [42 LAX]
+      | | | | (42)
+      | | | | | [48 ATL]
+      | | | (42)
+      | | | | | [67 DCA]
+      | | | | (67)
+      | | | | | [88 BWI]
+      | | (42)
+      | | | | | [73 ORD]
+      | | | | (73)
+      | | | | | [null]
+      | | | (73)
+      | | | | [null]
+insert(1, ICN): successful
+get-min-key: 1
+list-heap:
+  {lev: 0 nodeCt: 17}
+  [1 ICN]
+  {lev: 1 nodeCt: 12}
+  {lev: 2 nodeCt: 8}
+  {lev: 3 nodeCt: 5}
+  {lev: 4 nodeCt: 3}
+  (46)
+  (46)
+  (46)
+  (46)
+  [46 LHR]
+  [null]
+  (62)
+  [62 HKG]
+  [99 NRT]
+  (64)
+  (64)
+  [64 PEK]
+  [null]
+  (94)
+  [94 JFK]
+  [null]
+  (55)
+  (55)
+  (55)
+  [55 DFW]
+  [null]
+  [null]
+  [null]
+  {lev: 5 nodeCt: 1}
+  (13)
+  (13)
+  (13)
+  (13)
+  (13)
+  [13 SEA]
+  [null]
+  [null]
+  [null]
+  [null]
+  (19)
+  (19)
+  (19)
+  (19)
+  [19 SFO]
+  [26 IAD]
+  (22)
+  [22 MIA]
+  [null]
+  (27)
+  (27)
+  [27 CDG]
+  [null]
+  [null]
+  (42)
+  (42)
+  (42)
+  [42 LAX]
+  [48 ATL]
+  (67)
+  [67 DCA]
+  [88 BWI]
+  (73)
+  (73)
+  [73 ORD]
+  [null]
+  [null]
+Structured list:
+  {lev: 0 nodeCt: 17}
+    Tree: 0
+      [1 ICN]
+  {lev: 1 nodeCt: 12}
+  {lev: 2 nodeCt: 8}
+  {lev: 3 nodeCt: 5}
+  {lev: 4 nodeCt: 3}
+    Tree: 0
+      | | | | [46 LHR]
+      | | | (46)
+      | | | | [null]
+      | | (46)
+      | | | | [62 HKG]
+      | | | (62)
+      | | | | [99 NRT]
+      | (46)
+      | | | | [64 PEK]
+      | | | (64)
+      | | | | [null]
+      | | (64)
+      | | | | [94 JFK]
+      | | | (94)
+      | | | | [null]
+      (46)
+      | | | | [55 DFW]
+      | | | (55)
+      | | | | [null]
+      | | (55)
+      | | | [null]
+      | (55)
+      | | [null]
+  {lev: 5 nodeCt: 1}
+    Tree: 0
+      | | | | | [13 SEA]
+      | | | | (13)
+      | | | | | [null]
+      | | | (13)
+      | | | | [null]
+      | | (13)
+      | | | [null]
+      | (13)
+      | | [null]
+      (13)
+      | | | | | [19 SFO]
+      | | | | (19)
+      | | | | | [26 IAD]
+      | | | (19)
+      | | | | | [22 MIA]
+      | | | | (22)
+      | | | | | [null]
+      | | (19)
+      | | | | | [27 CDG]
+      | | | | (27)
+      | | | | | [null]
+      | | | (27)
+      | | | | [null]
+      | (19)
+      | | | | | [42 LAX]
+      | | | | (42)
+      | | | | | [48 ATL]
+      | | | (42)
+      | | | | | [67 DCA]
+      | | | | (67)
+      | | | | | [88 BWI]
+      | | (42)
+      | | | | | [73 ORD]
+      | | | | (73)
+      | | | | | [null]
+      | | | (73)
+      | | | | [null]
