@@ -43,7 +43,6 @@ public class CommandHandler {
 					var label = line.next(); // read the label
 					var key = line.nextInt(); // read the key
 					yield String.format("locators.put(\"%s\", heap.insert(%d, \"%s\"));\n", label, key, label);
-
 				}
 				// -----------------------------------------------------
 				// LIST-HEAP

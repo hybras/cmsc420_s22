@@ -18,8 +18,7 @@ public class Tester {
 	public static void main(String[] args) throws FileNotFoundException {
 		final var test = 5;
 		final var inputFileName = String.format("test%02d-input.txt", test);
-		System.out.println(
-				String.format("@Test\n    void test%02d() {", test));
+		System.out.printf("@Test\n    void test%02d() {%n", test);
 		try(var scanner = new Scanner(new FileInputStream(String.valueOf(Path.of(System.getProperty("user.dir"), "src", "test", "resources", inputFileName))))) {
 			var commandHandler = new CommandHandler(); // initialize command handler
 			while (scanner.hasNextLine()) {
