@@ -99,7 +99,7 @@ public class CommandHandler {
 				case "decrease-key" -> {
 					var label = line.next(); // read the label
 					var newKey = line.nextInt(); // read the new key value
-					yield String.format("heap.decreaseKey(locators.get(\"%s\"), %d);\n", label, newKey);
+					yield String.format("Assertions.assertDoesNotThrow(() -> heap.decreaseKey(locators.get(\"%s\"), %d));\n", label, newKey);
 				}
 				// -----------------------------------------------------
 				// SET-QUAKE-RATIO
@@ -111,7 +111,7 @@ public class CommandHandler {
 				}
 				case "comment" -> {
 					var comment = line.next(); // read the comment
-					yield String.format("// [%s]\n", comment);
+					yield String.format("// %s\n", comment);
 				}
 				// -----------------------------------------------------
 				// Unrecognized command
