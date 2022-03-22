@@ -1707,7 +1707,7 @@ public class QuakeHeapTest {
                 "[67 DCA]",
                 "[88 BWI]",
                 "[94 JFK]"), heap.listHeap());
-        Assertions.assertDoesNotThrow(() -> heap.decreaseKey(locators.get("BWI"), 2));
+        Assertions.assertDoesNotThrow(() -> heap.decreaseKey(locators.get("BWI"), 20));
         Assertions.assertIterableEquals(List.of("{lev: 0 nodeCt: 7}",
                 "[19 SFO]",
                 "[20 BWI]",
@@ -1731,7 +1731,7 @@ public class QuakeHeapTest {
                 "(26)",
                 "[26 IAD]",
                 "[42 LAX]"), heap.listHeap());
-        Assertions.assertDoesNotThrow(() -> heap.decreaseKey(locators.get("IAD"), 2));
+        Assertions.assertDoesNotThrow(() -> heap.decreaseKey(locators.get("IAD"), 26));
         Assertions.assertIterableEquals(List.of("{lev: 0 nodeCt: 7}",
                 "[94 JFK]",
                 "{lev: 1 nodeCt: 3}",
@@ -1747,7 +1747,7 @@ public class QuakeHeapTest {
                 "[19 SFO]",
                 "[20 BWI]",
                 "[null]"), heap.listHeap());
-        Assertions.assertDoesNotThrow(() -> heap.decreaseKey(locators.get("ATL"), 2));
+        Assertions.assertDoesNotThrow(() -> heap.decreaseKey(locators.get("ATL"), 30));
         Assertions.assertIterableEquals(List.of("{lev: 0 nodeCt: 7}",
                 "[94 JFK]",
                 "{lev: 1 nodeCt: 3}",
@@ -1763,7 +1763,7 @@ public class QuakeHeapTest {
                 "[19 SFO]",
                 "[20 BWI]",
                 "[null]"), heap.listHeap());
-        Assertions.assertDoesNotThrow(() -> heap.decreaseKey(locators.get("ATL"), 2));
+        Assertions.assertDoesNotThrow(() -> heap.decreaseKey(locators.get("ATL"), 30));
         Assertions.assertIterableEquals(List.of("{lev: 0 nodeCt: 7}",
                 "[94 JFK]",
                 "{lev: 1 nodeCt: 3}",
@@ -1853,7 +1853,7 @@ public class QuakeHeapTest {
                 "(194)",
                 "[194 JFK]",
                 "[199 NRT]"), heap.listHeap());
-        Assertions.assertDoesNotThrow(() -> heap.decreaseKey(locators.get("SEA"), 2));
+        Assertions.assertDoesNotThrow(() -> heap.decreaseKey(locators.get("SEA"), 13));
         Assertions.assertIterableEquals(List.of("{lev: 0 nodeCt: 16}",
                 "{lev: 1 nodeCt: 8}",
                 "{lev: 2 nodeCt: 4}",
@@ -1890,7 +1890,7 @@ public class QuakeHeapTest {
                 "(194)",
                 "[194 JFK]",
                 "[199 NRT]"), heap.listHeap());
-        Assertions.assertDoesNotThrow(() -> heap.decreaseKey(locators.get("DFW"), 2));
+        Assertions.assertDoesNotThrow(() -> heap.decreaseKey(locators.get("DFW"), 55));
         Assertions.assertIterableEquals(List.of("{lev: 0 nodeCt: 16}",
                 "{lev: 1 nodeCt: 8}",
                 "{lev: 2 nodeCt: 4}",
@@ -1928,7 +1928,7 @@ public class QuakeHeapTest {
                 "[146 LHR]",
                 "[148 ATL]",
                 "[null]"), heap.listHeap());
-        Assertions.assertDoesNotThrow(() -> heap.decreaseKey(locators.get("CDG"), 2));
+        Assertions.assertDoesNotThrow(() -> heap.decreaseKey(locators.get("CDG"), 27));
         Assertions.assertIterableEquals(List.of("{lev: 0 nodeCt: 16}",
                 "{lev: 1 nodeCt: 8}",
                 "{lev: 2 nodeCt: 4}",
@@ -1967,7 +1967,7 @@ public class QuakeHeapTest {
                 "[126 IAD]",
                 "[null]",
                 "[null]"), heap.listHeap());
-        Assertions.assertDoesNotThrow(() -> heap.decreaseKey(locators.get("MIA"), 2));
+        Assertions.assertDoesNotThrow(() -> heap.decreaseKey(locators.get("MIA"), 22));
         Assertions.assertIterableEquals(List.of("{lev: 0 nodeCt: 16}",
                 "{lev: 1 nodeCt: 8}",
                 "(22)",
@@ -2007,7 +2007,7 @@ public class QuakeHeapTest {
                 "[null]",
                 "[null]",
                 "[null]"), heap.listHeap());
-        Assertions.assertDoesNotThrow(() -> heap.decreaseKey(locators.get("SFO"), 2));
+        Assertions.assertDoesNotThrow(() -> heap.decreaseKey(locators.get("SFO"), 19));
         Assertions.assertIterableEquals(List.of("{lev: 0 nodeCt: 16}",
                 "[19 SFO]",
                 "{lev: 1 nodeCt: 8}",
@@ -2092,7 +2092,7 @@ public class QuakeHeapTest {
                 "[null]",
                 "[null]",
                 "[null]"), heap.listHeap());
-        Assertions.assertDoesNotThrow(() -> heap.decreaseKey(locators.get("DCA"), 2));
+        Assertions.assertDoesNotThrow(() -> heap.decreaseKey(locators.get("DCA"), 67));
         Assertions.assertIterableEquals(List.of("{lev: 0 nodeCt: 16}",
                 "[19 SFO]",
                 "[67 DCA]",
@@ -2134,7 +2134,7 @@ public class QuakeHeapTest {
                 "[null]",
                 "[null]",
                 "[null]"), heap.listHeap());
-        Assertions.assertDoesNotThrow(() -> heap.decreaseKey(locators.get("IAD"), 2));
+        Assertions.assertDoesNotThrow(() -> heap.decreaseKey(locators.get("IAD"), 26));
         Assertions.assertIterableEquals(List.of("{lev: 0 nodeCt: 16}",
                 "[19 SFO]",
                 "[26 IAD]",
@@ -2177,7 +2177,7 @@ public class QuakeHeapTest {
                 "[null]",
                 "[null]",
                 "[null]"), heap.listHeap());
-        Assertions.assertDoesNotThrow(() -> heap.decreaseKey(locators.get("ATL"), 2));
+        Assertions.assertDoesNotThrow(() -> heap.decreaseKey(locators.get("ATL"), 48));
         Assertions.assertIterableEquals(List.of("{lev: 0 nodeCt: 16}",
                 "[19 SFO]",
                 "[26 IAD]",
@@ -2221,7 +2221,7 @@ public class QuakeHeapTest {
                 "[null]",
                 "[null]",
                 "[null]"), heap.listHeap());
-        Assertions.assertDoesNotThrow(() -> heap.decreaseKey(locators.get("BWI"), 2));
+        Assertions.assertDoesNotThrow(() -> heap.decreaseKey(locators.get("BWI"), 88));
         Assertions.assertIterableEquals(List.of("{lev: 0 nodeCt: 16}",
                 "[19 SFO]",
                 "[26 IAD]",
@@ -2266,7 +2266,7 @@ public class QuakeHeapTest {
                 "[null]",
                 "[null]",
                 "[null]"), heap.listHeap());
-        Assertions.assertDoesNotThrow(() -> heap.decreaseKey(locators.get("JFK"), 2));
+        Assertions.assertDoesNotThrow(() -> heap.decreaseKey(locators.get("JFK"), 94));
         Assertions.assertIterableEquals(List.of("{lev: 0 nodeCt: 16}",
                 "[19 SFO]",
                 "[26 IAD]",
@@ -2312,7 +2312,7 @@ public class QuakeHeapTest {
                 "[null]",
                 "[null]",
                 "[null]"), heap.listHeap());
-        Assertions.assertDoesNotThrow(() -> heap.decreaseKey(locators.get("LAX"), 2));
+        Assertions.assertDoesNotThrow(() -> heap.decreaseKey(locators.get("LAX"), 42));
         Assertions.assertIterableEquals(List.of("{lev: 0 nodeCt: 16}",
                 "[19 SFO]",
                 "[26 IAD]",
@@ -2359,7 +2359,7 @@ public class QuakeHeapTest {
                 "[null]",
                 "[null]",
                 "[null]"), heap.listHeap());
-        Assertions.assertDoesNotThrow(() -> heap.decreaseKey(locators.get("ORD"), 2));
+        Assertions.assertDoesNotThrow(() -> heap.decreaseKey(locators.get("ORD"), 73));
         Assertions.assertIterableEquals(List.of("{lev: 0 nodeCt: 16}",
                 "[19 SFO]",
                 "[26 IAD]",
@@ -2465,7 +2465,7 @@ public class QuakeHeapTest {
                 "[73 ORD]",
                 "[null]",
                 "[null]"), heap.listHeap());
-        Assertions.assertDoesNotThrow(() -> heap.decreaseKey(locators.get("HKG"), 2));
+        Assertions.assertDoesNotThrow(() -> heap.decreaseKey(locators.get("HKG"), 62));
         Assertions.assertIterableEquals(List.of("{lev: 0 nodeCt: 16}",
                 "[62 HKG]",
                 "{lev: 1 nodeCt: 11}",
@@ -2524,7 +2524,7 @@ public class QuakeHeapTest {
                 "[73 ORD]",
                 "[null]",
                 "[null]"), heap.listHeap());
-        Assertions.assertDoesNotThrow(() -> heap.decreaseKey(locators.get("LHR"), 2));
+        Assertions.assertDoesNotThrow(() -> heap.decreaseKey(locators.get("LHR"), 46));
         Assertions.assertIterableEquals(List.of("{lev: 0 nodeCt: 16}",
                 "[62 HKG]",
                 "{lev: 1 nodeCt: 11}",
@@ -2584,7 +2584,7 @@ public class QuakeHeapTest {
                 "[73 ORD]",
                 "[null]",
                 "[null]"), heap.listHeap());
-        Assertions.assertDoesNotThrow(() -> heap.decreaseKey(locators.get("NRT"), 2));
+        Assertions.assertDoesNotThrow(() -> heap.decreaseKey(locators.get("NRT"), 99));
         Assertions.assertIterableEquals(List.of("{lev: 0 nodeCt: 16}",
                 "[62 HKG]",
                 "[99 NRT]",
@@ -2645,7 +2645,7 @@ public class QuakeHeapTest {
                 "[73 ORD]",
                 "[null]",
                 "[null]"), heap.listHeap());
-        Assertions.assertDoesNotThrow(() -> heap.decreaseKey(locators.get("PEK"), 2));
+        Assertions.assertDoesNotThrow(() -> heap.decreaseKey(locators.get("PEK"), 64));
         Assertions.assertIterableEquals(List.of("{lev: 0 nodeCt: 16}",
                 "[62 HKG]",
                 "[99 NRT]",
