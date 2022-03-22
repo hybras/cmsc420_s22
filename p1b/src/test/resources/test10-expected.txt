@@ -1,0 +1,4694 @@
+[This test involves 382 entries and lots of decrease-keys, extract-mins, and quakes]
+set-n-levels(9): 
+set-quake-ratio(0.75): successful
+insert(311160, ABI): successful
+insert(601339, ACK): successful
+insert(330148, ACT): successful
+insert(558312, ACY): successful
+insert(328209, ADM): successful
+insert(539282, ADW): successful
+insert(378154, AEX): successful
+insert(483188, AGS): successful
+insert(483344, AKR): successful
+insert(563362, ALB): successful
+insert(313627, ALI): successful
+insert(291220, AMA): successful
+insert(446188, ANB): successful
+insert(481206, AND): successful
+insert(516322, AOO): successful
+insert(542301, APG): successful
+insert(385124, ARA): successful
+insert(542381, ART): successful
+insert(462189, ATL): successful
+insert(605412, AUG): successful
+insert(327126, AUS): successful
+insert(89299, BAB): successful
+insert(365166, BAD): successful
+insert(495497, BCT): successful
+insert(360480, BDE): successful
+insert(580345, BDL): successful
+insert(567354, BDR): successful
+insert(585377, BED): successful
+insert(74477, BFI): successful
+insert(105230, BFL): successful
+insert(413128, BFM): successful
+insert(614409, BGR): successful
+insert(439193, BHM): successful
+insert(233143, BIF): successful
+insert(418129, BIX): successful
+insert(253302, BKF): successful
+insert(82492, BLI): successful
+insert(405293, BLV): successful
+insert(439257, BNA): successful
+insert(142396, BOI): successful
+insert(583374, BOS): successful
+insert(362112, BPT): successful
+insert(327317, BRO): successful
+insert(391119, BTR): successful
+insert(563408, BTV): successful
+insert(518370, BUF): successful
+insert(122217, BUR): successful
+insert(538302, BWI): successful
+insert(409236, BYH): successful
+insert(142222, BYS): successful
+insert(485185, CAE): successful
+insert(616444, CAR): successful
+insert(421196, CBM): successful
+insert(167269, CDC): successful
+insert(293216, CDS): successful
+insert(578368, CEF): successful
+insert(439135, CEW): successful
+insert(333137, CFD): successful
+insert(445233, CHA): successful
+insert(494160, CHS): successful
+insert(89305, CIC): successful
+insert(488343, CLE): successful
+insert(337136, CLL): successful
+insert(494228, CLT): successful
+insert(473312, CMH): successful
+insert(256175, CNM): successful
+insert(331154, CNW): successful
+insert(500877, COF): successful
+insert(260296, COS): successful
+insert(306907, COT): successful
+insert(378283, COU): successful
+insert(235370, CPR): successful
+insert(328617, CRP): successful
+insert(181492, CTB): successful
+insert(457305, CVG): successful
+insert(267210, CVS): successful
+insert(148160, CXL): successful
+insert(345137, CXO): successful
+insert(257341, CYS): successful
+insert(342164, DAL): successful
+insert(457302, DAY): successful
+insert(525296, DCA): successful
+insert(256313, DEN): successful
+insert(464364, DET): successful
+insert(332168, DFW): successful
+insert(445157, DHN): successful
+insert(278251, DHT): successful
+insert(298112, DLF): successful
+insert(380454, DLH): successful
+insert(197170, DMA): successful
+insert(544313, DOV): successful
+insert(414352, DPA): successful
+insert(366135, DRI): successful
+insert(229277, DRO): successful
+insert(301104, DRT): successful
+insert(366357, DSM): successful
+insert(465363, DTW): successful
+insert(203147, DUG): successful
+insert(303174, DYS): successful
+insert(536252, ECG): successful
+insert(125206, EDW): successful
+insert(349115, EFD): successful
+insert(294837, EGP): successful
+insert(512286, EKN): successful
+insert(382179, ELD): successful
+insert(238150, ELP): successful
+insert(323248, END): successful
+insert(157331, ENV): successful
+insert(377155, ESF): successful
+insert(526231, EWN): successful
+insert(556325, EWR): successful
+insert(4834, EYW): successful
+insert(537272, FAF): successful
+insert(108239, FAT): successful
+insert(261294, FCS): successful
+insert(461304, FFO): successful
+insert(201156, FHU): successful
+insert(497467, FLL): successful
+insert(504204, FLO): successful
+insert(356300, FLV): successful
+insert(593343, FMH): successful
+insert(219258, FMN): successful
+insert(483567, FMY): successful
+insert(355371, FOD): successful
+insert(348297, FOE): successful
+insert(575331, FOK): successful
+insert(335316, FRI): successful
+insert(322208, FSI): successful
+insert(360226, FSM): successful
+insert(443259, FTK): successful
+insert(332163, FTW): successful
+insert(500507, FXE): successful
+insert(360252, FYV): successful
+insert(309248, GAG): successful
+insert(299267, GCK): successful
+insert(127465, GEG): successful
+insert(324468, GFK): successful
+insert(358176, GGG): successful
+insert(362107, GLS): successful
+insert(232226, GNT): successful
+insert(476114, GNV): successful
+insert(422404, GRB): successful
+insert(76463, GRF): successful
+insert(323151, GRK): successful
+insert(450377, GRR): successful
+insert(526221, GSB): successful
+insert(550405, GTB): successful
+insert(186465, GTF): successful
+insert(440321, GUS): successful
+insert(333192, GVT): successful
+insert(360280, GVW): successful
+insert(394196, GWO): successful
+insert(308217, HBR): successful
+insert(579353, HFD): successful
+insert(119198, HHR): successful
+insert(378461, HIB): successful
+insert(188354, HIF): successful
+insert(485223, HKY): successful
+insert(184458, HLN): successful
+insert(329151, HLR): successful
+insert(239164, HMN): successful
+insert(268160, HOB): successful
+insert(313411, HON): successful
+insert(424241, HOP): successful
+insert(348103, HOU): successful
+insert(565353, HPN): successful
+insert(324577, HRL): successful
+insert(370254, HRO): successful
+insert(436121, HRT): successful
+insert(497237, HST): successful
+insert(455417, HTL): successful
+insert(439211, HUA): successful
+insert(426315, HUF): successful
+insert(628454, HUL): successful
+insert(206491, HVR): successful
+insert(494537, HWO): successful
+insert(324274, IAB): successful
+insert(524292, IAD): successful
+insert(513394, IAG): successful
+insert(344100, IAH): successful
+insert(324268, ICT): successful
+insert(424341, IKK): successful
+insert(234233, ABQ): successful
+insert(547313, ILG): successful
+insert(532213, ILM): successful
+insert(439313, IND): successful
+insert(265146, INK): successful
+insert(369497, INL): successful
+insert(150255, INS): successful
+insert(493249, INT): successful
+insert(151172, IPL): successful
+insert(542352, IPT): successful
+insert(270491, ISN): successful
+insert(563322, ISP): successful
+insert(398172, JAN): successful
+insert(488137, JAX): successful
+insert(398232, JBR): successful
+insert(566337, JFK): successful
+insert(459373, LAN): successful
+insert(148251, LAS): successful
+insert(119181, LAX): successful
+insert(292185, LBB): successful
+insert(365120, LCH): successful
+insert(481311, LCK): successful
+insert(537270, LFI): successful
+insert(361148, LFK): successful
+insert(384132, LFT): successful
+insert(567334, LGA): successful
+insert(118181, LGB): successful
+insert(489156, LHW): successful
+insert(376210, LIT): successful
+insert(493497, LNA): successful
+insert(342336, LNK): successful
+insert(444294, LOU): successful
+insert(304727, LRD): successful
+insert(380210, LRF): successful
+insert(459159, LSF): successful
+insert(152254, LSV): successful
+insert(309202, LTS): successful
+insert(182185, LUF): successful
+insert(460302, LUK): successful
+insert(275141, MAF): successful
+insert(85280, MCC): successful
+insert(473747, MCF): successful
+insert(356309, MCI): successful
+insert(468171, MCN): successful
+insert(491967, MCO): successful
+insert(538320, MDT): successful
+insert(425353, MDW): successful
+insert(405229, MEM): successful
+insert(99271, MER): successful
+insert(322577, MFE): successful
+insert(459185, MGE): successful
+insert(91282, MHR): successful
+insert(493287, MIA): successful
+insert(286482, MIB): successful
+insert(546307, MIV): successful
+insert(427361, MKE): successful
+insert(421229, MKL): successful
+insert(347238, MKO): successful
+insert(495837, MLB): successful
+insert(344201, MLC): successful
+insert(621430, MLT): successful
+insert(381163, MLU): successful
+insert(63424, MMV): successful
+insert(426427, MNM): successful
+insert(416134, MOB): successful
+insert(97274, MOD): successful
+insert(288485, MOT): successful
+insert(576404, MPV): successful
+insert(425457, MQT): successful
+insert(408380, MSN): successful
+insert(363407, MSP): successful
+insert(561412, MSS): successful
+insert(399102, MSY): successful
+get-min-key: 4834
+insert(479359, MTC): successful
+insert(542333, MUI): successful
+insert(147379, MUO): successful
+insert(111477, MWH): successful
+insert(316161, MWL): successful
+insert(434168, MXF): successful
+insert(519184, MYR): successful
+insert(493167, NBC): successful
+insert(394106, NBG): successful
+insert(532218, NCA): successful
+insert(554335, NEL): successful
+insert(122299, NFL): successful
+insert(542250, NGU): successful
+insert(537290, NHK): successful
+insert(129237, NID): successful
+insert(486135, NIP): successful
+insert(144167, NJK): successful
+insert(542206, NKT): successful
+insert(131170, NKX): successful
+insert(105256, NLC): successful
+insert(413168, NMM): successful
+insert(67488, NOW): successful
+insert(429127, NPA): successful
+insert(410231, NQA): successful
+insert(327637, NQI): successful
+insert(488147, NQX): successful
+insert(428125, NSE): successful
+insert(112201, NTD): successful
+insert(126189, NTK): successful
+insert(533255, NTU): successful
+insert(81275, NUQ): successful
+insert(82483, NUW): successful
+insert(140210, NXP): successful
+insert(552322, NXX): successful
+insert(531287, NYG): successful
+insert(484128, NZC): successful
+insert(126165, NZY): successful
+insert(82277, OAK): successful
+insert(344341, OFF): successful
+insert(551409, OGS): successful
+insert(326238, OKC): successful
+insert(193144, OLS): successful
+insert(349354, OMA): successful
+insert(126203, ONT): successful
+insert(497337, OPF): successful
+insert(426341, ORD): successful
+insert(537252, ORF): successful
+insert(488827, ORL): successful
+insert(81461, PAE): successful
+insert(446129, PAM): successful
+insert(389209, PBF): successful
+insert(564418, PBG): successful
+insert(493567, PBI): successful
+insert(78428, PDX): successful
+insert(537259, PHF): successful
+insert(548306, PHL): successful
+insert(482361, PHN): successful
+insert(178192, PHX): successful
+insert(473777, PIE): successful
+insert(501334, PIT): successful
+insert(115213, PMD): successful
+insert(324240, PNC): successful
+insert(548320, PNE): successful
+insert(367423, PNM): successful
+insert(426127, PNS): successful
+insert(508233, POB): successful
+insert(369149, POE): successful
+insert(617448, PQI): successful
+insert(180208, PRC): successful
+insert(135192, PSP): successful
+insert(336837, PSX): successful
+insert(262291, PUB): successful
+insert(588344, PVD): successful
+insert(599395, PWM): successful
+insert(124191, RAL): successful
+insert(374217, RBM): successful
+insert(267402, RCA): successful
+insert(332476, RDR): successful
+insert(521231, RDU): successful
+insert(527278, RIC): successful
+insert(86282, RIU): successful
+insert(123188, RIV): successful
+insert(548383, RME): successful
+insert(315112, RND): successful
+insert(108317, RNO): successful
+insert(527398, ROC): successful
+insert(256182, ROW): successful
+insert(486417, RSW): successful
+insert(85285, SAC): successful
+insert(235221, SAF): successful
+insert(132172, SAN): successful
+insert(313116, SAT): successful
+insert(487162, SAV): successful
+insert(477172, SBO): successful
+insert(547282, SBY): successful
+insert(88269, SCK): successful
+insert(76471, SEA): successful
+insert(438169, SEM): successful
+insert(125467, SFF): successful
+insert(77276, SFO): successful
+insert(592339, SFZ): successful
+insert(371162, SHV): successful
+insert(85262, SJC): successful
+insert(302140, SJT): successful
+insert(125466, SKA): successful
+insert(316103, SKF): successful
+insert(477346, SKY): successful
+insert(186333, SLC): successful
+insert(90280, SMF): successful
+insert(132196, SNA): successful
+insert(73429, SPB): successful
+insert(479677, SPG): successful
+insert(320191, SPS): successful
+insert(500195, SSC): successful
+insert(398297, STL): successful
+insert(89286, SUU): successful
+insert(337370, SUX): successful
+insert(485178, SVN): successful
+insert(553353, SWF): successful
+insert(533387, SYR): successful
+insert(370283, SZL): successful
+insert(378264, TBN): successful
+insert(271220, TCC): successful
+insert(75459, TCM): successful
+insert(223183, TCS): successful
+insert(553333, TEB): successful
+insert(331235, TIK): successful
+insert(458126, TLH): successful
+get-min-key: 4834
+decrease-key(NOW, 67487): successful
+decrease-key(GCK, 299266): successful
+decrease-key(HIF, 188353): successful
+decrease-key(BUR, 122216): successful
+decrease-key(MHR, 91281): successful
+decrease-key(BLI, 82491): successful
+decrease-key(BFI, 74476): successful
+decrease-key(MMV, 63423): successful
+[There is a degenerate tree at level 8 with 4834 (EYW) as root]
+list-heap:
+  {lev: 0 nodeCt: 383}
+  [63423 MMV]
+  [628454 HUL]
+  {lev: 1 nodeCt: 191}
+  (74476)
+  [74476 BFI]
+  [76463 GRF]
+  (616444)
+  [616444 CAR]
+  [621430 MLT]
+  {lev: 2 nodeCt: 95}
+  (82491)
+  (82491)
+  [82491 BLI]
+  [85280 MCC]
+  (89299)
+  [89299 BAB]
+  [89305 CIC]
+  (593343)
+  (593343)
+  [593343 FMH]
+  [601339 ACK]
+  (605412)
+  [605412 AUG]
+  [614409 BGR]
+  {lev: 3 nodeCt: 47}
+  (91281)
+  (91281)
+  (91281)
+  [91281 MHR]
+  [97274 MOD]
+  (99271)
+  [99271 MER]
+  [105230 BFL]
+  (108239)
+  (108239)
+  [108239 FAT]
+  [118181 LGB]
+  (119181)
+  [119181 LAX]
+  [119198 HHR]
+  (567354)
+  (567354)
+  (567354)
+  [567354 BDR]
+  [575331 FOK]
+  (576404)
+  [576404 MPV]
+  [578368 CEF]
+  (579353)
+  (579353)
+  [579353 HFD]
+  [580345 BDL]
+  (583374)
+  [583374 BOS]
+  [585377 BED]
+  {lev: 4 nodeCt: 23}
+  (122216)
+  (122216)
+  (122216)
+  (122216)
+  [122216 BUR]
+  [125206 EDW]
+  (127465)
+  [127465 GEG]
+  [142222 BYS]
+  (142396)
+  (142396)
+  [142396 BOI]
+  [148160 CXL]
+  (148251)
+  [148251 LAS]
+  [150255 INS]
+  (151172)
+  (151172)
+  (151172)
+  [151172 IPL]
+  [152254 LSV]
+  (157331)
+  [157331 ENV]
+  [167269 CDC]
+  (181492)
+  (181492)
+  [181492 CTB]
+  [182185 LUF]
+  (184458)
+  [184458 HLN]
+  [186465 GTF]
+  (542301)
+  (542301)
+  (542301)
+  (542301)
+  [542301 APG]
+  [542352 IPT]
+  (542381)
+  [542381 ART]
+  [544313 DOV]
+  (546307)
+  (546307)
+  [546307 MIV]
+  [547313 ILG]
+  (550405)
+  [550405 GTB]
+  [556325 EWR]
+  (558312)
+  (558312)
+  (558312)
+  [558312 ACY]
+  [561412 MSS]
+  (563322)
+  [563322 ISP]
+  [563362 ALB]
+  (563408)
+  (563408)
+  [563408 BTV]
+  [565353 HPN]
+  (566337)
+  [566337 JFK]
+  [567334 LGA]
+  {lev: 5 nodeCt: 11}
+  (188353)
+  (188353)
+  (188353)
+  (188353)
+  (188353)
+  [188353 HIF]
+  [197170 DMA]
+  (201156)
+  [201156 FHU]
+  [203147 DUG]
+  (206491)
+  (206491)
+  [206491 HVR]
+  [219258 FMN]
+  (229277)
+  [229277 DRO]
+  [232226 GNT]
+  (233143)
+  (233143)
+  (233143)
+  [233143 BIF]
+  [234233 ABQ]
+  (235370)
+  [235370 CPR]
+  [238150 ELP]
+  (239164)
+  (239164)
+  [239164 HMN]
+  [253302 BKF]
+  (256175)
+  [256175 CNM]
+  [256313 DEN]
+  (257341)
+  (257341)
+  (257341)
+  (257341)
+  [257341 CYS]
+  [260296 COS]
+  (261294)
+  [261294 FCS]
+  [265146 INK]
+  (267210)
+  (267210)
+  [267210 CVS]
+  [268160 HOB]
+  (270491)
+  [270491 ISN]
+  [275141 MAF]
+  (278251)
+  (278251)
+  (278251)
+  [278251 DHT]
+  [286482 MIB]
+  (288485)
+  [288485 MOT]
+  [291220 AMA]
+  (292185)
+  (292185)
+  [292185 LBB]
+  [293216 CDS]
+  (294837)
+  [294837 EGP]
+  [298112 DLF]
+  (497337)
+  (497337)
+  (497337)
+  (497337)
+  (497337)
+  [497337 OPF]
+  [500195 SSC]
+  (501334)
+  [501334 PIT]
+  [508233 POB]
+  (519184)
+  (519184)
+  [519184 MYR]
+  [521231 RDU]
+  (527278)
+  [527278 RIC]
+  [527398 ROC]
+  (531287)
+  (531287)
+  (531287)
+  [531287 NYG]
+  [532218 NCA]
+  (533255)
+  [533255 NTU]
+  [533387 SYR]
+  (537252)
+  (537252)
+  [537252 ORF]
+  [537259 PHF]
+  (537290)
+  [537290 NHK]
+  [542206 NKT]
+  (542250)
+  (542250)
+  (542250)
+  (542250)
+  [542250 NGU]
+  [542333 MUI]
+  (547282)
+  [547282 SBY]
+  [548306 PHL]
+  (548320)
+  (548320)
+  [548320 PNE]
+  [548383 RME]
+  (551409)
+  [551409 OGS]
+  [552322 NXX]
+  (553333)
+  (553333)
+  (553333)
+  [553333 TEB]
+  [553353 SWF]
+  (554335)
+  [554335 NEL]
+  [564418 PBG]
+  (588344)
+  (588344)
+  [588344 PVD]
+  [592339 SFZ]
+  (599395)
+  [599395 PWM]
+  [617448 PQI]
+  {lev: 6 nodeCt: 5}
+  (299266)
+  (299266)
+  (299266)
+  (299266)
+  (299266)
+  (299266)
+  [299266 GCK]
+  [301104 DRT]
+  (303174)
+  [303174 DYS]
+  [304727 LRD]
+  (306907)
+  (306907)
+  [306907 COT]
+  [308217 HBR]
+  (309202)
+  [309202 LTS]
+  [309248 GAG]
+  (311160)
+  (311160)
+  (311160)
+  [311160 ABI]
+  [313411 HON]
+  (313627)
+  [313627 ALI]
+  [322208 FSI]
+  (322577)
+  (322577)
+  [322577 MFE]
+  [323151 GRK]
+  (323248)
+  [323248 END]
+  [324268 ICT]
+  (324274)
+  (324274)
+  (324274)
+  (324274)
+  [324274 IAB]
+  [324468 GFK]
+  (324577)
+  [324577 HRL]
+  [327126 AUS]
+  (327317)
+  (327317)
+  [327317 BRO]
+  [328209 ADM]
+  (328617)
+  [328617 CRP]
+  [329151 HLR]
+  (330148)
+  (330148)
+  (330148)
+  [330148 ACT]
+  [331154 CNW]
+  (332163)
+  [332163 FTW]
+  [332168 DFW]
+  (333137)
+  (333137)
+  [333137 CFD]
+  [333192 GVT]
+  (335316)
+  [335316 FRI]
+  [337136 CLL]
+  (342164)
+  (342164)
+  (342164)
+  (342164)
+  (342164)
+  [342164 DAL]
+  [342336 LNK]
+  (344100)
+  [344100 IAH]
+  [344201 MLC]
+  (345137)
+  (345137)
+  [345137 CXO]
+  [347238 MKO]
+  (348103)
+  [348103 HOU]
+  [348297 FOE]
+  (349115)
+  (349115)
+  (349115)
+  [349115 EFD]
+  [355371 FOD]
+  (356300)
+  [356300 FLV]
+  [356309 MCI]
+  (358176)
+  (358176)
+  [358176 GGG]
+  [360226 FSM]
+  (360252)
+  [360252 FYV]
+  [360280 GVW]
+  (360480)
+  (360480)
+  (360480)
+  (360480)
+  [360480 BDE]
+  [361148 LFK]
+  (362107)
+  [362107 GLS]
+  [362112 BPT]
+  (363407)
+  (363407)
+  [363407 MSP]
+  [365120 LCH]
+  (365166)
+  [365166 BAD]
+  [366135 DRI]
+  (366357)
+  (366357)
+  (366357)
+  [366357 DSM]
+  [369497 INL]
+  (370254)
+  [370254 HRO]
+  [376210 LIT]
+  (377155)
+  (377155)
+  [377155 ESF]
+  [378154 AEX]
+  (378283)
+  [378283 COU]
+  [378461 HIB]
+  (380210)
+  (380210)
+  (380210)
+  (380210)
+  (380210)
+  (380210)
+  [380210 LRF]
+  [380454 DLH]
+  (381163)
+  [381163 MLU]
+  [382179 ELD]
+  (384132)
+  (384132)
+  [384132 LFT]
+  [385124 ARA]
+  (391119)
+  [391119 BTR]
+  [394196 GWO]
+  (398172)
+  (398172)
+  (398172)
+  [398172 JAN]
+  [398232 JBR]
+  (399102)
+  [399102 MSY]
+  [405229 MEM]
+  (405293)
+  (405293)
+  [405293 BLV]
+  [408380 MSN]
+  (409236)
+  [409236 BYH]
+  [413128 BFM]
+  (414352)
+  (414352)
+  (414352)
+  (414352)
+  [414352 DPA]
+  [416134 MOB]
+  (418129)
+  [418129 BIX]
+  [421196 CBM]
+  (421229)
+  (421229)
+  [421229 MKL]
+  [422404 GRB]
+  (424241)
+  [424241 HOP]
+  [424341 IKK]
+  (425353)
+  (425353)
+  (425353)
+  [425353 MDW]
+  [425457 MQT]
+  (426315)
+  [426315 HUF]
+  [426427 MNM]
+  (427361)
+  (427361)
+  [427361 MKE]
+  [436121 HRT]
+  (439135)
+  [439135 CEW]
+  [439193 BHM]
+  (439211)
+  (439211)
+  (439211)
+  (439211)
+  (439211)
+  [439211 HUA]
+  [439257 BNA]
+  (439313)
+  [439313 IND]
+  [440321 GUS]
+  (443259)
+  (443259)
+  [443259 FTK]
+  [444294 LOU]
+  (445157)
+  [445157 DHN]
+  [445233 CHA]
+  (446188)
+  (446188)
+  (446188)
+  [446188 ANB]
+  [450377 GRR]
+  (455417)
+  [455417 HTL]
+  [457302 DAY]
+  (457305)
+  (457305)
+  [457305 CVG]
+  [459159 LSF]
+  (459185)
+  [459185 MGE]
+  [459373 LAN]
+  (460302)
+  (460302)
+  (460302)
+  (460302)
+  [460302 LUK]
+  [461304 FFO]
+  (462189)
+  [462189 ATL]
+  [464364 DET]
+  (465363)
+  (465363)
+  [465363 DTW]
+  [468171 MCN]
+  (473312)
+  [473312 CMH]
+  [473747 MCF]
+  (476114)
+  (476114)
+  (476114)
+  [476114 GNV]
+  [481206 AND]
+  (481311)
+  [481311 LCK]
+  [483188 AGS]
+  (483344)
+  (483344)
+  [483344 AKR]
+  [483567 FMY]
+  (485185)
+  [485185 CAE]
+  [485223 HKY]
+  {lev: 7 nodeCt: 2}
+  (67487)
+  (67487)
+  (67487)
+  (67487)
+  (67487)
+  (67487)
+  (67487)
+  [67487 NOW]
+  [73429 SPB]
+  (75459)
+  [75459 TCM]
+  [76471 SEA]
+  (77276)
+  (77276)
+  [77276 SFO]
+  [78428 PDX]
+  (81275)
+  [81275 NUQ]
+  [81461 PAE]
+  (82277)
+  (82277)
+  (82277)
+  [82277 OAK]
+  [82483 NUW]
+  (85262)
+  [85262 SJC]
+  [85285 SAC]
+  (86282)
+  (86282)
+  [86282 RIU]
+  [88269 SCK]
+  (89286)
+  [89286 SUU]
+  [90280 SMF]
+  (105256)
+  (105256)
+  (105256)
+  (105256)
+  [105256 NLC]
+  [108317 RNO]
+  (111477)
+  [111477 MWH]
+  [112201 NTD]
+  (115213)
+  (115213)
+  [115213 PMD]
+  [122299 NFL]
+  (123188)
+  [123188 RIV]
+  [124191 RAL]
+  (125466)
+  (125466)
+  (125466)
+  [125466 SKA]
+  [125467 SFF]
+  (126165)
+  [126165 NZY]
+  [126189 NTK]
+  (126203)
+  (126203)
+  [126203 ONT]
+  [129237 NID]
+  (131170)
+  [131170 NKX]
+  [132172 SAN]
+  (132196)
+  (132196)
+  (132196)
+  (132196)
+  (132196)
+  [132196 SNA]
+  [135192 PSP]
+  (140210)
+  [140210 NXP]
+  [144167 NJK]
+  (147379)
+  (147379)
+  [147379 MUO]
+  [178192 PHX]
+  (180208)
+  [180208 PRC]
+  [186333 SLC]
+  (193144)
+  (193144)
+  (193144)
+  [193144 OLS]
+  [223183 TCS]
+  (235221)
+  [235221 SAF]
+  [256182 ROW]
+  (262291)
+  (262291)
+  [262291 PUB]
+  [267402 RCA]
+  (271220)
+  [271220 TCC]
+  [302140 SJT]
+  (313116)
+  (313116)
+  (313116)
+  (313116)
+  [313116 SAT]
+  [315112 RND]
+  (316103)
+  [316103 SKF]
+  [316161 MWL]
+  (320191)
+  (320191)
+  [320191 SPS]
+  [324240 PNC]
+  (326238)
+  [326238 OKC]
+  [327637 NQI]
+  (331235)
+  (331235)
+  (331235)
+  [331235 TIK]
+  [332476 RDR]
+  (336837)
+  [336837 PSX]
+  [337370 SUX]
+  (344341)
+  (344341)
+  [344341 OFF]
+  [349354 OMA]
+  (367423)
+  [367423 PNM]
+  [369149 POE]
+  (370283)
+  (370283)
+  (370283)
+  (370283)
+  (370283)
+  (370283)
+  [370283 SZL]
+  [371162 SHV]
+  (374217)
+  [374217 RBM]
+  [378264 TBN]
+  (389209)
+  (389209)
+  [389209 PBF]
+  [394106 NBG]
+  (398297)
+  [398297 STL]
+  [410231 NQA]
+  (413168)
+  (413168)
+  (413168)
+  [413168 NMM]
+  [426127 PNS]
+  (426341)
+  [426341 ORD]
+  [428125 NSE]
+  (429127)
+  (429127)
+  [429127 NPA]
+  [434168 MXF]
+  (438169)
+  [438169 SEM]
+  [446129 PAM]
+  (458126)
+  (458126)
+  (458126)
+  (458126)
+  [458126 TLH]
+  [473777 PIE]
+  (477172)
+  [477172 SBO]
+  [477346 SKY]
+  (479359)
+  (479359)
+  [479359 MTC]
+  [479677 SPG]
+  (482361)
+  [482361 PHN]
+  [484128 NZC]
+  (485178)
+  (485178)
+  (485178)
+  [485178 SVN]
+  [486135 NIP]
+  (486417)
+  [486417 RSW]
+  [487162 SAV]
+  (488147)
+  (488147)
+  [488147 NQX]
+  [488827 ORL]
+  (493167)
+  [493167 NBC]
+  [493567 PBI]
+  (488137)
+  (488137)
+  (488137)
+  (488137)
+  (488137)
+  [488137 JAX]
+  [488343 CLE]
+  (489156)
+  [489156 LHW]
+  [491967 MCO]
+  (493249)
+  (493249)
+  [493249 INT]
+  [493287 MIA]
+  (493497)
+  [493497 LNA]
+  [494160 CHS]
+  (494228)
+  (494228)
+  (494228)
+  [494228 CLT]
+  [494537 HWO]
+  (495497)
+  [495497 BCT]
+  [495837 MLB]
+  (497237)
+  (497237)
+  [497237 HST]
+  [497467 FLL]
+  (500507)
+  [500507 FXE]
+  [500877 COF]
+  (504204)
+  (504204)
+  (504204)
+  (504204)
+  [504204 FLO]
+  [512286 EKN]
+  (513394)
+  [513394 IAG]
+  [516322 AOO]
+  (518370)
+  (518370)
+  [518370 BUF]
+  [524292 IAD]
+  (525296)
+  [525296 DCA]
+  [526221 GSB]
+  (526231)
+  (526231)
+  (526231)
+  [526231 EWN]
+  [532213 ILM]
+  (536252)
+  [536252 ECG]
+  [537270 LFI]
+  (537272)
+  (537272)
+  [537272 FAF]
+  [538302 BWI]
+  (538320)
+  [538320 MDT]
+  [539282 ADW]
+  {lev: 8 nodeCt: 1}
+  (4834)
+  (4834)
+  (4834)
+  (4834)
+  (4834)
+  (4834)
+  (4834)
+  (4834)
+  [4834 EYW]
+  [null]
+  [null]
+  [null]
+  [null]
+  [null]
+  [null]
+  [null]
+  [null]
+Structured list:
+  {lev: 0 nodeCt: 383}
+    Tree: 0
+      [63423 MMV]
+    Tree: 1
+      [628454 HUL]
+  {lev: 1 nodeCt: 191}
+    Tree: 0
+      | [74476 BFI]
+      (74476)
+      | [76463 GRF]
+    Tree: 1
+      | [616444 CAR]
+      (616444)
+      | [621430 MLT]
+  {lev: 2 nodeCt: 95}
+    Tree: 0
+      | | [82491 BLI]
+      | (82491)
+      | | [85280 MCC]
+      (82491)
+      | | [89299 BAB]
+      | (89299)
+      | | [89305 CIC]
+    Tree: 1
+      | | [593343 FMH]
+      | (593343)
+      | | [601339 ACK]
+      (593343)
+      | | [605412 AUG]
+      | (605412)
+      | | [614409 BGR]
+  {lev: 3 nodeCt: 47}
+    Tree: 0
+      | | | [91281 MHR]
+      | | (91281)
+      | | | [97274 MOD]
+      | (91281)
+      | | | [99271 MER]
+      | | (99271)
+      | | | [105230 BFL]
+      (91281)
+      | | | [108239 FAT]
+      | | (108239)
+      | | | [118181 LGB]
+      | (108239)
+      | | | [119181 LAX]
+      | | (119181)
+      | | | [119198 HHR]
+    Tree: 1
+      | | | [567354 BDR]
+      | | (567354)
+      | | | [575331 FOK]
+      | (567354)
+      | | | [576404 MPV]
+      | | (576404)
+      | | | [578368 CEF]
+      (567354)
+      | | | [579353 HFD]
+      | | (579353)
+      | | | [580345 BDL]
+      | (579353)
+      | | | [583374 BOS]
+      | | (583374)
+      | | | [585377 BED]
+  {lev: 4 nodeCt: 23}
+    Tree: 0
+      | | | | [122216 BUR]
+      | | | (122216)
+      | | | | [125206 EDW]
+      | | (122216)
+      | | | | [127465 GEG]
+      | | | (127465)
+      | | | | [142222 BYS]
+      | (122216)
+      | | | | [142396 BOI]
+      | | | (142396)
+      | | | | [148160 CXL]
+      | | (142396)
+      | | | | [148251 LAS]
+      | | | (148251)
+      | | | | [150255 INS]
+      (122216)
+      | | | | [151172 IPL]
+      | | | (151172)
+      | | | | [152254 LSV]
+      | | (151172)
+      | | | | [157331 ENV]
+      | | | (157331)
+      | | | | [167269 CDC]
+      | (151172)
+      | | | | [181492 CTB]
+      | | | (181492)
+      | | | | [182185 LUF]
+      | | (181492)
+      | | | | [184458 HLN]
+      | | | (184458)
+      | | | | [186465 GTF]
+    Tree: 1
+      | | | | [542301 APG]
+      | | | (542301)
+      | | | | [542352 IPT]
+      | | (542301)
+      | | | | [542381 ART]
+      | | | (542381)
+      | | | | [544313 DOV]
+      | (542301)
+      | | | | [546307 MIV]
+      | | | (546307)
+      | | | | [547313 ILG]
+      | | (546307)
+      | | | | [550405 GTB]
+      | | | (550405)
+      | | | | [556325 EWR]
+      (542301)
+      | | | | [558312 ACY]
+      | | | (558312)
+      | | | | [561412 MSS]
+      | | (558312)
+      | | | | [563322 ISP]
+      | | | (563322)
+      | | | | [563362 ALB]
+      | (558312)
+      | | | | [563408 BTV]
+      | | | (563408)
+      | | | | [565353 HPN]
+      | | (563408)
+      | | | | [566337 JFK]
+      | | | (566337)
+      | | | | [567334 LGA]
+  {lev: 5 nodeCt: 11}
+    Tree: 0
+      | | | | | [188353 HIF]
+      | | | | (188353)
+      | | | | | [197170 DMA]
+      | | | (188353)
+      | | | | | [201156 FHU]
+      | | | | (201156)
+      | | | | | [203147 DUG]
+      | | (188353)
+      | | | | | [206491 HVR]
+      | | | | (206491)
+      | | | | | [219258 FMN]
+      | | | (206491)
+      | | | | | [229277 DRO]
+      | | | | (229277)
+      | | | | | [232226 GNT]
+      | (188353)
+      | | | | | [233143 BIF]
+      | | | | (233143)
+      | | | | | [234233 ABQ]
+      | | | (233143)
+      | | | | | [235370 CPR]
+      | | | | (235370)
+      | | | | | [238150 ELP]
+      | | (233143)
+      | | | | | [239164 HMN]
+      | | | | (239164)
+      | | | | | [253302 BKF]
+      | | | (239164)
+      | | | | | [256175 CNM]
+      | | | | (256175)
+      | | | | | [256313 DEN]
+      (188353)
+      | | | | | [257341 CYS]
+      | | | | (257341)
+      | | | | | [260296 COS]
+      | | | (257341)
+      | | | | | [261294 FCS]
+      | | | | (261294)
+      | | | | | [265146 INK]
+      | | (257341)
+      | | | | | [267210 CVS]
+      | | | | (267210)
+      | | | | | [268160 HOB]
+      | | | (267210)
+      | | | | | [270491 ISN]
+      | | | | (270491)
+      | | | | | [275141 MAF]
+      | (257341)
+      | | | | | [278251 DHT]
+      | | | | (278251)
+      | | | | | [286482 MIB]
+      | | | (278251)
+      | | | | | [288485 MOT]
+      | | | | (288485)
+      | | | | | [291220 AMA]
+      | | (278251)
+      | | | | | [292185 LBB]
+      | | | | (292185)
+      | | | | | [293216 CDS]
+      | | | (292185)
+      | | | | | [294837 EGP]
+      | | | | (294837)
+      | | | | | [298112 DLF]
+    Tree: 1
+      | | | | | [497337 OPF]
+      | | | | (497337)
+      | | | | | [500195 SSC]
+      | | | (497337)
+      | | | | | [501334 PIT]
+      | | | | (501334)
+      | | | | | [508233 POB]
+      | | (497337)
+      | | | | | [519184 MYR]
+      | | | | (519184)
+      | | | | | [521231 RDU]
+      | | | (519184)
+      | | | | | [527278 RIC]
+      | | | | (527278)
+      | | | | | [527398 ROC]
+      | (497337)
+      | | | | | [531287 NYG]
+      | | | | (531287)
+      | | | | | [532218 NCA]
+      | | | (531287)
+      | | | | | [533255 NTU]
+      | | | | (533255)
+      | | | | | [533387 SYR]
+      | | (531287)
+      | | | | | [537252 ORF]
+      | | | | (537252)
+      | | | | | [537259 PHF]
+      | | | (537252)
+      | | | | | [537290 NHK]
+      | | | | (537290)
+      | | | | | [542206 NKT]
+      (497337)
+      | | | | | [542250 NGU]
+      | | | | (542250)
+      | | | | | [542333 MUI]
+      | | | (542250)
+      | | | | | [547282 SBY]
+      | | | | (547282)
+      | | | | | [548306 PHL]
+      | | (542250)
+      | | | | | [548320 PNE]
+      | | | | (548320)
+      | | | | | [548383 RME]
+      | | | (548320)
+      | | | | | [551409 OGS]
+      | | | | (551409)
+      | | | | | [552322 NXX]
+      | (542250)
+      | | | | | [553333 TEB]
+      | | | | (553333)
+      | | | | | [553353 SWF]
+      | | | (553333)
+      | | | | | [554335 NEL]
+      | | | | (554335)
+      | | | | | [564418 PBG]
+      | | (553333)
+      | | | | | [588344 PVD]
+      | | | | (588344)
+      | | | | | [592339 SFZ]
+      | | | (588344)
+      | | | | | [599395 PWM]
+      | | | | (599395)
+      | | | | | [617448 PQI]
+  {lev: 6 nodeCt: 5}
+    Tree: 0
+      | | | | | | [299266 GCK]
+      | | | | | (299266)
+      | | | | | | [301104 DRT]
+      | | | | (299266)
+      | | | | | | [303174 DYS]
+      | | | | | (303174)
+      | | | | | | [304727 LRD]
+      | | | (299266)
+      | | | | | | [306907 COT]
+      | | | | | (306907)
+      | | | | | | [308217 HBR]
+      | | | | (306907)
+      | | | | | | [309202 LTS]
+      | | | | | (309202)
+      | | | | | | [309248 GAG]
+      | | (299266)
+      | | | | | | [311160 ABI]
+      | | | | | (311160)
+      | | | | | | [313411 HON]
+      | | | | (311160)
+      | | | | | | [313627 ALI]
+      | | | | | (313627)
+      | | | | | | [322208 FSI]
+      | | | (311160)
+      | | | | | | [322577 MFE]
+      | | | | | (322577)
+      | | | | | | [323151 GRK]
+      | | | | (322577)
+      | | | | | | [323248 END]
+      | | | | | (323248)
+      | | | | | | [324268 ICT]
+      | (299266)
+      | | | | | | [324274 IAB]
+      | | | | | (324274)
+      | | | | | | [324468 GFK]
+      | | | | (324274)
+      | | | | | | [324577 HRL]
+      | | | | | (324577)
+      | | | | | | [327126 AUS]
+      | | | (324274)
+      | | | | | | [327317 BRO]
+      | | | | | (327317)
+      | | | | | | [328209 ADM]
+      | | | | (327317)
+      | | | | | | [328617 CRP]
+      | | | | | (328617)
+      | | | | | | [329151 HLR]
+      | | (324274)
+      | | | | | | [330148 ACT]
+      | | | | | (330148)
+      | | | | | | [331154 CNW]
+      | | | | (330148)
+      | | | | | | [332163 FTW]
+      | | | | | (332163)
+      | | | | | | [332168 DFW]
+      | | | (330148)
+      | | | | | | [333137 CFD]
+      | | | | | (333137)
+      | | | | | | [333192 GVT]
+      | | | | (333137)
+      | | | | | | [335316 FRI]
+      | | | | | (335316)
+      | | | | | | [337136 CLL]
+      (299266)
+      | | | | | | [342164 DAL]
+      | | | | | (342164)
+      | | | | | | [342336 LNK]
+      | | | | (342164)
+      | | | | | | [344100 IAH]
+      | | | | | (344100)
+      | | | | | | [344201 MLC]
+      | | | (342164)
+      | | | | | | [345137 CXO]
+      | | | | | (345137)
+      | | | | | | [347238 MKO]
+      | | | | (345137)
+      | | | | | | [348103 HOU]
+      | | | | | (348103)
+      | | | | | | [348297 FOE]
+      | | (342164)
+      | | | | | | [349115 EFD]
+      | | | | | (349115)
+      | | | | | | [355371 FOD]
+      | | | | (349115)
+      | | | | | | [356300 FLV]
+      | | | | | (356300)
+      | | | | | | [356309 MCI]
+      | | | (349115)
+      | | | | | | [358176 GGG]
+      | | | | | (358176)
+      | | | | | | [360226 FSM]
+      | | | | (358176)
+      | | | | | | [360252 FYV]
+      | | | | | (360252)
+      | | | | | | [360280 GVW]
+      | (342164)
+      | | | | | | [360480 BDE]
+      | | | | | (360480)
+      | | | | | | [361148 LFK]
+      | | | | (360480)
+      | | | | | | [362107 GLS]
+      | | | | | (362107)
+      | | | | | | [362112 BPT]
+      | | | (360480)
+      | | | | | | [363407 MSP]
+      | | | | | (363407)
+      | | | | | | [365120 LCH]
+      | | | | (363407)
+      | | | | | | [365166 BAD]
+      | | | | | (365166)
+      | | | | | | [366135 DRI]
+      | | (360480)
+      | | | | | | [366357 DSM]
+      | | | | | (366357)
+      | | | | | | [369497 INL]
+      | | | | (366357)
+      | | | | | | [370254 HRO]
+      | | | | | (370254)
+      | | | | | | [376210 LIT]
+      | | | (366357)
+      | | | | | | [377155 ESF]
+      | | | | | (377155)
+      | | | | | | [378154 AEX]
+      | | | | (377155)
+      | | | | | | [378283 COU]
+      | | | | | (378283)
+      | | | | | | [378461 HIB]
+    Tree: 1
+      | | | | | | [380210 LRF]
+      | | | | | (380210)
+      | | | | | | [380454 DLH]
+      | | | | (380210)
+      | | | | | | [381163 MLU]
+      | | | | | (381163)
+      | | | | | | [382179 ELD]
+      | | | (380210)
+      | | | | | | [384132 LFT]
+      | | | | | (384132)
+      | | | | | | [385124 ARA]
+      | | | | (384132)
+      | | | | | | [391119 BTR]
+      | | | | | (391119)
+      | | | | | | [394196 GWO]
+      | | (380210)
+      | | | | | | [398172 JAN]
+      | | | | | (398172)
+      | | | | | | [398232 JBR]
+      | | | | (398172)
+      | | | | | | [399102 MSY]
+      | | | | | (399102)
+      | | | | | | [405229 MEM]
+      | | | (398172)
+      | | | | | | [405293 BLV]
+      | | | | | (405293)
+      | | | | | | [408380 MSN]
+      | | | | (405293)
+      | | | | | | [409236 BYH]
+      | | | | | (409236)
+      | | | | | | [413128 BFM]
+      | (380210)
+      | | | | | | [414352 DPA]
+      | | | | | (414352)
+      | | | | | | [416134 MOB]
+      | | | | (414352)
+      | | | | | | [418129 BIX]
+      | | | | | (418129)
+      | | | | | | [421196 CBM]
+      | | | (414352)
+      | | | | | | [421229 MKL]
+      | | | | | (421229)
+      | | | | | | [422404 GRB]
+      | | | | (421229)
+      | | | | | | [424241 HOP]
+      | | | | | (424241)
+      | | | | | | [424341 IKK]
+      | | (414352)
+      | | | | | | [425353 MDW]
+      | | | | | (425353)
+      | | | | | | [425457 MQT]
+      | | | | (425353)
+      | | | | | | [426315 HUF]
+      | | | | | (426315)
+      | | | | | | [426427 MNM]
+      | | | (425353)
+      | | | | | | [427361 MKE]
+      | | | | | (427361)
+      | | | | | | [436121 HRT]
+      | | | | (427361)
+      | | | | | | [439135 CEW]
+      | | | | | (439135)
+      | | | | | | [439193 BHM]
+      (380210)
+      | | | | | | [439211 HUA]
+      | | | | | (439211)
+      | | | | | | [439257 BNA]
+      | | | | (439211)
+      | | | | | | [439313 IND]
+      | | | | | (439313)
+      | | | | | | [440321 GUS]
+      | | | (439211)
+      | | | | | | [443259 FTK]
+      | | | | | (443259)
+      | | | | | | [444294 LOU]
+      | | | | (443259)
+      | | | | | | [445157 DHN]
+      | | | | | (445157)
+      | | | | | | [445233 CHA]
+      | | (439211)
+      | | | | | | [446188 ANB]
+      | | | | | (446188)
+      | | | | | | [450377 GRR]
+      | | | | (446188)
+      | | | | | | [455417 HTL]
+      | | | | | (455417)
+      | | | | | | [457302 DAY]
+      | | | (446188)
+      | | | | | | [457305 CVG]
+      | | | | | (457305)
+      | | | | | | [459159 LSF]
+      | | | | (457305)
+      | | | | | | [459185 MGE]
+      | | | | | (459185)
+      | | | | | | [459373 LAN]
+      | (439211)
+      | | | | | | [460302 LUK]
+      | | | | | (460302)
+      | | | | | | [461304 FFO]
+      | | | | (460302)
+      | | | | | | [462189 ATL]
+      | | | | | (462189)
+      | | | | | | [464364 DET]
+      | | | (460302)
+      | | | | | | [465363 DTW]
+      | | | | | (465363)
+      | | | | | | [468171 MCN]
+      | | | | (465363)
+      | | | | | | [473312 CMH]
+      | | | | | (473312)
+      | | | | | | [473747 MCF]
+      | | (460302)
+      | | | | | | [476114 GNV]
+      | | | | | (476114)
+      | | | | | | [481206 AND]
+      | | | | (476114)
+      | | | | | | [481311 LCK]
+      | | | | | (481311)
+      | | | | | | [483188 AGS]
+      | | | (476114)
+      | | | | | | [483344 AKR]
+      | | | | | (483344)
+      | | | | | | [483567 FMY]
+      | | | | (483344)
+      | | | | | | [485185 CAE]
+      | | | | | (485185)
+      | | | | | | [485223 HKY]
+  {lev: 7 nodeCt: 2}
+    Tree: 0
+      | | | | | | | [67487 NOW]
+      | | | | | | (67487)
+      | | | | | | | [73429 SPB]
+      | | | | | (67487)
+      | | | | | | | [75459 TCM]
+      | | | | | | (75459)
+      | | | | | | | [76471 SEA]
+      | | | | (67487)
+      | | | | | | | [77276 SFO]
+      | | | | | | (77276)
+      | | | | | | | [78428 PDX]
+      | | | | | (77276)
+      | | | | | | | [81275 NUQ]
+      | | | | | | (81275)
+      | | | | | | | [81461 PAE]
+      | | | (67487)
+      | | | | | | | [82277 OAK]
+      | | | | | | (82277)
+      | | | | | | | [82483 NUW]
+      | | | | | (82277)
+      | | | | | | | [85262 SJC]
+      | | | | | | (85262)
+      | | | | | | | [85285 SAC]
+      | | | | (82277)
+      | | | | | | | [86282 RIU]
+      | | | | | | (86282)
+      | | | | | | | [88269 SCK]
+      | | | | | (86282)
+      | | | | | | | [89286 SUU]
+      | | | | | | (89286)
+      | | | | | | | [90280 SMF]
+      | | (67487)
+      | | | | | | | [105256 NLC]
+      | | | | | | (105256)
+      | | | | | | | [108317 RNO]
+      | | | | | (105256)
+      | | | | | | | [111477 MWH]
+      | | | | | | (111477)
+      | | | | | | | [112201 NTD]
+      | | | | (105256)
+      | | | | | | | [115213 PMD]
+      | | | | | | (115213)
+      | | | | | | | [122299 NFL]
+      | | | | | (115213)
+      | | | | | | | [123188 RIV]
+      | | | | | | (123188)
+      | | | | | | | [124191 RAL]
+      | | | (105256)
+      | | | | | | | [125466 SKA]
+      | | | | | | (125466)
+      | | | | | | | [125467 SFF]
+      | | | | | (125466)
+      | | | | | | | [126165 NZY]
+      | | | | | | (126165)
+      | | | | | | | [126189 NTK]
+      | | | | (125466)
+      | | | | | | | [126203 ONT]
+      | | | | | | (126203)
+      | | | | | | | [129237 NID]
+      | | | | | (126203)
+      | | | | | | | [131170 NKX]
+      | | | | | | (131170)
+      | | | | | | | [132172 SAN]
+      | (67487)
+      | | | | | | | [132196 SNA]
+      | | | | | | (132196)
+      | | | | | | | [135192 PSP]
+      | | | | | (132196)
+      | | | | | | | [140210 NXP]
+      | | | | | | (140210)
+      | | | | | | | [144167 NJK]
+      | | | | (132196)
+      | | | | | | | [147379 MUO]
+      | | | | | | (147379)
+      | | | | | | | [178192 PHX]
+      | | | | | (147379)
+      | | | | | | | [180208 PRC]
+      | | | | | | (180208)
+      | | | | | | | [186333 SLC]
+      | | | (132196)
+      | | | | | | | [193144 OLS]
+      | | | | | | (193144)
+      | | | | | | | [223183 TCS]
+      | | | | | (193144)
+      | | | | | | | [235221 SAF]
+      | | | | | | (235221)
+      | | | | | | | [256182 ROW]
+      | | | | (193144)
+      | | | | | | | [262291 PUB]
+      | | | | | | (262291)
+      | | | | | | | [267402 RCA]
+      | | | | | (262291)
+      | | | | | | | [271220 TCC]
+      | | | | | | (271220)
+      | | | | | | | [302140 SJT]
+      | | (132196)
+      | | | | | | | [313116 SAT]
+      | | | | | | (313116)
+      | | | | | | | [315112 RND]
+      | | | | | (313116)
+      | | | | | | | [316103 SKF]
+      | | | | | | (316103)
+      | | | | | | | [316161 MWL]
+      | | | | (313116)
+      | | | | | | | [320191 SPS]
+      | | | | | | (320191)
+      | | | | | | | [324240 PNC]
+      | | | | | (320191)
+      | | | | | | | [326238 OKC]
+      | | | | | | (326238)
+      | | | | | | | [327637 NQI]
+      | | | (313116)
+      | | | | | | | [331235 TIK]
+      | | | | | | (331235)
+      | | | | | | | [332476 RDR]
+      | | | | | (331235)
+      | | | | | | | [336837 PSX]
+      | | | | | | (336837)
+      | | | | | | | [337370 SUX]
+      | | | | (331235)
+      | | | | | | | [344341 OFF]
+      | | | | | | (344341)
+      | | | | | | | [349354 OMA]
+      | | | | | (344341)
+      | | | | | | | [367423 PNM]
+      | | | | | | (367423)
+      | | | | | | | [369149 POE]
+      (67487)
+      | | | | | | | [370283 SZL]
+      | | | | | | (370283)
+      | | | | | | | [371162 SHV]
+      | | | | | (370283)
+      | | | | | | | [374217 RBM]
+      | | | | | | (374217)
+      | | | | | | | [378264 TBN]
+      | | | | (370283)
+      | | | | | | | [389209 PBF]
+      | | | | | | (389209)
+      | | | | | | | [394106 NBG]
+      | | | | | (389209)
+      | | | | | | | [398297 STL]
+      | | | | | | (398297)
+      | | | | | | | [410231 NQA]
+      | | | (370283)
+      | | | | | | | [413168 NMM]
+      | | | | | | (413168)
+      | | | | | | | [426127 PNS]
+      | | | | | (413168)
+      | | | | | | | [426341 ORD]
+      | | | | | | (426341)
+      | | | | | | | [428125 NSE]
+      | | | | (413168)
+      | | | | | | | [429127 NPA]
+      | | | | | | (429127)
+      | | | | | | | [434168 MXF]
+      | | | | | (429127)
+      | | | | | | | [438169 SEM]
+      | | | | | | (438169)
+      | | | | | | | [446129 PAM]
+      | | (370283)
+      | | | | | | | [458126 TLH]
+      | | | | | | (458126)
+      | | | | | | | [473777 PIE]
+      | | | | | (458126)
+      | | | | | | | [477172 SBO]
+      | | | | | | (477172)
+      | | | | | | | [477346 SKY]
+      | | | | (458126)
+      | | | | | | | [479359 MTC]
+      | | | | | | (479359)
+      | | | | | | | [479677 SPG]
+      | | | | | (479359)
+      | | | | | | | [482361 PHN]
+      | | | | | | (482361)
+      | | | | | | | [484128 NZC]
+      | | | (458126)
+      | | | | | | | [485178 SVN]
+      | | | | | | (485178)
+      | | | | | | | [486135 NIP]
+      | | | | | (485178)
+      | | | | | | | [486417 RSW]
+      | | | | | | (486417)
+      | | | | | | | [487162 SAV]
+      | | | | (485178)
+      | | | | | | | [488147 NQX]
+      | | | | | | (488147)
+      | | | | | | | [488827 ORL]
+      | | | | | (488147)
+      | | | | | | | [493167 NBC]
+      | | | | | | (493167)
+      | | | | | | | [493567 PBI]
+      | (370283)
+      | | | | | | | [488137 JAX]
+      | | | | | | (488137)
+      | | | | | | | [488343 CLE]
+      | | | | | (488137)
+      | | | | | | | [489156 LHW]
+      | | | | | | (489156)
+      | | | | | | | [491967 MCO]
+      | | | | (488137)
+      | | | | | | | [493249 INT]
+      | | | | | | (493249)
+      | | | | | | | [493287 MIA]
+      | | | | | (493249)
+      | | | | | | | [493497 LNA]
+      | | | | | | (493497)
+      | | | | | | | [494160 CHS]
+      | | | (488137)
+      | | | | | | | [494228 CLT]
+      | | | | | | (494228)
+      | | | | | | | [494537 HWO]
+      | | | | | (494228)
+      | | | | | | | [495497 BCT]
+      | | | | | | (495497)
+      | | | | | | | [495837 MLB]
+      | | | | (494228)
+      | | | | | | | [497237 HST]
+      | | | | | | (497237)
+      | | | | | | | [497467 FLL]
+      | | | | | (497237)
+      | | | | | | | [500507 FXE]
+      | | | | | | (500507)
+      | | | | | | | [500877 COF]
+      | | (488137)
+      | | | | | | | [504204 FLO]
+      | | | | | | (504204)
+      | | | | | | | [512286 EKN]
+      | | | | | (504204)
+      | | | | | | | [513394 IAG]
+      | | | | | | (513394)
+      | | | | | | | [516322 AOO]
+      | | | | (504204)
+      | | | | | | | [518370 BUF]
+      | | | | | | (518370)
+      | | | | | | | [524292 IAD]
+      | | | | | (518370)
+      | | | | | | | [525296 DCA]
+      | | | | | | (525296)
+      | | | | | | | [526221 GSB]
+      | | | (504204)
+      | | | | | | | [526231 EWN]
+      | | | | | | (526231)
+      | | | | | | | [532213 ILM]
+      | | | | | (526231)
+      | | | | | | | [536252 ECG]
+      | | | | | | (536252)
+      | | | | | | | [537270 LFI]
+      | | | | (526231)
+      | | | | | | | [537272 FAF]
+      | | | | | | (537272)
+      | | | | | | | [538302 BWI]
+      | | | | | (537272)
+      | | | | | | | [538320 MDT]
+      | | | | | | (538320)
+      | | | | | | | [539282 ADW]
+  {lev: 8 nodeCt: 1}
+    Tree: 0
+      | | | | | | | | [4834 EYW]
+      | | | | | | | (4834)
+      | | | | | | | | [null]
+      | | | | | | (4834)
+      | | | | | | | [null]
+      | | | | | (4834)
+      | | | | | | [null]
+      | | | | (4834)
+      | | | | | [null]
+      | | | (4834)
+      | | | | [null]
+      | | (4834)
+      | | | [null]
+      | (4834)
+      | | [null]
+      (4834)
+      | [null]
+size: 383
+extract-min: EYW
+extract-min: MMV
+extract-min: NOW
+extract-min: SPB
+extract-min: BFI
+extract-min: TCM
+extract-min: GRF
+extract-min: SEA
+extract-min: SFO
+extract-min: PDX
+extract-min: NUQ
+decrease-key(IPT, 0): successful
+extract-min: IPT
+decrease-key(DOV, 0): successful
+extract-min: DOV
+decrease-key(ILG, 0): successful
+extract-min: ILG
+decrease-key(EWR, 0): successful
+extract-min: EWR
+decrease-key(MSS, 0): successful
+extract-min: MSS
+decrease-key(ALB, 0): successful
+extract-min: ALB
+decrease-key(HPN, 0): successful
+extract-min: HPN
+decrease-key(LGA, 0): successful
+extract-min: LGA
+decrease-key(SSC, 0): successful
+extract-min: SSC
+decrease-key(POB, 0): successful
+extract-min: POB
+decrease-key(RDU, 0): successful
+extract-min: RDU
+decrease-key(ROC, 0): successful
+extract-min: ROC
+decrease-key(NCA, 0): successful
+extract-min: NCA
+decrease-key(SYR, 0): successful
+extract-min: SYR
+decrease-key(PHF, 0): successful
+extract-min: PHF
+decrease-key(NKT, 0): successful
+extract-min: NKT
+decrease-key(MUI, 0): successful
+extract-min: MUI
+decrease-key(PHL, 0): successful
+extract-min: PHL
+decrease-key(RME, 0): successful
+extract-min: RME
+decrease-key(NXX, 0): successful
+extract-min: NXX
+decrease-key(SWF, 0): successful
+extract-min: SWF
+decrease-key(PBG, 0): successful
+extract-min: PBG
+decrease-key(SFZ, 0): successful
+extract-min: SFZ
+decrease-key(PQI, 0): successful
+extract-min: PQI
+decrease-key(DLH, 0): successful
+extract-min: DLH
+decrease-key(ELD, 0): successful
+extract-min: ELD
+decrease-key(ARA, 0): successful
+extract-min: ARA
+decrease-key(GWO, 0): successful
+extract-min: GWO
+decrease-key(JBR, 0): successful
+extract-min: JBR
+decrease-key(MEM, 0): successful
+extract-min: MEM
+decrease-key(MSN, 0): successful
+extract-min: MSN
+decrease-key(BFM, 0): successful
+extract-min: BFM
+decrease-key(MOB, 0): successful
+extract-min: MOB
+decrease-key(CBM, 0): successful
+extract-min: CBM
+decrease-key(GRB, 0): successful
+extract-min: GRB
+decrease-key(IKK, 0): successful
+extract-min: IKK
+decrease-key(MQT, 0): successful
+extract-min: MQT
+decrease-key(MNM, 0): successful
+extract-min: MNM
+decrease-key(HRT, 0): successful
+extract-min: HRT
+decrease-key(BHM, 0): successful
+extract-min: BHM
+decrease-key(BNA, 0): successful
+extract-min: BNA
+decrease-key(GUS, 0): successful
+extract-min: GUS
+decrease-key(LOU, 0): successful
+extract-min: LOU
+decrease-key(CHA, 0): successful
+extract-min: CHA
+decrease-key(GRR, 0): successful
+extract-min: GRR
+decrease-key(DAY, 0): successful
+extract-min: DAY
+decrease-key(LSF, 0): successful
+extract-min: LSF
+decrease-key(LAN, 0): successful
+extract-min: LAN
+decrease-key(FFO, 0): successful
+extract-min: FFO
+decrease-key(DET, 0): successful
+extract-min: DET
+decrease-key(MCN, 0): successful
+extract-min: MCN
+decrease-key(MCF, 0): successful
+extract-min: MCF
+decrease-key(AND, 0): successful
+extract-min: AND
+decrease-key(AGS, 0): successful
+extract-min: AGS
+decrease-key(FMY, 0): successful
+extract-min: FMY
+decrease-key(HKY, 0): successful
+extract-min: HKY
+decrease-key(PAE, 0): successful
+extract-min: PAE
+decrease-key(MLT, 0): successful
+extract-min: MLT
+decrease-key(MCC, 0): successful
+extract-min: MCC
+decrease-key(CIC, 0): successful
+extract-min: CIC
+decrease-key(NUW, 0): successful
+extract-min: NUW
+decrease-key(SAC, 0): successful
+extract-min: SAC
+decrease-key(SCK, 0): successful
+extract-min: SCK
+decrease-key(SMF, 0): successful
+extract-min: SMF
+decrease-key(RNO, 0): successful
+extract-min: RNO
+decrease-key(NTD, 0): successful
+extract-min: NTD
+decrease-key(NFL, 0): successful
+extract-min: NFL
+decrease-key(RAL, 0): successful
+extract-min: RAL
+decrease-key(SFF, 0): successful
+extract-min: SFF
+decrease-key(NTK, 0): successful
+extract-min: NTK
+decrease-key(NID, 0): successful
+extract-min: NID
+decrease-key(SAN, 0): successful
+extract-min: SAN
+decrease-key(PSP, 0): successful
+extract-min: PSP
+decrease-key(NJK, 0): successful
+extract-min: NJK
+decrease-key(PHX, 0): successful
+extract-min: PHX
+decrease-key(SLC, 0): successful
+extract-min: SLC
+decrease-key(TCS, 0): successful
+extract-min: TCS
+decrease-key(ROW, 0): successful
+extract-min: ROW
+decrease-key(RCA, 0): successful
+extract-min: RCA
+decrease-key(SJT, 0): successful
+extract-min: SJT
+decrease-key(RND, 0): successful
+extract-min: RND
+decrease-key(MWL, 0): successful
+extract-min: MWL
+decrease-key(PNC, 0): successful
+extract-min: PNC
+decrease-key(NQI, 0): successful
+extract-min: NQI
+decrease-key(RDR, 0): successful
+extract-min: RDR
+decrease-key(SUX, 0): successful
+extract-min: SUX
+decrease-key(OMA, 0): successful
+extract-min: OMA
+decrease-key(POE, 0): successful
+extract-min: POE
+decrease-key(SHV, 0): successful
+extract-min: SHV
+decrease-key(TBN, 0): successful
+extract-min: TBN
+decrease-key(NBG, 0): successful
+extract-min: NBG
+decrease-key(NQA, 0): successful
+extract-min: NQA
+decrease-key(PNS, 0): successful
+extract-min: PNS
+decrease-key(NSE, 0): successful
+extract-min: NSE
+decrease-key(MXF, 0): successful
+extract-min: MXF
+decrease-key(PAM, 0): successful
+extract-min: PAM
+decrease-key(PIE, 0): successful
+extract-min: PIE
+decrease-key(SKY, 0): successful
+extract-min: SKY
+decrease-key(SPG, 0): successful
+extract-min: SPG
+decrease-key(NZC, 0): successful
+extract-min: NZC
+decrease-key(NIP, 0): successful
+extract-min: NIP
+decrease-key(SAV, 0): successful
+extract-min: SAV
+decrease-key(ORL, 0): successful
+extract-min: ORL
+decrease-key(PBI, 0): successful
+extract-min: PBI
+decrease-key(CLE, 0): successful
+extract-min: CLE
+decrease-key(MCO, 0): successful
+extract-min: MCO
+decrease-key(MIA, 0): successful
+extract-min: MIA
+decrease-key(CHS, 0): successful
+extract-min: CHS
+decrease-key(HWO, 0): successful
+extract-min: HWO
+decrease-key(MLB, 0): successful
+extract-min: MLB
+decrease-key(FLL, 0): successful
+extract-min: FLL
+decrease-key(COF, 0): successful
+extract-min: COF
+decrease-key(EKN, 0): successful
+extract-min: EKN
+decrease-key(AOO, 0): successful
+extract-min: AOO
+decrease-key(IAD, 0): successful
+extract-min: IAD
+decrease-key(GSB, 0): successful
+extract-min: GSB
+decrease-key(ILM, 0): successful
+extract-min: ILM
+decrease-key(LFI, 0): successful
+extract-min: LFI
+decrease-key(BWI, 0): successful
+extract-min: BWI
+decrease-key(ADW, 0): successful
+extract-min: ADW
+decrease-key(MOD, 0): successful
+extract-min: MOD
+decrease-key(BFL, 0): successful
+extract-min: BFL
+decrease-key(LGB, 0): successful
+extract-min: LGB
+decrease-key(HHR, 0): successful
+extract-min: HHR
+decrease-key(OGS, 0): successful
+extract-min: OGS
+decrease-key(TEB, 0): successful
+extract-min: TEB
+decrease-key(NEL, 0): successful
+extract-min: NEL
+decrease-key(ISP, 0): successful
+extract-min: ISP
+decrease-key(BTV, 0): successful
+extract-min: BTV
+decrease-key(JFK, 0): successful
+extract-min: JFK
+decrease-key(FOK, 0): successful
+extract-min: FOK
+decrease-key(MPV, 0): successful
+extract-min: MPV
+decrease-key(CEF, 0): successful
+extract-min: CEF
+decrease-key(BDL, 0): successful
+extract-min: BDL
+decrease-key(BOS, 0): successful
+[The following extract-min generates a quake to level 0]
+extract-min: BOS
+list-heap:
+  {lev: 0 nodeCt: 237}
+  [82277 OAK]
+  [82491 BLI]
+  [85262 SJC]
+  [86282 RIU]
+  [89286 SUU]
+  [89299 BAB]
+  [91281 MHR]
+  [99271 MER]
+  [105256 NLC]
+  [108239 FAT]
+  [111477 MWH]
+  [115213 PMD]
+  [119181 LAX]
+  [122216 BUR]
+  [123188 RIV]
+  [125206 EDW]
+  [125466 SKA]
+  [126165 NZY]
+  [126203 ONT]
+  [127465 GEG]
+  [131170 NKX]
+  [132196 SNA]
+  [140210 NXP]
+  [142222 BYS]
+  [142396 BOI]
+  [147379 MUO]
+  [148160 CXL]
+  [148251 LAS]
+  [150255 INS]
+  [151172 IPL]
+  [152254 LSV]
+  [157331 ENV]
+  [167269 CDC]
+  [180208 PRC]
+  [181492 CTB]
+  [182185 LUF]
+  [184458 HLN]
+  [186465 GTF]
+  [188353 HIF]
+  [193144 OLS]
+  [197170 DMA]
+  [201156 FHU]
+  [203147 DUG]
+  [206491 HVR]
+  [219258 FMN]
+  [229277 DRO]
+  [232226 GNT]
+  [233143 BIF]
+  [234233 ABQ]
+  [235221 SAF]
+  [235370 CPR]
+  [238150 ELP]
+  [239164 HMN]
+  [253302 BKF]
+  [256175 CNM]
+  [256313 DEN]
+  [257341 CYS]
+  [260296 COS]
+  [261294 FCS]
+  [262291 PUB]
+  [265146 INK]
+  [267210 CVS]
+  [268160 HOB]
+  [270491 ISN]
+  [271220 TCC]
+  [275141 MAF]
+  [278251 DHT]
+  [286482 MIB]
+  [288485 MOT]
+  [291220 AMA]
+  [292185 LBB]
+  [293216 CDS]
+  [294837 EGP]
+  [298112 DLF]
+  [299266 GCK]
+  [301104 DRT]
+  [303174 DYS]
+  [304727 LRD]
+  [306907 COT]
+  [308217 HBR]
+  [309202 LTS]
+  [309248 GAG]
+  [311160 ABI]
+  [313116 SAT]
+  [313411 HON]
+  [313627 ALI]
+  [316103 SKF]
+  [320191 SPS]
+  [322208 FSI]
+  [322577 MFE]
+  [323151 GRK]
+  [323248 END]
+  [324268 ICT]
+  [324274 IAB]
+  [324468 GFK]
+  [324577 HRL]
+  [326238 OKC]
+  [327126 AUS]
+  [327317 BRO]
+  [328209 ADM]
+  [328617 CRP]
+  [329151 HLR]
+  [330148 ACT]
+  [331154 CNW]
+  [331235 TIK]
+  [332163 FTW]
+  [332168 DFW]
+  [333137 CFD]
+  [333192 GVT]
+  [335316 FRI]
+  [336837 PSX]
+  [337136 CLL]
+  [342164 DAL]
+  [342336 LNK]
+  [344100 IAH]
+  [344201 MLC]
+  [344341 OFF]
+  [345137 CXO]
+  [347238 MKO]
+  [348103 HOU]
+  [348297 FOE]
+  [349115 EFD]
+  [355371 FOD]
+  [356300 FLV]
+  [356309 MCI]
+  [358176 GGG]
+  [360226 FSM]
+  [360252 FYV]
+  [360280 GVW]
+  [360480 BDE]
+  [361148 LFK]
+  [362107 GLS]
+  [362112 BPT]
+  [363407 MSP]
+  [365120 LCH]
+  [365166 BAD]
+  [366135 DRI]
+  [366357 DSM]
+  [367423 PNM]
+  [369497 INL]
+  [370254 HRO]
+  [370283 SZL]
+  [374217 RBM]
+  [376210 LIT]
+  [377155 ESF]
+  [378154 AEX]
+  [378283 COU]
+  [378461 HIB]
+  [380210 LRF]
+  [381163 MLU]
+  [384132 LFT]
+  [389209 PBF]
+  [391119 BTR]
+  [398172 JAN]
+  [398297 STL]
+  [399102 MSY]
+  [405293 BLV]
+  [409236 BYH]
+  [413168 NMM]
+  [414352 DPA]
+  [418129 BIX]
+  [421229 MKL]
+  [424241 HOP]
+  [425353 MDW]
+  [426315 HUF]
+  [426341 ORD]
+  [427361 MKE]
+  [429127 NPA]
+  [438169 SEM]
+  [439135 CEW]
+  [439211 HUA]
+  [439313 IND]
+  [443259 FTK]
+  [445157 DHN]
+  [446188 ANB]
+  [455417 HTL]
+  [457305 CVG]
+  [458126 TLH]
+  [459185 MGE]
+  [460302 LUK]
+  [462189 ATL]
+  [465363 DTW]
+  [473312 CMH]
+  [476114 GNV]
+  [477172 SBO]
+  [479359 MTC]
+  [481311 LCK]
+  [482361 PHN]
+  [483344 AKR]
+  [485178 SVN]
+  [485185 CAE]
+  [486417 RSW]
+  [488137 JAX]
+  [488147 NQX]
+  [489156 LHW]
+  [493167 NBC]
+  [493249 INT]
+  [493497 LNA]
+  [494228 CLT]
+  [495497 BCT]
+  [497237 HST]
+  [497337 OPF]
+  [500507 FXE]
+  [501334 PIT]
+  [504204 FLO]
+  [513394 IAG]
+  [518370 BUF]
+  [519184 MYR]
+  [525296 DCA]
+  [526231 EWN]
+  [527278 RIC]
+  [531287 NYG]
+  [533255 NTU]
+  [536252 ECG]
+  [537252 ORF]
+  [537272 FAF]
+  [537290 NHK]
+  [538320 MDT]
+  [542250 NGU]
+  [542301 APG]
+  [542381 ART]
+  [546307 MIV]
+  [547282 SBY]
+  [548320 PNE]
+  [550405 GTB]
+  [558312 ACY]
+  [567354 BDR]
+  [579353 HFD]
+  [585377 BED]
+  [588344 PVD]
+  [593343 FMH]
+  [599395 PWM]
+  [601339 ACK]
+  [605412 AUG]
+  [614409 BGR]
+  [616444 CAR]
+  [628454 HUL]
+Structured list:
+  {lev: 0 nodeCt: 237}
+    Tree: 0
+      [82277 OAK]
+    Tree: 1
+      [82491 BLI]
+    Tree: 2
+      [85262 SJC]
+    Tree: 3
+      [86282 RIU]
+    Tree: 4
+      [89286 SUU]
+    Tree: 5
+      [89299 BAB]
+    Tree: 6
+      [91281 MHR]
+    Tree: 7
+      [99271 MER]
+    Tree: 8
+      [105256 NLC]
+    Tree: 9
+      [108239 FAT]
+    Tree: 10
+      [111477 MWH]
+    Tree: 11
+      [115213 PMD]
+    Tree: 12
+      [119181 LAX]
+    Tree: 13
+      [122216 BUR]
+    Tree: 14
+      [123188 RIV]
+    Tree: 15
+      [125206 EDW]
+    Tree: 16
+      [125466 SKA]
+    Tree: 17
+      [126165 NZY]
+    Tree: 18
+      [126203 ONT]
+    Tree: 19
+      [127465 GEG]
+    Tree: 20
+      [131170 NKX]
+    Tree: 21
+      [132196 SNA]
+    Tree: 22
+      [140210 NXP]
+    Tree: 23
+      [142222 BYS]
+    Tree: 24
+      [142396 BOI]
+    Tree: 25
+      [147379 MUO]
+    Tree: 26
+      [148160 CXL]
+    Tree: 27
+      [148251 LAS]
+    Tree: 28
+      [150255 INS]
+    Tree: 29
+      [151172 IPL]
+    Tree: 30
+      [152254 LSV]
+    Tree: 31
+      [157331 ENV]
+    Tree: 32
+      [167269 CDC]
+    Tree: 33
+      [180208 PRC]
+    Tree: 34
+      [181492 CTB]
+    Tree: 35
+      [182185 LUF]
+    Tree: 36
+      [184458 HLN]
+    Tree: 37
+      [186465 GTF]
+    Tree: 38
+      [188353 HIF]
+    Tree: 39
+      [193144 OLS]
+    Tree: 40
+      [197170 DMA]
+    Tree: 41
+      [201156 FHU]
+    Tree: 42
+      [203147 DUG]
+    Tree: 43
+      [206491 HVR]
+    Tree: 44
+      [219258 FMN]
+    Tree: 45
+      [229277 DRO]
+    Tree: 46
+      [232226 GNT]
+    Tree: 47
+      [233143 BIF]
+    Tree: 48
+      [234233 ABQ]
+    Tree: 49
+      [235221 SAF]
+    Tree: 50
+      [235370 CPR]
+    Tree: 51
+      [238150 ELP]
+    Tree: 52
+      [239164 HMN]
+    Tree: 53
+      [253302 BKF]
+    Tree: 54
+      [256175 CNM]
+    Tree: 55
+      [256313 DEN]
+    Tree: 56
+      [257341 CYS]
+    Tree: 57
+      [260296 COS]
+    Tree: 58
+      [261294 FCS]
+    Tree: 59
+      [262291 PUB]
+    Tree: 60
+      [265146 INK]
+    Tree: 61
+      [267210 CVS]
+    Tree: 62
+      [268160 HOB]
+    Tree: 63
+      [270491 ISN]
+    Tree: 64
+      [271220 TCC]
+    Tree: 65
+      [275141 MAF]
+    Tree: 66
+      [278251 DHT]
+    Tree: 67
+      [286482 MIB]
+    Tree: 68
+      [288485 MOT]
+    Tree: 69
+      [291220 AMA]
+    Tree: 70
+      [292185 LBB]
+    Tree: 71
+      [293216 CDS]
+    Tree: 72
+      [294837 EGP]
+    Tree: 73
+      [298112 DLF]
+    Tree: 74
+      [299266 GCK]
+    Tree: 75
+      [301104 DRT]
+    Tree: 76
+      [303174 DYS]
+    Tree: 77
+      [304727 LRD]
+    Tree: 78
+      [306907 COT]
+    Tree: 79
+      [308217 HBR]
+    Tree: 80
+      [309202 LTS]
+    Tree: 81
+      [309248 GAG]
+    Tree: 82
+      [311160 ABI]
+    Tree: 83
+      [313116 SAT]
+    Tree: 84
+      [313411 HON]
+    Tree: 85
+      [313627 ALI]
+    Tree: 86
+      [316103 SKF]
+    Tree: 87
+      [320191 SPS]
+    Tree: 88
+      [322208 FSI]
+    Tree: 89
+      [322577 MFE]
+    Tree: 90
+      [323151 GRK]
+    Tree: 91
+      [323248 END]
+    Tree: 92
+      [324268 ICT]
+    Tree: 93
+      [324274 IAB]
+    Tree: 94
+      [324468 GFK]
+    Tree: 95
+      [324577 HRL]
+    Tree: 96
+      [326238 OKC]
+    Tree: 97
+      [327126 AUS]
+    Tree: 98
+      [327317 BRO]
+    Tree: 99
+      [328209 ADM]
+    Tree: 100
+      [328617 CRP]
+    Tree: 101
+      [329151 HLR]
+    Tree: 102
+      [330148 ACT]
+    Tree: 103
+      [331154 CNW]
+    Tree: 104
+      [331235 TIK]
+    Tree: 105
+      [332163 FTW]
+    Tree: 106
+      [332168 DFW]
+    Tree: 107
+      [333137 CFD]
+    Tree: 108
+      [333192 GVT]
+    Tree: 109
+      [335316 FRI]
+    Tree: 110
+      [336837 PSX]
+    Tree: 111
+      [337136 CLL]
+    Tree: 112
+      [342164 DAL]
+    Tree: 113
+      [342336 LNK]
+    Tree: 114
+      [344100 IAH]
+    Tree: 115
+      [344201 MLC]
+    Tree: 116
+      [344341 OFF]
+    Tree: 117
+      [345137 CXO]
+    Tree: 118
+      [347238 MKO]
+    Tree: 119
+      [348103 HOU]
+    Tree: 120
+      [348297 FOE]
+    Tree: 121
+      [349115 EFD]
+    Tree: 122
+      [355371 FOD]
+    Tree: 123
+      [356300 FLV]
+    Tree: 124
+      [356309 MCI]
+    Tree: 125
+      [358176 GGG]
+    Tree: 126
+      [360226 FSM]
+    Tree: 127
+      [360252 FYV]
+    Tree: 128
+      [360280 GVW]
+    Tree: 129
+      [360480 BDE]
+    Tree: 130
+      [361148 LFK]
+    Tree: 131
+      [362107 GLS]
+    Tree: 132
+      [362112 BPT]
+    Tree: 133
+      [363407 MSP]
+    Tree: 134
+      [365120 LCH]
+    Tree: 135
+      [365166 BAD]
+    Tree: 136
+      [366135 DRI]
+    Tree: 137
+      [366357 DSM]
+    Tree: 138
+      [367423 PNM]
+    Tree: 139
+      [369497 INL]
+    Tree: 140
+      [370254 HRO]
+    Tree: 141
+      [370283 SZL]
+    Tree: 142
+      [374217 RBM]
+    Tree: 143
+      [376210 LIT]
+    Tree: 144
+      [377155 ESF]
+    Tree: 145
+      [378154 AEX]
+    Tree: 146
+      [378283 COU]
+    Tree: 147
+      [378461 HIB]
+    Tree: 148
+      [380210 LRF]
+    Tree: 149
+      [381163 MLU]
+    Tree: 150
+      [384132 LFT]
+    Tree: 151
+      [389209 PBF]
+    Tree: 152
+      [391119 BTR]
+    Tree: 153
+      [398172 JAN]
+    Tree: 154
+      [398297 STL]
+    Tree: 155
+      [399102 MSY]
+    Tree: 156
+      [405293 BLV]
+    Tree: 157
+      [409236 BYH]
+    Tree: 158
+      [413168 NMM]
+    Tree: 159
+      [414352 DPA]
+    Tree: 160
+      [418129 BIX]
+    Tree: 161
+      [421229 MKL]
+    Tree: 162
+      [424241 HOP]
+    Tree: 163
+      [425353 MDW]
+    Tree: 164
+      [426315 HUF]
+    Tree: 165
+      [426341 ORD]
+    Tree: 166
+      [427361 MKE]
+    Tree: 167
+      [429127 NPA]
+    Tree: 168
+      [438169 SEM]
+    Tree: 169
+      [439135 CEW]
+    Tree: 170
+      [439211 HUA]
+    Tree: 171
+      [439313 IND]
+    Tree: 172
+      [443259 FTK]
+    Tree: 173
+      [445157 DHN]
+    Tree: 174
+      [446188 ANB]
+    Tree: 175
+      [455417 HTL]
+    Tree: 176
+      [457305 CVG]
+    Tree: 177
+      [458126 TLH]
+    Tree: 178
+      [459185 MGE]
+    Tree: 179
+      [460302 LUK]
+    Tree: 180
+      [462189 ATL]
+    Tree: 181
+      [465363 DTW]
+    Tree: 182
+      [473312 CMH]
+    Tree: 183
+      [476114 GNV]
+    Tree: 184
+      [477172 SBO]
+    Tree: 185
+      [479359 MTC]
+    Tree: 186
+      [481311 LCK]
+    Tree: 187
+      [482361 PHN]
+    Tree: 188
+      [483344 AKR]
+    Tree: 189
+      [485178 SVN]
+    Tree: 190
+      [485185 CAE]
+    Tree: 191
+      [486417 RSW]
+    Tree: 192
+      [488137 JAX]
+    Tree: 193
+      [488147 NQX]
+    Tree: 194
+      [489156 LHW]
+    Tree: 195
+      [493167 NBC]
+    Tree: 196
+      [493249 INT]
+    Tree: 197
+      [493497 LNA]
+    Tree: 198
+      [494228 CLT]
+    Tree: 199
+      [495497 BCT]
+    Tree: 200
+      [497237 HST]
+    Tree: 201
+      [497337 OPF]
+    Tree: 202
+      [500507 FXE]
+    Tree: 203
+      [501334 PIT]
+    Tree: 204
+      [504204 FLO]
+    Tree: 205
+      [513394 IAG]
+    Tree: 206
+      [518370 BUF]
+    Tree: 207
+      [519184 MYR]
+    Tree: 208
+      [525296 DCA]
+    Tree: 209
+      [526231 EWN]
+    Tree: 210
+      [527278 RIC]
+    Tree: 211
+      [531287 NYG]
+    Tree: 212
+      [533255 NTU]
+    Tree: 213
+      [536252 ECG]
+    Tree: 214
+      [537252 ORF]
+    Tree: 215
+      [537272 FAF]
+    Tree: 216
+      [537290 NHK]
+    Tree: 217
+      [538320 MDT]
+    Tree: 218
+      [542250 NGU]
+    Tree: 219
+      [542301 APG]
+    Tree: 220
+      [542381 ART]
+    Tree: 221
+      [546307 MIV]
+    Tree: 222
+      [547282 SBY]
+    Tree: 223
+      [548320 PNE]
+    Tree: 224
+      [550405 GTB]
+    Tree: 225
+      [558312 ACY]
+    Tree: 226
+      [567354 BDR]
+    Tree: 227
+      [579353 HFD]
+    Tree: 228
+      [585377 BED]
+    Tree: 229
+      [588344 PVD]
+    Tree: 230
+      [593343 FMH]
+    Tree: 231
+      [599395 PWM]
+    Tree: 232
+      [601339 ACK]
+    Tree: 233
+      [605412 AUG]
+    Tree: 234
+      [614409 BGR]
+    Tree: 235
+      [616444 CAR]
+    Tree: 236
+      [628454 HUL]
+size: 237
+decrease-key(BED, 0): successful
+extract-min: BED
+decrease-key(NQX, 0): successful
+extract-min: NQX
+decrease-key(LHW, 0): successful
+extract-min: LHW
+decrease-key(NBC, 0): successful
+extract-min: NBC
+decrease-key(LNA, 0): successful
+extract-min: LNA
+decrease-key(CLT, 0): successful
+extract-min: CLT
+decrease-key(BCT, 0): successful
+extract-min: BCT
+decrease-key(OPF, 0): successful
+extract-min: OPF
+decrease-key(FXE, 0): successful
+extract-min: FXE
+decrease-key(PIT, 0): successful
+extract-min: PIT
+decrease-key(IAG, 0): successful
+extract-min: IAG
+decrease-key(BUF, 0): successful
+extract-min: BUF
+decrease-key(MYR, 0): successful
+extract-min: MYR
+decrease-key(EWN, 0): successful
+extract-min: EWN
+decrease-key(RIC, 0): successful
+extract-min: RIC
+decrease-key(NYG, 0): successful
+extract-min: NYG
+decrease-key(ECG, 0): successful
+extract-min: ECG
+decrease-key(ORF, 0): successful
+extract-min: ORF
+decrease-key(FAF, 0): successful
+extract-min: FAF
+decrease-key(MDT, 0): successful
+extract-min: MDT
+decrease-key(NGU, 0): successful
+extract-min: NGU
+decrease-key(APG, 0): successful
+extract-min: APG
+decrease-key(MIV, 0): successful
+extract-min: MIV
+decrease-key(SBY, 0): successful
+extract-min: SBY
+decrease-key(PNE, 0): successful
+extract-min: PNE
+decrease-key(BDE, 0): successful
+extract-min: BDE
+decrease-key(LFK, 0): successful
+extract-min: LFK
+decrease-key(GLS, 0): successful
+extract-min: GLS
+decrease-key(MSP, 0): successful
+extract-min: MSP
+decrease-key(LCH, 0): successful
+extract-min: LCH
+decrease-key(BAD, 0): successful
+extract-min: BAD
+decrease-key(DSM, 0): successful
+extract-min: DSM
+decrease-key(PNM, 0): successful
+extract-min: PNM
+decrease-key(INL, 0): successful
+extract-min: INL
+decrease-key(SZL, 0): successful
+extract-min: SZL
+decrease-key(RBM, 0): successful
+extract-min: RBM
+decrease-key(LIT, 0): successful
+extract-min: LIT
+decrease-key(AEX, 0): successful
+extract-min: AEX
+decrease-key(COU, 0): successful
+extract-min: COU
+decrease-key(HIB, 0): successful
+extract-min: HIB
+decrease-key(MLU, 0): successful
+extract-min: MLU
+decrease-key(LFT, 0): successful
+extract-min: LFT
+decrease-key(PBF, 0): successful
+extract-min: PBF
+decrease-key(JAN, 0): successful
+extract-min: JAN
+decrease-key(STL, 0): successful
+extract-min: STL
+decrease-key(MSY, 0): successful
+extract-min: MSY
+decrease-key(BYH, 0): successful
+extract-min: BYH
+decrease-key(NMM, 0): successful
+extract-min: NMM
+decrease-key(DPA, 0): successful
+extract-min: DPA
+decrease-key(MKL, 0): successful
+extract-min: MKL
+decrease-key(HOP, 0): successful
+extract-min: HOP
+decrease-key(MDW, 0): successful
+extract-min: MDW
+decrease-key(ORD, 0): successful
+extract-min: ORD
+decrease-key(MKE, 0): successful
+extract-min: MKE
+decrease-key(NPA, 0): successful
+extract-min: NPA
+decrease-key(CEW, 0): successful
+extract-min: CEW
+decrease-key(HUA, 0): successful
+extract-min: HUA
+decrease-key(IND, 0): successful
+extract-min: IND
+decrease-key(DHN, 0): successful
+extract-min: DHN
+decrease-key(ANB, 0): successful
+extract-min: ANB
+decrease-key(HTL, 0): successful
+extract-min: HTL
+decrease-key(TLH, 0): successful
+extract-min: TLH
+decrease-key(MGE, 0): successful
+extract-min: MGE
+decrease-key(LUK, 0): successful
+extract-min: LUK
+decrease-key(DTW, 0): successful
+extract-min: DTW
+decrease-key(CMH, 0): successful
+extract-min: CMH
+decrease-key(GNV, 0): successful
+extract-min: GNV
+decrease-key(MTC, 0): successful
+extract-min: MTC
+decrease-key(LCK, 0): successful
+extract-min: LCK
+decrease-key(PHN, 0): successful
+extract-min: PHN
+decrease-key(SVN, 0): successful
+extract-min: SVN
+decrease-key(CAE, 0): successful
+extract-min: CAE
+decrease-key(RSW, 0): successful
+extract-min: RSW
+decrease-key(BLI, 0): successful
+extract-min: BLI
+decrease-key(SJC, 0): successful
+extract-min: SJC
+decrease-key(RIU, 0): successful
+extract-min: RIU
+decrease-key(BAB, 0): successful
+extract-min: BAB
+decrease-key(MHR, 0): successful
+extract-min: MHR
+decrease-key(MER, 0): successful
+extract-min: MER
+decrease-key(FAT, 0): successful
+extract-min: FAT
+decrease-key(MWH, 0): successful
+extract-min: MWH
+decrease-key(PMD, 0): successful
+extract-min: PMD
+decrease-key(BUR, 0): successful
+extract-min: BUR
+decrease-key(RIV, 0): successful
+extract-min: RIV
+decrease-key(EDW, 0): successful
+extract-min: EDW
+decrease-key(NZY, 0): successful
+extract-min: NZY
+decrease-key(ONT, 0): successful
+extract-min: ONT
+decrease-key(GEG, 0): successful
+extract-min: GEG
+decrease-key(SNA, 0): successful
+extract-min: SNA
+decrease-key(NXP, 0): successful
+extract-min: NXP
+decrease-key(BYS, 0): successful
+extract-min: BYS
+decrease-key(MUO, 0): successful
+extract-min: MUO
+decrease-key(CXL, 0): successful
+extract-min: CXL
+decrease-key(LAS, 0): successful
+extract-min: LAS
+decrease-key(IPL, 0): successful
+extract-min: IPL
+decrease-key(LSV, 0): successful
+extract-min: LSV
+decrease-key(ENV, 0): successful
+extract-min: ENV
+decrease-key(PRC, 0): successful
+extract-min: PRC
+decrease-key(CTB, 0): successful
+extract-min: CTB
+decrease-key(LUF, 0): successful
+extract-min: LUF
+decrease-key(GTF, 0): successful
+extract-min: GTF
+decrease-key(HIF, 0): successful
+extract-min: HIF
+decrease-key(OLS, 0): successful
+extract-min: OLS
+decrease-key(FHU, 0): successful
+extract-min: FHU
+decrease-key(DUG, 0): successful
+extract-min: DUG
+decrease-key(HVR, 0): successful
+extract-min: HVR
+decrease-key(DRO, 0): successful
+extract-min: DRO
+decrease-key(GNT, 0): successful
+extract-min: GNT
+decrease-key(BIF, 0): successful
+extract-min: BIF
+decrease-key(SAF, 0): successful
+extract-min: SAF
+decrease-key(CPR, 0): successful
+extract-min: CPR
+decrease-key(ELP, 0): successful
+extract-min: ELP
+decrease-key(BKF, 0): successful
+extract-min: BKF
+decrease-key(CNM, 0): successful
+extract-min: CNM
+decrease-key(JAX, 0): successful
+extract-min: JAX
+decrease-key(HST, 0): successful
+extract-min: HST
+decrease-key(DCA, 0): successful
+extract-min: DCA
+decrease-key(NHK, 0): successful
+extract-min: NHK
+decrease-key(GTB, 0): successful
+extract-min: GTB
+decrease-key(BDR, 0): successful
+extract-min: BDR
+decrease-key(FMH, 0): successful
+extract-min: FMH
+decrease-key(AUG, 0): successful
+extract-min: AUG
+decrease-key(HUL, 0): successful
+extract-min: HUL
+decrease-key(NLC, 0): successful
+extract-min: NLC
+decrease-key(SKA, 0): successful
+extract-min: SKA
+decrease-key(BOI, 0): successful
+extract-min: BOI
+decrease-key(CDC, 0): successful
+extract-min: CDC
+decrease-key(DMA, 0): successful
+extract-min: DMA
+decrease-key(CYS, 0): successful
+extract-min: CYS
+decrease-key(COS, 0): successful
+extract-min: COS
+decrease-key(CVS, 0): successful
+extract-min: CVS
+decrease-key(ISN, 0): successful
+extract-min: ISN
+decrease-key(MAF, 0): successful
+extract-min: MAF
+decrease-key(MIB, 0): successful
+extract-min: MIB
+decrease-key(AMA, 0): successful
+extract-min: AMA
+decrease-key(CDS, 0): successful
+extract-min: CDS
+decrease-key(EGP, 0): successful
+extract-min: EGP
+decrease-key(DLF, 0): successful
+extract-min: DLF
+decrease-key(DRT, 0): successful
+extract-min: DRT
+decrease-key(LRD, 0): successful
+extract-min: LRD
+decrease-key(HBR, 0): successful
+extract-min: HBR
+decrease-key(GAG, 0): successful
+extract-min: GAG
+decrease-key(SAT, 0): successful
+extract-min: SAT
+decrease-key(ALI, 0): successful
+extract-min: ALI
+decrease-key(FLO, 0): successful
+extract-min: FLO
+decrease-key(ART, 0): successful
+extract-min: ART
+decrease-key(HFD, 0): successful
+extract-min: HFD
+decrease-key(PWM, 0): successful
+extract-min: PWM
+decrease-key(NTU, 0): successful
+extract-min: NTU
+decrease-key(PVD, 0): successful
+extract-min: PVD
+decrease-key(ACY, 0): successful
+extract-min: ACY
+decrease-key(BPT, 0): successful
+extract-min: BPT
+decrease-key(HRO, 0): successful
+extract-min: HRO
+decrease-key(LRF, 0): successful
+extract-min: LRF
+decrease-key(BLV, 0): successful
+extract-min: BLV
+decrease-key(HUF, 0): successful
+extract-min: HUF
+decrease-key(FTK, 0): successful
+extract-min: FTK
+decrease-key(ATL, 0): successful
+extract-min: ATL
+decrease-key(AKR, 0): successful
+extract-min: AKR
+decrease-key(DRI, 0): successful
+extract-min: DRI
+decrease-key(BTR, 0): successful
+extract-min: BTR
+decrease-key(SEM, 0): successful
+extract-min: SEM
+decrease-key(SBO, 0): successful
+[The following extract-min generates a quake to level 3]
+extract-min: SBO
+list-heap:
+  {lev: 0 nodeCt: 74}
+  {lev: 1 nodeCt: 51}
+  {lev: 2 nodeCt: 33}
+  (601339)
+  (601339)
+  [601339 ACK]
+  [614409 BGR]
+  (616444)
+  [616444 CAR]
+  [null]
+  {lev: 3 nodeCt: 19}
+  (82277)
+  (82277)
+  (82277)
+  [82277 OAK]
+  [null]
+  [null]
+  (89286)
+  (89286)
+  [89286 SUU]
+  [null]
+  [null]
+  (119181)
+  (119181)
+  (119181)
+  [119181 LAX]
+  [null]
+  [null]
+  (131170)
+  (131170)
+  [131170 NKX]
+  [null]
+  [null]
+  (150255)
+  (150255)
+  (150255)
+  [150255 INS]
+  [null]
+  [null]
+  (184458)
+  (184458)
+  [184458 HLN]
+  [null]
+  [null]
+  (219258)
+  (219258)
+  (219258)
+  [219258 FMN]
+  [null]
+  [null]
+  (265146)
+  (265146)
+  [265146 INK]
+  [null]
+  (268160)
+  [268160 HOB]
+  [null]
+  (234233)
+  (234233)
+  (234233)
+  [234233 ABQ]
+  [null]
+  [null]
+  (239164)
+  (239164)
+  [239164 HMN]
+  [null]
+  [null]
+  (256313)
+  (256313)
+  (256313)
+  [256313 DEN]
+  [null]
+  [null]
+  [null]
+  (261294)
+  (261294)
+  (261294)
+  [261294 FCS]
+  [262291 PUB]
+  (299266)
+  [299266 GCK]
+  [null]
+  (303174)
+  (303174)
+  [303174 DYS]
+  [null]
+  (306907)
+  [306907 COT]
+  [null]
+  (271220)
+  (271220)
+  (271220)
+  [271220 TCC]
+  [null]
+  (278251)
+  [278251 DHT]
+  [null]
+  (288485)
+  (288485)
+  [288485 MOT]
+  [null]
+  (292185)
+  [292185 LBB]
+  [null]
+  (309202)
+  (309202)
+  (309202)
+  [309202 LTS]
+  [null]
+  (311160)
+  [311160 ABI]
+  [null]
+  (313411)
+  (313411)
+  [313411 HON]
+  [null]
+  (316103)
+  [316103 SKF]
+  [320191 SPS]
+  (322208)
+  (322208)
+  (322208)
+  [322208 FSI]
+  [322577 MFE]
+  (323151)
+  [323151 GRK]
+  [323248 END]
+  (324268)
+  (324268)
+  [324268 ICT]
+  [324274 IAB]
+  (324468)
+  [324468 GFK]
+  [324577 HRL]
+  (326238)
+  (326238)
+  (326238)
+  [326238 OKC]
+  [327126 AUS]
+  (327317)
+  [327317 BRO]
+  [328209 ADM]
+  (328617)
+  (328617)
+  [328617 CRP]
+  [329151 HLR]
+  (330148)
+  [330148 ACT]
+  [331154 CNW]
+  (331235)
+  (331235)
+  (331235)
+  [331235 TIK]
+  [332163 FTW]
+  (332168)
+  [332168 DFW]
+  [333137 CFD]
+  (333192)
+  (333192)
+  [333192 GVT]
+  [335316 FRI]
+  (336837)
+  [336837 PSX]
+  [337136 CLL]
+  (342164)
+  (342164)
+  (342164)
+  [342164 DAL]
+  [342336 LNK]
+  (344100)
+  [344100 IAH]
+  [344201 MLC]
+  (344341)
+  (344341)
+  [344341 OFF]
+  [345137 CXO]
+  (347238)
+  [347238 MKO]
+  [348103 HOU]
+  (348297)
+  (348297)
+  (348297)
+  [348297 FOE]
+  [349115 EFD]
+  (355371)
+  [355371 FOD]
+  [356300 FLV]
+  (356309)
+  (356309)
+  [356309 MCI]
+  [358176 GGG]
+  (360226)
+  [360226 FSM]
+  [360252 FYV]
+  (360280)
+  (360280)
+  (360280)
+  [360280 GVW]
+  [null]
+  [null]
+  [null]
+  (377155)
+  (377155)
+  (377155)
+  [377155 ESF]
+  [null]
+  [null]
+  [null]
+  (418129)
+  (418129)
+  (418129)
+  [418129 BIX]
+  [null]
+  [null]
+  [null]
+  (457305)
+  (457305)
+  (457305)
+  [457305 CVG]
+  [null]
+  [null]
+  [null]
+  (493249)
+  (493249)
+  (493249)
+  [493249 INT]
+  [null]
+  [null]
+  [null]
+Structured list:
+  {lev: 0 nodeCt: 74}
+  {lev: 1 nodeCt: 51}
+  {lev: 2 nodeCt: 33}
+    Tree: 0
+      | | [601339 ACK]
+      | (601339)
+      | | [614409 BGR]
+      (601339)
+      | | [616444 CAR]
+      | (616444)
+      | | [null]
+  {lev: 3 nodeCt: 19}
+    Tree: 0
+      | | | [82277 OAK]
+      | | (82277)
+      | | | [null]
+      | (82277)
+      | | [null]
+      (82277)
+      | | | [89286 SUU]
+      | | (89286)
+      | | | [null]
+      | (89286)
+      | | [null]
+    Tree: 1
+      | | | [119181 LAX]
+      | | (119181)
+      | | | [null]
+      | (119181)
+      | | [null]
+      (119181)
+      | | | [131170 NKX]
+      | | (131170)
+      | | | [null]
+      | (131170)
+      | | [null]
+    Tree: 2
+      | | | [150255 INS]
+      | | (150255)
+      | | | [null]
+      | (150255)
+      | | [null]
+      (150255)
+      | | | [184458 HLN]
+      | | (184458)
+      | | | [null]
+      | (184458)
+      | | [null]
+    Tree: 3
+      | | | [219258 FMN]
+      | | (219258)
+      | | | [null]
+      | (219258)
+      | | [null]
+      (219258)
+      | | | [265146 INK]
+      | | (265146)
+      | | | [null]
+      | (265146)
+      | | | [268160 HOB]
+      | | (268160)
+      | | | [null]
+    Tree: 4
+      | | | [234233 ABQ]
+      | | (234233)
+      | | | [null]
+      | (234233)
+      | | [null]
+      (234233)
+      | | | [239164 HMN]
+      | | (239164)
+      | | | [null]
+      | (239164)
+      | | [null]
+    Tree: 5
+      | | | [256313 DEN]
+      | | (256313)
+      | | | [null]
+      | (256313)
+      | | [null]
+      (256313)
+      | [null]
+    Tree: 6
+      | | | [261294 FCS]
+      | | (261294)
+      | | | [262291 PUB]
+      | (261294)
+      | | | [299266 GCK]
+      | | (299266)
+      | | | [null]
+      (261294)
+      | | | [303174 DYS]
+      | | (303174)
+      | | | [null]
+      | (303174)
+      | | | [306907 COT]
+      | | (306907)
+      | | | [null]
+    Tree: 7
+      | | | [271220 TCC]
+      | | (271220)
+      | | | [null]
+      | (271220)
+      | | | [278251 DHT]
+      | | (278251)
+      | | | [null]
+      (271220)
+      | | | [288485 MOT]
+      | | (288485)
+      | | | [null]
+      | (288485)
+      | | | [292185 LBB]
+      | | (292185)
+      | | | [null]
+    Tree: 8
+      | | | [309202 LTS]
+      | | (309202)
+      | | | [null]
+      | (309202)
+      | | | [311160 ABI]
+      | | (311160)
+      | | | [null]
+      (309202)
+      | | | [313411 HON]
+      | | (313411)
+      | | | [null]
+      | (313411)
+      | | | [316103 SKF]
+      | | (316103)
+      | | | [320191 SPS]
+    Tree: 9
+      | | | [322208 FSI]
+      | | (322208)
+      | | | [322577 MFE]
+      | (322208)
+      | | | [323151 GRK]
+      | | (323151)
+      | | | [323248 END]
+      (322208)
+      | | | [324268 ICT]
+      | | (324268)
+      | | | [324274 IAB]
+      | (324268)
+      | | | [324468 GFK]
+      | | (324468)
+      | | | [324577 HRL]
+    Tree: 10
+      | | | [326238 OKC]
+      | | (326238)
+      | | | [327126 AUS]
+      | (326238)
+      | | | [327317 BRO]
+      | | (327317)
+      | | | [328209 ADM]
+      (326238)
+      | | | [328617 CRP]
+      | | (328617)
+      | | | [329151 HLR]
+      | (328617)
+      | | | [330148 ACT]
+      | | (330148)
+      | | | [331154 CNW]
+    Tree: 11
+      | | | [331235 TIK]
+      | | (331235)
+      | | | [332163 FTW]
+      | (331235)
+      | | | [332168 DFW]
+      | | (332168)
+      | | | [333137 CFD]
+      (331235)
+      | | | [333192 GVT]
+      | | (333192)
+      | | | [335316 FRI]
+      | (333192)
+      | | | [336837 PSX]
+      | | (336837)
+      | | | [337136 CLL]
+    Tree: 12
+      | | | [342164 DAL]
+      | | (342164)
+      | | | [342336 LNK]
+      | (342164)
+      | | | [344100 IAH]
+      | | (344100)
+      | | | [344201 MLC]
+      (342164)
+      | | | [344341 OFF]
+      | | (344341)
+      | | | [345137 CXO]
+      | (344341)
+      | | | [347238 MKO]
+      | | (347238)
+      | | | [348103 HOU]
+    Tree: 13
+      | | | [348297 FOE]
+      | | (348297)
+      | | | [349115 EFD]
+      | (348297)
+      | | | [355371 FOD]
+      | | (355371)
+      | | | [356300 FLV]
+      (348297)
+      | | | [356309 MCI]
+      | | (356309)
+      | | | [358176 GGG]
+      | (356309)
+      | | | [360226 FSM]
+      | | (360226)
+      | | | [360252 FYV]
+    Tree: 14
+      | | | [360280 GVW]
+      | | (360280)
+      | | | [null]
+      | (360280)
+      | | [null]
+      (360280)
+      | [null]
+    Tree: 15
+      | | | [377155 ESF]
+      | | (377155)
+      | | | [null]
+      | (377155)
+      | | [null]
+      (377155)
+      | [null]
+    Tree: 16
+      | | | [418129 BIX]
+      | | (418129)
+      | | | [null]
+      | (418129)
+      | | [null]
+      (418129)
+      | [null]
+    Tree: 17
+      | | | [457305 CVG]
+      | | (457305)
+      | | | [null]
+      | (457305)
+      | | [null]
+      (457305)
+      | [null]
+    Tree: 18
+      | | | [493249 INT]
+      | | (493249)
+      | | | [null]
+      | (493249)
+      | | [null]
+      (493249)
+      | [null]
+size: 74
+decrease-key(ESF, 0): successful
+extract-min: ESF
+decrease-key(CVG, 0): successful
+extract-min: CVG
+decrease-key(BIX, 0): successful
+extract-min: BIX
+decrease-key(NKX, 0): successful
+extract-min: NKX
+decrease-key(HLN, 0): successful
+extract-min: HLN
+decrease-key(ABQ, 0): successful
+extract-min: ABQ
+decrease-key(DEN, 0): successful
+extract-min: DEN
+decrease-key(PUB, 0): successful
+extract-min: PUB
+decrease-key(HOB, 0): successful
+extract-min: HOB
+decrease-key(DHT, 0): successful
+extract-min: DHT
+decrease-key(LBB, 0): successful
+extract-min: LBB
+decrease-key(DYS, 0): successful
+extract-min: DYS
+decrease-key(LTS, 0): successful
+extract-min: LTS
+decrease-key(HON, 0): successful
+extract-min: HON
+decrease-key(SPS, 0): successful
+extract-min: SPS
+decrease-key(MFE, 0): successful
+extract-min: MFE
+decrease-key(END, 0): successful
+extract-min: END
+decrease-key(IAB, 0): successful
+extract-min: IAB
+decrease-key(HRL, 0): successful
+extract-min: HRL
+decrease-key(INS, 0): successful
+extract-min: INS
+decrease-key(FMN, 0): successful
+extract-min: FMN
+decrease-key(FCS, 0): successful
+extract-min: FCS
+decrease-key(TCC, 0): successful
+extract-min: TCC
+decrease-key(GCK, 0): successful
+extract-min: GCK
+decrease-key(ABI, 0): successful
+extract-min: ABI
+decrease-key(FSI, 0): successful
+extract-min: FSI
+decrease-key(ICT, 0): successful
+extract-min: ICT
+decrease-key(HMN, 0): successful
+[The following extract-min generates a quake to level 7]
+extract-min: HMN
+list-heap:
+  {lev: 0 nodeCt: 46}
+  {lev: 1 nodeCt: 29}
+  (324468)
+  [324468 GFK]
+  [null]
+  {lev: 2 nodeCt: 18}
+  (601339)
+  (601339)
+  [601339 ACK]
+  [614409 BGR]
+  (616444)
+  [616444 CAR]
+  [null]
+  {lev: 3 nodeCt: 11}
+  {lev: 4 nodeCt: 7}
+  {lev: 5 nodeCt: 4}
+  (306907)
+  (306907)
+  (306907)
+  (306907)
+  (306907)
+  [306907 COT]
+  [null]
+  [null]
+  [null]
+  [null]
+  (326238)
+  (326238)
+  (326238)
+  (326238)
+  [326238 OKC]
+  [327126 AUS]
+  (327317)
+  [327317 BRO]
+  [328209 ADM]
+  (328617)
+  (328617)
+  [328617 CRP]
+  [329151 HLR]
+  (330148)
+  [330148 ACT]
+  [331154 CNW]
+  (331235)
+  (331235)
+  (331235)
+  [331235 TIK]
+  [332163 FTW]
+  (332168)
+  [332168 DFW]
+  [333137 CFD]
+  (333192)
+  (333192)
+  [333192 GVT]
+  [335316 FRI]
+  (336837)
+  [336837 PSX]
+  [337136 CLL]
+  {lev: 6 nodeCt: 2}
+  (265146)
+  (265146)
+  (265146)
+  (265146)
+  (265146)
+  (265146)
+  [265146 INK]
+  [null]
+  [null]
+  [null]
+  [null]
+  (288485)
+  (288485)
+  (288485)
+  (288485)
+  [288485 MOT]
+  [null]
+  [null]
+  (316103)
+  (316103)
+  [316103 SKF]
+  [null]
+  (323151)
+  [323151 GRK]
+  [null]
+  (493249)
+  (493249)
+  (493249)
+  [493249 INT]
+  [null]
+  [null]
+  [null]
+  (342164)
+  (342164)
+  (342164)
+  (342164)
+  (342164)
+  [342164 DAL]
+  [342336 LNK]
+  (344100)
+  [344100 IAH]
+  [344201 MLC]
+  (344341)
+  (344341)
+  [344341 OFF]
+  [345137 CXO]
+  (347238)
+  [347238 MKO]
+  [348103 HOU]
+  (348297)
+  (348297)
+  (348297)
+  [348297 FOE]
+  [349115 EFD]
+  (355371)
+  [355371 FOD]
+  [356300 FLV]
+  (356309)
+  (356309)
+  [356309 MCI]
+  [358176 GGG]
+  (360226)
+  [360226 FSM]
+  [360252 FYV]
+  (360280)
+  (360280)
+  (360280)
+  (360280)
+  [360280 GVW]
+  [null]
+  [null]
+  [null]
+  [null]
+  {lev: 7 nodeCt: 1}
+  (82277)
+  (82277)
+  (82277)
+  (82277)
+  (82277)
+  (82277)
+  (82277)
+  [82277 OAK]
+  [null]
+  [null]
+  (89286)
+  (89286)
+  [89286 SUU]
+  [null]
+  [null]
+  (119181)
+  (119181)
+  (119181)
+  [119181 LAX]
+  [null]
+  [null]
+  [null]
+  [null]
+  [null]
+  [null]
+Structured list:
+  {lev: 0 nodeCt: 46}
+  {lev: 1 nodeCt: 29}
+    Tree: 0
+      | [324468 GFK]
+      (324468)
+      | [null]
+  {lev: 2 nodeCt: 18}
+    Tree: 0
+      | | [601339 ACK]
+      | (601339)
+      | | [614409 BGR]
+      (601339)
+      | | [616444 CAR]
+      | (616444)
+      | | [null]
+  {lev: 3 nodeCt: 11}
+  {lev: 4 nodeCt: 7}
+  {lev: 5 nodeCt: 4}
+    Tree: 0
+      | | | | | [306907 COT]
+      | | | | (306907)
+      | | | | | [null]
+      | | | (306907)
+      | | | | [null]
+      | | (306907)
+      | | | [null]
+      | (306907)
+      | | [null]
+      (306907)
+      | | | | | [326238 OKC]
+      | | | | (326238)
+      | | | | | [327126 AUS]
+      | | | (326238)
+      | | | | | [327317 BRO]
+      | | | | (327317)
+      | | | | | [328209 ADM]
+      | | (326238)
+      | | | | | [328617 CRP]
+      | | | | (328617)
+      | | | | | [329151 HLR]
+      | | | (328617)
+      | | | | | [330148 ACT]
+      | | | | (330148)
+      | | | | | [331154 CNW]
+      | (326238)
+      | | | | | [331235 TIK]
+      | | | | (331235)
+      | | | | | [332163 FTW]
+      | | | (331235)
+      | | | | | [332168 DFW]
+      | | | | (332168)
+      | | | | | [333137 CFD]
+      | | (331235)
+      | | | | | [333192 GVT]
+      | | | | (333192)
+      | | | | | [335316 FRI]
+      | | | (333192)
+      | | | | | [336837 PSX]
+      | | | | (336837)
+      | | | | | [337136 CLL]
+  {lev: 6 nodeCt: 2}
+    Tree: 0
+      | | | | | | [265146 INK]
+      | | | | | (265146)
+      | | | | | | [null]
+      | | | | (265146)
+      | | | | | [null]
+      | | | (265146)
+      | | | | [null]
+      | | (265146)
+      | | | [null]
+      | (265146)
+      | | | | | | [288485 MOT]
+      | | | | | (288485)
+      | | | | | | [null]
+      | | | | (288485)
+      | | | | | [null]
+      | | | (288485)
+      | | | | | | [316103 SKF]
+      | | | | | (316103)
+      | | | | | | [null]
+      | | | | (316103)
+      | | | | | | [323151 GRK]
+      | | | | | (323151)
+      | | | | | | [null]
+      | | (288485)
+      | | | | | | [493249 INT]
+      | | | | | (493249)
+      | | | | | | [null]
+      | | | | (493249)
+      | | | | | [null]
+      | | | (493249)
+      | | | | [null]
+      (265146)
+      | | | | | | [342164 DAL]
+      | | | | | (342164)
+      | | | | | | [342336 LNK]
+      | | | | (342164)
+      | | | | | | [344100 IAH]
+      | | | | | (344100)
+      | | | | | | [344201 MLC]
+      | | | (342164)
+      | | | | | | [344341 OFF]
+      | | | | | (344341)
+      | | | | | | [345137 CXO]
+      | | | | (344341)
+      | | | | | | [347238 MKO]
+      | | | | | (347238)
+      | | | | | | [348103 HOU]
+      | | (342164)
+      | | | | | | [348297 FOE]
+      | | | | | (348297)
+      | | | | | | [349115 EFD]
+      | | | | (348297)
+      | | | | | | [355371 FOD]
+      | | | | | (355371)
+      | | | | | | [356300 FLV]
+      | | | (348297)
+      | | | | | | [356309 MCI]
+      | | | | | (356309)
+      | | | | | | [358176 GGG]
+      | | | | (356309)
+      | | | | | | [360226 FSM]
+      | | | | | (360226)
+      | | | | | | [360252 FYV]
+      | (342164)
+      | | | | | | [360280 GVW]
+      | | | | | (360280)
+      | | | | | | [null]
+      | | | | (360280)
+      | | | | | [null]
+      | | | (360280)
+      | | | | [null]
+      | | (360280)
+      | | | [null]
+  {lev: 7 nodeCt: 1}
+    Tree: 0
+      | | | | | | | [82277 OAK]
+      | | | | | | (82277)
+      | | | | | | | [null]
+      | | | | | (82277)
+      | | | | | | [null]
+      | | | | (82277)
+      | | | | | | | [89286 SUU]
+      | | | | | | (89286)
+      | | | | | | | [null]
+      | | | | | (89286)
+      | | | | | | [null]
+      | | | (82277)
+      | | | | | | | [119181 LAX]
+      | | | | | | (119181)
+      | | | | | | | [null]
+      | | | | | (119181)
+      | | | | | | [null]
+      | | | | (119181)
+      | | | | | [null]
+      | | (82277)
+      | | | [null]
+      | (82277)
+      | | [null]
+      (82277)
+      | [null]
+size: 46
+decrease-key(MOT, 0): successful
+extract-min: MOT
+decrease-key(SKF, 0): successful
+extract-min: SKF
+decrease-key(GFK, 0): successful
+extract-min: GFK
+decrease-key(INK, 0): successful
+extract-min: INK
+decrease-key(GRK, 0): successful
+extract-min: GRK
+decrease-key(COT, 0): successful
+[The following extract-min generates a quake to level 6]
+extract-min: COT
+list-heap:
+  {lev: 0 nodeCt: 40}
+  {lev: 1 nodeCt: 23}
+  {lev: 2 nodeCt: 14}
+  (601339)
+  (601339)
+  [601339 ACK]
+  [614409 BGR]
+  (616444)
+  [616444 CAR]
+  [null]
+  {lev: 3 nodeCt: 8}
+  (493249)
+  (493249)
+  (493249)
+  [493249 INT]
+  [null]
+  [null]
+  [null]
+  {lev: 4 nodeCt: 4}
+  (326238)
+  (326238)
+  (326238)
+  (326238)
+  [326238 OKC]
+  [327126 AUS]
+  (327317)
+  [327317 BRO]
+  [328209 ADM]
+  (328617)
+  (328617)
+  [328617 CRP]
+  [329151 HLR]
+  (330148)
+  [330148 ACT]
+  [331154 CNW]
+  (331235)
+  (331235)
+  (331235)
+  [331235 TIK]
+  [332163 FTW]
+  (332168)
+  [332168 DFW]
+  [333137 CFD]
+  (333192)
+  (333192)
+  [333192 GVT]
+  [335316 FRI]
+  (336837)
+  [336837 PSX]
+  [337136 CLL]
+  {lev: 5 nodeCt: 2}
+  (342164)
+  (342164)
+  (342164)
+  (342164)
+  (342164)
+  [342164 DAL]
+  [342336 LNK]
+  (344100)
+  [344100 IAH]
+  [344201 MLC]
+  (344341)
+  (344341)
+  [344341 OFF]
+  [345137 CXO]
+  (347238)
+  [347238 MKO]
+  [348103 HOU]
+  (348297)
+  (348297)
+  (348297)
+  [348297 FOE]
+  [349115 EFD]
+  (355371)
+  [355371 FOD]
+  [356300 FLV]
+  (356309)
+  (356309)
+  [356309 MCI]
+  [358176 GGG]
+  (360226)
+  [360226 FSM]
+  [360252 FYV]
+  (360280)
+  (360280)
+  (360280)
+  (360280)
+  [360280 GVW]
+  [null]
+  [null]
+  [null]
+  [null]
+  {lev: 6 nodeCt: 1}
+  (82277)
+  (82277)
+  (82277)
+  (82277)
+  (82277)
+  (82277)
+  [82277 OAK]
+  [null]
+  [null]
+  (89286)
+  (89286)
+  [89286 SUU]
+  [null]
+  [null]
+  (119181)
+  (119181)
+  (119181)
+  [119181 LAX]
+  [null]
+  [null]
+  [null]
+  [null]
+  [null]
+Structured list:
+  {lev: 0 nodeCt: 40}
+  {lev: 1 nodeCt: 23}
+  {lev: 2 nodeCt: 14}
+    Tree: 0
+      | | [601339 ACK]
+      | (601339)
+      | | [614409 BGR]
+      (601339)
+      | | [616444 CAR]
+      | (616444)
+      | | [null]
+  {lev: 3 nodeCt: 8}
+    Tree: 0
+      | | | [493249 INT]
+      | | (493249)
+      | | | [null]
+      | (493249)
+      | | [null]
+      (493249)
+      | [null]
+  {lev: 4 nodeCt: 4}
+    Tree: 0
+      | | | | [326238 OKC]
+      | | | (326238)
+      | | | | [327126 AUS]
+      | | (326238)
+      | | | | [327317 BRO]
+      | | | (327317)
+      | | | | [328209 ADM]
+      | (326238)
+      | | | | [328617 CRP]
+      | | | (328617)
+      | | | | [329151 HLR]
+      | | (328617)
+      | | | | [330148 ACT]
+      | | | (330148)
+      | | | | [331154 CNW]
+      (326238)
+      | | | | [331235 TIK]
+      | | | (331235)
+      | | | | [332163 FTW]
+      | | (331235)
+      | | | | [332168 DFW]
+      | | | (332168)
+      | | | | [333137 CFD]
+      | (331235)
+      | | | | [333192 GVT]
+      | | | (333192)
+      | | | | [335316 FRI]
+      | | (333192)
+      | | | | [336837 PSX]
+      | | | (336837)
+      | | | | [337136 CLL]
+  {lev: 5 nodeCt: 2}
+    Tree: 0
+      | | | | | [342164 DAL]
+      | | | | (342164)
+      | | | | | [342336 LNK]
+      | | | (342164)
+      | | | | | [344100 IAH]
+      | | | | (344100)
+      | | | | | [344201 MLC]
+      | | (342164)
+      | | | | | [344341 OFF]
+      | | | | (344341)
+      | | | | | [345137 CXO]
+      | | | (344341)
+      | | | | | [347238 MKO]
+      | | | | (347238)
+      | | | | | [348103 HOU]
+      | (342164)
+      | | | | | [348297 FOE]
+      | | | | (348297)
+      | | | | | [349115 EFD]
+      | | | (348297)
+      | | | | | [355371 FOD]
+      | | | | (355371)
+      | | | | | [356300 FLV]
+      | | (348297)
+      | | | | | [356309 MCI]
+      | | | | (356309)
+      | | | | | [358176 GGG]
+      | | | (356309)
+      | | | | | [360226 FSM]
+      | | | | (360226)
+      | | | | | [360252 FYV]
+      (342164)
+      | | | | | [360280 GVW]
+      | | | | (360280)
+      | | | | | [null]
+      | | | (360280)
+      | | | | [null]
+      | | (360280)
+      | | | [null]
+      | (360280)
+      | | [null]
+  {lev: 6 nodeCt: 1}
+    Tree: 0
+      | | | | | | [82277 OAK]
+      | | | | | (82277)
+      | | | | | | [null]
+      | | | | (82277)
+      | | | | | [null]
+      | | | (82277)
+      | | | | | | [89286 SUU]
+      | | | | | (89286)
+      | | | | | | [null]
+      | | | | (89286)
+      | | | | | [null]
+      | | (82277)
+      | | | | | | [119181 LAX]
+      | | | | | (119181)
+      | | | | | | [null]
+      | | | | (119181)
+      | | | | | [null]
+      | | | (119181)
+      | | | | [null]
+      | (82277)
+      | | [null]
+      (82277)
+      | [null]
+size: 40
+decrease-key(AUS, 0): successful
+extract-min: AUS
+decrease-key(ADM, 0): successful
+extract-min: ADM
+decrease-key(HLR, 0): successful
+extract-min: HLR
+decrease-key(CNW, 0): successful
+extract-min: CNW
+decrease-key(FTW, 0): successful
+extract-min: FTW
+decrease-key(CFD, 0): successful
+extract-min: CFD
+decrease-key(FRI, 0): successful
+extract-min: FRI
+decrease-key(CLL, 0): successful
+extract-min: CLL
+decrease-key(LNK, 0): successful
+extract-min: LNK
+decrease-key(MLC, 0): successful
+[The following extract-min generates a quake to level 0]
+extract-min: MLC
+list-heap:
+  {lev: 0 nodeCt: 30}
+  [82277 OAK]
+  [89286 SUU]
+  [119181 LAX]
+  [326238 OKC]
+  [327317 BRO]
+  [328617 CRP]
+  [330148 ACT]
+  [331235 TIK]
+  [332168 DFW]
+  [333192 GVT]
+  [336837 PSX]
+  [342164 DAL]
+  [344100 IAH]
+  [344341 OFF]
+  [345137 CXO]
+  [347238 MKO]
+  [348103 HOU]
+  [348297 FOE]
+  [349115 EFD]
+  [355371 FOD]
+  [356300 FLV]
+  [356309 MCI]
+  [358176 GGG]
+  [360226 FSM]
+  [360252 FYV]
+  [360280 GVW]
+  [493249 INT]
+  [601339 ACK]
+  [614409 BGR]
+  [616444 CAR]
+Structured list:
+  {lev: 0 nodeCt: 30}
+    Tree: 0
+      [82277 OAK]
+    Tree: 1
+      [89286 SUU]
+    Tree: 2
+      [119181 LAX]
+    Tree: 3
+      [326238 OKC]
+    Tree: 4
+      [327317 BRO]
+    Tree: 5
+      [328617 CRP]
+    Tree: 6
+      [330148 ACT]
+    Tree: 7
+      [331235 TIK]
+    Tree: 8
+      [332168 DFW]
+    Tree: 9
+      [333192 GVT]
+    Tree: 10
+      [336837 PSX]
+    Tree: 11
+      [342164 DAL]
+    Tree: 12
+      [344100 IAH]
+    Tree: 13
+      [344341 OFF]
+    Tree: 14
+      [345137 CXO]
+    Tree: 15
+      [347238 MKO]
+    Tree: 16
+      [348103 HOU]
+    Tree: 17
+      [348297 FOE]
+    Tree: 18
+      [349115 EFD]
+    Tree: 19
+      [355371 FOD]
+    Tree: 20
+      [356300 FLV]
+    Tree: 21
+      [356309 MCI]
+    Tree: 22
+      [358176 GGG]
+    Tree: 23
+      [360226 FSM]
+    Tree: 24
+      [360252 FYV]
+    Tree: 25
+      [360280 GVW]
+    Tree: 26
+      [493249 INT]
+    Tree: 27
+      [601339 ACK]
+    Tree: 28
+      [614409 BGR]
+    Tree: 29
+      [616444 CAR]
+size: 30
+decrease-key(CXO, 0): successful
+extract-min: CXO
+decrease-key(HOU, 0): successful
+extract-min: HOU
+decrease-key(EFD, 0): successful
+extract-min: EFD
+decrease-key(FLV, 0): successful
+extract-min: FLV
+decrease-key(GGG, 0): successful
+extract-min: GGG
+decrease-key(FYV, 0): successful
+extract-min: FYV
+decrease-key(BRO, 0): successful
+extract-min: BRO
+decrease-key(ACT, 0): successful
+extract-min: ACT
+decrease-key(DFW, 0): successful
+extract-min: DFW
+decrease-key(PSX, 0): successful
+extract-min: PSX
+decrease-key(IAH, 0): successful
+extract-min: IAH
+decrease-key(MKO, 0): successful
+extract-min: MKO
+decrease-key(FOD, 0): successful
+extract-min: FOD
+decrease-key(FSM, 0): successful
+[The following extract-min generates a quake to level 1]
+extract-min: FSM
+list-heap:
+  {lev: 0 nodeCt: 16}
+  {lev: 1 nodeCt: 9}
+  (82277)
+  [82277 OAK]
+  [89286 SUU]
+  (119181)
+  [119181 LAX]
+  [326238 OKC]
+  (328617)
+  [328617 CRP]
+  [616444 CAR]
+  (331235)
+  [331235 TIK]
+  [333192 GVT]
+  (342164)
+  [342164 DAL]
+  [344341 OFF]
+  (348297)
+  [348297 FOE]
+  [null]
+  (356309)
+  [356309 MCI]
+  [null]
+  (360280)
+  [360280 GVW]
+  [493249 INT]
+  (601339)
+  [601339 ACK]
+  [614409 BGR]
+Structured list:
+  {lev: 0 nodeCt: 16}
+  {lev: 1 nodeCt: 9}
+    Tree: 0
+      | [82277 OAK]
+      (82277)
+      | [89286 SUU]
+    Tree: 1
+      | [119181 LAX]
+      (119181)
+      | [326238 OKC]
+    Tree: 2
+      | [328617 CRP]
+      (328617)
+      | [616444 CAR]
+    Tree: 3
+      | [331235 TIK]
+      (331235)
+      | [333192 GVT]
+    Tree: 4
+      | [342164 DAL]
+      (342164)
+      | [344341 OFF]
+    Tree: 5
+      | [348297 FOE]
+      (348297)
+      | [null]
+    Tree: 6
+      | [356309 MCI]
+      (356309)
+      | [null]
+    Tree: 7
+      | [360280 GVW]
+      (360280)
+      | [493249 INT]
+    Tree: 8
+      | [601339 ACK]
+      (601339)
+      | [614409 BGR]
+size: 16
+decrease-key(CRP, 0): successful
+extract-min: CRP
+decrease-key(GVT, 0): successful
+extract-min: GVT
+decrease-key(OFF, 0): successful
+extract-min: OFF
+decrease-key(MCI, 0): successful
+extract-min: MCI
+decrease-key(TIK, 0): successful
+extract-min: TIK
+decrease-key(GVW, 0): successful
+extract-min: GVW
+decrease-key(CAR, 0): successful
+extract-min: CAR
+decrease-key(INT, 0): successful
+extract-min: INT
+decrease-key(DAL, 0): successful
+[The following extract-min generates a quake to level 2]
+extract-min: DAL
+list-heap:
+  {lev: 0 nodeCt: 7}
+  {lev: 1 nodeCt: 4}
+  (601339)
+  [601339 ACK]
+  [614409 BGR]
+  {lev: 2 nodeCt: 2}
+  (82277)
+  (82277)
+  [82277 OAK]
+  [89286 SUU]
+  (119181)
+  [119181 LAX]
+  [326238 OKC]
+  (348297)
+  (348297)
+  [348297 FOE]
+  [null]
+  [null]
+Structured list:
+  {lev: 0 nodeCt: 7}
+  {lev: 1 nodeCt: 4}
+    Tree: 0
+      | [601339 ACK]
+      (601339)
+      | [614409 BGR]
+  {lev: 2 nodeCt: 2}
+    Tree: 0
+      | | [82277 OAK]
+      | (82277)
+      | | [89286 SUU]
+      (82277)
+      | | [119181 LAX]
+      | (119181)
+      | | [326238 OKC]
+    Tree: 1
+      | | [348297 FOE]
+      | (348297)
+      | | [null]
+      (348297)
+      | [null]
+size: 7
+extract-min: OAK
+extract-min: SUU
+extract-min: LAX
+extract-min: OKC
+extract-min: FOE
+extract-min: ACK
+extract-min: BGR
+[The heap is now empty]
+list-heap:
+Structured list:
+size: 0
+extract-min: Failure due to exception: "Empty heap"

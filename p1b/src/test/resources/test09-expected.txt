@@ -1,0 +1,851 @@
+[This test involves 64 entries and lots of extract-mins]
+set-n-levels(8): 
+set-quake-ratio(0.65): successful
+insert(426127, PNS): successful
+insert(508233, POB): successful
+insert(369149, POE): successful
+insert(617448, PQI): successful
+insert(180208, PRC): successful
+insert(135192, PSP): successful
+insert(336837, PSX): successful
+insert(262291, PUB): successful
+insert(588344, PVD): successful
+insert(599395, PWM): successful
+insert(124191, RAL): successful
+insert(374217, RBM): successful
+insert(267402, RCA): successful
+insert(332476, RDR): successful
+insert(521231, RDU): successful
+insert(527278, RIC): successful
+insert(86282, RIU): successful
+insert(123188, RIV): successful
+insert(548383, RME): successful
+insert(315112, RND): successful
+insert(108317, RNO): successful
+insert(527398, ROC): successful
+insert(256182, ROW): successful
+insert(486417, RSW): successful
+insert(85285, SAC): successful
+insert(235221, SAF): successful
+insert(132172, SAN): successful
+insert(313116, SAT): successful
+insert(487162, SAV): successful
+insert(477172, SBO): successful
+insert(547282, SBY): successful
+insert(88269, SCK): successful
+insert(76471, SEA): successful
+insert(438169, SEM): successful
+insert(125467, SFF): successful
+insert(77276, SFO): successful
+insert(592339, SFZ): successful
+insert(371162, SHV): successful
+insert(85262, SJC): successful
+insert(302140, SJT): successful
+insert(125466, SKA): successful
+insert(316103, SKF): successful
+insert(477346, SKY): successful
+insert(186333, SLC): successful
+insert(90280, SMF): successful
+insert(132196, SNA): successful
+insert(73429, SPB): successful
+insert(479677, SPG): successful
+insert(320191, SPS): successful
+insert(500195, SSC): successful
+insert(398297, STL): successful
+insert(89286, SUU): successful
+insert(337370, SUX): successful
+insert(485178, SVN): successful
+insert(553353, SWF): successful
+insert(533387, SYR): successful
+insert(370283, SZL): successful
+insert(378264, TBN): successful
+insert(271220, TCC): successful
+insert(75459, TCM): successful
+insert(223183, TCS): successful
+insert(553333, TEB): successful
+insert(331235, TIK): successful
+insert(458126, TLH): successful
+get-min-key: 73429
+decrease-key(TCM, 0): successful
+extract-min: TCM
+decrease-key(SFO, 0): successful
+extract-min: SFO
+decrease-key(SAC, 0): successful
+extract-min: SAC
+decrease-key(SCK, 0): successful
+extract-min: SCK
+decrease-key(SMF, 0): successful
+extract-min: SMF
+decrease-key(RIV, 0): successful
+extract-min: RIV
+decrease-key(SKA, 0): successful
+extract-min: SKA
+decrease-key(SAN, 0): successful
+extract-min: SAN
+decrease-key(SPB, 0): successful
+extract-min: SPB
+decrease-key(PSP, 0): successful
+extract-min: PSP
+decrease-key(SLC, 0): successful
+extract-min: SLC
+decrease-key(SAF, 0): successful
+extract-min: SAF
+decrease-key(PUB, 0): successful
+extract-min: PUB
+decrease-key(TCC, 0): successful
+extract-min: TCC
+decrease-key(SAT, 0): successful
+extract-min: SAT
+decrease-key(SKF, 0): successful
+extract-min: SKF
+decrease-key(TIK, 0): successful
+[The following extract-min generates a quake to level 0]
+extract-min: TIK
+list-heap:
+  {lev: 0 nodeCt: 47}
+  [76471 SEA]
+  [85262 SJC]
+  [86282 RIU]
+  [89286 SUU]
+  [108317 RNO]
+  [124191 RAL]
+  [125467 SFF]
+  [132196 SNA]
+  [180208 PRC]
+  [223183 TCS]
+  [256182 ROW]
+  [267402 RCA]
+  [302140 SJT]
+  [315112 RND]
+  [320191 SPS]
+  [332476 RDR]
+  [336837 PSX]
+  [337370 SUX]
+  [369149 POE]
+  [370283 SZL]
+  [371162 SHV]
+  [374217 RBM]
+  [378264 TBN]
+  [398297 STL]
+  [426127 PNS]
+  [438169 SEM]
+  [458126 TLH]
+  [477172 SBO]
+  [477346 SKY]
+  [479677 SPG]
+  [485178 SVN]
+  [486417 RSW]
+  [487162 SAV]
+  [500195 SSC]
+  [508233 POB]
+  [521231 RDU]
+  [527278 RIC]
+  [527398 ROC]
+  [533387 SYR]
+  [547282 SBY]
+  [548383 RME]
+  [553333 TEB]
+  [553353 SWF]
+  [588344 PVD]
+  [592339 SFZ]
+  [599395 PWM]
+  [617448 PQI]
+Structured list:
+  {lev: 0 nodeCt: 47}
+    Tree: 0
+      [76471 SEA]
+    Tree: 1
+      [85262 SJC]
+    Tree: 2
+      [86282 RIU]
+    Tree: 3
+      [89286 SUU]
+    Tree: 4
+      [108317 RNO]
+    Tree: 5
+      [124191 RAL]
+    Tree: 6
+      [125467 SFF]
+    Tree: 7
+      [132196 SNA]
+    Tree: 8
+      [180208 PRC]
+    Tree: 9
+      [223183 TCS]
+    Tree: 10
+      [256182 ROW]
+    Tree: 11
+      [267402 RCA]
+    Tree: 12
+      [302140 SJT]
+    Tree: 13
+      [315112 RND]
+    Tree: 14
+      [320191 SPS]
+    Tree: 15
+      [332476 RDR]
+    Tree: 16
+      [336837 PSX]
+    Tree: 17
+      [337370 SUX]
+    Tree: 18
+      [369149 POE]
+    Tree: 19
+      [370283 SZL]
+    Tree: 20
+      [371162 SHV]
+    Tree: 21
+      [374217 RBM]
+    Tree: 22
+      [378264 TBN]
+    Tree: 23
+      [398297 STL]
+    Tree: 24
+      [426127 PNS]
+    Tree: 25
+      [438169 SEM]
+    Tree: 26
+      [458126 TLH]
+    Tree: 27
+      [477172 SBO]
+    Tree: 28
+      [477346 SKY]
+    Tree: 29
+      [479677 SPG]
+    Tree: 30
+      [485178 SVN]
+    Tree: 31
+      [486417 RSW]
+    Tree: 32
+      [487162 SAV]
+    Tree: 33
+      [500195 SSC]
+    Tree: 34
+      [508233 POB]
+    Tree: 35
+      [521231 RDU]
+    Tree: 36
+      [527278 RIC]
+    Tree: 37
+      [527398 ROC]
+    Tree: 38
+      [533387 SYR]
+    Tree: 39
+      [547282 SBY]
+    Tree: 40
+      [548383 RME]
+    Tree: 41
+      [553333 TEB]
+    Tree: 42
+      [553353 SWF]
+    Tree: 43
+      [588344 PVD]
+    Tree: 44
+      [592339 SFZ]
+    Tree: 45
+      [599395 PWM]
+    Tree: 46
+      [617448 PQI]
+get-min-key: 76471
+decrease-key(PWM, 0): successful
+extract-min: PWM
+decrease-key(TEB, 0): successful
+extract-min: TEB
+decrease-key(PVD, 0): successful
+extract-min: PVD
+decrease-key(SSC, 0): successful
+extract-min: SSC
+decrease-key(RDU, 0): successful
+extract-min: RDU
+decrease-key(ROC, 0): successful
+extract-min: ROC
+decrease-key(SBY, 0): successful
+extract-min: SBY
+decrease-key(SJC, 0): successful
+extract-min: SJC
+decrease-key(SUU, 0): successful
+extract-min: SUU
+decrease-key(RAL, 0): successful
+extract-min: RAL
+decrease-key(SNA, 0): successful
+extract-min: SNA
+decrease-key(TCS, 0): successful
+[The following extract-min generates a quake to level 0]
+extract-min: TCS
+decrease-key(RCA, 0): successful
+extract-min: RCA
+decrease-key(RND, 0): successful
+extract-min: RND
+decrease-key(RDR, 0): successful
+extract-min: RDR
+decrease-key(SUX, 0): successful
+extract-min: SUX
+decrease-key(SZL, 0): successful
+extract-min: SZL
+decrease-key(RBM, 0): successful
+extract-min: RBM
+decrease-key(STL, 0): successful
+extract-min: STL
+decrease-key(SEM, 0): successful
+extract-min: SEM
+decrease-key(SBO, 0): successful
+[The following extract-min generates a quake to level 0]
+extract-min: SBO
+list-heap:
+  {lev: 0 nodeCt: 26}
+  [76471 SEA]
+  [86282 RIU]
+  [108317 RNO]
+  [125467 SFF]
+  [180208 PRC]
+  [256182 ROW]
+  [302140 SJT]
+  [320191 SPS]
+  [336837 PSX]
+  [369149 POE]
+  [371162 SHV]
+  [378264 TBN]
+  [426127 PNS]
+  [458126 TLH]
+  [477346 SKY]
+  [479677 SPG]
+  [485178 SVN]
+  [486417 RSW]
+  [487162 SAV]
+  [508233 POB]
+  [527278 RIC]
+  [533387 SYR]
+  [548383 RME]
+  [553353 SWF]
+  [592339 SFZ]
+  [617448 PQI]
+Structured list:
+  {lev: 0 nodeCt: 26}
+    Tree: 0
+      [76471 SEA]
+    Tree: 1
+      [86282 RIU]
+    Tree: 2
+      [108317 RNO]
+    Tree: 3
+      [125467 SFF]
+    Tree: 4
+      [180208 PRC]
+    Tree: 5
+      [256182 ROW]
+    Tree: 6
+      [302140 SJT]
+    Tree: 7
+      [320191 SPS]
+    Tree: 8
+      [336837 PSX]
+    Tree: 9
+      [369149 POE]
+    Tree: 10
+      [371162 SHV]
+    Tree: 11
+      [378264 TBN]
+    Tree: 12
+      [426127 PNS]
+    Tree: 13
+      [458126 TLH]
+    Tree: 14
+      [477346 SKY]
+    Tree: 15
+      [479677 SPG]
+    Tree: 16
+      [485178 SVN]
+    Tree: 17
+      [486417 RSW]
+    Tree: 18
+      [487162 SAV]
+    Tree: 19
+      [508233 POB]
+    Tree: 20
+      [527278 RIC]
+    Tree: 21
+      [533387 SYR]
+    Tree: 22
+      [548383 RME]
+    Tree: 23
+      [553353 SWF]
+    Tree: 24
+      [592339 SFZ]
+    Tree: 25
+      [617448 PQI]
+get-min-key: 76471
+decrease-key(RSW, 0): successful
+extract-min: RSW
+decrease-key(POB, 0): successful
+extract-min: POB
+decrease-key(SYR, 0): successful
+extract-min: SYR
+decrease-key(SWF, 0): successful
+extract-min: SWF
+decrease-key(RIU, 0): successful
+extract-min: RIU
+decrease-key(SFF, 0): successful
+extract-min: SFF
+decrease-key(ROW, 0): successful
+[The following extract-min generates a quake to level 0]
+extract-min: ROW
+get-min-key: 76471
+list-heap:
+  {lev: 0 nodeCt: 19}
+  [617448 PQI]
+  {lev: 1 nodeCt: 9}
+  (548383)
+  [548383 RME]
+  [592339 SFZ]
+  {lev: 2 nodeCt: 4}
+  {lev: 3 nodeCt: 2}
+  {lev: 4 nodeCt: 1}
+  (76471)
+  (76471)
+  (76471)
+  (76471)
+  [76471 SEA]
+  [108317 RNO]
+  (180208)
+  [180208 PRC]
+  [302140 SJT]
+  (320191)
+  (320191)
+  [320191 SPS]
+  [336837 PSX]
+  (369149)
+  [369149 POE]
+  [371162 SHV]
+  (378264)
+  (378264)
+  (378264)
+  [378264 TBN]
+  [426127 PNS]
+  (458126)
+  [458126 TLH]
+  [477346 SKY]
+  (479677)
+  (479677)
+  [479677 SPG]
+  [485178 SVN]
+  (487162)
+  [487162 SAV]
+  [527278 RIC]
+Structured list:
+  {lev: 0 nodeCt: 19}
+    Tree: 0
+      [617448 PQI]
+  {lev: 1 nodeCt: 9}
+    Tree: 0
+      | [548383 RME]
+      (548383)
+      | [592339 SFZ]
+  {lev: 2 nodeCt: 4}
+  {lev: 3 nodeCt: 2}
+  {lev: 4 nodeCt: 1}
+    Tree: 0
+      | | | | [76471 SEA]
+      | | | (76471)
+      | | | | [108317 RNO]
+      | | (76471)
+      | | | | [180208 PRC]
+      | | | (180208)
+      | | | | [302140 SJT]
+      | (76471)
+      | | | | [320191 SPS]
+      | | | (320191)
+      | | | | [336837 PSX]
+      | | (320191)
+      | | | | [369149 POE]
+      | | | (369149)
+      | | | | [371162 SHV]
+      (76471)
+      | | | | [378264 TBN]
+      | | | (378264)
+      | | | | [426127 PNS]
+      | | (378264)
+      | | | | [458126 TLH]
+      | | | (458126)
+      | | | | [477346 SKY]
+      | (378264)
+      | | | | [479677 SPG]
+      | | | (479677)
+      | | | | [485178 SVN]
+      | | (479677)
+      | | | | [487162 SAV]
+      | | | (487162)
+      | | | | [527278 RIC]
+decrease-key(SEA, 76470): successful
+decrease-key(RNO, 108316): successful
+decrease-key(PRC, 180207): successful
+decrease-key(SJT, 302139): successful
+decrease-key(SPS, 320190): successful
+decrease-key(PSX, 336836): successful
+decrease-key(POE, 369148): successful
+decrease-key(SHV, 371161): successful
+decrease-key(TBN, 378263): successful
+decrease-key(PNS, 426126): successful
+decrease-key(TLH, 458125): successful
+decrease-key(SKY, 477345): successful
+decrease-key(SPG, 479676): successful
+decrease-key(SVN, 485177): successful
+decrease-key(SAV, 487161): successful
+decrease-key(RIC, 527277): successful
+list-heap:
+  {lev: 0 nodeCt: 19}
+  [108316 RNO]
+  [302139 SJT]
+  [336836 PSX]
+  [371161 SHV]
+  [426126 PNS]
+  [477345 SKY]
+  [485177 SVN]
+  [527277 RIC]
+  [617448 PQI]
+  {lev: 1 nodeCt: 9}
+  (180207)
+  [180207 PRC]
+  [null]
+  (369148)
+  [369148 POE]
+  [null]
+  (458125)
+  [458125 TLH]
+  [null]
+  (487161)
+  [487161 SAV]
+  [null]
+  (548383)
+  [548383 RME]
+  [592339 SFZ]
+  {lev: 2 nodeCt: 4}
+  (320190)
+  (320190)
+  [320190 SPS]
+  [null]
+  [null]
+  (479676)
+  (479676)
+  [479676 SPG]
+  [null]
+  [null]
+  {lev: 3 nodeCt: 2}
+  (378263)
+  (378263)
+  (378263)
+  [378263 TBN]
+  [null]
+  [null]
+  [null]
+  {lev: 4 nodeCt: 1}
+  (76470)
+  (76470)
+  (76470)
+  (76470)
+  [76470 SEA]
+  [null]
+  [null]
+  [null]
+  [null]
+Structured list:
+  {lev: 0 nodeCt: 19}
+    Tree: 0
+      [108316 RNO]
+    Tree: 1
+      [302139 SJT]
+    Tree: 2
+      [336836 PSX]
+    Tree: 3
+      [371161 SHV]
+    Tree: 4
+      [426126 PNS]
+    Tree: 5
+      [477345 SKY]
+    Tree: 6
+      [485177 SVN]
+    Tree: 7
+      [527277 RIC]
+    Tree: 8
+      [617448 PQI]
+  {lev: 1 nodeCt: 9}
+    Tree: 0
+      | [180207 PRC]
+      (180207)
+      | [null]
+    Tree: 1
+      | [369148 POE]
+      (369148)
+      | [null]
+    Tree: 2
+      | [458125 TLH]
+      (458125)
+      | [null]
+    Tree: 3
+      | [487161 SAV]
+      (487161)
+      | [null]
+    Tree: 4
+      | [548383 RME]
+      (548383)
+      | [592339 SFZ]
+  {lev: 2 nodeCt: 4}
+    Tree: 0
+      | | [320190 SPS]
+      | (320190)
+      | | [null]
+      (320190)
+      | [null]
+    Tree: 1
+      | | [479676 SPG]
+      | (479676)
+      | | [null]
+      (479676)
+      | [null]
+  {lev: 3 nodeCt: 2}
+    Tree: 0
+      | | | [378263 TBN]
+      | | (378263)
+      | | | [null]
+      | (378263)
+      | | [null]
+      (378263)
+      | [null]
+  {lev: 4 nodeCt: 1}
+    Tree: 0
+      | | | | [76470 SEA]
+      | | | (76470)
+      | | | | [null]
+      | | (76470)
+      | | | [null]
+      | (76470)
+      | | [null]
+      (76470)
+      | [null]
+[The following extract-min generates a quake to level 0]
+extract-min: SEA
+list-heap:
+  {lev: 0 nodeCt: 18}
+  [108316 RNO]
+  [180207 PRC]
+  [302139 SJT]
+  [320190 SPS]
+  [336836 PSX]
+  [369148 POE]
+  [371161 SHV]
+  [378263 TBN]
+  [426126 PNS]
+  [458125 TLH]
+  [477345 SKY]
+  [479676 SPG]
+  [485177 SVN]
+  [487161 SAV]
+  [527277 RIC]
+  [548383 RME]
+  [592339 SFZ]
+  [617448 PQI]
+Structured list:
+  {lev: 0 nodeCt: 18}
+    Tree: 0
+      [108316 RNO]
+    Tree: 1
+      [180207 PRC]
+    Tree: 2
+      [302139 SJT]
+    Tree: 3
+      [320190 SPS]
+    Tree: 4
+      [336836 PSX]
+    Tree: 5
+      [369148 POE]
+    Tree: 6
+      [371161 SHV]
+    Tree: 7
+      [378263 TBN]
+    Tree: 8
+      [426126 PNS]
+    Tree: 9
+      [458125 TLH]
+    Tree: 10
+      [477345 SKY]
+    Tree: 11
+      [479676 SPG]
+    Tree: 12
+      [485177 SVN]
+    Tree: 13
+      [487161 SAV]
+    Tree: 14
+      [527277 RIC]
+    Tree: 15
+      [548383 RME]
+    Tree: 16
+      [592339 SFZ]
+    Tree: 17
+      [617448 PQI]
+get-min-key: 108316
+decrease-key(PRC, 0): successful
+extract-min: PRC
+decrease-key(SPS, 0): successful
+extract-min: SPS
+decrease-key(POE, 0): successful
+extract-min: POE
+decrease-key(TBN, 0): successful
+extract-min: TBN
+decrease-key(TLH, 0): successful
+extract-min: TLH
+get-min-key: 108316
+list-heap:
+  {lev: 0 nodeCt: 13}
+  [617448 PQI]
+  {lev: 1 nodeCt: 6}
+  {lev: 2 nodeCt: 3}
+  (487161)
+  (487161)
+  [487161 SAV]
+  [527277 RIC]
+  (548383)
+  [548383 RME]
+  [592339 SFZ]
+  {lev: 3 nodeCt: 1}
+  (108316)
+  (108316)
+  (108316)
+  [108316 RNO]
+  [302139 SJT]
+  (336836)
+  [336836 PSX]
+  [371161 SHV]
+  (426126)
+  (426126)
+  [426126 PNS]
+  [477345 SKY]
+  (479676)
+  [479676 SPG]
+  [485177 SVN]
+Structured list:
+  {lev: 0 nodeCt: 13}
+    Tree: 0
+      [617448 PQI]
+  {lev: 1 nodeCt: 6}
+  {lev: 2 nodeCt: 3}
+    Tree: 0
+      | | [487161 SAV]
+      | (487161)
+      | | [527277 RIC]
+      (487161)
+      | | [548383 RME]
+      | (548383)
+      | | [592339 SFZ]
+  {lev: 3 nodeCt: 1}
+    Tree: 0
+      | | | [108316 RNO]
+      | | (108316)
+      | | | [302139 SJT]
+      | (108316)
+      | | | [336836 PSX]
+      | | (336836)
+      | | | [371161 SHV]
+      (108316)
+      | | | [426126 PNS]
+      | | (426126)
+      | | | [477345 SKY]
+      | (426126)
+      | | | [479676 SPG]
+      | | (479676)
+      | | | [485177 SVN]
+insert(6127, PNX): successful
+insert(8233, POY): successful
+insert(9149, POZ): successful
+get-min-key: 6127
+list-heap:
+  {lev: 0 nodeCt: 16}
+  {lev: 1 nodeCt: 8}
+  {lev: 2 nodeCt: 4}
+  {lev: 3 nodeCt: 2}
+  {lev: 4 nodeCt: 1}
+  (6127)
+  (6127)
+  (6127)
+  (6127)
+  [6127 PNX]
+  [8233 POY]
+  (9149)
+  [9149 POZ]
+  [617448 PQI]
+  (487161)
+  (487161)
+  [487161 SAV]
+  [527277 RIC]
+  (548383)
+  [548383 RME]
+  [592339 SFZ]
+  (108316)
+  (108316)
+  (108316)
+  [108316 RNO]
+  [302139 SJT]
+  (336836)
+  [336836 PSX]
+  [371161 SHV]
+  (426126)
+  (426126)
+  [426126 PNS]
+  [477345 SKY]
+  (479676)
+  [479676 SPG]
+  [485177 SVN]
+Structured list:
+  {lev: 0 nodeCt: 16}
+  {lev: 1 nodeCt: 8}
+  {lev: 2 nodeCt: 4}
+  {lev: 3 nodeCt: 2}
+  {lev: 4 nodeCt: 1}
+    Tree: 0
+      | | | | [6127 PNX]
+      | | | (6127)
+      | | | | [8233 POY]
+      | | (6127)
+      | | | | [9149 POZ]
+      | | | (9149)
+      | | | | [617448 PQI]
+      | (6127)
+      | | | | [487161 SAV]
+      | | | (487161)
+      | | | | [527277 RIC]
+      | | (487161)
+      | | | | [548383 RME]
+      | | | (548383)
+      | | | | [592339 SFZ]
+      (6127)
+      | | | | [108316 RNO]
+      | | | (108316)
+      | | | | [302139 SJT]
+      | | (108316)
+      | | | | [336836 PSX]
+      | | | (336836)
+      | | | | [371161 SHV]
+      | (108316)
+      | | | | [426126 PNS]
+      | | | (426126)
+      | | | | [477345 SKY]
+      | | (426126)
+      | | | | [479676 SPG]
+      | | | (479676)
+      | | | | [485177 SVN]
+extract-min: PNX
+extract-min: POY
+extract-min: POZ
+extract-min: RNO
+extract-min: SJT
+extract-min: PSX
+extract-min: SHV
+extract-min: PNS
+extract-min: SKY
+extract-min: SPG
+extract-min: SVN
+extract-min: SAV
+extract-min: RIC
+extract-min: RME
+extract-min: SFZ
+extract-min: PQI
+list-heap:
+Structured list:

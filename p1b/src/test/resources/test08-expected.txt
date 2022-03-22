@@ -1,0 +1,4635 @@
+[This test involves 128 entries and multiple decrease-keys and extract-mins and some error checking]
+set-n-levels(8): 
+[The following should generate an error]
+set-quake-ratio(0.45): Failure due to exception: "Quake ratio is outside valid bounds"
+insert(479359, MTC): successful
+insert(542333, MUI): successful
+insert(147379, MUO): successful
+insert(111477, MWH): successful
+insert(316161, MWL): successful
+insert(434168, MXF): successful
+insert(519184, MYR): successful
+insert(493167, NBC): successful
+insert(394106, NBG): successful
+insert(532218, NCA): successful
+insert(554335, NEL): successful
+insert(122299, NFL): successful
+insert(542250, NGU): successful
+insert(537290, NHK): successful
+insert(129237, NID): successful
+insert(486135, NIP): successful
+insert(144167, NJK): successful
+insert(542206, NKT): successful
+insert(131170, NKX): successful
+insert(105256, NLC): successful
+insert(413168, NMM): successful
+insert(67488, NOW): successful
+insert(429127, NPA): successful
+insert(410231, NQA): successful
+insert(327637, NQI): successful
+insert(488147, NQX): successful
+insert(428125, NSE): successful
+insert(112201, NTD): successful
+insert(126189, NTK): successful
+insert(533255, NTU): successful
+insert(81275, NUQ): successful
+insert(82483, NUW): successful
+insert(140210, NXP): successful
+insert(552322, NXX): successful
+insert(531287, NYG): successful
+insert(484128, NZC): successful
+insert(126165, NZY): successful
+insert(82277, OAK): successful
+insert(344341, OFF): successful
+insert(551409, OGS): successful
+insert(326238, OKC): successful
+insert(193144, OLS): successful
+insert(349354, OMA): successful
+insert(126203, ONT): successful
+insert(497337, OPF): successful
+insert(426341, ORD): successful
+insert(537252, ORF): successful
+insert(488827, ORL): successful
+insert(81461, PAE): successful
+insert(446129, PAM): successful
+insert(389209, PBF): successful
+insert(564418, PBG): successful
+insert(493567, PBI): successful
+insert(78428, PDX): successful
+insert(537259, PHF): successful
+insert(548306, PHL): successful
+insert(482361, PHN): successful
+insert(178192, PHX): successful
+insert(473777, PIE): successful
+insert(501334, PIT): successful
+insert(115213, PMD): successful
+insert(324240, PNC): successful
+insert(548320, PNE): successful
+insert(367423, PNM): successful
+insert(426127, PNS): successful
+insert(508233, POB): successful
+insert(369149, POE): successful
+insert(617448, PQI): successful
+insert(180208, PRC): successful
+insert(135192, PSP): successful
+insert(336837, PSX): successful
+insert(262291, PUB): successful
+insert(588344, PVD): successful
+insert(599395, PWM): successful
+insert(124191, RAL): successful
+insert(374217, RBM): successful
+insert(267402, RCA): successful
+insert(332476, RDR): successful
+insert(521231, RDU): successful
+insert(527278, RIC): successful
+insert(86282, RIU): successful
+insert(123188, RIV): successful
+insert(548383, RME): successful
+insert(315112, RND): successful
+insert(108317, RNO): successful
+insert(527398, ROC): successful
+insert(256182, ROW): successful
+insert(486417, RSW): successful
+insert(85285, SAC): successful
+insert(235221, SAF): successful
+insert(132172, SAN): successful
+insert(313116, SAT): successful
+insert(487162, SAV): successful
+insert(477172, SBO): successful
+insert(547282, SBY): successful
+insert(88269, SCK): successful
+insert(76471, SEA): successful
+insert(438169, SEM): successful
+insert(125467, SFF): successful
+insert(77276, SFO): successful
+insert(592339, SFZ): successful
+insert(371162, SHV): successful
+insert(85262, SJC): successful
+insert(302140, SJT): successful
+insert(125466, SKA): successful
+insert(316103, SKF): successful
+insert(477346, SKY): successful
+insert(186333, SLC): successful
+insert(90280, SMF): successful
+insert(132196, SNA): successful
+insert(73429, SPB): successful
+insert(479677, SPG): successful
+insert(320191, SPS): successful
+insert(500195, SSC): successful
+insert(398297, STL): successful
+insert(89286, SUU): successful
+insert(337370, SUX): successful
+insert(485178, SVN): successful
+insert(553353, SWF): successful
+insert(533387, SYR): successful
+insert(370283, SZL): successful
+insert(378264, TBN): successful
+insert(271220, TCC): successful
+insert(75459, TCM): successful
+insert(223183, TCS): successful
+insert(553333, TEB): successful
+insert(331235, TIK): successful
+insert(458126, TLH): successful
+get-min-key: 67488
+list-heap:
+  {lev: 0 nodeCt: 128}
+  {lev: 1 nodeCt: 64}
+  {lev: 2 nodeCt: 32}
+  {lev: 3 nodeCt: 16}
+  {lev: 4 nodeCt: 8}
+  {lev: 5 nodeCt: 4}
+  {lev: 6 nodeCt: 2}
+  {lev: 7 nodeCt: 1}
+  (67488)
+  (67488)
+  (67488)
+  (67488)
+  (67488)
+  (67488)
+  (67488)
+  [67488 NOW]
+  [73429 SPB]
+  (75459)
+  [75459 TCM]
+  [76471 SEA]
+  (77276)
+  (77276)
+  [77276 SFO]
+  [78428 PDX]
+  (81275)
+  [81275 NUQ]
+  [81461 PAE]
+  (82277)
+  (82277)
+  (82277)
+  [82277 OAK]
+  [82483 NUW]
+  (85262)
+  [85262 SJC]
+  [85285 SAC]
+  (86282)
+  (86282)
+  [86282 RIU]
+  [88269 SCK]
+  (89286)
+  [89286 SUU]
+  [90280 SMF]
+  (105256)
+  (105256)
+  (105256)
+  (105256)
+  [105256 NLC]
+  [108317 RNO]
+  (111477)
+  [111477 MWH]
+  [112201 NTD]
+  (115213)
+  (115213)
+  [115213 PMD]
+  [122299 NFL]
+  (123188)
+  [123188 RIV]
+  [124191 RAL]
+  (125466)
+  (125466)
+  (125466)
+  [125466 SKA]
+  [125467 SFF]
+  (126165)
+  [126165 NZY]
+  [126189 NTK]
+  (126203)
+  (126203)
+  [126203 ONT]
+  [129237 NID]
+  (131170)
+  [131170 NKX]
+  [132172 SAN]
+  (132196)
+  (132196)
+  (132196)
+  (132196)
+  (132196)
+  [132196 SNA]
+  [135192 PSP]
+  (140210)
+  [140210 NXP]
+  [144167 NJK]
+  (147379)
+  (147379)
+  [147379 MUO]
+  [178192 PHX]
+  (180208)
+  [180208 PRC]
+  [186333 SLC]
+  (193144)
+  (193144)
+  (193144)
+  [193144 OLS]
+  [223183 TCS]
+  (235221)
+  [235221 SAF]
+  [256182 ROW]
+  (262291)
+  (262291)
+  [262291 PUB]
+  [267402 RCA]
+  (271220)
+  [271220 TCC]
+  [302140 SJT]
+  (313116)
+  (313116)
+  (313116)
+  (313116)
+  [313116 SAT]
+  [315112 RND]
+  (316103)
+  [316103 SKF]
+  [316161 MWL]
+  (320191)
+  (320191)
+  [320191 SPS]
+  [324240 PNC]
+  (326238)
+  [326238 OKC]
+  [327637 NQI]
+  (331235)
+  (331235)
+  (331235)
+  [331235 TIK]
+  [332476 RDR]
+  (336837)
+  [336837 PSX]
+  [337370 SUX]
+  (344341)
+  (344341)
+  [344341 OFF]
+  [349354 OMA]
+  (367423)
+  [367423 PNM]
+  [369149 POE]
+  (370283)
+  (370283)
+  (370283)
+  (370283)
+  (370283)
+  (370283)
+  [370283 SZL]
+  [371162 SHV]
+  (374217)
+  [374217 RBM]
+  [378264 TBN]
+  (389209)
+  (389209)
+  [389209 PBF]
+  [394106 NBG]
+  (398297)
+  [398297 STL]
+  [410231 NQA]
+  (413168)
+  (413168)
+  (413168)
+  [413168 NMM]
+  [426127 PNS]
+  (426341)
+  [426341 ORD]
+  [428125 NSE]
+  (429127)
+  (429127)
+  [429127 NPA]
+  [434168 MXF]
+  (438169)
+  [438169 SEM]
+  [446129 PAM]
+  (458126)
+  (458126)
+  (458126)
+  (458126)
+  [458126 TLH]
+  [473777 PIE]
+  (477172)
+  [477172 SBO]
+  [477346 SKY]
+  (479359)
+  (479359)
+  [479359 MTC]
+  [479677 SPG]
+  (482361)
+  [482361 PHN]
+  [484128 NZC]
+  (485178)
+  (485178)
+  (485178)
+  [485178 SVN]
+  [486135 NIP]
+  (486417)
+  [486417 RSW]
+  [487162 SAV]
+  (488147)
+  (488147)
+  [488147 NQX]
+  [488827 ORL]
+  (493167)
+  [493167 NBC]
+  [493567 PBI]
+  (497337)
+  (497337)
+  (497337)
+  (497337)
+  (497337)
+  [497337 OPF]
+  [500195 SSC]
+  (501334)
+  [501334 PIT]
+  [508233 POB]
+  (519184)
+  (519184)
+  [519184 MYR]
+  [521231 RDU]
+  (527278)
+  [527278 RIC]
+  [527398 ROC]
+  (531287)
+  (531287)
+  (531287)
+  [531287 NYG]
+  [532218 NCA]
+  (533255)
+  [533255 NTU]
+  [533387 SYR]
+  (537252)
+  (537252)
+  [537252 ORF]
+  [537259 PHF]
+  (537290)
+  [537290 NHK]
+  [542206 NKT]
+  (542250)
+  (542250)
+  (542250)
+  (542250)
+  [542250 NGU]
+  [542333 MUI]
+  (547282)
+  [547282 SBY]
+  [548306 PHL]
+  (548320)
+  (548320)
+  [548320 PNE]
+  [548383 RME]
+  (551409)
+  [551409 OGS]
+  [552322 NXX]
+  (553333)
+  (553333)
+  (553333)
+  [553333 TEB]
+  [553353 SWF]
+  (554335)
+  [554335 NEL]
+  [564418 PBG]
+  (588344)
+  (588344)
+  [588344 PVD]
+  [592339 SFZ]
+  (599395)
+  [599395 PWM]
+  [617448 PQI]
+Structured list:
+  {lev: 0 nodeCt: 128}
+  {lev: 1 nodeCt: 64}
+  {lev: 2 nodeCt: 32}
+  {lev: 3 nodeCt: 16}
+  {lev: 4 nodeCt: 8}
+  {lev: 5 nodeCt: 4}
+  {lev: 6 nodeCt: 2}
+  {lev: 7 nodeCt: 1}
+    Tree: 0
+      | | | | | | | [67488 NOW]
+      | | | | | | (67488)
+      | | | | | | | [73429 SPB]
+      | | | | | (67488)
+      | | | | | | | [75459 TCM]
+      | | | | | | (75459)
+      | | | | | | | [76471 SEA]
+      | | | | (67488)
+      | | | | | | | [77276 SFO]
+      | | | | | | (77276)
+      | | | | | | | [78428 PDX]
+      | | | | | (77276)
+      | | | | | | | [81275 NUQ]
+      | | | | | | (81275)
+      | | | | | | | [81461 PAE]
+      | | | (67488)
+      | | | | | | | [82277 OAK]
+      | | | | | | (82277)
+      | | | | | | | [82483 NUW]
+      | | | | | (82277)
+      | | | | | | | [85262 SJC]
+      | | | | | | (85262)
+      | | | | | | | [85285 SAC]
+      | | | | (82277)
+      | | | | | | | [86282 RIU]
+      | | | | | | (86282)
+      | | | | | | | [88269 SCK]
+      | | | | | (86282)
+      | | | | | | | [89286 SUU]
+      | | | | | | (89286)
+      | | | | | | | [90280 SMF]
+      | | (67488)
+      | | | | | | | [105256 NLC]
+      | | | | | | (105256)
+      | | | | | | | [108317 RNO]
+      | | | | | (105256)
+      | | | | | | | [111477 MWH]
+      | | | | | | (111477)
+      | | | | | | | [112201 NTD]
+      | | | | (105256)
+      | | | | | | | [115213 PMD]
+      | | | | | | (115213)
+      | | | | | | | [122299 NFL]
+      | | | | | (115213)
+      | | | | | | | [123188 RIV]
+      | | | | | | (123188)
+      | | | | | | | [124191 RAL]
+      | | | (105256)
+      | | | | | | | [125466 SKA]
+      | | | | | | (125466)
+      | | | | | | | [125467 SFF]
+      | | | | | (125466)
+      | | | | | | | [126165 NZY]
+      | | | | | | (126165)
+      | | | | | | | [126189 NTK]
+      | | | | (125466)
+      | | | | | | | [126203 ONT]
+      | | | | | | (126203)
+      | | | | | | | [129237 NID]
+      | | | | | (126203)
+      | | | | | | | [131170 NKX]
+      | | | | | | (131170)
+      | | | | | | | [132172 SAN]
+      | (67488)
+      | | | | | | | [132196 SNA]
+      | | | | | | (132196)
+      | | | | | | | [135192 PSP]
+      | | | | | (132196)
+      | | | | | | | [140210 NXP]
+      | | | | | | (140210)
+      | | | | | | | [144167 NJK]
+      | | | | (132196)
+      | | | | | | | [147379 MUO]
+      | | | | | | (147379)
+      | | | | | | | [178192 PHX]
+      | | | | | (147379)
+      | | | | | | | [180208 PRC]
+      | | | | | | (180208)
+      | | | | | | | [186333 SLC]
+      | | | (132196)
+      | | | | | | | [193144 OLS]
+      | | | | | | (193144)
+      | | | | | | | [223183 TCS]
+      | | | | | (193144)
+      | | | | | | | [235221 SAF]
+      | | | | | | (235221)
+      | | | | | | | [256182 ROW]
+      | | | | (193144)
+      | | | | | | | [262291 PUB]
+      | | | | | | (262291)
+      | | | | | | | [267402 RCA]
+      | | | | | (262291)
+      | | | | | | | [271220 TCC]
+      | | | | | | (271220)
+      | | | | | | | [302140 SJT]
+      | | (132196)
+      | | | | | | | [313116 SAT]
+      | | | | | | (313116)
+      | | | | | | | [315112 RND]
+      | | | | | (313116)
+      | | | | | | | [316103 SKF]
+      | | | | | | (316103)
+      | | | | | | | [316161 MWL]
+      | | | | (313116)
+      | | | | | | | [320191 SPS]
+      | | | | | | (320191)
+      | | | | | | | [324240 PNC]
+      | | | | | (320191)
+      | | | | | | | [326238 OKC]
+      | | | | | | (326238)
+      | | | | | | | [327637 NQI]
+      | | | (313116)
+      | | | | | | | [331235 TIK]
+      | | | | | | (331235)
+      | | | | | | | [332476 RDR]
+      | | | | | (331235)
+      | | | | | | | [336837 PSX]
+      | | | | | | (336837)
+      | | | | | | | [337370 SUX]
+      | | | | (331235)
+      | | | | | | | [344341 OFF]
+      | | | | | | (344341)
+      | | | | | | | [349354 OMA]
+      | | | | | (344341)
+      | | | | | | | [367423 PNM]
+      | | | | | | (367423)
+      | | | | | | | [369149 POE]
+      (67488)
+      | | | | | | | [370283 SZL]
+      | | | | | | (370283)
+      | | | | | | | [371162 SHV]
+      | | | | | (370283)
+      | | | | | | | [374217 RBM]
+      | | | | | | (374217)
+      | | | | | | | [378264 TBN]
+      | | | | (370283)
+      | | | | | | | [389209 PBF]
+      | | | | | | (389209)
+      | | | | | | | [394106 NBG]
+      | | | | | (389209)
+      | | | | | | | [398297 STL]
+      | | | | | | (398297)
+      | | | | | | | [410231 NQA]
+      | | | (370283)
+      | | | | | | | [413168 NMM]
+      | | | | | | (413168)
+      | | | | | | | [426127 PNS]
+      | | | | | (413168)
+      | | | | | | | [426341 ORD]
+      | | | | | | (426341)
+      | | | | | | | [428125 NSE]
+      | | | | (413168)
+      | | | | | | | [429127 NPA]
+      | | | | | | (429127)
+      | | | | | | | [434168 MXF]
+      | | | | | (429127)
+      | | | | | | | [438169 SEM]
+      | | | | | | (438169)
+      | | | | | | | [446129 PAM]
+      | | (370283)
+      | | | | | | | [458126 TLH]
+      | | | | | | (458126)
+      | | | | | | | [473777 PIE]
+      | | | | | (458126)
+      | | | | | | | [477172 SBO]
+      | | | | | | (477172)
+      | | | | | | | [477346 SKY]
+      | | | | (458126)
+      | | | | | | | [479359 MTC]
+      | | | | | | (479359)
+      | | | | | | | [479677 SPG]
+      | | | | | (479359)
+      | | | | | | | [482361 PHN]
+      | | | | | | (482361)
+      | | | | | | | [484128 NZC]
+      | | | (458126)
+      | | | | | | | [485178 SVN]
+      | | | | | | (485178)
+      | | | | | | | [486135 NIP]
+      | | | | | (485178)
+      | | | | | | | [486417 RSW]
+      | | | | | | (486417)
+      | | | | | | | [487162 SAV]
+      | | | | (485178)
+      | | | | | | | [488147 NQX]
+      | | | | | | (488147)
+      | | | | | | | [488827 ORL]
+      | | | | | (488147)
+      | | | | | | | [493167 NBC]
+      | | | | | | (493167)
+      | | | | | | | [493567 PBI]
+      | (370283)
+      | | | | | | | [497337 OPF]
+      | | | | | | (497337)
+      | | | | | | | [500195 SSC]
+      | | | | | (497337)
+      | | | | | | | [501334 PIT]
+      | | | | | | (501334)
+      | | | | | | | [508233 POB]
+      | | | | (497337)
+      | | | | | | | [519184 MYR]
+      | | | | | | (519184)
+      | | | | | | | [521231 RDU]
+      | | | | | (519184)
+      | | | | | | | [527278 RIC]
+      | | | | | | (527278)
+      | | | | | | | [527398 ROC]
+      | | | (497337)
+      | | | | | | | [531287 NYG]
+      | | | | | | (531287)
+      | | | | | | | [532218 NCA]
+      | | | | | (531287)
+      | | | | | | | [533255 NTU]
+      | | | | | | (533255)
+      | | | | | | | [533387 SYR]
+      | | | | (531287)
+      | | | | | | | [537252 ORF]
+      | | | | | | (537252)
+      | | | | | | | [537259 PHF]
+      | | | | | (537252)
+      | | | | | | | [537290 NHK]
+      | | | | | | (537290)
+      | | | | | | | [542206 NKT]
+      | | (497337)
+      | | | | | | | [542250 NGU]
+      | | | | | | (542250)
+      | | | | | | | [542333 MUI]
+      | | | | | (542250)
+      | | | | | | | [547282 SBY]
+      | | | | | | (547282)
+      | | | | | | | [548306 PHL]
+      | | | | (542250)
+      | | | | | | | [548320 PNE]
+      | | | | | | (548320)
+      | | | | | | | [548383 RME]
+      | | | | | (548320)
+      | | | | | | | [551409 OGS]
+      | | | | | | (551409)
+      | | | | | | | [552322 NXX]
+      | | | (542250)
+      | | | | | | | [553333 TEB]
+      | | | | | | (553333)
+      | | | | | | | [553353 SWF]
+      | | | | | (553333)
+      | | | | | | | [554335 NEL]
+      | | | | | | (554335)
+      | | | | | | | [564418 PBG]
+      | | | | (553333)
+      | | | | | | | [588344 PVD]
+      | | | | | | (588344)
+      | | | | | | | [592339 SFZ]
+      | | | | | (588344)
+      | | | | | | | [599395 PWM]
+      | | | | | | (599395)
+      | | | | | | | [617448 PQI]
+[Let's see what happens when we try to increase a key]
+decrease-key(MTC, 479360): Failure due to exception: "Invalid key for decrease-key"
+decrease-key(MTC, 479359): successful
+decrease-key(MUI, 542333): successful
+decrease-key(MUO, 147379): successful
+decrease-key(MWH, 111477): successful
+decrease-key(MWL, 316161): successful
+decrease-key(MXF, 434168): successful
+decrease-key(MYR, 519184): successful
+decrease-key(NBC, 493167): successful
+decrease-key(NBG, 394106): successful
+decrease-key(NCA, 532218): successful
+decrease-key(NEL, 554335): successful
+decrease-key(NFL, 122299): successful
+decrease-key(NGU, 542250): successful
+decrease-key(NHK, 537290): successful
+decrease-key(NID, 129237): successful
+decrease-key(NIP, 486135): successful
+decrease-key(NJK, 144167): successful
+decrease-key(NKT, 542206): successful
+decrease-key(NKX, 131170): successful
+decrease-key(NLC, 105256): successful
+decrease-key(NMM, 413168): successful
+decrease-key(NOW, 67488): successful
+decrease-key(NPA, 429127): successful
+decrease-key(NQA, 410231): successful
+decrease-key(NQI, 327637): successful
+decrease-key(NQX, 488147): successful
+decrease-key(NSE, 428125): successful
+decrease-key(NTD, 112201): successful
+decrease-key(NTK, 126189): successful
+decrease-key(NTU, 533255): successful
+decrease-key(NUQ, 81275): successful
+decrease-key(NUW, 82483): successful
+decrease-key(NXP, 140210): successful
+decrease-key(NXX, 552322): successful
+decrease-key(NYG, 531287): successful
+decrease-key(NZC, 484128): successful
+decrease-key(NZY, 126165): successful
+decrease-key(OAK, 82277): successful
+decrease-key(OFF, 344341): successful
+decrease-key(OGS, 551409): successful
+decrease-key(OKC, 326238): successful
+decrease-key(OLS, 193144): successful
+decrease-key(OMA, 349354): successful
+decrease-key(ONT, 126203): successful
+decrease-key(OPF, 497337): successful
+decrease-key(ORD, 426341): successful
+decrease-key(ORF, 537252): successful
+decrease-key(ORL, 488827): successful
+decrease-key(PAE, 81461): successful
+decrease-key(PAM, 446129): successful
+decrease-key(PBF, 389209): successful
+decrease-key(PBG, 564418): successful
+decrease-key(PBI, 493567): successful
+decrease-key(PDX, 78428): successful
+decrease-key(PHF, 537259): successful
+decrease-key(PHL, 548306): successful
+decrease-key(PHN, 482361): successful
+decrease-key(PHX, 178192): successful
+decrease-key(PIE, 473777): successful
+decrease-key(PIT, 501334): successful
+decrease-key(PMD, 115213): successful
+decrease-key(PNC, 324240): successful
+decrease-key(PNE, 548320): successful
+decrease-key(PNM, 367423): successful
+decrease-key(PNS, 426127): successful
+decrease-key(POB, 508233): successful
+decrease-key(POE, 369149): successful
+decrease-key(PQI, 617448): successful
+decrease-key(PRC, 180208): successful
+decrease-key(PSP, 135192): successful
+decrease-key(PSX, 336837): successful
+decrease-key(PUB, 262291): successful
+decrease-key(PVD, 588344): successful
+decrease-key(PWM, 599395): successful
+decrease-key(RAL, 124191): successful
+decrease-key(RBM, 374217): successful
+decrease-key(RCA, 267402): successful
+decrease-key(RDR, 332476): successful
+decrease-key(RDU, 521231): successful
+decrease-key(RIC, 527278): successful
+decrease-key(RIU, 86282): successful
+decrease-key(RIV, 123188): successful
+decrease-key(RME, 548383): successful
+decrease-key(RND, 315112): successful
+decrease-key(RNO, 108317): successful
+decrease-key(ROC, 527398): successful
+decrease-key(ROW, 256182): successful
+decrease-key(RSW, 486417): successful
+decrease-key(SAC, 85285): successful
+decrease-key(SAF, 235221): successful
+decrease-key(SAN, 132172): successful
+decrease-key(SAT, 313116): successful
+decrease-key(SAV, 487162): successful
+decrease-key(SBO, 477172): successful
+decrease-key(SBY, 547282): successful
+decrease-key(SCK, 88269): successful
+decrease-key(SEA, 76471): successful
+decrease-key(SEM, 438169): successful
+decrease-key(SFF, 125467): successful
+decrease-key(SFO, 77276): successful
+decrease-key(SFZ, 592339): successful
+decrease-key(SHV, 371162): successful
+decrease-key(SJC, 85262): successful
+decrease-key(SJT, 302140): successful
+decrease-key(SKA, 125466): successful
+decrease-key(SKF, 316103): successful
+decrease-key(SKY, 477346): successful
+decrease-key(SLC, 186333): successful
+decrease-key(SMF, 90280): successful
+decrease-key(SNA, 132196): successful
+decrease-key(SPB, 73429): successful
+decrease-key(SPG, 479677): successful
+decrease-key(SPS, 320191): successful
+decrease-key(SSC, 500195): successful
+decrease-key(STL, 398297): successful
+decrease-key(SUU, 89286): successful
+decrease-key(SUX, 337370): successful
+decrease-key(SVN, 485178): successful
+decrease-key(SWF, 553353): successful
+decrease-key(SYR, 533387): successful
+decrease-key(SZL, 370283): successful
+decrease-key(TBN, 378264): successful
+decrease-key(TCC, 271220): successful
+decrease-key(TCM, 75459): successful
+decrease-key(TCS, 223183): successful
+decrease-key(TEB, 553333): successful
+decrease-key(TIK, 331235): successful
+decrease-key(TLH, 458126): successful
+[The prior decrease-keys did not change the priorities, but according to the spec, the tree structure should be modified]
+list-heap:
+  {lev: 0 nodeCt: 128}
+  [73429 SPB]
+  [76471 SEA]
+  [78428 PDX]
+  [81461 PAE]
+  [82483 NUW]
+  [85285 SAC]
+  [88269 SCK]
+  [90280 SMF]
+  [108317 RNO]
+  [112201 NTD]
+  [122299 NFL]
+  [124191 RAL]
+  [125467 SFF]
+  [126189 NTK]
+  [129237 NID]
+  [132172 SAN]
+  [135192 PSP]
+  [144167 NJK]
+  [178192 PHX]
+  [186333 SLC]
+  [223183 TCS]
+  [256182 ROW]
+  [267402 RCA]
+  [302140 SJT]
+  [315112 RND]
+  [316161 MWL]
+  [324240 PNC]
+  [327637 NQI]
+  [332476 RDR]
+  [337370 SUX]
+  [349354 OMA]
+  [369149 POE]
+  [371162 SHV]
+  [378264 TBN]
+  [394106 NBG]
+  [410231 NQA]
+  [426127 PNS]
+  [428125 NSE]
+  [434168 MXF]
+  [446129 PAM]
+  [473777 PIE]
+  [477346 SKY]
+  [479677 SPG]
+  [484128 NZC]
+  [486135 NIP]
+  [487162 SAV]
+  [488827 ORL]
+  [493567 PBI]
+  [500195 SSC]
+  [508233 POB]
+  [521231 RDU]
+  [527398 ROC]
+  [532218 NCA]
+  [533387 SYR]
+  [537259 PHF]
+  [542206 NKT]
+  [542333 MUI]
+  [548306 PHL]
+  [548383 RME]
+  [552322 NXX]
+  [553353 SWF]
+  [564418 PBG]
+  [592339 SFZ]
+  [617448 PQI]
+  {lev: 1 nodeCt: 64}
+  (75459)
+  [75459 TCM]
+  [null]
+  (81275)
+  [81275 NUQ]
+  [null]
+  (85262)
+  [85262 SJC]
+  [null]
+  (89286)
+  [89286 SUU]
+  [null]
+  (111477)
+  [111477 MWH]
+  [null]
+  (123188)
+  [123188 RIV]
+  [null]
+  (126165)
+  [126165 NZY]
+  [null]
+  (131170)
+  [131170 NKX]
+  [null]
+  (140210)
+  [140210 NXP]
+  [null]
+  (180208)
+  [180208 PRC]
+  [null]
+  (235221)
+  [235221 SAF]
+  [null]
+  (271220)
+  [271220 TCC]
+  [null]
+  (316103)
+  [316103 SKF]
+  [null]
+  (326238)
+  [326238 OKC]
+  [null]
+  (336837)
+  [336837 PSX]
+  [null]
+  (367423)
+  [367423 PNM]
+  [null]
+  (374217)
+  [374217 RBM]
+  [null]
+  (398297)
+  [398297 STL]
+  [null]
+  (426341)
+  [426341 ORD]
+  [null]
+  (438169)
+  [438169 SEM]
+  [null]
+  (477172)
+  [477172 SBO]
+  [null]
+  (482361)
+  [482361 PHN]
+  [null]
+  (486417)
+  [486417 RSW]
+  [null]
+  (493167)
+  [493167 NBC]
+  [null]
+  (501334)
+  [501334 PIT]
+  [null]
+  (527278)
+  [527278 RIC]
+  [null]
+  (533255)
+  [533255 NTU]
+  [null]
+  (537290)
+  [537290 NHK]
+  [null]
+  (547282)
+  [547282 SBY]
+  [null]
+  (551409)
+  [551409 OGS]
+  [null]
+  (554335)
+  [554335 NEL]
+  [null]
+  (599395)
+  [599395 PWM]
+  [null]
+  {lev: 2 nodeCt: 32}
+  (77276)
+  (77276)
+  [77276 SFO]
+  [null]
+  [null]
+  (86282)
+  (86282)
+  [86282 RIU]
+  [null]
+  [null]
+  (115213)
+  (115213)
+  [115213 PMD]
+  [null]
+  [null]
+  (126203)
+  (126203)
+  [126203 ONT]
+  [null]
+  [null]
+  (147379)
+  (147379)
+  [147379 MUO]
+  [null]
+  [null]
+  (262291)
+  (262291)
+  [262291 PUB]
+  [null]
+  [null]
+  (320191)
+  (320191)
+  [320191 SPS]
+  [null]
+  [null]
+  (344341)
+  (344341)
+  [344341 OFF]
+  [null]
+  [null]
+  (389209)
+  (389209)
+  [389209 PBF]
+  [null]
+  [null]
+  (429127)
+  (429127)
+  [429127 NPA]
+  [null]
+  [null]
+  (479359)
+  (479359)
+  [479359 MTC]
+  [null]
+  [null]
+  (488147)
+  (488147)
+  [488147 NQX]
+  [null]
+  [null]
+  (519184)
+  (519184)
+  [519184 MYR]
+  [null]
+  [null]
+  (537252)
+  (537252)
+  [537252 ORF]
+  [null]
+  [null]
+  (548320)
+  (548320)
+  [548320 PNE]
+  [null]
+  [null]
+  (588344)
+  (588344)
+  [588344 PVD]
+  [null]
+  [null]
+  {lev: 3 nodeCt: 16}
+  (82277)
+  (82277)
+  (82277)
+  [82277 OAK]
+  [null]
+  [null]
+  [null]
+  (125466)
+  (125466)
+  (125466)
+  [125466 SKA]
+  [null]
+  [null]
+  [null]
+  (193144)
+  (193144)
+  (193144)
+  [193144 OLS]
+  [null]
+  [null]
+  [null]
+  (331235)
+  (331235)
+  (331235)
+  [331235 TIK]
+  [null]
+  [null]
+  [null]
+  (413168)
+  (413168)
+  (413168)
+  [413168 NMM]
+  [null]
+  [null]
+  [null]
+  (485178)
+  (485178)
+  (485178)
+  [485178 SVN]
+  [null]
+  [null]
+  [null]
+  (531287)
+  (531287)
+  (531287)
+  [531287 NYG]
+  [null]
+  [null]
+  [null]
+  (553333)
+  (553333)
+  (553333)
+  [553333 TEB]
+  [null]
+  [null]
+  [null]
+  {lev: 4 nodeCt: 8}
+  (105256)
+  (105256)
+  (105256)
+  (105256)
+  [105256 NLC]
+  [null]
+  [null]
+  [null]
+  [null]
+  (313116)
+  (313116)
+  (313116)
+  (313116)
+  [313116 SAT]
+  [null]
+  [null]
+  [null]
+  [null]
+  (458126)
+  (458126)
+  (458126)
+  (458126)
+  [458126 TLH]
+  [null]
+  [null]
+  [null]
+  [null]
+  (542250)
+  (542250)
+  (542250)
+  (542250)
+  [542250 NGU]
+  [null]
+  [null]
+  [null]
+  [null]
+  {lev: 5 nodeCt: 4}
+  (132196)
+  (132196)
+  (132196)
+  (132196)
+  (132196)
+  [132196 SNA]
+  [null]
+  [null]
+  [null]
+  [null]
+  [null]
+  (497337)
+  (497337)
+  (497337)
+  (497337)
+  (497337)
+  [497337 OPF]
+  [null]
+  [null]
+  [null]
+  [null]
+  [null]
+  {lev: 6 nodeCt: 2}
+  (370283)
+  (370283)
+  (370283)
+  (370283)
+  (370283)
+  (370283)
+  [370283 SZL]
+  [null]
+  [null]
+  [null]
+  [null]
+  [null]
+  [null]
+  {lev: 7 nodeCt: 1}
+  (67488)
+  (67488)
+  (67488)
+  (67488)
+  (67488)
+  (67488)
+  (67488)
+  [67488 NOW]
+  [null]
+  [null]
+  [null]
+  [null]
+  [null]
+  [null]
+  [null]
+Structured list:
+  {lev: 0 nodeCt: 128}
+    Tree: 0
+      [73429 SPB]
+    Tree: 1
+      [76471 SEA]
+    Tree: 2
+      [78428 PDX]
+    Tree: 3
+      [81461 PAE]
+    Tree: 4
+      [82483 NUW]
+    Tree: 5
+      [85285 SAC]
+    Tree: 6
+      [88269 SCK]
+    Tree: 7
+      [90280 SMF]
+    Tree: 8
+      [108317 RNO]
+    Tree: 9
+      [112201 NTD]
+    Tree: 10
+      [122299 NFL]
+    Tree: 11
+      [124191 RAL]
+    Tree: 12
+      [125467 SFF]
+    Tree: 13
+      [126189 NTK]
+    Tree: 14
+      [129237 NID]
+    Tree: 15
+      [132172 SAN]
+    Tree: 16
+      [135192 PSP]
+    Tree: 17
+      [144167 NJK]
+    Tree: 18
+      [178192 PHX]
+    Tree: 19
+      [186333 SLC]
+    Tree: 20
+      [223183 TCS]
+    Tree: 21
+      [256182 ROW]
+    Tree: 22
+      [267402 RCA]
+    Tree: 23
+      [302140 SJT]
+    Tree: 24
+      [315112 RND]
+    Tree: 25
+      [316161 MWL]
+    Tree: 26
+      [324240 PNC]
+    Tree: 27
+      [327637 NQI]
+    Tree: 28
+      [332476 RDR]
+    Tree: 29
+      [337370 SUX]
+    Tree: 30
+      [349354 OMA]
+    Tree: 31
+      [369149 POE]
+    Tree: 32
+      [371162 SHV]
+    Tree: 33
+      [378264 TBN]
+    Tree: 34
+      [394106 NBG]
+    Tree: 35
+      [410231 NQA]
+    Tree: 36
+      [426127 PNS]
+    Tree: 37
+      [428125 NSE]
+    Tree: 38
+      [434168 MXF]
+    Tree: 39
+      [446129 PAM]
+    Tree: 40
+      [473777 PIE]
+    Tree: 41
+      [477346 SKY]
+    Tree: 42
+      [479677 SPG]
+    Tree: 43
+      [484128 NZC]
+    Tree: 44
+      [486135 NIP]
+    Tree: 45
+      [487162 SAV]
+    Tree: 46
+      [488827 ORL]
+    Tree: 47
+      [493567 PBI]
+    Tree: 48
+      [500195 SSC]
+    Tree: 49
+      [508233 POB]
+    Tree: 50
+      [521231 RDU]
+    Tree: 51
+      [527398 ROC]
+    Tree: 52
+      [532218 NCA]
+    Tree: 53
+      [533387 SYR]
+    Tree: 54
+      [537259 PHF]
+    Tree: 55
+      [542206 NKT]
+    Tree: 56
+      [542333 MUI]
+    Tree: 57
+      [548306 PHL]
+    Tree: 58
+      [548383 RME]
+    Tree: 59
+      [552322 NXX]
+    Tree: 60
+      [553353 SWF]
+    Tree: 61
+      [564418 PBG]
+    Tree: 62
+      [592339 SFZ]
+    Tree: 63
+      [617448 PQI]
+  {lev: 1 nodeCt: 64}
+    Tree: 0
+      | [75459 TCM]
+      (75459)
+      | [null]
+    Tree: 1
+      | [81275 NUQ]
+      (81275)
+      | [null]
+    Tree: 2
+      | [85262 SJC]
+      (85262)
+      | [null]
+    Tree: 3
+      | [89286 SUU]
+      (89286)
+      | [null]
+    Tree: 4
+      | [111477 MWH]
+      (111477)
+      | [null]
+    Tree: 5
+      | [123188 RIV]
+      (123188)
+      | [null]
+    Tree: 6
+      | [126165 NZY]
+      (126165)
+      | [null]
+    Tree: 7
+      | [131170 NKX]
+      (131170)
+      | [null]
+    Tree: 8
+      | [140210 NXP]
+      (140210)
+      | [null]
+    Tree: 9
+      | [180208 PRC]
+      (180208)
+      | [null]
+    Tree: 10
+      | [235221 SAF]
+      (235221)
+      | [null]
+    Tree: 11
+      | [271220 TCC]
+      (271220)
+      | [null]
+    Tree: 12
+      | [316103 SKF]
+      (316103)
+      | [null]
+    Tree: 13
+      | [326238 OKC]
+      (326238)
+      | [null]
+    Tree: 14
+      | [336837 PSX]
+      (336837)
+      | [null]
+    Tree: 15
+      | [367423 PNM]
+      (367423)
+      | [null]
+    Tree: 16
+      | [374217 RBM]
+      (374217)
+      | [null]
+    Tree: 17
+      | [398297 STL]
+      (398297)
+      | [null]
+    Tree: 18
+      | [426341 ORD]
+      (426341)
+      | [null]
+    Tree: 19
+      | [438169 SEM]
+      (438169)
+      | [null]
+    Tree: 20
+      | [477172 SBO]
+      (477172)
+      | [null]
+    Tree: 21
+      | [482361 PHN]
+      (482361)
+      | [null]
+    Tree: 22
+      | [486417 RSW]
+      (486417)
+      | [null]
+    Tree: 23
+      | [493167 NBC]
+      (493167)
+      | [null]
+    Tree: 24
+      | [501334 PIT]
+      (501334)
+      | [null]
+    Tree: 25
+      | [527278 RIC]
+      (527278)
+      | [null]
+    Tree: 26
+      | [533255 NTU]
+      (533255)
+      | [null]
+    Tree: 27
+      | [537290 NHK]
+      (537290)
+      | [null]
+    Tree: 28
+      | [547282 SBY]
+      (547282)
+      | [null]
+    Tree: 29
+      | [551409 OGS]
+      (551409)
+      | [null]
+    Tree: 30
+      | [554335 NEL]
+      (554335)
+      | [null]
+    Tree: 31
+      | [599395 PWM]
+      (599395)
+      | [null]
+  {lev: 2 nodeCt: 32}
+    Tree: 0
+      | | [77276 SFO]
+      | (77276)
+      | | [null]
+      (77276)
+      | [null]
+    Tree: 1
+      | | [86282 RIU]
+      | (86282)
+      | | [null]
+      (86282)
+      | [null]
+    Tree: 2
+      | | [115213 PMD]
+      | (115213)
+      | | [null]
+      (115213)
+      | [null]
+    Tree: 3
+      | | [126203 ONT]
+      | (126203)
+      | | [null]
+      (126203)
+      | [null]
+    Tree: 4
+      | | [147379 MUO]
+      | (147379)
+      | | [null]
+      (147379)
+      | [null]
+    Tree: 5
+      | | [262291 PUB]
+      | (262291)
+      | | [null]
+      (262291)
+      | [null]
+    Tree: 6
+      | | [320191 SPS]
+      | (320191)
+      | | [null]
+      (320191)
+      | [null]
+    Tree: 7
+      | | [344341 OFF]
+      | (344341)
+      | | [null]
+      (344341)
+      | [null]
+    Tree: 8
+      | | [389209 PBF]
+      | (389209)
+      | | [null]
+      (389209)
+      | [null]
+    Tree: 9
+      | | [429127 NPA]
+      | (429127)
+      | | [null]
+      (429127)
+      | [null]
+    Tree: 10
+      | | [479359 MTC]
+      | (479359)
+      | | [null]
+      (479359)
+      | [null]
+    Tree: 11
+      | | [488147 NQX]
+      | (488147)
+      | | [null]
+      (488147)
+      | [null]
+    Tree: 12
+      | | [519184 MYR]
+      | (519184)
+      | | [null]
+      (519184)
+      | [null]
+    Tree: 13
+      | | [537252 ORF]
+      | (537252)
+      | | [null]
+      (537252)
+      | [null]
+    Tree: 14
+      | | [548320 PNE]
+      | (548320)
+      | | [null]
+      (548320)
+      | [null]
+    Tree: 15
+      | | [588344 PVD]
+      | (588344)
+      | | [null]
+      (588344)
+      | [null]
+  {lev: 3 nodeCt: 16}
+    Tree: 0
+      | | | [82277 OAK]
+      | | (82277)
+      | | | [null]
+      | (82277)
+      | | [null]
+      (82277)
+      | [null]
+    Tree: 1
+      | | | [125466 SKA]
+      | | (125466)
+      | | | [null]
+      | (125466)
+      | | [null]
+      (125466)
+      | [null]
+    Tree: 2
+      | | | [193144 OLS]
+      | | (193144)
+      | | | [null]
+      | (193144)
+      | | [null]
+      (193144)
+      | [null]
+    Tree: 3
+      | | | [331235 TIK]
+      | | (331235)
+      | | | [null]
+      | (331235)
+      | | [null]
+      (331235)
+      | [null]
+    Tree: 4
+      | | | [413168 NMM]
+      | | (413168)
+      | | | [null]
+      | (413168)
+      | | [null]
+      (413168)
+      | [null]
+    Tree: 5
+      | | | [485178 SVN]
+      | | (485178)
+      | | | [null]
+      | (485178)
+      | | [null]
+      (485178)
+      | [null]
+    Tree: 6
+      | | | [531287 NYG]
+      | | (531287)
+      | | | [null]
+      | (531287)
+      | | [null]
+      (531287)
+      | [null]
+    Tree: 7
+      | | | [553333 TEB]
+      | | (553333)
+      | | | [null]
+      | (553333)
+      | | [null]
+      (553333)
+      | [null]
+  {lev: 4 nodeCt: 8}
+    Tree: 0
+      | | | | [105256 NLC]
+      | | | (105256)
+      | | | | [null]
+      | | (105256)
+      | | | [null]
+      | (105256)
+      | | [null]
+      (105256)
+      | [null]
+    Tree: 1
+      | | | | [313116 SAT]
+      | | | (313116)
+      | | | | [null]
+      | | (313116)
+      | | | [null]
+      | (313116)
+      | | [null]
+      (313116)
+      | [null]
+    Tree: 2
+      | | | | [458126 TLH]
+      | | | (458126)
+      | | | | [null]
+      | | (458126)
+      | | | [null]
+      | (458126)
+      | | [null]
+      (458126)
+      | [null]
+    Tree: 3
+      | | | | [542250 NGU]
+      | | | (542250)
+      | | | | [null]
+      | | (542250)
+      | | | [null]
+      | (542250)
+      | | [null]
+      (542250)
+      | [null]
+  {lev: 5 nodeCt: 4}
+    Tree: 0
+      | | | | | [132196 SNA]
+      | | | | (132196)
+      | | | | | [null]
+      | | | (132196)
+      | | | | [null]
+      | | (132196)
+      | | | [null]
+      | (132196)
+      | | [null]
+      (132196)
+      | [null]
+    Tree: 1
+      | | | | | [497337 OPF]
+      | | | | (497337)
+      | | | | | [null]
+      | | | (497337)
+      | | | | [null]
+      | | (497337)
+      | | | [null]
+      | (497337)
+      | | [null]
+      (497337)
+      | [null]
+  {lev: 6 nodeCt: 2}
+    Tree: 0
+      | | | | | | [370283 SZL]
+      | | | | | (370283)
+      | | | | | | [null]
+      | | | | (370283)
+      | | | | | [null]
+      | | | (370283)
+      | | | | [null]
+      | | (370283)
+      | | | [null]
+      | (370283)
+      | | [null]
+      (370283)
+      | [null]
+  {lev: 7 nodeCt: 1}
+    Tree: 0
+      | | | | | | | [67488 NOW]
+      | | | | | | (67488)
+      | | | | | | | [null]
+      | | | | | (67488)
+      | | | | | | [null]
+      | | | | (67488)
+      | | | | | [null]
+      | | | (67488)
+      | | | | [null]
+      | | (67488)
+      | | | [null]
+      | (67488)
+      | | [null]
+      (67488)
+      | [null]
+extract-min: NOW
+extract-min: SPB
+extract-min: TCM
+extract-min: SEA
+extract-min: SFO
+extract-min: PDX
+extract-min: NUQ
+extract-min: PAE
+extract-min: OAK
+extract-min: NUW
+extract-min: SJC
+extract-min: SAC
+extract-min: RIU
+extract-min: SCK
+extract-min: SUU
+extract-min: SMF
+extract-min: NLC
+extract-min: RNO
+extract-min: MWH
+extract-min: NTD
+list-heap:
+  {lev: 0 nodeCt: 108}
+  {lev: 1 nodeCt: 81}
+  {lev: 2 nodeCt: 54}
+  (115213)
+  (115213)
+  [115213 PMD]
+  [null]
+  [null]
+  {lev: 3 nodeCt: 33}
+  (122299)
+  (122299)
+  (122299)
+  [122299 NFL]
+  [124191 RAL]
+  (123188)
+  [123188 RIV]
+  [null]
+  (125467)
+  (125467)
+  [125467 SFF]
+  [126189 NTK]
+  (126165)
+  [126165 NZY]
+  [null]
+  {lev: 4 nodeCt: 19}
+  {lev: 5 nodeCt: 11}
+  {lev: 6 nodeCt: 6}
+  {lev: 7 nodeCt: 3}
+  (125466)
+  (125466)
+  (125466)
+  (125466)
+  (125466)
+  (125466)
+  (125466)
+  [125466 SKA]
+  [null]
+  [null]
+  [null]
+  (126203)
+  (126203)
+  (126203)
+  [126203 ONT]
+  [null]
+  [null]
+  (129237)
+  (129237)
+  [129237 NID]
+  [132172 SAN]
+  (131170)
+  [131170 NKX]
+  [null]
+  (135192)
+  (135192)
+  (135192)
+  (135192)
+  [135192 PSP]
+  [144167 NJK]
+  (140210)
+  [140210 NXP]
+  [null]
+  (147379)
+  (147379)
+  [147379 MUO]
+  [null]
+  [null]
+  (178192)
+  (178192)
+  (178192)
+  [178192 PHX]
+  [186333 SLC]
+  (180208)
+  [180208 PRC]
+  [null]
+  (223183)
+  (223183)
+  [223183 TCS]
+  [256182 ROW]
+  (235221)
+  [235221 SAF]
+  [null]
+  (132196)
+  (132196)
+  (132196)
+  (132196)
+  (132196)
+  [132196 SNA]
+  [null]
+  [null]
+  [null]
+  [null]
+  [null]
+  (531287)
+  (531287)
+  (531287)
+  (531287)
+  (531287)
+  (531287)
+  [531287 NYG]
+  [null]
+  [null]
+  [null]
+  (537252)
+  (537252)
+  (537252)
+  [537252 ORF]
+  [null]
+  [null]
+  (537259)
+  (537259)
+  [537259 PHF]
+  [542206 NKT]
+  (537290)
+  [537290 NHK]
+  [null]
+  (542250)
+  (542250)
+  (542250)
+  (542250)
+  [542250 NGU]
+  [null]
+  [null]
+  [null]
+  [null]
+  (542333)
+  (542333)
+  (542333)
+  (542333)
+  (542333)
+  [542333 MUI]
+  [548306 PHL]
+  (547282)
+  [547282 SBY]
+  [null]
+  (548320)
+  (548320)
+  [548320 PNE]
+  [null]
+  [null]
+  (548383)
+  (548383)
+  (548383)
+  [548383 RME]
+  [552322 NXX]
+  (551409)
+  [551409 OGS]
+  [null]
+  (553353)
+  (553353)
+  [553353 SWF]
+  [564418 PBG]
+  (554335)
+  [554335 NEL]
+  [null]
+  (553333)
+  (553333)
+  (553333)
+  (553333)
+  [553333 TEB]
+  [null]
+  [null]
+  [null]
+  (588344)
+  (588344)
+  (588344)
+  [588344 PVD]
+  [null]
+  [null]
+  (592339)
+  (592339)
+  [592339 SFZ]
+  [617448 PQI]
+  (599395)
+  [599395 PWM]
+  [null]
+  (193144)
+  (193144)
+  (193144)
+  (193144)
+  (193144)
+  (193144)
+  (193144)
+  [193144 OLS]
+  [null]
+  [null]
+  [null]
+  (262291)
+  (262291)
+  (262291)
+  [262291 PUB]
+  [null]
+  [null]
+  (267402)
+  (267402)
+  [267402 RCA]
+  [302140 SJT]
+  (271220)
+  [271220 TCC]
+  [null]
+  (313116)
+  (313116)
+  (313116)
+  (313116)
+  [313116 SAT]
+  [null]
+  [null]
+  [null]
+  [null]
+  (315112)
+  (315112)
+  (315112)
+  (315112)
+  (315112)
+  [315112 RND]
+  [316161 MWL]
+  (316103)
+  [316103 SKF]
+  [null]
+  (320191)
+  (320191)
+  [320191 SPS]
+  [null]
+  [null]
+  (324240)
+  (324240)
+  (324240)
+  [324240 PNC]
+  [327637 NQI]
+  (326238)
+  [326238 OKC]
+  [null]
+  (332476)
+  (332476)
+  [332476 RDR]
+  [337370 SUX]
+  (336837)
+  [336837 PSX]
+  [null]
+  (331235)
+  (331235)
+  (331235)
+  (331235)
+  [331235 TIK]
+  [null]
+  [null]
+  [null]
+  (344341)
+  (344341)
+  (344341)
+  [344341 OFF]
+  [null]
+  [null]
+  (349354)
+  (349354)
+  [349354 OMA]
+  [369149 POE]
+  (367423)
+  [367423 PNM]
+  [null]
+  (370283)
+  (370283)
+  (370283)
+  (370283)
+  (370283)
+  (370283)
+  [370283 SZL]
+  [null]
+  [null]
+  [null]
+  [null]
+  [null]
+  [null]
+  (371162)
+  (371162)
+  (371162)
+  (371162)
+  (371162)
+  (371162)
+  (371162)
+  [371162 SHV]
+  [378264 TBN]
+  (374217)
+  [374217 RBM]
+  [null]
+  (389209)
+  (389209)
+  [389209 PBF]
+  [null]
+  [null]
+  (394106)
+  (394106)
+  (394106)
+  [394106 NBG]
+  [410231 NQA]
+  (398297)
+  [398297 STL]
+  [null]
+  (426127)
+  (426127)
+  [426127 PNS]
+  [428125 NSE]
+  (426341)
+  [426341 ORD]
+  [null]
+  (413168)
+  (413168)
+  (413168)
+  (413168)
+  [413168 NMM]
+  [null]
+  [null]
+  [null]
+  (429127)
+  (429127)
+  (429127)
+  [429127 NPA]
+  [null]
+  [null]
+  (434168)
+  (434168)
+  [434168 MXF]
+  [446129 PAM]
+  (438169)
+  [438169 SEM]
+  [null]
+  (458126)
+  (458126)
+  (458126)
+  (458126)
+  (458126)
+  [458126 TLH]
+  [null]
+  [null]
+  [null]
+  [null]
+  (473777)
+  (473777)
+  (473777)
+  (473777)
+  [473777 PIE]
+  [477346 SKY]
+  (477172)
+  [477172 SBO]
+  [null]
+  (479359)
+  (479359)
+  [479359 MTC]
+  [null]
+  [null]
+  (479677)
+  (479677)
+  (479677)
+  [479677 SPG]
+  [484128 NZC]
+  (482361)
+  [482361 PHN]
+  [null]
+  (486135)
+  (486135)
+  [486135 NIP]
+  [487162 SAV]
+  (486417)
+  [486417 RSW]
+  [null]
+  (485178)
+  (485178)
+  (485178)
+  (485178)
+  (485178)
+  (485178)
+  [485178 SVN]
+  [null]
+  [null]
+  [null]
+  (488147)
+  (488147)
+  (488147)
+  [488147 NQX]
+  [null]
+  [null]
+  (488827)
+  (488827)
+  [488827 ORL]
+  [493567 PBI]
+  (493167)
+  [493167 NBC]
+  [null]
+  (500195)
+  (500195)
+  (500195)
+  (500195)
+  [500195 SSC]
+  [508233 POB]
+  (501334)
+  [501334 PIT]
+  [null]
+  (519184)
+  (519184)
+  [519184 MYR]
+  [null]
+  [null]
+  (521231)
+  (521231)
+  (521231)
+  [521231 RDU]
+  [527398 ROC]
+  (527278)
+  [527278 RIC]
+  [null]
+  (532218)
+  (532218)
+  [532218 NCA]
+  [533387 SYR]
+  (533255)
+  [533255 NTU]
+  [null]
+  (497337)
+  (497337)
+  (497337)
+  (497337)
+  (497337)
+  [497337 OPF]
+  [null]
+  [null]
+  [null]
+  [null]
+  [null]
+Structured list:
+  {lev: 0 nodeCt: 108}
+  {lev: 1 nodeCt: 81}
+  {lev: 2 nodeCt: 54}
+    Tree: 0
+      | | [115213 PMD]
+      | (115213)
+      | | [null]
+      (115213)
+      | [null]
+  {lev: 3 nodeCt: 33}
+    Tree: 0
+      | | | [122299 NFL]
+      | | (122299)
+      | | | [124191 RAL]
+      | (122299)
+      | | | [123188 RIV]
+      | | (123188)
+      | | | [null]
+      (122299)
+      | | | [125467 SFF]
+      | | (125467)
+      | | | [126189 NTK]
+      | (125467)
+      | | | [126165 NZY]
+      | | (126165)
+      | | | [null]
+  {lev: 4 nodeCt: 19}
+  {lev: 5 nodeCt: 11}
+  {lev: 6 nodeCt: 6}
+  {lev: 7 nodeCt: 3}
+    Tree: 0
+      | | | | | | | [125466 SKA]
+      | | | | | | (125466)
+      | | | | | | | [null]
+      | | | | | (125466)
+      | | | | | | [null]
+      | | | | (125466)
+      | | | | | [null]
+      | | | (125466)
+      | | | | | | | [126203 ONT]
+      | | | | | | (126203)
+      | | | | | | | [null]
+      | | | | | (126203)
+      | | | | | | [null]
+      | | | | (126203)
+      | | | | | | | [129237 NID]
+      | | | | | | (129237)
+      | | | | | | | [132172 SAN]
+      | | | | | (129237)
+      | | | | | | | [131170 NKX]
+      | | | | | | (131170)
+      | | | | | | | [null]
+      | | (125466)
+      | | | | | | | [135192 PSP]
+      | | | | | | (135192)
+      | | | | | | | [144167 NJK]
+      | | | | | (135192)
+      | | | | | | | [140210 NXP]
+      | | | | | | (140210)
+      | | | | | | | [null]
+      | | | | (135192)
+      | | | | | | | [147379 MUO]
+      | | | | | | (147379)
+      | | | | | | | [null]
+      | | | | | (147379)
+      | | | | | | [null]
+      | | | (135192)
+      | | | | | | | [178192 PHX]
+      | | | | | | (178192)
+      | | | | | | | [186333 SLC]
+      | | | | | (178192)
+      | | | | | | | [180208 PRC]
+      | | | | | | (180208)
+      | | | | | | | [null]
+      | | | | (178192)
+      | | | | | | | [223183 TCS]
+      | | | | | | (223183)
+      | | | | | | | [256182 ROW]
+      | | | | | (223183)
+      | | | | | | | [235221 SAF]
+      | | | | | | (235221)
+      | | | | | | | [null]
+      | (125466)
+      | | | | | | | [132196 SNA]
+      | | | | | | (132196)
+      | | | | | | | [null]
+      | | | | | (132196)
+      | | | | | | [null]
+      | | | | (132196)
+      | | | | | [null]
+      | | | (132196)
+      | | | | [null]
+      | | (132196)
+      | | | [null]
+      (125466)
+      | | | | | | | [531287 NYG]
+      | | | | | | (531287)
+      | | | | | | | [null]
+      | | | | | (531287)
+      | | | | | | [null]
+      | | | | (531287)
+      | | | | | [null]
+      | | | (531287)
+      | | | | | | | [537252 ORF]
+      | | | | | | (537252)
+      | | | | | | | [null]
+      | | | | | (537252)
+      | | | | | | [null]
+      | | | | (537252)
+      | | | | | | | [537259 PHF]
+      | | | | | | (537259)
+      | | | | | | | [542206 NKT]
+      | | | | | (537259)
+      | | | | | | | [537290 NHK]
+      | | | | | | (537290)
+      | | | | | | | [null]
+      | | (531287)
+      | | | | | | | [542250 NGU]
+      | | | | | | (542250)
+      | | | | | | | [null]
+      | | | | | (542250)
+      | | | | | | [null]
+      | | | | (542250)
+      | | | | | [null]
+      | | | (542250)
+      | | | | [null]
+      | (531287)
+      | | | | | | | [542333 MUI]
+      | | | | | | (542333)
+      | | | | | | | [548306 PHL]
+      | | | | | (542333)
+      | | | | | | | [547282 SBY]
+      | | | | | | (547282)
+      | | | | | | | [null]
+      | | | | (542333)
+      | | | | | | | [548320 PNE]
+      | | | | | | (548320)
+      | | | | | | | [null]
+      | | | | | (548320)
+      | | | | | | [null]
+      | | | (542333)
+      | | | | | | | [548383 RME]
+      | | | | | | (548383)
+      | | | | | | | [552322 NXX]
+      | | | | | (548383)
+      | | | | | | | [551409 OGS]
+      | | | | | | (551409)
+      | | | | | | | [null]
+      | | | | (548383)
+      | | | | | | | [553353 SWF]
+      | | | | | | (553353)
+      | | | | | | | [564418 PBG]
+      | | | | | (553353)
+      | | | | | | | [554335 NEL]
+      | | | | | | (554335)
+      | | | | | | | [null]
+      | | (542333)
+      | | | | | | | [553333 TEB]
+      | | | | | | (553333)
+      | | | | | | | [null]
+      | | | | | (553333)
+      | | | | | | [null]
+      | | | | (553333)
+      | | | | | [null]
+      | | | (553333)
+      | | | | | | | [588344 PVD]
+      | | | | | | (588344)
+      | | | | | | | [null]
+      | | | | | (588344)
+      | | | | | | [null]
+      | | | | (588344)
+      | | | | | | | [592339 SFZ]
+      | | | | | | (592339)
+      | | | | | | | [617448 PQI]
+      | | | | | (592339)
+      | | | | | | | [599395 PWM]
+      | | | | | | (599395)
+      | | | | | | | [null]
+    Tree: 1
+      | | | | | | | [193144 OLS]
+      | | | | | | (193144)
+      | | | | | | | [null]
+      | | | | | (193144)
+      | | | | | | [null]
+      | | | | (193144)
+      | | | | | [null]
+      | | | (193144)
+      | | | | | | | [262291 PUB]
+      | | | | | | (262291)
+      | | | | | | | [null]
+      | | | | | (262291)
+      | | | | | | [null]
+      | | | | (262291)
+      | | | | | | | [267402 RCA]
+      | | | | | | (267402)
+      | | | | | | | [302140 SJT]
+      | | | | | (267402)
+      | | | | | | | [271220 TCC]
+      | | | | | | (271220)
+      | | | | | | | [null]
+      | | (193144)
+      | | | | | | | [313116 SAT]
+      | | | | | | (313116)
+      | | | | | | | [null]
+      | | | | | (313116)
+      | | | | | | [null]
+      | | | | (313116)
+      | | | | | [null]
+      | | | (313116)
+      | | | | [null]
+      | (193144)
+      | | | | | | | [315112 RND]
+      | | | | | | (315112)
+      | | | | | | | [316161 MWL]
+      | | | | | (315112)
+      | | | | | | | [316103 SKF]
+      | | | | | | (316103)
+      | | | | | | | [null]
+      | | | | (315112)
+      | | | | | | | [320191 SPS]
+      | | | | | | (320191)
+      | | | | | | | [null]
+      | | | | | (320191)
+      | | | | | | [null]
+      | | | (315112)
+      | | | | | | | [324240 PNC]
+      | | | | | | (324240)
+      | | | | | | | [327637 NQI]
+      | | | | | (324240)
+      | | | | | | | [326238 OKC]
+      | | | | | | (326238)
+      | | | | | | | [null]
+      | | | | (324240)
+      | | | | | | | [332476 RDR]
+      | | | | | | (332476)
+      | | | | | | | [337370 SUX]
+      | | | | | (332476)
+      | | | | | | | [336837 PSX]
+      | | | | | | (336837)
+      | | | | | | | [null]
+      | | (315112)
+      | | | | | | | [331235 TIK]
+      | | | | | | (331235)
+      | | | | | | | [null]
+      | | | | | (331235)
+      | | | | | | [null]
+      | | | | (331235)
+      | | | | | [null]
+      | | | (331235)
+      | | | | | | | [344341 OFF]
+      | | | | | | (344341)
+      | | | | | | | [null]
+      | | | | | (344341)
+      | | | | | | [null]
+      | | | | (344341)
+      | | | | | | | [349354 OMA]
+      | | | | | | (349354)
+      | | | | | | | [369149 POE]
+      | | | | | (349354)
+      | | | | | | | [367423 PNM]
+      | | | | | | (367423)
+      | | | | | | | [null]
+      (193144)
+      | | | | | | | [370283 SZL]
+      | | | | | | (370283)
+      | | | | | | | [null]
+      | | | | | (370283)
+      | | | | | | [null]
+      | | | | (370283)
+      | | | | | [null]
+      | | | (370283)
+      | | | | [null]
+      | | (370283)
+      | | | [null]
+      | (370283)
+      | | [null]
+    Tree: 2
+      | | | | | | | [371162 SHV]
+      | | | | | | (371162)
+      | | | | | | | [378264 TBN]
+      | | | | | (371162)
+      | | | | | | | [374217 RBM]
+      | | | | | | (374217)
+      | | | | | | | [null]
+      | | | | (371162)
+      | | | | | | | [389209 PBF]
+      | | | | | | (389209)
+      | | | | | | | [null]
+      | | | | | (389209)
+      | | | | | | [null]
+      | | | (371162)
+      | | | | | | | [394106 NBG]
+      | | | | | | (394106)
+      | | | | | | | [410231 NQA]
+      | | | | | (394106)
+      | | | | | | | [398297 STL]
+      | | | | | | (398297)
+      | | | | | | | [null]
+      | | | | (394106)
+      | | | | | | | [426127 PNS]
+      | | | | | | (426127)
+      | | | | | | | [428125 NSE]
+      | | | | | (426127)
+      | | | | | | | [426341 ORD]
+      | | | | | | (426341)
+      | | | | | | | [null]
+      | | (371162)
+      | | | | | | | [413168 NMM]
+      | | | | | | (413168)
+      | | | | | | | [null]
+      | | | | | (413168)
+      | | | | | | [null]
+      | | | | (413168)
+      | | | | | [null]
+      | | | (413168)
+      | | | | | | | [429127 NPA]
+      | | | | | | (429127)
+      | | | | | | | [null]
+      | | | | | (429127)
+      | | | | | | [null]
+      | | | | (429127)
+      | | | | | | | [434168 MXF]
+      | | | | | | (434168)
+      | | | | | | | [446129 PAM]
+      | | | | | (434168)
+      | | | | | | | [438169 SEM]
+      | | | | | | (438169)
+      | | | | | | | [null]
+      | (371162)
+      | | | | | | | [458126 TLH]
+      | | | | | | (458126)
+      | | | | | | | [null]
+      | | | | | (458126)
+      | | | | | | [null]
+      | | | | (458126)
+      | | | | | [null]
+      | | | (458126)
+      | | | | [null]
+      | | (458126)
+      | | | | | | | [473777 PIE]
+      | | | | | | (473777)
+      | | | | | | | [477346 SKY]
+      | | | | | (473777)
+      | | | | | | | [477172 SBO]
+      | | | | | | (477172)
+      | | | | | | | [null]
+      | | | | (473777)
+      | | | | | | | [479359 MTC]
+      | | | | | | (479359)
+      | | | | | | | [null]
+      | | | | | (479359)
+      | | | | | | [null]
+      | | | (473777)
+      | | | | | | | [479677 SPG]
+      | | | | | | (479677)
+      | | | | | | | [484128 NZC]
+      | | | | | (479677)
+      | | | | | | | [482361 PHN]
+      | | | | | | (482361)
+      | | | | | | | [null]
+      | | | | (479677)
+      | | | | | | | [486135 NIP]
+      | | | | | | (486135)
+      | | | | | | | [487162 SAV]
+      | | | | | (486135)
+      | | | | | | | [486417 RSW]
+      | | | | | | (486417)
+      | | | | | | | [null]
+      (371162)
+      | | | | | | | [485178 SVN]
+      | | | | | | (485178)
+      | | | | | | | [null]
+      | | | | | (485178)
+      | | | | | | [null]
+      | | | | (485178)
+      | | | | | [null]
+      | | | (485178)
+      | | | | | | | [488147 NQX]
+      | | | | | | (488147)
+      | | | | | | | [null]
+      | | | | | (488147)
+      | | | | | | [null]
+      | | | | (488147)
+      | | | | | | | [488827 ORL]
+      | | | | | | (488827)
+      | | | | | | | [493567 PBI]
+      | | | | | (488827)
+      | | | | | | | [493167 NBC]
+      | | | | | | (493167)
+      | | | | | | | [null]
+      | | (485178)
+      | | | | | | | [500195 SSC]
+      | | | | | | (500195)
+      | | | | | | | [508233 POB]
+      | | | | | (500195)
+      | | | | | | | [501334 PIT]
+      | | | | | | (501334)
+      | | | | | | | [null]
+      | | | | (500195)
+      | | | | | | | [519184 MYR]
+      | | | | | | (519184)
+      | | | | | | | [null]
+      | | | | | (519184)
+      | | | | | | [null]
+      | | | (500195)
+      | | | | | | | [521231 RDU]
+      | | | | | | (521231)
+      | | | | | | | [527398 ROC]
+      | | | | | (521231)
+      | | | | | | | [527278 RIC]
+      | | | | | | (527278)
+      | | | | | | | [null]
+      | | | | (521231)
+      | | | | | | | [532218 NCA]
+      | | | | | | (532218)
+      | | | | | | | [533387 SYR]
+      | | | | | (532218)
+      | | | | | | | [533255 NTU]
+      | | | | | | (533255)
+      | | | | | | | [null]
+      | (485178)
+      | | | | | | | [497337 OPF]
+      | | | | | | (497337)
+      | | | | | | | [null]
+      | | | | | (497337)
+      | | | | | | [null]
+      | | | | (497337)
+      | | | | | [null]
+      | | | (497337)
+      | | | | [null]
+      | | (497337)
+      | | | [null]
+extract-min: PMD
+extract-min: NFL
+extract-min: RIV
+extract-min: RAL
+extract-min: SKA
+extract-min: SFF
+extract-min: NZY
+extract-min: NTK
+extract-min: ONT
+extract-min: NID
+extract-min: NKX
+extract-min: SAN
+extract-min: SNA
+extract-min: PSP
+extract-min: NXP
+extract-min: NJK
+extract-min: MUO
+extract-min: PHX
+extract-min: PRC
+extract-min: SLC
+list-heap:
+  {lev: 0 nodeCt: 88}
+  {lev: 1 nodeCt: 66}
+  {lev: 2 nodeCt: 44}
+  (223183)
+  (223183)
+  [223183 TCS]
+  [256182 ROW]
+  (235221)
+  [235221 SAF]
+  [null]
+  {lev: 3 nodeCt: 27}
+  {lev: 4 nodeCt: 16}
+  {lev: 5 nodeCt: 9}
+  {lev: 6 nodeCt: 5}
+  (531287)
+  (531287)
+  (531287)
+  (531287)
+  (531287)
+  (531287)
+  [531287 NYG]
+  [null]
+  [null]
+  [null]
+  (537252)
+  (537252)
+  (537252)
+  [537252 ORF]
+  [null]
+  [null]
+  (537259)
+  (537259)
+  [537259 PHF]
+  [542206 NKT]
+  (537290)
+  [537290 NHK]
+  [null]
+  (542250)
+  (542250)
+  (542250)
+  (542250)
+  [542250 NGU]
+  [null]
+  [null]
+  [null]
+  [null]
+  (542333)
+  (542333)
+  (542333)
+  (542333)
+  (542333)
+  [542333 MUI]
+  [548306 PHL]
+  (547282)
+  [547282 SBY]
+  [null]
+  (548320)
+  (548320)
+  [548320 PNE]
+  [null]
+  [null]
+  (548383)
+  (548383)
+  (548383)
+  [548383 RME]
+  [552322 NXX]
+  (551409)
+  [551409 OGS]
+  [null]
+  (553353)
+  (553353)
+  [553353 SWF]
+  [564418 PBG]
+  (554335)
+  [554335 NEL]
+  [null]
+  (553333)
+  (553333)
+  (553333)
+  (553333)
+  [553333 TEB]
+  [null]
+  [null]
+  [null]
+  (588344)
+  (588344)
+  (588344)
+  [588344 PVD]
+  [null]
+  [null]
+  (592339)
+  (592339)
+  [592339 SFZ]
+  [617448 PQI]
+  (599395)
+  [599395 PWM]
+  [null]
+  {lev: 7 nodeCt: 2}
+  (193144)
+  (193144)
+  (193144)
+  (193144)
+  (193144)
+  (193144)
+  (193144)
+  [193144 OLS]
+  [null]
+  [null]
+  [null]
+  (262291)
+  (262291)
+  (262291)
+  [262291 PUB]
+  [null]
+  [null]
+  (267402)
+  (267402)
+  [267402 RCA]
+  [302140 SJT]
+  (271220)
+  [271220 TCC]
+  [null]
+  (313116)
+  (313116)
+  (313116)
+  (313116)
+  [313116 SAT]
+  [null]
+  [null]
+  [null]
+  [null]
+  (315112)
+  (315112)
+  (315112)
+  (315112)
+  (315112)
+  [315112 RND]
+  [316161 MWL]
+  (316103)
+  [316103 SKF]
+  [null]
+  (320191)
+  (320191)
+  [320191 SPS]
+  [null]
+  [null]
+  (324240)
+  (324240)
+  (324240)
+  [324240 PNC]
+  [327637 NQI]
+  (326238)
+  [326238 OKC]
+  [null]
+  (332476)
+  (332476)
+  [332476 RDR]
+  [337370 SUX]
+  (336837)
+  [336837 PSX]
+  [null]
+  (331235)
+  (331235)
+  (331235)
+  (331235)
+  [331235 TIK]
+  [null]
+  [null]
+  [null]
+  (344341)
+  (344341)
+  (344341)
+  [344341 OFF]
+  [null]
+  [null]
+  (349354)
+  (349354)
+  [349354 OMA]
+  [369149 POE]
+  (367423)
+  [367423 PNM]
+  [null]
+  (370283)
+  (370283)
+  (370283)
+  (370283)
+  (370283)
+  (370283)
+  [370283 SZL]
+  [null]
+  [null]
+  [null]
+  [null]
+  [null]
+  [null]
+  (371162)
+  (371162)
+  (371162)
+  (371162)
+  (371162)
+  (371162)
+  (371162)
+  [371162 SHV]
+  [378264 TBN]
+  (374217)
+  [374217 RBM]
+  [null]
+  (389209)
+  (389209)
+  [389209 PBF]
+  [null]
+  [null]
+  (394106)
+  (394106)
+  (394106)
+  [394106 NBG]
+  [410231 NQA]
+  (398297)
+  [398297 STL]
+  [null]
+  (426127)
+  (426127)
+  [426127 PNS]
+  [428125 NSE]
+  (426341)
+  [426341 ORD]
+  [null]
+  (413168)
+  (413168)
+  (413168)
+  (413168)
+  [413168 NMM]
+  [null]
+  [null]
+  [null]
+  (429127)
+  (429127)
+  (429127)
+  [429127 NPA]
+  [null]
+  [null]
+  (434168)
+  (434168)
+  [434168 MXF]
+  [446129 PAM]
+  (438169)
+  [438169 SEM]
+  [null]
+  (458126)
+  (458126)
+  (458126)
+  (458126)
+  (458126)
+  [458126 TLH]
+  [null]
+  [null]
+  [null]
+  [null]
+  (473777)
+  (473777)
+  (473777)
+  (473777)
+  [473777 PIE]
+  [477346 SKY]
+  (477172)
+  [477172 SBO]
+  [null]
+  (479359)
+  (479359)
+  [479359 MTC]
+  [null]
+  [null]
+  (479677)
+  (479677)
+  (479677)
+  [479677 SPG]
+  [484128 NZC]
+  (482361)
+  [482361 PHN]
+  [null]
+  (486135)
+  (486135)
+  [486135 NIP]
+  [487162 SAV]
+  (486417)
+  [486417 RSW]
+  [null]
+  (485178)
+  (485178)
+  (485178)
+  (485178)
+  (485178)
+  (485178)
+  [485178 SVN]
+  [null]
+  [null]
+  [null]
+  (488147)
+  (488147)
+  (488147)
+  [488147 NQX]
+  [null]
+  [null]
+  (488827)
+  (488827)
+  [488827 ORL]
+  [493567 PBI]
+  (493167)
+  [493167 NBC]
+  [null]
+  (500195)
+  (500195)
+  (500195)
+  (500195)
+  [500195 SSC]
+  [508233 POB]
+  (501334)
+  [501334 PIT]
+  [null]
+  (519184)
+  (519184)
+  [519184 MYR]
+  [null]
+  [null]
+  (521231)
+  (521231)
+  (521231)
+  [521231 RDU]
+  [527398 ROC]
+  (527278)
+  [527278 RIC]
+  [null]
+  (532218)
+  (532218)
+  [532218 NCA]
+  [533387 SYR]
+  (533255)
+  [533255 NTU]
+  [null]
+  (497337)
+  (497337)
+  (497337)
+  (497337)
+  (497337)
+  [497337 OPF]
+  [null]
+  [null]
+  [null]
+  [null]
+  [null]
+Structured list:
+  {lev: 0 nodeCt: 88}
+  {lev: 1 nodeCt: 66}
+  {lev: 2 nodeCt: 44}
+    Tree: 0
+      | | [223183 TCS]
+      | (223183)
+      | | [256182 ROW]
+      (223183)
+      | | [235221 SAF]
+      | (235221)
+      | | [null]
+  {lev: 3 nodeCt: 27}
+  {lev: 4 nodeCt: 16}
+  {lev: 5 nodeCt: 9}
+  {lev: 6 nodeCt: 5}
+    Tree: 0
+      | | | | | | [531287 NYG]
+      | | | | | (531287)
+      | | | | | | [null]
+      | | | | (531287)
+      | | | | | [null]
+      | | | (531287)
+      | | | | [null]
+      | | (531287)
+      | | | | | | [537252 ORF]
+      | | | | | (537252)
+      | | | | | | [null]
+      | | | | (537252)
+      | | | | | [null]
+      | | | (537252)
+      | | | | | | [537259 PHF]
+      | | | | | (537259)
+      | | | | | | [542206 NKT]
+      | | | | (537259)
+      | | | | | | [537290 NHK]
+      | | | | | (537290)
+      | | | | | | [null]
+      | (531287)
+      | | | | | | [542250 NGU]
+      | | | | | (542250)
+      | | | | | | [null]
+      | | | | (542250)
+      | | | | | [null]
+      | | | (542250)
+      | | | | [null]
+      | | (542250)
+      | | | [null]
+      (531287)
+      | | | | | | [542333 MUI]
+      | | | | | (542333)
+      | | | | | | [548306 PHL]
+      | | | | (542333)
+      | | | | | | [547282 SBY]
+      | | | | | (547282)
+      | | | | | | [null]
+      | | | (542333)
+      | | | | | | [548320 PNE]
+      | | | | | (548320)
+      | | | | | | [null]
+      | | | | (548320)
+      | | | | | [null]
+      | | (542333)
+      | | | | | | [548383 RME]
+      | | | | | (548383)
+      | | | | | | [552322 NXX]
+      | | | | (548383)
+      | | | | | | [551409 OGS]
+      | | | | | (551409)
+      | | | | | | [null]
+      | | | (548383)
+      | | | | | | [553353 SWF]
+      | | | | | (553353)
+      | | | | | | [564418 PBG]
+      | | | | (553353)
+      | | | | | | [554335 NEL]
+      | | | | | (554335)
+      | | | | | | [null]
+      | (542333)
+      | | | | | | [553333 TEB]
+      | | | | | (553333)
+      | | | | | | [null]
+      | | | | (553333)
+      | | | | | [null]
+      | | | (553333)
+      | | | | [null]
+      | | (553333)
+      | | | | | | [588344 PVD]
+      | | | | | (588344)
+      | | | | | | [null]
+      | | | | (588344)
+      | | | | | [null]
+      | | | (588344)
+      | | | | | | [592339 SFZ]
+      | | | | | (592339)
+      | | | | | | [617448 PQI]
+      | | | | (592339)
+      | | | | | | [599395 PWM]
+      | | | | | (599395)
+      | | | | | | [null]
+  {lev: 7 nodeCt: 2}
+    Tree: 0
+      | | | | | | | [193144 OLS]
+      | | | | | | (193144)
+      | | | | | | | [null]
+      | | | | | (193144)
+      | | | | | | [null]
+      | | | | (193144)
+      | | | | | [null]
+      | | | (193144)
+      | | | | | | | [262291 PUB]
+      | | | | | | (262291)
+      | | | | | | | [null]
+      | | | | | (262291)
+      | | | | | | [null]
+      | | | | (262291)
+      | | | | | | | [267402 RCA]
+      | | | | | | (267402)
+      | | | | | | | [302140 SJT]
+      | | | | | (267402)
+      | | | | | | | [271220 TCC]
+      | | | | | | (271220)
+      | | | | | | | [null]
+      | | (193144)
+      | | | | | | | [313116 SAT]
+      | | | | | | (313116)
+      | | | | | | | [null]
+      | | | | | (313116)
+      | | | | | | [null]
+      | | | | (313116)
+      | | | | | [null]
+      | | | (313116)
+      | | | | [null]
+      | (193144)
+      | | | | | | | [315112 RND]
+      | | | | | | (315112)
+      | | | | | | | [316161 MWL]
+      | | | | | (315112)
+      | | | | | | | [316103 SKF]
+      | | | | | | (316103)
+      | | | | | | | [null]
+      | | | | (315112)
+      | | | | | | | [320191 SPS]
+      | | | | | | (320191)
+      | | | | | | | [null]
+      | | | | | (320191)
+      | | | | | | [null]
+      | | | (315112)
+      | | | | | | | [324240 PNC]
+      | | | | | | (324240)
+      | | | | | | | [327637 NQI]
+      | | | | | (324240)
+      | | | | | | | [326238 OKC]
+      | | | | | | (326238)
+      | | | | | | | [null]
+      | | | | (324240)
+      | | | | | | | [332476 RDR]
+      | | | | | | (332476)
+      | | | | | | | [337370 SUX]
+      | | | | | (332476)
+      | | | | | | | [336837 PSX]
+      | | | | | | (336837)
+      | | | | | | | [null]
+      | | (315112)
+      | | | | | | | [331235 TIK]
+      | | | | | | (331235)
+      | | | | | | | [null]
+      | | | | | (331235)
+      | | | | | | [null]
+      | | | | (331235)
+      | | | | | [null]
+      | | | (331235)
+      | | | | | | | [344341 OFF]
+      | | | | | | (344341)
+      | | | | | | | [null]
+      | | | | | (344341)
+      | | | | | | [null]
+      | | | | (344341)
+      | | | | | | | [349354 OMA]
+      | | | | | | (349354)
+      | | | | | | | [369149 POE]
+      | | | | | (349354)
+      | | | | | | | [367423 PNM]
+      | | | | | | (367423)
+      | | | | | | | [null]
+      (193144)
+      | | | | | | | [370283 SZL]
+      | | | | | | (370283)
+      | | | | | | | [null]
+      | | | | | (370283)
+      | | | | | | [null]
+      | | | | (370283)
+      | | | | | [null]
+      | | | (370283)
+      | | | | [null]
+      | | (370283)
+      | | | [null]
+      | (370283)
+      | | [null]
+    Tree: 1
+      | | | | | | | [371162 SHV]
+      | | | | | | (371162)
+      | | | | | | | [378264 TBN]
+      | | | | | (371162)
+      | | | | | | | [374217 RBM]
+      | | | | | | (374217)
+      | | | | | | | [null]
+      | | | | (371162)
+      | | | | | | | [389209 PBF]
+      | | | | | | (389209)
+      | | | | | | | [null]
+      | | | | | (389209)
+      | | | | | | [null]
+      | | | (371162)
+      | | | | | | | [394106 NBG]
+      | | | | | | (394106)
+      | | | | | | | [410231 NQA]
+      | | | | | (394106)
+      | | | | | | | [398297 STL]
+      | | | | | | (398297)
+      | | | | | | | [null]
+      | | | | (394106)
+      | | | | | | | [426127 PNS]
+      | | | | | | (426127)
+      | | | | | | | [428125 NSE]
+      | | | | | (426127)
+      | | | | | | | [426341 ORD]
+      | | | | | | (426341)
+      | | | | | | | [null]
+      | | (371162)
+      | | | | | | | [413168 NMM]
+      | | | | | | (413168)
+      | | | | | | | [null]
+      | | | | | (413168)
+      | | | | | | [null]
+      | | | | (413168)
+      | | | | | [null]
+      | | | (413168)
+      | | | | | | | [429127 NPA]
+      | | | | | | (429127)
+      | | | | | | | [null]
+      | | | | | (429127)
+      | | | | | | [null]
+      | | | | (429127)
+      | | | | | | | [434168 MXF]
+      | | | | | | (434168)
+      | | | | | | | [446129 PAM]
+      | | | | | (434168)
+      | | | | | | | [438169 SEM]
+      | | | | | | (438169)
+      | | | | | | | [null]
+      | (371162)
+      | | | | | | | [458126 TLH]
+      | | | | | | (458126)
+      | | | | | | | [null]
+      | | | | | (458126)
+      | | | | | | [null]
+      | | | | (458126)
+      | | | | | [null]
+      | | | (458126)
+      | | | | [null]
+      | | (458126)
+      | | | | | | | [473777 PIE]
+      | | | | | | (473777)
+      | | | | | | | [477346 SKY]
+      | | | | | (473777)
+      | | | | | | | [477172 SBO]
+      | | | | | | (477172)
+      | | | | | | | [null]
+      | | | | (473777)
+      | | | | | | | [479359 MTC]
+      | | | | | | (479359)
+      | | | | | | | [null]
+      | | | | | (479359)
+      | | | | | | [null]
+      | | | (473777)
+      | | | | | | | [479677 SPG]
+      | | | | | | (479677)
+      | | | | | | | [484128 NZC]
+      | | | | | (479677)
+      | | | | | | | [482361 PHN]
+      | | | | | | (482361)
+      | | | | | | | [null]
+      | | | | (479677)
+      | | | | | | | [486135 NIP]
+      | | | | | | (486135)
+      | | | | | | | [487162 SAV]
+      | | | | | (486135)
+      | | | | | | | [486417 RSW]
+      | | | | | | (486417)
+      | | | | | | | [null]
+      (371162)
+      | | | | | | | [485178 SVN]
+      | | | | | | (485178)
+      | | | | | | | [null]
+      | | | | | (485178)
+      | | | | | | [null]
+      | | | | (485178)
+      | | | | | [null]
+      | | | (485178)
+      | | | | | | | [488147 NQX]
+      | | | | | | (488147)
+      | | | | | | | [null]
+      | | | | | (488147)
+      | | | | | | [null]
+      | | | | (488147)
+      | | | | | | | [488827 ORL]
+      | | | | | | (488827)
+      | | | | | | | [493567 PBI]
+      | | | | | (488827)
+      | | | | | | | [493167 NBC]
+      | | | | | | (493167)
+      | | | | | | | [null]
+      | | (485178)
+      | | | | | | | [500195 SSC]
+      | | | | | | (500195)
+      | | | | | | | [508233 POB]
+      | | | | | (500195)
+      | | | | | | | [501334 PIT]
+      | | | | | | (501334)
+      | | | | | | | [null]
+      | | | | (500195)
+      | | | | | | | [519184 MYR]
+      | | | | | | (519184)
+      | | | | | | | [null]
+      | | | | | (519184)
+      | | | | | | [null]
+      | | | (500195)
+      | | | | | | | [521231 RDU]
+      | | | | | | (521231)
+      | | | | | | | [527398 ROC]
+      | | | | | (521231)
+      | | | | | | | [527278 RIC]
+      | | | | | | (527278)
+      | | | | | | | [null]
+      | | | | (521231)
+      | | | | | | | [532218 NCA]
+      | | | | | | (532218)
+      | | | | | | | [533387 SYR]
+      | | | | | (532218)
+      | | | | | | | [533255 NTU]
+      | | | | | | (533255)
+      | | | | | | | [null]
+      | (485178)
+      | | | | | | | [497337 OPF]
+      | | | | | | (497337)
+      | | | | | | | [null]
+      | | | | | (497337)
+      | | | | | | [null]
+      | | | | (497337)
+      | | | | | [null]
+      | | | (497337)
+      | | | | [null]
+      | | (497337)
+      | | | [null]
+extract-min: OLS
+extract-min: TCS
+extract-min: SAF
+extract-min: ROW
+extract-min: PUB
+extract-min: RCA
+extract-min: TCC
+extract-min: SJT
+extract-min: SAT
+extract-min: RND
+extract-min: SKF
+extract-min: MWL
+extract-min: SPS
+extract-min: PNC
+extract-min: OKC
+extract-min: NQI
+extract-min: TIK
+extract-min: RDR
+extract-min: PSX
+extract-min: SUX
+list-heap:
+  {lev: 0 nodeCt: 68}
+  {lev: 1 nodeCt: 51}
+  {lev: 2 nodeCt: 34}
+  {lev: 3 nodeCt: 21}
+  (344341)
+  (344341)
+  (344341)
+  [344341 OFF]
+  [null]
+  [null]
+  (349354)
+  (349354)
+  [349354 OMA]
+  [369149 POE]
+  (367423)
+  [367423 PNM]
+  [null]
+  {lev: 4 nodeCt: 12}
+  {lev: 5 nodeCt: 7}
+  {lev: 6 nodeCt: 4}
+  {lev: 7 nodeCt: 2}
+  (370283)
+  (370283)
+  (370283)
+  (370283)
+  (370283)
+  (370283)
+  (370283)
+  [370283 SZL]
+  [null]
+  [null]
+  [null]
+  [null]
+  [null]
+  [null]
+  (531287)
+  (531287)
+  (531287)
+  (531287)
+  (531287)
+  (531287)
+  [531287 NYG]
+  [null]
+  [null]
+  [null]
+  (537252)
+  (537252)
+  (537252)
+  [537252 ORF]
+  [null]
+  [null]
+  (537259)
+  (537259)
+  [537259 PHF]
+  [542206 NKT]
+  (537290)
+  [537290 NHK]
+  [null]
+  (542250)
+  (542250)
+  (542250)
+  (542250)
+  [542250 NGU]
+  [null]
+  [null]
+  [null]
+  [null]
+  (542333)
+  (542333)
+  (542333)
+  (542333)
+  (542333)
+  [542333 MUI]
+  [548306 PHL]
+  (547282)
+  [547282 SBY]
+  [null]
+  (548320)
+  (548320)
+  [548320 PNE]
+  [null]
+  [null]
+  (548383)
+  (548383)
+  (548383)
+  [548383 RME]
+  [552322 NXX]
+  (551409)
+  [551409 OGS]
+  [null]
+  (553353)
+  (553353)
+  [553353 SWF]
+  [564418 PBG]
+  (554335)
+  [554335 NEL]
+  [null]
+  (553333)
+  (553333)
+  (553333)
+  (553333)
+  [553333 TEB]
+  [null]
+  [null]
+  [null]
+  (588344)
+  (588344)
+  (588344)
+  [588344 PVD]
+  [null]
+  [null]
+  (592339)
+  (592339)
+  [592339 SFZ]
+  [617448 PQI]
+  (599395)
+  [599395 PWM]
+  [null]
+  (371162)
+  (371162)
+  (371162)
+  (371162)
+  (371162)
+  (371162)
+  (371162)
+  [371162 SHV]
+  [378264 TBN]
+  (374217)
+  [374217 RBM]
+  [null]
+  (389209)
+  (389209)
+  [389209 PBF]
+  [null]
+  [null]
+  (394106)
+  (394106)
+  (394106)
+  [394106 NBG]
+  [410231 NQA]
+  (398297)
+  [398297 STL]
+  [null]
+  (426127)
+  (426127)
+  [426127 PNS]
+  [428125 NSE]
+  (426341)
+  [426341 ORD]
+  [null]
+  (413168)
+  (413168)
+  (413168)
+  (413168)
+  [413168 NMM]
+  [null]
+  [null]
+  [null]
+  (429127)
+  (429127)
+  (429127)
+  [429127 NPA]
+  [null]
+  [null]
+  (434168)
+  (434168)
+  [434168 MXF]
+  [446129 PAM]
+  (438169)
+  [438169 SEM]
+  [null]
+  (458126)
+  (458126)
+  (458126)
+  (458126)
+  (458126)
+  [458126 TLH]
+  [null]
+  [null]
+  [null]
+  [null]
+  (473777)
+  (473777)
+  (473777)
+  (473777)
+  [473777 PIE]
+  [477346 SKY]
+  (477172)
+  [477172 SBO]
+  [null]
+  (479359)
+  (479359)
+  [479359 MTC]
+  [null]
+  [null]
+  (479677)
+  (479677)
+  (479677)
+  [479677 SPG]
+  [484128 NZC]
+  (482361)
+  [482361 PHN]
+  [null]
+  (486135)
+  (486135)
+  [486135 NIP]
+  [487162 SAV]
+  (486417)
+  [486417 RSW]
+  [null]
+  (485178)
+  (485178)
+  (485178)
+  (485178)
+  (485178)
+  (485178)
+  [485178 SVN]
+  [null]
+  [null]
+  [null]
+  (488147)
+  (488147)
+  (488147)
+  [488147 NQX]
+  [null]
+  [null]
+  (488827)
+  (488827)
+  [488827 ORL]
+  [493567 PBI]
+  (493167)
+  [493167 NBC]
+  [null]
+  (500195)
+  (500195)
+  (500195)
+  (500195)
+  [500195 SSC]
+  [508233 POB]
+  (501334)
+  [501334 PIT]
+  [null]
+  (519184)
+  (519184)
+  [519184 MYR]
+  [null]
+  [null]
+  (521231)
+  (521231)
+  (521231)
+  [521231 RDU]
+  [527398 ROC]
+  (527278)
+  [527278 RIC]
+  [null]
+  (532218)
+  (532218)
+  [532218 NCA]
+  [533387 SYR]
+  (533255)
+  [533255 NTU]
+  [null]
+  (497337)
+  (497337)
+  (497337)
+  (497337)
+  (497337)
+  [497337 OPF]
+  [null]
+  [null]
+  [null]
+  [null]
+  [null]
+Structured list:
+  {lev: 0 nodeCt: 68}
+  {lev: 1 nodeCt: 51}
+  {lev: 2 nodeCt: 34}
+  {lev: 3 nodeCt: 21}
+    Tree: 0
+      | | | [344341 OFF]
+      | | (344341)
+      | | | [null]
+      | (344341)
+      | | [null]
+      (344341)
+      | | | [349354 OMA]
+      | | (349354)
+      | | | [369149 POE]
+      | (349354)
+      | | | [367423 PNM]
+      | | (367423)
+      | | | [null]
+  {lev: 4 nodeCt: 12}
+  {lev: 5 nodeCt: 7}
+  {lev: 6 nodeCt: 4}
+  {lev: 7 nodeCt: 2}
+    Tree: 0
+      | | | | | | | [370283 SZL]
+      | | | | | | (370283)
+      | | | | | | | [null]
+      | | | | | (370283)
+      | | | | | | [null]
+      | | | | (370283)
+      | | | | | [null]
+      | | | (370283)
+      | | | | [null]
+      | | (370283)
+      | | | [null]
+      | (370283)
+      | | [null]
+      (370283)
+      | | | | | | | [531287 NYG]
+      | | | | | | (531287)
+      | | | | | | | [null]
+      | | | | | (531287)
+      | | | | | | [null]
+      | | | | (531287)
+      | | | | | [null]
+      | | | (531287)
+      | | | | | | | [537252 ORF]
+      | | | | | | (537252)
+      | | | | | | | [null]
+      | | | | | (537252)
+      | | | | | | [null]
+      | | | | (537252)
+      | | | | | | | [537259 PHF]
+      | | | | | | (537259)
+      | | | | | | | [542206 NKT]
+      | | | | | (537259)
+      | | | | | | | [537290 NHK]
+      | | | | | | (537290)
+      | | | | | | | [null]
+      | | (531287)
+      | | | | | | | [542250 NGU]
+      | | | | | | (542250)
+      | | | | | | | [null]
+      | | | | | (542250)
+      | | | | | | [null]
+      | | | | (542250)
+      | | | | | [null]
+      | | | (542250)
+      | | | | [null]
+      | (531287)
+      | | | | | | | [542333 MUI]
+      | | | | | | (542333)
+      | | | | | | | [548306 PHL]
+      | | | | | (542333)
+      | | | | | | | [547282 SBY]
+      | | | | | | (547282)
+      | | | | | | | [null]
+      | | | | (542333)
+      | | | | | | | [548320 PNE]
+      | | | | | | (548320)
+      | | | | | | | [null]
+      | | | | | (548320)
+      | | | | | | [null]
+      | | | (542333)
+      | | | | | | | [548383 RME]
+      | | | | | | (548383)
+      | | | | | | | [552322 NXX]
+      | | | | | (548383)
+      | | | | | | | [551409 OGS]
+      | | | | | | (551409)
+      | | | | | | | [null]
+      | | | | (548383)
+      | | | | | | | [553353 SWF]
+      | | | | | | (553353)
+      | | | | | | | [564418 PBG]
+      | | | | | (553353)
+      | | | | | | | [554335 NEL]
+      | | | | | | (554335)
+      | | | | | | | [null]
+      | | (542333)
+      | | | | | | | [553333 TEB]
+      | | | | | | (553333)
+      | | | | | | | [null]
+      | | | | | (553333)
+      | | | | | | [null]
+      | | | | (553333)
+      | | | | | [null]
+      | | | (553333)
+      | | | | | | | [588344 PVD]
+      | | | | | | (588344)
+      | | | | | | | [null]
+      | | | | | (588344)
+      | | | | | | [null]
+      | | | | (588344)
+      | | | | | | | [592339 SFZ]
+      | | | | | | (592339)
+      | | | | | | | [617448 PQI]
+      | | | | | (592339)
+      | | | | | | | [599395 PWM]
+      | | | | | | (599395)
+      | | | | | | | [null]
+    Tree: 1
+      | | | | | | | [371162 SHV]
+      | | | | | | (371162)
+      | | | | | | | [378264 TBN]
+      | | | | | (371162)
+      | | | | | | | [374217 RBM]
+      | | | | | | (374217)
+      | | | | | | | [null]
+      | | | | (371162)
+      | | | | | | | [389209 PBF]
+      | | | | | | (389209)
+      | | | | | | | [null]
+      | | | | | (389209)
+      | | | | | | [null]
+      | | | (371162)
+      | | | | | | | [394106 NBG]
+      | | | | | | (394106)
+      | | | | | | | [410231 NQA]
+      | | | | | (394106)
+      | | | | | | | [398297 STL]
+      | | | | | | (398297)
+      | | | | | | | [null]
+      | | | | (394106)
+      | | | | | | | [426127 PNS]
+      | | | | | | (426127)
+      | | | | | | | [428125 NSE]
+      | | | | | (426127)
+      | | | | | | | [426341 ORD]
+      | | | | | | (426341)
+      | | | | | | | [null]
+      | | (371162)
+      | | | | | | | [413168 NMM]
+      | | | | | | (413168)
+      | | | | | | | [null]
+      | | | | | (413168)
+      | | | | | | [null]
+      | | | | (413168)
+      | | | | | [null]
+      | | | (413168)
+      | | | | | | | [429127 NPA]
+      | | | | | | (429127)
+      | | | | | | | [null]
+      | | | | | (429127)
+      | | | | | | [null]
+      | | | | (429127)
+      | | | | | | | [434168 MXF]
+      | | | | | | (434168)
+      | | | | | | | [446129 PAM]
+      | | | | | (434168)
+      | | | | | | | [438169 SEM]
+      | | | | | | (438169)
+      | | | | | | | [null]
+      | (371162)
+      | | | | | | | [458126 TLH]
+      | | | | | | (458126)
+      | | | | | | | [null]
+      | | | | | (458126)
+      | | | | | | [null]
+      | | | | (458126)
+      | | | | | [null]
+      | | | (458126)
+      | | | | [null]
+      | | (458126)
+      | | | | | | | [473777 PIE]
+      | | | | | | (473777)
+      | | | | | | | [477346 SKY]
+      | | | | | (473777)
+      | | | | | | | [477172 SBO]
+      | | | | | | (477172)
+      | | | | | | | [null]
+      | | | | (473777)
+      | | | | | | | [479359 MTC]
+      | | | | | | (479359)
+      | | | | | | | [null]
+      | | | | | (479359)
+      | | | | | | [null]
+      | | | (473777)
+      | | | | | | | [479677 SPG]
+      | | | | | | (479677)
+      | | | | | | | [484128 NZC]
+      | | | | | (479677)
+      | | | | | | | [482361 PHN]
+      | | | | | | (482361)
+      | | | | | | | [null]
+      | | | | (479677)
+      | | | | | | | [486135 NIP]
+      | | | | | | (486135)
+      | | | | | | | [487162 SAV]
+      | | | | | (486135)
+      | | | | | | | [486417 RSW]
+      | | | | | | (486417)
+      | | | | | | | [null]
+      (371162)
+      | | | | | | | [485178 SVN]
+      | | | | | | (485178)
+      | | | | | | | [null]
+      | | | | | (485178)
+      | | | | | | [null]
+      | | | | (485178)
+      | | | | | [null]
+      | | | (485178)
+      | | | | | | | [488147 NQX]
+      | | | | | | (488147)
+      | | | | | | | [null]
+      | | | | | (488147)
+      | | | | | | [null]
+      | | | | (488147)
+      | | | | | | | [488827 ORL]
+      | | | | | | (488827)
+      | | | | | | | [493567 PBI]
+      | | | | | (488827)
+      | | | | | | | [493167 NBC]
+      | | | | | | (493167)
+      | | | | | | | [null]
+      | | (485178)
+      | | | | | | | [500195 SSC]
+      | | | | | | (500195)
+      | | | | | | | [508233 POB]
+      | | | | | (500195)
+      | | | | | | | [501334 PIT]
+      | | | | | | (501334)
+      | | | | | | | [null]
+      | | | | (500195)
+      | | | | | | | [519184 MYR]
+      | | | | | | (519184)
+      | | | | | | | [null]
+      | | | | | (519184)
+      | | | | | | [null]
+      | | | (500195)
+      | | | | | | | [521231 RDU]
+      | | | | | | (521231)
+      | | | | | | | [527398 ROC]
+      | | | | | (521231)
+      | | | | | | | [527278 RIC]
+      | | | | | | (527278)
+      | | | | | | | [null]
+      | | | | (521231)
+      | | | | | | | [532218 NCA]
+      | | | | | | (532218)
+      | | | | | | | [533387 SYR]
+      | | | | | (532218)
+      | | | | | | | [533255 NTU]
+      | | | | | | (533255)
+      | | | | | | | [null]
+      | (485178)
+      | | | | | | | [497337 OPF]
+      | | | | | | (497337)
+      | | | | | | | [null]
+      | | | | | (497337)
+      | | | | | | [null]
+      | | | | (497337)
+      | | | | | [null]
+      | | | (497337)
+      | | | | [null]
+      | | (497337)
+      | | | [null]
+[The following should generate an error]
+set-n-levels(0): Failure due to exception: "Attempt to set an invalid number of levels"
+[The following decrease in levels will result in level 5 having multiple roots]
+set-n-levels(6): successful
+extract-min: OFF
+extract-min: OMA
+extract-min: PNM
+extract-min: POE
+extract-min: SZL
+extract-min: SHV
+extract-min: RBM
+extract-min: TBN
+extract-min: PBF
+extract-min: NBG
+extract-min: STL
+extract-min: NQA
+extract-min: NMM
+extract-min: PNS
+extract-min: ORD
+extract-min: NSE
+extract-min: NPA
+extract-min: MXF
+extract-min: SEM
+extract-min: PAM
+list-heap:
+  {lev: 0 nodeCt: 48}
+  {lev: 1 nodeCt: 36}
+  {lev: 2 nodeCt: 24}
+  {lev: 3 nodeCt: 15}
+  {lev: 4 nodeCt: 9}
+  {lev: 5 nodeCt: 5}
+  (458126)
+  (458126)
+  (458126)
+  (458126)
+  (458126)
+  [458126 TLH]
+  [null]
+  [null]
+  [null]
+  [null]
+  (473777)
+  (473777)
+  (473777)
+  (473777)
+  [473777 PIE]
+  [477346 SKY]
+  (477172)
+  [477172 SBO]
+  [null]
+  (479359)
+  (479359)
+  [479359 MTC]
+  [null]
+  [null]
+  (479677)
+  (479677)
+  (479677)
+  [479677 SPG]
+  [484128 NZC]
+  (482361)
+  [482361 PHN]
+  [null]
+  (486135)
+  (486135)
+  [486135 NIP]
+  [487162 SAV]
+  (486417)
+  [486417 RSW]
+  [null]
+  (485178)
+  (485178)
+  (485178)
+  (485178)
+  (485178)
+  [485178 SVN]
+  [null]
+  [null]
+  [null]
+  (488147)
+  (488147)
+  (488147)
+  [488147 NQX]
+  [null]
+  [null]
+  (488827)
+  (488827)
+  [488827 ORL]
+  [493567 PBI]
+  (493167)
+  [493167 NBC]
+  [null]
+  (500195)
+  (500195)
+  (500195)
+  (500195)
+  [500195 SSC]
+  [508233 POB]
+  (501334)
+  [501334 PIT]
+  [null]
+  (519184)
+  (519184)
+  [519184 MYR]
+  [null]
+  [null]
+  (521231)
+  (521231)
+  (521231)
+  [521231 RDU]
+  [527398 ROC]
+  (527278)
+  [527278 RIC]
+  [null]
+  (532218)
+  (532218)
+  [532218 NCA]
+  [533387 SYR]
+  (533255)
+  [533255 NTU]
+  [null]
+  (497337)
+  (497337)
+  (497337)
+  (497337)
+  (497337)
+  [497337 OPF]
+  [null]
+  [null]
+  [null]
+  [null]
+  [null]
+  (531287)
+  (531287)
+  (531287)
+  (531287)
+  (531287)
+  [531287 NYG]
+  [null]
+  [null]
+  [null]
+  (537252)
+  (537252)
+  (537252)
+  [537252 ORF]
+  [null]
+  [null]
+  (537259)
+  (537259)
+  [537259 PHF]
+  [542206 NKT]
+  (537290)
+  [537290 NHK]
+  [null]
+  (542250)
+  (542250)
+  (542250)
+  (542250)
+  [542250 NGU]
+  [null]
+  [null]
+  [null]
+  [null]
+  (542333)
+  (542333)
+  (542333)
+  (542333)
+  (542333)
+  [542333 MUI]
+  [548306 PHL]
+  (547282)
+  [547282 SBY]
+  [null]
+  (548320)
+  (548320)
+  [548320 PNE]
+  [null]
+  [null]
+  (548383)
+  (548383)
+  (548383)
+  [548383 RME]
+  [552322 NXX]
+  (551409)
+  [551409 OGS]
+  [null]
+  (553353)
+  (553353)
+  [553353 SWF]
+  [564418 PBG]
+  (554335)
+  [554335 NEL]
+  [null]
+  (553333)
+  (553333)
+  (553333)
+  (553333)
+  [553333 TEB]
+  [null]
+  [null]
+  [null]
+  (588344)
+  (588344)
+  (588344)
+  [588344 PVD]
+  [null]
+  [null]
+  (592339)
+  (592339)
+  [592339 SFZ]
+  [617448 PQI]
+  (599395)
+  [599395 PWM]
+  [null]
+Structured list:
+  {lev: 0 nodeCt: 48}
+  {lev: 1 nodeCt: 36}
+  {lev: 2 nodeCt: 24}
+  {lev: 3 nodeCt: 15}
+  {lev: 4 nodeCt: 9}
+  {lev: 5 nodeCt: 5}
+    Tree: 0
+      | | | | | [458126 TLH]
+      | | | | (458126)
+      | | | | | [null]
+      | | | (458126)
+      | | | | [null]
+      | | (458126)
+      | | | [null]
+      | (458126)
+      | | [null]
+      (458126)
+      | | | | | [473777 PIE]
+      | | | | (473777)
+      | | | | | [477346 SKY]
+      | | | (473777)
+      | | | | | [477172 SBO]
+      | | | | (477172)
+      | | | | | [null]
+      | | (473777)
+      | | | | | [479359 MTC]
+      | | | | (479359)
+      | | | | | [null]
+      | | | (479359)
+      | | | | [null]
+      | (473777)
+      | | | | | [479677 SPG]
+      | | | | (479677)
+      | | | | | [484128 NZC]
+      | | | (479677)
+      | | | | | [482361 PHN]
+      | | | | (482361)
+      | | | | | [null]
+      | | (479677)
+      | | | | | [486135 NIP]
+      | | | | (486135)
+      | | | | | [487162 SAV]
+      | | | (486135)
+      | | | | | [486417 RSW]
+      | | | | (486417)
+      | | | | | [null]
+    Tree: 1
+      | | | | | [485178 SVN]
+      | | | | (485178)
+      | | | | | [null]
+      | | | (485178)
+      | | | | [null]
+      | | (485178)
+      | | | [null]
+      | (485178)
+      | | | | | [488147 NQX]
+      | | | | (488147)
+      | | | | | [null]
+      | | | (488147)
+      | | | | [null]
+      | | (488147)
+      | | | | | [488827 ORL]
+      | | | | (488827)
+      | | | | | [493567 PBI]
+      | | | (488827)
+      | | | | | [493167 NBC]
+      | | | | (493167)
+      | | | | | [null]
+      (485178)
+      | | | | | [500195 SSC]
+      | | | | (500195)
+      | | | | | [508233 POB]
+      | | | (500195)
+      | | | | | [501334 PIT]
+      | | | | (501334)
+      | | | | | [null]
+      | | (500195)
+      | | | | | [519184 MYR]
+      | | | | (519184)
+      | | | | | [null]
+      | | | (519184)
+      | | | | [null]
+      | (500195)
+      | | | | | [521231 RDU]
+      | | | | (521231)
+      | | | | | [527398 ROC]
+      | | | (521231)
+      | | | | | [527278 RIC]
+      | | | | (527278)
+      | | | | | [null]
+      | | (521231)
+      | | | | | [532218 NCA]
+      | | | | (532218)
+      | | | | | [533387 SYR]
+      | | | (532218)
+      | | | | | [533255 NTU]
+      | | | | (533255)
+      | | | | | [null]
+    Tree: 2
+      | | | | | [497337 OPF]
+      | | | | (497337)
+      | | | | | [null]
+      | | | (497337)
+      | | | | [null]
+      | | (497337)
+      | | | [null]
+      | (497337)
+      | | [null]
+      (497337)
+      | [null]
+    Tree: 3
+      | | | | | [531287 NYG]
+      | | | | (531287)
+      | | | | | [null]
+      | | | (531287)
+      | | | | [null]
+      | | (531287)
+      | | | [null]
+      | (531287)
+      | | | | | [537252 ORF]
+      | | | | (537252)
+      | | | | | [null]
+      | | | (537252)
+      | | | | [null]
+      | | (537252)
+      | | | | | [537259 PHF]
+      | | | | (537259)
+      | | | | | [542206 NKT]
+      | | | (537259)
+      | | | | | [537290 NHK]
+      | | | | (537290)
+      | | | | | [null]
+      (531287)
+      | | | | | [542250 NGU]
+      | | | | (542250)
+      | | | | | [null]
+      | | | (542250)
+      | | | | [null]
+      | | (542250)
+      | | | [null]
+      | (542250)
+      | | [null]
+    Tree: 4
+      | | | | | [542333 MUI]
+      | | | | (542333)
+      | | | | | [548306 PHL]
+      | | | (542333)
+      | | | | | [547282 SBY]
+      | | | | (547282)
+      | | | | | [null]
+      | | (542333)
+      | | | | | [548320 PNE]
+      | | | | (548320)
+      | | | | | [null]
+      | | | (548320)
+      | | | | [null]
+      | (542333)
+      | | | | | [548383 RME]
+      | | | | (548383)
+      | | | | | [552322 NXX]
+      | | | (548383)
+      | | | | | [551409 OGS]
+      | | | | (551409)
+      | | | | | [null]
+      | | (548383)
+      | | | | | [553353 SWF]
+      | | | | (553353)
+      | | | | | [564418 PBG]
+      | | | (553353)
+      | | | | | [554335 NEL]
+      | | | | (554335)
+      | | | | | [null]
+      (542333)
+      | | | | | [553333 TEB]
+      | | | | (553333)
+      | | | | | [null]
+      | | | (553333)
+      | | | | [null]
+      | | (553333)
+      | | | [null]
+      | (553333)
+      | | | | | [588344 PVD]
+      | | | | (588344)
+      | | | | | [null]
+      | | | (588344)
+      | | | | [null]
+      | | (588344)
+      | | | | | [592339 SFZ]
+      | | | | (592339)
+      | | | | | [617448 PQI]
+      | | | (592339)
+      | | | | | [599395 PWM]
+      | | | | (599395)
+      | | | | | [null]
+extract-min: TLH
+extract-min: PIE
+extract-min: SBO
+extract-min: SKY
+extract-min: MTC
+extract-min: SPG
+extract-min: PHN
+extract-min: NZC
+extract-min: SVN
+extract-min: NIP
+extract-min: RSW
+extract-min: SAV
+extract-min: NQX
+extract-min: ORL
+extract-min: NBC
+extract-min: PBI
+extract-min: OPF
+extract-min: SSC
+extract-min: PIT
+extract-min: POB
+list-heap:
+  {lev: 0 nodeCt: 28}
+  {lev: 1 nodeCt: 21}
+  {lev: 2 nodeCt: 14}
+  (519184)
+  (519184)
+  [519184 MYR]
+  [null]
+  [null]
+  {lev: 3 nodeCt: 8}
+  (521231)
+  (521231)
+  (521231)
+  [521231 RDU]
+  [527398 ROC]
+  (527278)
+  [527278 RIC]
+  [null]
+  (532218)
+  (532218)
+  [532218 NCA]
+  [533387 SYR]
+  (533255)
+  [533255 NTU]
+  [null]
+  {lev: 4 nodeCt: 4}
+  {lev: 5 nodeCt: 2}
+  (531287)
+  (531287)
+  (531287)
+  (531287)
+  (531287)
+  [531287 NYG]
+  [null]
+  [null]
+  [null]
+  (537252)
+  (537252)
+  (537252)
+  [537252 ORF]
+  [null]
+  [null]
+  (537259)
+  (537259)
+  [537259 PHF]
+  [542206 NKT]
+  (537290)
+  [537290 NHK]
+  [null]
+  (542250)
+  (542250)
+  (542250)
+  (542250)
+  [542250 NGU]
+  [null]
+  [null]
+  [null]
+  [null]
+  (542333)
+  (542333)
+  (542333)
+  (542333)
+  (542333)
+  [542333 MUI]
+  [548306 PHL]
+  (547282)
+  [547282 SBY]
+  [null]
+  (548320)
+  (548320)
+  [548320 PNE]
+  [null]
+  [null]
+  (548383)
+  (548383)
+  (548383)
+  [548383 RME]
+  [552322 NXX]
+  (551409)
+  [551409 OGS]
+  [null]
+  (553353)
+  (553353)
+  [553353 SWF]
+  [564418 PBG]
+  (554335)
+  [554335 NEL]
+  [null]
+  (553333)
+  (553333)
+  (553333)
+  (553333)
+  [553333 TEB]
+  [null]
+  [null]
+  [null]
+  (588344)
+  (588344)
+  (588344)
+  [588344 PVD]
+  [null]
+  [null]
+  (592339)
+  (592339)
+  [592339 SFZ]
+  [617448 PQI]
+  (599395)
+  [599395 PWM]
+  [null]
+Structured list:
+  {lev: 0 nodeCt: 28}
+  {lev: 1 nodeCt: 21}
+  {lev: 2 nodeCt: 14}
+    Tree: 0
+      | | [519184 MYR]
+      | (519184)
+      | | [null]
+      (519184)
+      | [null]
+  {lev: 3 nodeCt: 8}
+    Tree: 0
+      | | | [521231 RDU]
+      | | (521231)
+      | | | [527398 ROC]
+      | (521231)
+      | | | [527278 RIC]
+      | | (527278)
+      | | | [null]
+      (521231)
+      | | | [532218 NCA]
+      | | (532218)
+      | | | [533387 SYR]
+      | (532218)
+      | | | [533255 NTU]
+      | | (533255)
+      | | | [null]
+  {lev: 4 nodeCt: 4}
+  {lev: 5 nodeCt: 2}
+    Tree: 0
+      | | | | | [531287 NYG]
+      | | | | (531287)
+      | | | | | [null]
+      | | | (531287)
+      | | | | [null]
+      | | (531287)
+      | | | [null]
+      | (531287)
+      | | | | | [537252 ORF]
+      | | | | (537252)
+      | | | | | [null]
+      | | | (537252)
+      | | | | [null]
+      | | (537252)
+      | | | | | [537259 PHF]
+      | | | | (537259)
+      | | | | | [542206 NKT]
+      | | | (537259)
+      | | | | | [537290 NHK]
+      | | | | (537290)
+      | | | | | [null]
+      (531287)
+      | | | | | [542250 NGU]
+      | | | | (542250)
+      | | | | | [null]
+      | | | (542250)
+      | | | | [null]
+      | | (542250)
+      | | | [null]
+      | (542250)
+      | | [null]
+    Tree: 1
+      | | | | | [542333 MUI]
+      | | | | (542333)
+      | | | | | [548306 PHL]
+      | | | (542333)
+      | | | | | [547282 SBY]
+      | | | | (547282)
+      | | | | | [null]
+      | | (542333)
+      | | | | | [548320 PNE]
+      | | | | (548320)
+      | | | | | [null]
+      | | | (548320)
+      | | | | [null]
+      | (542333)
+      | | | | | [548383 RME]
+      | | | | (548383)
+      | | | | | [552322 NXX]
+      | | | (548383)
+      | | | | | [551409 OGS]
+      | | | | (551409)
+      | | | | | [null]
+      | | (548383)
+      | | | | | [553353 SWF]
+      | | | | (553353)
+      | | | | | [564418 PBG]
+      | | | (553353)
+      | | | | | [554335 NEL]
+      | | | | (554335)
+      | | | | | [null]
+      (542333)
+      | | | | | [553333 TEB]
+      | | | | (553333)
+      | | | | | [null]
+      | | | (553333)
+      | | | | [null]
+      | | (553333)
+      | | | [null]
+      | (553333)
+      | | | | | [588344 PVD]
+      | | | | (588344)
+      | | | | | [null]
+      | | | (588344)
+      | | | | [null]
+      | | (588344)
+      | | | | | [592339 SFZ]
+      | | | | (592339)
+      | | | | | [617448 PQI]
+      | | | (592339)
+      | | | | | [599395 PWM]
+      | | | | (599395)
+      | | | | | [null]
+extract-min: MYR
+extract-min: RDU
+extract-min: RIC
+extract-min: ROC
+extract-min: NYG
+extract-min: NCA
+extract-min: NTU
+extract-min: SYR
+extract-min: ORF
+extract-min: PHF
+extract-min: NHK
+extract-min: NKT
+extract-min: NGU
+extract-min: MUI
+extract-min: SBY
+extract-min: PHL
+extract-min: PNE
+extract-min: RME
+extract-min: OGS
+extract-min: NXX
+list-heap:
+  {lev: 0 nodeCt: 8}
+  {lev: 1 nodeCt: 6}
+  {lev: 2 nodeCt: 4}
+  (553353)
+  (553353)
+  [553353 SWF]
+  [564418 PBG]
+  (554335)
+  [554335 NEL]
+  [null]
+  {lev: 3 nodeCt: 2}
+  {lev: 4 nodeCt: 1}
+  (553333)
+  (553333)
+  (553333)
+  (553333)
+  [553333 TEB]
+  [null]
+  [null]
+  [null]
+  (588344)
+  (588344)
+  (588344)
+  [588344 PVD]
+  [null]
+  [null]
+  (592339)
+  (592339)
+  [592339 SFZ]
+  [617448 PQI]
+  (599395)
+  [599395 PWM]
+  [null]
+Structured list:
+  {lev: 0 nodeCt: 8}
+  {lev: 1 nodeCt: 6}
+  {lev: 2 nodeCt: 4}
+    Tree: 0
+      | | [553353 SWF]
+      | (553353)
+      | | [564418 PBG]
+      (553353)
+      | | [554335 NEL]
+      | (554335)
+      | | [null]
+  {lev: 3 nodeCt: 2}
+  {lev: 4 nodeCt: 1}
+    Tree: 0
+      | | | | [553333 TEB]
+      | | | (553333)
+      | | | | [null]
+      | | (553333)
+      | | | [null]
+      | (553333)
+      | | [null]
+      (553333)
+      | | | | [588344 PVD]
+      | | | (588344)
+      | | | | [null]
+      | | (588344)
+      | | | [null]
+      | (588344)
+      | | | | [592339 SFZ]
+      | | | (592339)
+      | | | | [617448 PQI]
+      | | (592339)
+      | | | | [599395 PWM]
+      | | | (599395)
+      | | | | [null]
+extract-min: TEB
+extract-min: SWF
+extract-min: NEL
+extract-min: PBG
+extract-min: PVD
+extract-min: SFZ
+extract-min: PWM
+extract-min: PQI
+[The heap should now be empty]
+list-heap:
+Structured list:
+extract-min: Failure due to exception: "Empty heap"
+get-min-key: Failure due to exception: "Empty heap"
