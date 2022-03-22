@@ -8,6 +8,6 @@
  */
 
 rootProject.name = 'cmsc420_s22'
-include('project0')
-include('project1a')
-include('project1b')
+include('p0')
+include('p1a')
+include('p1b')
