@@ -1763,7 +1763,7 @@ public class QuakeHeapTest {
                 "[19 SFO]",
                 "[20 BWI]",
                 "[null]"), heap.listHeap());
-        Assertions.assertDoesNotThrow(() -> heap.decreaseKey(locators.get("ATL"), 30));
+        Assertions.assertDoesNotThrow(() -> heap.decreaseKey(locators.get("ATL"), 10));
         Assertions.assertIterableEquals(List.of("{lev: 0 nodeCt: 7}",
                 "[94 JFK]",
                 "{lev: 1 nodeCt: 3}",
