@@ -21,6 +21,6 @@ public class QuakeHeap<Key extends Comparable<Key>, Value> {
 	public void decreaseKey(Locator r, Key newKey) throws Exception { /* ... */ }
 	public Value extractMin() throws Exception { /* ... */ return null; }
 	public int size() { /* ... */ return 0; }
-	public void setQuakeRatio(double newRatio) throws Exception { /* ... */ }
+	public void setQuakeRatio(double newRatio) { /* ... */ }
 	public void setNLevels(int nl) throws Exception { /* ... */ }
 }
