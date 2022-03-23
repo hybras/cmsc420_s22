@@ -1,0 +1,29 @@
+plugins {
+    id "com.github.spotbugs" version "5.0.6" apply false
+    id "com.github.mrsarm.jshell.plugin" version "1.2.0" apply false
+}
+
+subprojects {
+    apply(plugin: 'java-library')
+    apply(plugin: "com.github.spotbugs")
+    apply(plugin: "com.github.mrsarm.jshell.plugin")
+
+    repositories {
+        // Use Maven Central for resolving dependencies.
+        mavenCentral()
+    }
+
+    dependencies {
+        testImplementation(platform("org.junit:junit-bom:5.8.2"))
+        testImplementation 'org.junit.jupiter:junit-jupiter-api'
+        testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
+    }
+
+    test {
+        useJUnitPlatform()
+    }
+
+    task submit(type: Exec) {
+        executable "gradescope-submit"
+    }
+}
