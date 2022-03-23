@@ -91,7 +91,7 @@ public class CommandHandler {
 				// EXTRACT-MIN
 				// - extract the minimum element from the heap
 				// -----------------------------------------------------
-				case "extract-min" -> "Assertions.assertNotNull(locators.remove(Assertions.assertDoesNotThrow(heap::extractMin)));\n";
+				case "extract-min" -> "Assertions.assertEquals(%s, Assertions.assertDoesNotThrow(heap::extractMin));\n";
 				// -----------------------------------------------------
 				// DECREASE-KEY
 				// - decrease the key value of some entry
