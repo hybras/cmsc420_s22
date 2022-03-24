@@ -23,7 +23,8 @@ public class ConvertTest {
 
     final static String emptyHeap = "Failure due to exception: \"Empty heap\"";
     final static Pattern init_pat = Pattern.compile("set-n-levels\\((\\d+)\\): ");
-    final static Pattern levels_pat = Pattern.compile("set-n-levels\\((\\d+)\\): (successful|" + emptyHeap + ")");
+    final static String levelFail = "Failure due to exception: \"Attempt to set an invalid number of levels\"";
+    final static Pattern levels_pat = Pattern.compile("set-n-levels\\((\\d+)\\): (successful|" + levelFail + ")");
     final static Pattern insert_pat = Pattern.compile("insert\\((\\d+), (\\w+)\\): successful");
     final static Pattern minKey_pat = Pattern.compile("get-min-key: (\\d+|" + emptyHeap + ")");
     final static Pattern maxLev_pat = Pattern.compile("get-max-level\\((\\w+)\\): (\\d+)");
@@ -31,13 +32,15 @@ public class ConvertTest {
     final static Pattern size_regex = Pattern.compile("size: (\\d+)");
     final static Pattern extractMin_pat = Pattern.compile("extract-min: (\\w+)");
     final static String extractMinFail_pat = "extract-min: " + emptyHeap;
-    final static Pattern decKey_pat = Pattern.compile("decrease-key\\((\\w+), (\\d+)\\): (successful|Failure)");
-    final static Pattern rat_pat = Pattern.compile("set-quake-ratio\\((0\\.\\d*|1\\.0)\\): (successful|Failure)");
+    final static String decKeyFail = "Failure due to exception: \"Invalid key for decrease-key\"";
+    final static Pattern decKey_pat = Pattern.compile("decrease-key\\((\\w+), (\\d+)\\): (successful|" + decKeyFail + ")");
+    final static String ratioFail = "Failure due to exception: \"Quake ratio is outside valid bounds\"";
+    final static Pattern rat_pat = Pattern.compile("set-quake-ratio\\((0\\.\\d*|1\\.0?)\\): (successful|" + ratioFail + ")");
     final static Pattern comment_pat = Pattern.compile("\\[(.+)]");
 
     @Test
     public void convertTest() {
-        final var test = 7;
+        final var test = 10;
         final var inputFileName = String.format("test%02d-expected.txt", test);
         final var inputFilePath = String.valueOf(Path.of(System.getProperty("user.dir"), "src", "test", "resources", inputFileName));
         System.out.printf("@Test\nvoid test%02d() {\n", test);
