@@ -1,5 +1,5 @@
 [This tests the Part-B functions decrease-key, extract-min, and set-n-levels]
-set-n-levels: 5
+set-n-levels(5): 
 set-quake-ratio(1.0): successful
 insert(1, X01): successful
 insert(6, X06): successful

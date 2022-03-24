@@ -1,5 +1,5 @@
 [This is the same as test05 from Part-A]
-set-n-levels: 8
+set-n-levels(8): 
 insert(290, TMX): successful
 insert(535, NRD): successful
 insert(548, GWT): successful

@@ -1,5 +1,5 @@
 [This tests the Part-B function decrease-key]
-set-n-levels: 6
+set-n-levels(6): 
 insert(88, BWI): successful
 insert(42, LAX): successful
 insert(26, IAD): successful

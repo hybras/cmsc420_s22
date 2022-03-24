@@ -1,5 +1,5 @@
 [This tests the Part-B functions decrease-key and extract-min]
-set-n-levels: 6
+set-n-levels(6): 
 [We set the quake ratio super high, so no quakes can occur]
 set-quake-ratio(1.0): successful
 insert(4, X04): successful

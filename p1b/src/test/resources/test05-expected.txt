@@ -1,5 +1,5 @@
 [This tests the Part-B functions extract-min and size]
-set-n-levels: 5
+set-n-levels(5): 
 [We set the quake ratio to 1, so no quakes should occur]
 set-quake-ratio(1.0): successful
 insert(88, BWI): successful
@@ -203,7 +203,7 @@ list-heap:
 Structured list:
 size: 0
 [The following should throw an empty-heap exception]
-Failure due to exception: "Empty heap"
+extract-min: Failure due to exception: "Empty heap"
 list-heap:
 Structured list:
 size: 0
@@ -952,7 +952,7 @@ list-heap:
 Structured list:
 size: 0
 [The following attempts to extract-min from an empty heap]
-Failure due to exception: "Empty heap"
+extract-min: Failure due to exception: "Empty heap"
 list-heap:
 Structured list:
 size: 0

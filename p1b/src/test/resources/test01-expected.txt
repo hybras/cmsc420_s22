@@ -1,5 +1,5 @@
 [This is the same as test03 from Part-A]
-set-n-levels: 5
+set-n-levels(5): 
 [The next command should generate an empty-heap exception]
 get-min-key: Failure due to exception: "Empty heap"
 insert(88, BWI): successful
