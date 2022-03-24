@@ -21,16 +21,16 @@ import java.util.regex.Pattern;
 
 public class ConvertTest {
 
+    final static String emptyHeap = "Failure due to exception: \"Empty heap\"";
     final static Pattern init_pat = Pattern.compile("set-n-levels\\((\\d+)\\): ");
-    final static Pattern levels_pat = Pattern.compile("set-n-levels\\((\\d+)\\): (successful|Failure)");
+    final static Pattern levels_pat = Pattern.compile("set-n-levels\\((\\d+)\\): (successful|" + emptyHeap + ")");
     final static Pattern insert_pat = Pattern.compile("insert\\((\\d+), (\\w+)\\): successful");
-    final static Pattern minKey_pat = Pattern.compile("get-min-key: (\\d+)");
-    final static String minKeyFail_pat = "get-min-key: Failure due to exception: \"Empty heap\"";
+    final static Pattern minKey_pat = Pattern.compile("get-min-key: (\\d+|" + emptyHeap + ")");
     final static Pattern maxLev_pat = Pattern.compile("get-max-level\\((\\w+)\\): (\\d+)");
     final static String clear_pat = "clear: successful";
     final static Pattern size_regex = Pattern.compile("size: (\\d+)");
     final static Pattern extractMin_pat = Pattern.compile("extract-min: (\\w+)");
-    final static String extractMinFail_pat = "extract-min: Failure due to exception: \"Empty heap\"";
+    final static String extractMinFail_pat = "extract-min: " + emptyHeap;
     final static Pattern decKey_pat = Pattern.compile("decrease-key\\((\\w+), (\\d+)\\): (successful|Failure)");
     final static Pattern rat_pat = Pattern.compile("set-quake-ratio\\((0\\.\\d*|1\\.0)\\): (successful|Failure)");
     final static Pattern comment_pat = Pattern.compile("\\[(.+)]");
@@ -156,10 +156,13 @@ public class ConvertTest {
     static void getMinKey(String line) {
         var matcher = minKey_pat.matcher(line);
         if (matcher.matches()) {
-            var key = Integer.parseInt(matcher.group(1));
-            System.out.printf("Assertions.assertEquals(%d, Assertions.assertDoesNotThrow(heap::getMinKey));\n", key);
-        } else if (minKeyFail_pat.equals(line)) {
-            System.out.println("Assertions.assertThrows(EmptyHeapException.class, heap::getMinKey);");
+            var status = !emptyHeap.equals(matcher.group(1));
+            if (status) {
+                var key = Integer.parseInt(matcher.group(1));
+                System.out.printf("Assertions.assertEquals(%d, Assertions.assertDoesNotThrow(heap::getMinKey));\n", key);
+            } else {
+                System.out.println("Assertions.assertThrows(EmptyHeapException.class, heap::getMinKey);");
+            }
         } else {
             throw new IllegalArgumentException("Doesnt match: " + line);
         }
