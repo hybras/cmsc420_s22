@@ -11,13 +11,9 @@ subprojects {
     apply(plugin: "com.github.spotbugs")
     // Use `gradle --console plain jshell` INSIDE A PROJECT (not the root) to open a repl with that project's code imported
     apply(plugin: "com.github.mrsarm.jshell.plugin")
-
-    // We should limit ourselves to java 11, but the test converters use switch expressions introduced around java 16. Remove or rewrite the converters first
-//    java {
-//        toolchain {
-//            languageVersion = JavaLanguageVersion.of(11)
-//        }
-//    }
+    java {
+        sourceCompatibility = JavaVersion.VERSION_11
+    }
 
     repositories {
         // Use Maven Central for resolving dependencies.
