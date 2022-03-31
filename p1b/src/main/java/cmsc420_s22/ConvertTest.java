@@ -1,11 +1,9 @@
-package cmsc420_s22_test;
+package cmsc420_s22;
 
 // list-heap regex
 // rg "^  (\{lev: \d+ nodeCt: \d+\}|\[\d+ .+\]|\(\d+\)|\[null\])$" test01-expected.txt --context 1 --replace="\"\$1\","
 
 // YOU SHOULD NOT MODIFY THIS FILE, EXCEPT TO ALTER THE INPUT/OUTPUT SOURCES
-
-import org.junit.jupiter.api.Test;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -38,8 +36,7 @@ public class ConvertTest {
     final static Pattern rat_pat = Pattern.compile("set-quake-ratio\\((0\\.\\d*|1\\.0?)\\): (successful|" + ratioFail + ")");
     final static Pattern comment_pat = Pattern.compile("\\[(.+)]");
 
-    @Test
-    public void convertTest() {
+    public static void main(String[] args) {
         final var test = 10;
         final var inputFileName = String.format("test%02d-expected.txt", test);
         final var inputFilePath = String.valueOf(Path.of(System.getProperty("user.dir"), "src", "test", "resources", inputFileName));
