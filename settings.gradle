@@ -11,3 +11,4 @@ rootProject.name = 'cmsc420_s22'
 include('p0')
 include('p1a')
 include('p1b')
+include('p2')

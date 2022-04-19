@@ -1,0 +1,6 @@
+This is a very preliminary version.
+
+- There will be more test files to come.
+- We haven't extensively checked this, so there may be errors. (If you spot
+  any errors, please notify Dave Mount (mount@umd.edu))
+- The assignment handout can be found on the class handouts page.
