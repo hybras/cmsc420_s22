@@ -1,4 +1,4 @@
-[This tests insert, preorder, size, and clear]
+[This tests insert, delete, preorder, size, and clear]
 initialize: height-difference = 1, bounding-box = [(0.0,0.0),(10.0,10.0)]
 insert(SEA): successful {Seattle, (5.0,5.0)}
 Preorder list:
@@ -418,3 +418,184 @@ Tree structure:
   | | (x=6.0 ht=1) DCA: (6.0,7.0)
   | | | (y=8.0 ht=0) BWI: (8.0,8.0)
 size: 10
+[This results in taking a replacement (SFO) from the right subtree]
+delete(ORD): successful
+Preorder list:
+  (x=3.0 ht=3) IAD: (3.0,4.0)
+  (y=9.0 ht=1) SFO: (1.0,9.0)
+  (y=5.0 ht=0) ATL: (1.0,5.0)
+  []
+  []
+  []
+  (y=5.0 ht=2) SEA: (5.0,5.0)
+  (x=4.0 ht=1) LAX: (4.0,2.0)
+  []
+  (x=9.0 ht=0) JFK: (9.0,3.0)
+  []
+  []
+  (x=6.0 ht=1) DCA: (6.0,7.0)
+  (y=8.0 ht=0) DFW: (3.0,8.0)
+  []
+  []
+  (y=8.0 ht=0) BWI: (8.0,8.0)
+  []
+  []
+Tree structure:
+  | | (y=5.0 ht=0) ATL: (1.0,5.0)
+  | (y=9.0 ht=1) SFO: (1.0,9.0)
+  (x=3.0 ht=3) IAD: (3.0,4.0)
+  | | (x=4.0 ht=1) LAX: (4.0,2.0)
+  | | | (x=9.0 ht=0) JFK: (9.0,3.0)
+  | (y=5.0 ht=2) SEA: (5.0,5.0)
+  | | | (y=8.0 ht=0) DFW: (3.0,8.0)
+  | | (x=6.0 ht=1) DCA: (6.0,7.0)
+  | | | (y=8.0 ht=0) BWI: (8.0,8.0)
+delete(DFW): successful
+Preorder list:
+  (x=3.0 ht=3) IAD: (3.0,4.0)
+  (y=9.0 ht=1) SFO: (1.0,9.0)
+  (y=5.0 ht=0) ATL: (1.0,5.0)
+  []
+  []
+  []
+  (y=5.0 ht=2) SEA: (5.0,5.0)
+  (x=4.0 ht=1) LAX: (4.0,2.0)
+  []
+  (x=9.0 ht=0) JFK: (9.0,3.0)
+  []
+  []
+  (x=6.0 ht=1) DCA: (6.0,7.0)
+  []
+  (y=8.0 ht=0) BWI: (8.0,8.0)
+  []
+  []
+Tree structure:
+  | | (y=5.0 ht=0) ATL: (1.0,5.0)
+  | (y=9.0 ht=1) SFO: (1.0,9.0)
+  (x=3.0 ht=3) IAD: (3.0,4.0)
+  | | (x=4.0 ht=1) LAX: (4.0,2.0)
+  | | | (x=9.0 ht=0) JFK: (9.0,3.0)
+  | (y=5.0 ht=2) SEA: (5.0,5.0)
+  | | (x=6.0 ht=1) DCA: (6.0,7.0)
+  | | | (y=8.0 ht=0) BWI: (8.0,8.0)
+[This results in taking a replacement (ATL) from the left subtree and then rebuilding the subtree rooted at IAD]
+delete(SFO): successful
+Preorder list:
+  (x=5.0 ht=2) SEA: (5.0,5.0)
+  (y=4.0 ht=1) IAD: (3.0,4.0)
+  (x=4.0 ht=0) LAX: (4.0,2.0)
+  []
+  []
+  (y=5.0 ht=0) ATL: (1.0,5.0)
+  []
+  []
+  (y=7.0 ht=1) DCA: (6.0,7.0)
+  (y=3.0 ht=0) JFK: (9.0,3.0)
+  []
+  []
+  (x=8.0 ht=0) BWI: (8.0,8.0)
+  []
+  []
+Tree structure:
+  | | (x=4.0 ht=0) LAX: (4.0,2.0)
+  | (y=4.0 ht=1) IAD: (3.0,4.0)
+  | | (y=5.0 ht=0) ATL: (1.0,5.0)
+  (x=5.0 ht=2) SEA: (5.0,5.0)
+  | | (y=3.0 ht=0) JFK: (9.0,3.0)
+  | (y=7.0 ht=1) DCA: (6.0,7.0)
+  | | (x=8.0 ht=0) BWI: (8.0,8.0)
+delete(LAX): successful
+Preorder list:
+  (x=5.0 ht=2) SEA: (5.0,5.0)
+  (y=4.0 ht=1) IAD: (3.0,4.0)
+  []
+  (y=5.0 ht=0) ATL: (1.0,5.0)
+  []
+  []
+  (y=7.0 ht=1) DCA: (6.0,7.0)
+  (y=3.0 ht=0) JFK: (9.0,3.0)
+  []
+  []
+  (x=8.0 ht=0) BWI: (8.0,8.0)
+  []
+  []
+Tree structure:
+  | (y=4.0 ht=1) IAD: (3.0,4.0)
+  | | (y=5.0 ht=0) ATL: (1.0,5.0)
+  (x=5.0 ht=2) SEA: (5.0,5.0)
+  | | (y=3.0 ht=0) JFK: (9.0,3.0)
+  | (y=7.0 ht=1) DCA: (6.0,7.0)
+  | | (x=8.0 ht=0) BWI: (8.0,8.0)
+[This results in taking a replacement (ATL) from the right subtree]
+delete(IAD): successful
+Preorder list:
+  (x=5.0 ht=2) SEA: (5.0,5.0)
+  (y=5.0 ht=0) ATL: (1.0,5.0)
+  []
+  []
+  (y=7.0 ht=1) DCA: (6.0,7.0)
+  (y=3.0 ht=0) JFK: (9.0,3.0)
+  []
+  []
+  (x=8.0 ht=0) BWI: (8.0,8.0)
+  []
+  []
+Tree structure:
+  | (y=5.0 ht=0) ATL: (1.0,5.0)
+  (x=5.0 ht=2) SEA: (5.0,5.0)
+  | | (y=3.0 ht=0) JFK: (9.0,3.0)
+  | (y=7.0 ht=1) DCA: (6.0,7.0)
+  | | (x=8.0 ht=0) BWI: (8.0,8.0)
+[This results in taking a replacement (BWI) from the right subtree]
+delete(DCA): successful
+Preorder list:
+  (x=5.0 ht=2) SEA: (5.0,5.0)
+  (y=5.0 ht=0) ATL: (1.0,5.0)
+  []
+  []
+  (y=8.0 ht=1) BWI: (8.0,8.0)
+  (y=3.0 ht=0) JFK: (9.0,3.0)
+  []
+  []
+  []
+Tree structure:
+  | (y=5.0 ht=0) ATL: (1.0,5.0)
+  (x=5.0 ht=2) SEA: (5.0,5.0)
+  | | (y=3.0 ht=0) JFK: (9.0,3.0)
+  | (y=8.0 ht=1) BWI: (8.0,8.0)
+delete(JFK): successful
+Preorder list:
+  (x=5.0 ht=1) SEA: (5.0,5.0)
+  (y=5.0 ht=0) ATL: (1.0,5.0)
+  []
+  []
+  (y=8.0 ht=0) BWI: (8.0,8.0)
+  []
+  []
+Tree structure:
+  | (y=5.0 ht=0) ATL: (1.0,5.0)
+  (x=5.0 ht=1) SEA: (5.0,5.0)
+  | (y=8.0 ht=0) BWI: (8.0,8.0)
+delete(BWI): successful
+Preorder list:
+  (x=5.0 ht=1) SEA: (5.0,5.0)
+  (y=5.0 ht=0) ATL: (1.0,5.0)
+  []
+  []
+  []
+Tree structure:
+  | (y=5.0 ht=0) ATL: (1.0,5.0)
+  (x=5.0 ht=1) SEA: (5.0,5.0)
+[This results in taking a replacement (ATL) from the left subtree]
+delete(SEA): successful
+Preorder list:
+  (x=1.0 ht=0) ATL: (1.0,5.0)
+  []
+  []
+Tree structure:
+  (x=1.0 ht=0) ATL: (1.0,5.0)
+delete(ATL): successful
+Preorder list:
+  []
+Tree structure:
+size: 0
