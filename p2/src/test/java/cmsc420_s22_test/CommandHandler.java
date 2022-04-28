@@ -85,21 +85,6 @@ public class CommandHandler {
 				output.append("[").append(comment).append("]").append(System.lineSeparator());
 			}
 			// -----------------------------------------------------
-			// MAX-HEIGHT-DIFFERENCE
-			// - updates the max height difference
-			// -----------------------------------------------------
-			else if (cmd.compareTo("max-height-difference") == 0) {
-				confirmInitialized(); // confirm that we are initialized
-				int newHeightDifference = line.nextInt(); // read the difference
-				if (newHeightDifference <= 0) {
-					throw new Exception("Error - max-height-difference must be at least 1");
-				}
-				output.append("max-height-difference(").append(newHeightDifference).append("): ");
-				hbkdTree.setHeightDifference(newHeightDifference);
-				output.append("successful").append(System.lineSeparator());
-			}
-
-			// -----------------------------------------------------
 			// INSERT code city x y
 			// -----------------------------------------------------
 			else if (cmd.compareTo("insert") == 0) {
@@ -131,6 +116,20 @@ public class CommandHandler {
 				}
 				hbkdTree.delete(ap.getPoint2D()); // delete from kd-tree
 				airports.remove(code); // delete from dictionary
+				output.append("successful").append(System.lineSeparator());
+			}
+			// -----------------------------------------------------
+			// DELETE-POINT code
+			// Warning: Just for testing. When deleting points that are
+			// actually in the tree, use delete above.
+			// -----------------------------------------------------
+			else if (cmd.compareTo("delete-point") == 0) {
+				confirmInitialized(); // confirm that we are initialized
+				double x = line.nextDouble(); // get coordinates
+				double y = line.nextDouble();
+				Point2D pt = new Point2D(x, y);
+				output.append("delete-point(").append(pt).append("): ");
+				hbkdTree.delete(pt); // delete from kd-tree
 				output.append("successful").append(System.lineSeparator());
 			}
 			// -----------------------------------------------------
@@ -172,18 +171,22 @@ public class CommandHandler {
 				double yMin = line.nextDouble();
 				double yMax = line.nextDouble();
 				if (xMax < xMin || yMax < yMin) {
-					throw new Exception("Error - Invalid rectangular-range bounds");
+					throw new Exception("Error - Invalid bounds for orthog-range-report");
 				}
 				Rectangle2D query = new Rectangle2D(new Point2D(xMin, yMin), new Point2D(xMax, yMax));
 				ArrayList<Airport> list = hbkdTree.orthogRangeReport(query);
 				if (list == null) {
-					throw new Exception("Error - rectangularRange returned a null result");
+					throw new Exception("Error - orthogRangeReport returned a null result");
 				}
 				Collections.sort(list); // sort by code
 				Iterator<Airport> iter = list.iterator(); // iterator for the list
-				output.append("orthog-range-report x=[").append(xMin).append("..").append(xMax).append("] y=[").append(yMin).append(",").append(yMax).append("] :").append(System.lineSeparator());
-				while (iter.hasNext()) { // output the list (flat)
-					output.append("  ").append(iter.next()).append(System.lineSeparator());
+				output.append("orthog-range-report x=[").append(xMin).append(" .. ").append(xMax).append("] y=[").append(yMin).append(" .. ").append(yMax).append("] :").append(System.lineSeparator());
+				if (iter.hasNext()) {
+					while (iter.hasNext()) { // output the list (flat)
+						output.append("  ").append(iter.next()).append(System.lineSeparator());
+					}
+				} else {
+					output.append("  [Empty]").append(System.lineSeparator());
 				}
 			}
 			// -----------------------------------------------------
@@ -217,8 +220,7 @@ public class CommandHandler {
 		} catch (Error e) { // error occurred?
 			System.err.print("Operation failed due to error: " + e.getMessage());
 			e.printStackTrace(System.err);
-		} // always executed
-		// close the input scanner
+		}
 		return output.toString(); // return summary output
 	}
 
